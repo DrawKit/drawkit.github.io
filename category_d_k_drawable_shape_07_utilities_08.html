@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,17 +96,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:aeccd2720460fd207675de54c007ddce4"><td class="memItemLeft" align="right" valign="top">(NSBezierPath *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawable_shape_07_utilities_08.html#aeccd2720460fd207675de54c007ddce4">pathWithRelativeRect:</a></td></tr>
+<tr class="memdesc:aeccd2720460fd207675de54c007ddce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a rectangular path with given size and origin  <a href="#aeccd2720460fd207675de54c007ddce4">More...</a><br/></td></tr>
 <tr class="separator:aeccd2720460fd207675de54c007ddce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaada3d99a7b554ac1fcd4c1748a8713c"><td class="memItemLeft" align="right" valign="top">(NSBezierPath *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawable_shape_07_utilities_08.html#aaada3d99a7b554ac1fcd4c1748a8713c">pathWithRelativePosition:finalSize:</a></td></tr>
+<tr class="memdesc:aaada3d99a7b554ac1fcd4c1748a8713c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a rectangular path with given relative origin but absolute final size  <a href="#aaada3d99a7b554ac1fcd4c1748a8713c">More...</a><br/></td></tr>
 <tr class="separator:aaada3d99a7b554ac1fcd4c1748a8713c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad90f10d5a3d95190c913d4b68381580c"><td class="memItemLeft" align="right" valign="top">(NSBezierPath *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawable_shape_07_utilities_08.html#ad90f10d5a3d95190c913d4b68381580c">pathWithFinalSize:offsetBy:fromPartcode:</a></td></tr>
+<tr class="memdesc:ad90f10d5a3d95190c913d4b68381580c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a rectangular path offset from a given partcode  <a href="#ad90f10d5a3d95190c913d4b68381580c">More...</a><br/></td></tr>
 <tr class="separator:ad90f10d5a3d95190c913d4b68381580c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6b1e4d9129b62d2889d731f3f3f3038"><td class="memItemLeft" align="right" valign="top">(NSBezierPath *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawable_shape_07_utilities_08.html#af6b1e4d9129b62d2889d731f3f3f3038">path:withFinalSize:offsetBy:fromPartcode:</a></td></tr>
+<tr class="memdesc:af6b1e4d9129b62d2889d731f3f3f3038"><td class="mdescLeft">&#160;</td><td class="mdescRight">transforms a path to the final size and position relative to a partcode  <a href="#af6b1e4d9129b62d2889d731f3f3f3038">More...</a><br/></td></tr>
 <tr class="separator:af6b1e4d9129b62d2889d731f3f3f3038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3532222dd6059b430f3a3abbc4c57729"><td class="memItemLeft" align="right" valign="top">(NSPoint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawable_shape_07_utilities_08.html#a3532222dd6059b430f3a3abbc4c57729">pointForRelativeLocation:</a></td></tr>
+<tr class="memdesc:a3532222dd6059b430f3a3abbc4c57729"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert a point from relative coordinates to absolute coordinates  <a href="#a3532222dd6059b430f3a3abbc4c57729">More...</a><br/></td></tr>
 <tr class="separator:a3532222dd6059b430f3a3abbc4c57729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Graham Cox, Apptree.net </dd>
+<dd>
+Graham Miln, miln.eu </dd>
+<dd>
+Contributions from the community </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2005-2013 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>This software is released subject to licensing conditions as detailed in DRAWKIT-LICENSING.TXT, which must accompany this source file. </dd></dl>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="af6b1e4d9129b62d2889d731f3f3f3038"></a>
 <div class="memitem">
 <div class="memproto">
@@ -143,6 +156,19 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>transforms a path to the final size and position relative to a partcode </p>
+<dl class="section note"><dt>Note</dt><dd>The resulting path is positioned at a fixed offset and size relative to a partcode (a corner, say) in such a way that the object's size and angle set the positioning and orientation of the path but not its actual size. This is useful for adding an adornment to the shape that is unscaled by the object, such as the text indicator shown by <a class="el" href="interface_d_k_text_shape.html">DKTextShape</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>the path to transform </td></tr>
+    <tr><td class="paramname">size</td><td>the final desired size of the rectangle </td></tr>
+    <tr><td class="paramname">offset</td><td>an offset in absolute units from the nominated partcode position </td></tr>
+    <tr><td class="paramname">pc</td><td>the partcode that the path is positioned relative to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the transformed path </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawable_shape.html#af6b1e4d9129b62d2889d731f3f3f3038">DKDrawableShape</a>.</p>
 
 </div>
@@ -177,6 +203,18 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return a rectangular path offset from a given partcode </p>
+<dl class="section note"><dt>Note</dt><dd>The resulting path is positioned at a fixed offset and size relative to a partcode (a corner, say) in such a way that the object's size and angle set the positioning and orientation of the path but not its actual size. This is useful for adding an adornment to the shape that is unscaled by the object, such as the text indicator shown by <a class="el" href="interface_d_k_text_shape.html">DKTextShape</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>the final desired size of the rectangle </td></tr>
+    <tr><td class="paramname">offset</td><td>an offset in absolute units from the nominated partcode position </td></tr>
+    <tr><td class="paramname">pc</td><td>the partcode that the path is positioned relative to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a rectangular path transformed to the current true size, position and angle of the shape </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawable_shape.html#ad90f10d5a3d95190c913d4b68381580c">DKDrawableShape</a>.</p>
 
 </div>
@@ -205,6 +243,17 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return a rectangular path with given relative origin but absolute final size </p>
+<dl class="section note"><dt>Note</dt><dd>not affected by the object's current offset. By specifying a final size the resulting path can represent a fixed-sized region independent of the object's current size. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relLoc</td><td>a point expressed relative to the unit square </td></tr>
+    <tr><td class="paramname">size</td><td>the final desired size o fthe rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a rectangular path transformed to the current true size, position and angle of the shape </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawable_shape.html#aaada3d99a7b554ac1fcd4c1748a8713c">DKDrawableShape</a>.</p>
 
 </div>
@@ -222,6 +271,16 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return a rectangular path with given size and origin </p>
+<dl class="section note"><dt>Note</dt><dd>not affected by the object's current offset </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relRect</td><td>a rectangle expressed relative to the unit square </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a rectangular path transformed to the current true size, position and angle of the shape </dd></dl>
 
 <p>Extends class <a class="el" href="interface_d_k_drawable_shape.html#aeccd2720460fd207675de54c007ddce4">DKDrawableShape</a>.</p>
 
@@ -241,18 +300,28 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>convert a point from relative coordinates to absolute coordinates </p>
+<dl class="section note"><dt>Note</dt><dd>not affected by the object's current offset </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relLoc</td><td>a point expressed relative to the unit square </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the absolute point taking into account scale, position and angle </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawable_shape.html#a3532222dd6059b430f3a3abbc4c57729">DKDrawableShape</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this category was generated from the following files:<ul>
-<li>framework/Code/<a class="el" href="_d_k_drawable_shape_09_utilities_8h_source.html">DKDrawableShape+Utilities.h</a></li>
-<li>framework/Code/<a class="el" href="_d_k_drawable_shape_09_utilities_8m.html">DKDrawableShape+Utilities.m</a></li>
+<li><a class="el" href="_d_k_drawable_shape_09_utilities_8h_source.html">DKDrawableShape+Utilities.h</a></li>
+<li>DKDrawableShape+Utilities.m</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:03 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

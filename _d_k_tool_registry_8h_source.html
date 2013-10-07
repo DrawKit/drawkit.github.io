@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKToolRegistry.h Source File</title>
+<title>DrawKit: DKToolRegistry.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,106 +88,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKToolRegistry.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_tool_registry_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  DKToolRegistry.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  GCDrawKit</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Graham Cox on 15/07/09.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright 2009 Apptree.net. All rights reserved.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//  DKToolRegistry.h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  GCDrawKit</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//  Created by Graham Cox on 15/07/09.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//  Copyright 2009 Apptree.net. All rights reserved.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="interface_d_k_tool_registry.html">   16</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_tool_registry.html">DKToolRegistry</a> : NSObject</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_d_k_tool_registry.html#ab99ac9bf80ee93eaaa7a909166594aff">   18</a></span>&#160;    NSMutableDictionary*    <a class="code" href="interface_d_k_tool_registry.html#ab99ac9bf80ee93eaaa7a909166594aff">mToolsReg</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;+ (<a class="code" href="interface_d_k_tool_registry.html">DKToolRegistry</a>*)     sharedToolRegistry;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;- (<a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*)      drawingToolWithName:(NSString*) name;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (void)                registerDrawingTool:(<a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*) tool withName:(NSString*) name;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (<a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*)      drawingToolWithKeyboardEquivalent:(NSEvent*) keyEvent;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;- (void)                registerStandardTools;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (NSArray*)            toolNames;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (NSArray*)            allKeysForTool:(<a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*) tool;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;- (NSArray*)            tools;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// notifications</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a8d2ad45dfa89cd86b73e4b731c2ec7d3">kDKDrawingToolWasRegisteredNotification</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_d_k_tool_registry.html">   20</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_tool_registry.html">DKToolRegistry</a> : NSObject</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    NSMutableDictionary*    mToolsReg;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;+ (<a class="code" href="interface_d_k_tool_registry.html">DKToolRegistry</a>*)     sharedToolRegistry;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;- (<a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*)      drawingToolWithName:(NSString*) name;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// standard tool name constants</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_controller_8h.html#af2b9f48b6dfa19cb5f2084f1cc3bf4b9">kDKStandardSelectionToolName</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#adabacf808cf563f7c397a9eefa1952dd">kDKStandardRectangleToolName</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a5e525beb0930f8ded731b43f34c5f259">kDKStandardOvalToolName</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a175ab996266eac08f1e4928118cb6c99">kDKStandardRoundRectangleToolName</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a4a5a9eecf190b4a15c9e18ad93518df1">kDKStandardRoundEndedRectangleToolName</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a3ce56bcf2d15be3de1ae019f2e93e060">kDKStandardBezierPathToolName</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#aa2584829e4a1aeeccdaf61a004eb7b09">kDKStandardStraightLinePathToolName</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#ac81f9e21a347e52a432a8c65b26a553b">kDKStandardIrregularPolygonPathToolName</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a691b28c22f115b2082522f67c090d79f">kDKStandardRegularPolygonPathToolName</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#afee6c787aac40779eba6e41e5321dae9">kDKStandardFreehandPathToolName</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#ae4010fa774399813d5ba33d59d6becb3">kDKStandardArcToolName</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a1c0b5fb27115e96fa07c8513d1ce3e80">kDKStandardWedgeToolName</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#af513a96938e746c920cc9c4eb42ea7a5">kDKStandardRingToolName</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#af2e8fbc75e4d343d9ff9eeb1990e74dc">kDKStandardSpeechBalloonToolName</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#ae34894258efa3567b077cfa3d73462f1">kDKStandardTextBoxToolName</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a4791c66d793930f59650997bdd92abb9">kDKStandardTextPathToolName</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a7a0b561575d86f588d2a7f4c47d28b4a">kDKStandardAddPathPointToolName</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#ab74aaa39321d61634d6fbb2e512a1395">kDKStandardDeletePathPointToolName</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a2d2712de833826ea7f7ac00b2051a67c">kDKStandardDeletePathSegmentToolName</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_tool_registry_8h.html#a81c11dbe980732d1ab42a4f7bf718ff4">kDKStandardZoomToolName</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;- (void)                registerDrawingTool:(<a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*) tool withName:(NSString*) name;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;- (<a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*)      drawingToolWithKeyboardEquivalent:(NSEvent*) keyEvent;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;- (void)                registerStandardTools;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;- (NSArray*)            toolNames;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;- (NSArray*)            allKeysForTool:(<a class="code" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*) tool;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;- (NSArray*)            tools;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// notifications</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">extern</span> NSString*        kDKDrawingToolWasRegisteredNotification;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> DKToolRegistry takes over the tool collection functionality formerly part of DKDrawingTool itself. The old methods in DKDrawingTool now map to this class for backward</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> compatibility but are deprecated.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a5e525beb0930f8ded731b43f34c5f259"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a5e525beb0930f8ded731b43f34c5f259">kDKStandardOvalToolName</a></div><div class="ttdeci">NSString * kDKStandardOvalToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:32</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_afee6c787aac40779eba6e41e5321dae9"><div class="ttname"><a href="_d_k_tool_registry_8h.html#afee6c787aac40779eba6e41e5321dae9">kDKStandardFreehandPathToolName</a></div><div class="ttdeci">NSString * kDKStandardFreehandPathToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:39</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a7a0b561575d86f588d2a7f4c47d28b4a"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a7a0b561575d86f588d2a7f4c47d28b4a">kDKStandardAddPathPointToolName</a></div><div class="ttdeci">NSString * kDKStandardAddPathPointToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:46</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a4a5a9eecf190b4a15c9e18ad93518df1"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a4a5a9eecf190b4a15c9e18ad93518df1">kDKStandardRoundEndedRectangleToolName</a></div><div class="ttdeci">NSString * kDKStandardRoundEndedRectangleToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:34</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_af513a96938e746c920cc9c4eb42ea7a5"><div class="ttname"><a href="_d_k_tool_registry_8h.html#af513a96938e746c920cc9c4eb42ea7a5">kDKStandardRingToolName</a></div><div class="ttdeci">NSString * kDKStandardRingToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:42</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_ae4010fa774399813d5ba33d59d6becb3"><div class="ttname"><a href="_d_k_tool_registry_8h.html#ae4010fa774399813d5ba33d59d6becb3">kDKStandardArcToolName</a></div><div class="ttdeci">NSString * kDKStandardArcToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:40</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a81c11dbe980732d1ab42a4f7bf718ff4"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a81c11dbe980732d1ab42a4f7bf718ff4">kDKStandardZoomToolName</a></div><div class="ttdeci">NSString * kDKStandardZoomToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:49</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_af2e8fbc75e4d343d9ff9eeb1990e74dc"><div class="ttname"><a href="_d_k_tool_registry_8h.html#af2e8fbc75e4d343d9ff9eeb1990e74dc">kDKStandardSpeechBalloonToolName</a></div><div class="ttdeci">NSString * kDKStandardSpeechBalloonToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:43</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a691b28c22f115b2082522f67c090d79f"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a691b28c22f115b2082522f67c090d79f">kDKStandardRegularPolygonPathToolName</a></div><div class="ttdeci">NSString * kDKStandardRegularPolygonPathToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:38</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a8d2ad45dfa89cd86b73e4b731c2ec7d3"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a8d2ad45dfa89cd86b73e4b731c2ec7d3">kDKDrawingToolWasRegisteredNotification</a></div><div class="ttdeci">NSString * kDKDrawingToolWasRegisteredNotification</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:26</div></div>
-<div class="ttc" id="interface_d_k_tool_registry_html"><div class="ttname"><a href="interface_d_k_tool_registry.html">DKToolRegistry</a></div><div class="ttdef"><b>Definition:</b> DKToolRegistry.h:16</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_ab74aaa39321d61634d6fbb2e512a1395"><div class="ttname"><a href="_d_k_tool_registry_8h.html#ab74aaa39321d61634d6fbb2e512a1395">kDKStandardDeletePathPointToolName</a></div><div class="ttdeci">NSString * kDKStandardDeletePathPointToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:47</div></div>
-<div class="ttc" id="interface_d_k_tool_registry_html_ab99ac9bf80ee93eaaa7a909166594aff"><div class="ttname"><a href="interface_d_k_tool_registry.html#ab99ac9bf80ee93eaaa7a909166594aff">DKToolRegistry::mToolsReg</a></div><div class="ttdeci">NSMutableDictionary * mToolsReg</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.h:18</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a175ab996266eac08f1e4928118cb6c99"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a175ab996266eac08f1e4928118cb6c99">kDKStandardRoundRectangleToolName</a></div><div class="ttdeci">NSString * kDKStandardRoundRectangleToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:33</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_adabacf808cf563f7c397a9eefa1952dd"><div class="ttname"><a href="_d_k_tool_registry_8h.html#adabacf808cf563f7c397a9eefa1952dd">kDKStandardRectangleToolName</a></div><div class="ttdeci">NSString * kDKStandardRectangleToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:31</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a4791c66d793930f59650997bdd92abb9"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a4791c66d793930f59650997bdd92abb9">kDKStandardTextPathToolName</a></div><div class="ttdeci">NSString * kDKStandardTextPathToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:45</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a2d2712de833826ea7f7ac00b2051a67c"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a2d2712de833826ea7f7ac00b2051a67c">kDKStandardDeletePathSegmentToolName</a></div><div class="ttdeci">NSString * kDKStandardDeletePathSegmentToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:48</div></div>
-<div class="ttc" id="interface_d_k_drawing_tool_html"><div class="ttname"><a href="interface_d_k_drawing_tool.html">DKDrawingTool</a></div><div class="ttdef"><b>Definition:</b> DKDrawingTool.h:16</div></div>
-<div class="ttc" id="_d_k_tool_controller_8h_html_af2b9f48b6dfa19cb5f2084f1cc3bf4b9"><div class="ttname"><a href="_d_k_tool_controller_8h.html#af2b9f48b6dfa19cb5f2084f1cc3bf4b9">kDKStandardSelectionToolName</a></div><div class="ttdeci">NSString * kDKStandardSelectionToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:30</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a1c0b5fb27115e96fa07c8513d1ce3e80"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a1c0b5fb27115e96fa07c8513d1ce3e80">kDKStandardWedgeToolName</a></div><div class="ttdeci">NSString * kDKStandardWedgeToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:41</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_a3ce56bcf2d15be3de1ae019f2e93e060"><div class="ttname"><a href="_d_k_tool_registry_8h.html#a3ce56bcf2d15be3de1ae019f2e93e060">kDKStandardBezierPathToolName</a></div><div class="ttdeci">NSString * kDKStandardBezierPathToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:35</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_aa2584829e4a1aeeccdaf61a004eb7b09"><div class="ttname"><a href="_d_k_tool_registry_8h.html#aa2584829e4a1aeeccdaf61a004eb7b09">kDKStandardStraightLinePathToolName</a></div><div class="ttdeci">NSString * kDKStandardStraightLinePathToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:36</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_ae34894258efa3567b077cfa3d73462f1"><div class="ttname"><a href="_d_k_tool_registry_8h.html#ae34894258efa3567b077cfa3d73462f1">kDKStandardTextBoxToolName</a></div><div class="ttdeci">NSString * kDKStandardTextBoxToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:44</div></div>
-<div class="ttc" id="_d_k_tool_registry_8h_html_ac81f9e21a347e52a432a8c65b26a553b"><div class="ttname"><a href="_d_k_tool_registry_8h.html#ac81f9e21a347e52a432a8c65b26a553b">kDKStandardIrregularPolygonPathToolName</a></div><div class="ttdeci">NSString * kDKStandardIrregularPolygonPathToolName</div><div class="ttdef"><b>Definition:</b> DKToolRegistry.m:37</div></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// standard tool name constants</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardSelectionToolName;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardRectangleToolName;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardOvalToolName;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardRoundRectangleToolName;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardRoundEndedRectangleToolName;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardBezierPathToolName;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardStraightLinePathToolName;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardIrregularPolygonPathToolName;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardRegularPolygonPathToolName;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardFreehandPathToolName;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardArcToolName;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardWedgeToolName;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardRingToolName;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardSpeechBalloonToolName;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardTextBoxToolName;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardTextPathToolName;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardAddPathPointToolName;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardDeletePathPointToolName;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardDeletePathSegmentToolName;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">extern</span> NSString*        kDKStandardZoomToolName;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> DKToolRegistry takes over the tool collection functionality formerly part of DKDrawingTool itself. The old methods in DKDrawingTool now map to this class for backward</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> compatibility but are deprecated.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="interface_d_k_tool_registry_html"><div class="ttname"><a href="interface_d_k_tool_registry.html">DKToolRegistry</a></div><div class="ttdef"><b>Definition:</b> DKToolRegistry.h:20</div></div>
+<div class="ttc" id="interface_d_k_drawing_tool_html"><div class="ttname"><a href="interface_d_k_drawing_tool.html">DKDrawingTool</a></div><div class="ttdef"><b>Definition:</b> DKDrawingTool.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

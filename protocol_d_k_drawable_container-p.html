@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,8 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">&lt;DKDrawableContainer&gt; Protocol Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#import &lt;<a class="el" href="_d_k_drawable_container_protocol_8h_source.html">DKDrawableContainerProtocol.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for &lt;DKDrawableContainer&gt;:</div>
 <div class="dyncontent">
@@ -107,159 +105,35 @@ Inheritance diagram for &lt;DKDrawableContainer&gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:a88aba239493ff99f957202d8c7e7ce39"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_drawing.html">DKDrawing</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_drawable_container-p.html#a88aba239493ff99f957202d8c7e7ce39">drawing</a></td></tr>
+<tr class="memitem:a88aba239493ff99f957202d8c7e7ce39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88aba239493ff99f957202d8c7e7ce39"></a>
+(<a class="el" href="interface_d_k_drawing.html">DKDrawing</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <b>drawing</b></td></tr>
 <tr class="separator:a88aba239493ff99f957202d8c7e7ce39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e9bd48d6ff7094d5d45b5faa087d4b"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_layer.html">DKLayer</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_drawable_container-p.html#af0e9bd48d6ff7094d5d45b5faa087d4b">layer</a></td></tr>
+<tr class="memitem:af0e9bd48d6ff7094d5d45b5faa087d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0e9bd48d6ff7094d5d45b5faa087d4b"></a>
+(<a class="el" href="interface_d_k_layer.html">DKLayer</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <b>layer</b></td></tr>
 <tr class="separator:af0e9bd48d6ff7094d5d45b5faa087d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57e275601c3a85f0750aad11910ad1da"><td class="memItemLeft" align="right" valign="top">(NSAffineTransform *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_drawable_container-p.html#a57e275601c3a85f0750aad11910ad1da">renderingTransform</a></td></tr>
+<tr class="memitem:a57e275601c3a85f0750aad11910ad1da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57e275601c3a85f0750aad11910ad1da"></a>
+(NSAffineTransform *)&#160;</td><td class="memItemRight" valign="bottom">- <b>renderingTransform</b></td></tr>
 <tr class="separator:a57e275601c3a85f0750aad11910ad1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6f21ad7c913a5c1c3b14b2645af162f"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_image_data_manager.html">DKImageDataManager</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_drawable_container-p.html#ab6f21ad7c913a5c1c3b14b2645af162f">imageManager</a></td></tr>
+<tr class="memitem:ab6f21ad7c913a5c1c3b14b2645af162f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6f21ad7c913a5c1c3b14b2645af162f"></a>
+(<a class="el" href="interface_d_k_image_data_manager.html">DKImageDataManager</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <b>imageManager</b></td></tr>
 <tr class="separator:ab6f21ad7c913a5c1c3b14b2645af162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a276f0eebfe806186e828a45328194e3d"><td class="memItemLeft" align="right" valign="top">(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_drawable_container-p.html#a276f0eebfe806186e828a45328194e3d">indexOfObject:</a></td></tr>
+<tr class="memitem:a276f0eebfe806186e828a45328194e3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a276f0eebfe806186e828a45328194e3d"></a>
+(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">- <b>indexOfObject:</b></td></tr>
 <tr class="separator:a276f0eebfe806186e828a45328194e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae872e0978497d3ad3e5a9c26dc27963f"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_metadata_item.html">DKMetadataItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_drawable_container-p.html#ae872e0978497d3ad3e5a9c26dc27963f">metadataItemForKey:</a></td></tr>
+<tr class="memitem:ae872e0978497d3ad3e5a9c26dc27963f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae872e0978497d3ad3e5a9c26dc27963f"></a>
+(<a class="el" href="interface_d_k_metadata_item.html">DKMetadataItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <b>metadataItemForKey:</b></td></tr>
 <tr class="separator:ae872e0978497d3ad3e5a9c26dc27963f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a013d268f73f535ff5f6cc0bb394c6788"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_drawable_container-p.html#a013d268f73f535ff5f6cc0bb394c6788">metadataObjectForKey:</a></td></tr>
+<tr class="memitem:a013d268f73f535ff5f6cc0bb394c6788"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a013d268f73f535ff5f6cc0bb394c6788"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>metadataObjectForKey:</b></td></tr>
 <tr class="separator:a013d268f73f535ff5f6cc0bb394c6788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a88aba239493ff99f957202d8c7e7ce39"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_d_k_drawing.html">DKDrawing</a>*) drawing </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab6f21ad7c913a5c1c3b14b2645af162f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_d_k_image_data_manager.html">DKImageDataManager</a>*) imageManager </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a276f0eebfe806186e828a45328194e3d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSUInteger) indexOfObject: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_d_k_drawable_object.html">DKDrawableObject</a> *)&#160;</td>
-          <td class="paramname"><em>obj</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="interface_d_k_object_owner_layer.html#a68b78e9aeac7c395b41f848780e50132">DKObjectOwnerLayer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af0e9bd48d6ff7094d5d45b5faa087d4b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_d_k_layer.html">DKLayer</a>*) layer </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="interface_d_k_object_owner_layer.html#a212f9e5b97a7e27b22efad5dfa6f4d93">DKObjectOwnerLayer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae872e0978497d3ad3e5a9c26dc27963f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_d_k_metadata_item.html">DKMetadataItem</a>*) metadataItemForKey: </td>
-          <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>key</em></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a013d268f73f535ff5f6cc0bb394c6788"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id) metadataObjectForKey: </td>
-          <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>key</em></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a57e275601c3a85f0750aad11910ad1da"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSAffineTransform*) renderingTransform </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="interface_d_k_object_owner_layer.html#adc046414b9b05e1a16e0359ec2124a5d">DKObjectOwnerLayer</a>, and <a class="el" href="interface_d_k_shape_group.html#a5ff496769e81434b32cf48607b7829f9">DKShapeGroup</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
-<li>framework/Code/<a class="el" href="_d_k_drawable_container_protocol_8h_source.html">DKDrawableContainerProtocol.h</a></li>
+<li><a class="el" href="_d_k_drawable_container_protocol_8h_source.html">DKDrawableContainerProtocol.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:03 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

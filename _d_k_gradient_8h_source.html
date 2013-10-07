@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKGradient.h Source File</title>
+<title>DrawKit: DKGradient.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,204 +88,187 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKGradient.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_gradient_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_g_c_observable_object_8h.html">GCObservableObject.h</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;GCObservableObject.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// gradient type:</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8">   19</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8a8b836ff3a46073c92833ba128e1730ba">   21</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8a8b836ff3a46073c92833ba128e1730ba">kDKGradientTypeLinear</a>       = 0,</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8a8a2d6976d0476eefc6de9d6cf56e12d7">   22</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8a8a2d6976d0476eefc6de9d6cf56e12d7">kDKGradientTypeRadial</a>       = 1,</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8ab67adab078975c2cd27ec4ce13a18324">   23</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8ab67adab078975c2cd27ec4ce13a18324">kDKGradientSweptAngle</a>       = 3</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8">DKGradientType</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// gradient blending mode:</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107b">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107ba2f2eb75f78898abe47ae6a3be15bb6d7">   31</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107ba2f2eb75f78898abe47ae6a3be15bb6d7">kDKGradientRGBBlending</a>          = 0,</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107bac4bdc321cf9af79a130181f2cffbe4e1">   32</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107bac4bdc321cf9af79a130181f2cffbe4e1">kDKGradientHSBBlending</a>          = 1,</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107ba516df0def5712317dee303b3e4bc17d2">   33</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107ba516df0def5712317dee303b3e4bc17d2">kDKGradientAlphaBlending</a>        = 64</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107b">DKGradientBlending</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9">   38</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a386d64cb1e2c6243441a17b1474a464f">   40</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a386d64cb1e2c6243441a17b1474a464f">kDKGradientInterpLinear</a>         = 0,</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a7c01ccb57f2417c345a387358680b219">   41</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a7c01ccb57f2417c345a387358680b219">kDKGradientInterpQuadratic</a>      = 2,</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9aa44eea9b06bd6762ac93c3da45a6c844">   42</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9aa44eea9b06bd6762ac93c3da45a6c844">kDKGradientInterpCubic</a>          = 3,</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9afc3f0030146446ac3c55c67425ca3f1c">   43</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9afc3f0030146446ac3c55c67425ca3f1c">kDKGradientInterpSinus</a>          = 4,</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a4d374fedd3706dd5e53928a59137b62d">   44</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a4d374fedd3706dd5e53928a59137b62d">kDKGradientInterpSinus2</a>         = 5</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9">DKGradientInterpolation</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// A DKGradient encapsulates gradient/shading drawing.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html">   50</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_gradient.html">DKGradient</a> : <a class="code" href="interface_g_c_observable_object.html">GCObservableObject</a> &lt;NSCoding, NSCopying&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    NSMutableArray*         <a class="code" href="interface_d_k_gradient.html#a071796954a9e93497e0b561269891051">m_colorStops</a>;       <span class="comment">// color stops</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html#a071796954a9e93497e0b561269891051">   53</a></span>&#160;    <span class="keywordtype">id</span>                      <a class="code" href="interface_d_k_gradient.html#adb6c3031bedeb586ead363cb811aeb18">m_extensionData</a>;    <span class="comment">// additional supplementary data </span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html#adb6c3031bedeb586ead363cb811aeb18">   54</a></span>&#160;    CGFloat                 <a class="code" href="interface_d_k_gradient.html#af3b6544f2f35e6e1448e3b0083e3657e">m_gradAngle</a>;        <span class="comment">// linear angle in radians</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html#af3b6544f2f35e6e1448e3b0083e3657e">   55</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8">DKGradientType</a>          <a class="code" href="interface_d_k_gradient.html#ad0360ae31dc0c2e94eff28193201d75c">m_gradType</a>;         <span class="comment">// type</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html#ad0360ae31dc0c2e94eff28193201d75c">   56</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107b">DKGradientBlending</a>      <a class="code" href="interface_d_k_gradient.html#a64b07f957ce71e75d71b7f5fc2c1a9c8">m_blending</a>;         <span class="comment">// method to blend colours</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html#a64b07f957ce71e75d71b7f5fc2c1a9c8">   57</a></span>&#160;    <a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9">DKGradientInterpolation</a> <a class="code" href="interface_d_k_gradient.html#a0702364bc5a78c6940dd77e56eba2c4a">m_interp</a>;           <span class="comment">// interpolation function</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html#a0702364bc5a78c6940dd77e56eba2c4a">   58</a></span>&#160;    CGFunctionRef           <a class="code" href="interface_d_k_gradient.html#a768c67cab29eb9a69bf1c4088a4ebca6">m_cbfunc</a>;           <span class="comment">// callback function</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html#a768c67cab29eb9a69bf1c4088a4ebca6">   59</a></span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// simple gradient convenience methods</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;+ (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         defaultGradient;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;+ (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         gradientWithStartingColor:(NSColor*) c1 endingColor:(NSColor*) c2;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;+ (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         gradientWithStartingColor:(NSColor*) c1 endingColor:(NSColor*) c2 type:(NSInteger) gt angle:(CGFloat) degrees;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// modified copies:</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         gradientByColorizingWithColor:(NSColor*) color;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;- (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         gradientWithAlpha:(CGFloat) alpha;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// setting up the Color stops</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// gradient type:</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    kDKGradientTypeLinear       = 0,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    kDKGradientTypeRadial       = 1,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    kDKGradientSweptAngle       = 3</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;DKGradientType;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// gradient blending mode:</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    kDKGradientRGBBlending          = 0,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    kDKGradientHSBBlending          = 1,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    kDKGradientAlphaBlending        = 64</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;DKGradientBlending;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    kDKGradientInterpLinear         = 0,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    kDKGradientInterpQuadratic      = 2,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    kDKGradientInterpCubic          = 3,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    kDKGradientInterpSinus          = 4,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    kDKGradientInterpSinus2         = 5</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;DKGradientInterpolation;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// A DKGradient encapsulates gradient/shading drawing.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="interface_d_k_gradient.html">   45</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_gradient.html">DKGradient</a> : <a class="code" href="interface_g_c_observable_object.html">GCObservableObject</a> &lt;NSCoding, NSCopying&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    NSMutableArray*         m_colorStops;       <span class="comment">// color stops</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">id</span>                      m_extensionData;    <span class="comment">// additional supplementary data </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    CGFloat                 m_gradAngle;        <span class="comment">// linear angle in radians</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    DKGradientType          m_gradType;         <span class="comment">// type</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    DKGradientBlending      m_blending;         <span class="comment">// method to blend colours</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    DKGradientInterpolation m_interp;           <span class="comment">// interpolation function</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    CGFunctionRef           m_cbfunc;           <span class="comment">// callback function</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// simple gradient convenience methods</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;+ (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         defaultGradient;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;+ (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         gradientWithStartingColor:(NSColor*) c1 endingColor:(NSColor*) c2;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;- (<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*)        addColor:(NSColor*) Color at:(CGFloat) pos;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;- (void)                addColorStop:(<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*) stop;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;- (void)                removeLastColor;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (void)                removeColorStop:(<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*) stop;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;- (void)                removeAllColors;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;- (void)                setColorStops:(NSArray*) stops;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;- (NSArray*)            colorStops;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;- (void)                sortColorStops;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;- (void)                reverseColorStops;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// KVO compliant accessors:</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (NSUInteger)      countOfColorStops;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*)        objectInColorStopsAtIndex:(NSUInteger) ix;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)                insertObject:(<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*) stop inColorStopsAtIndex:(NSUInteger) ix;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;- (void)                removeObjectFromColorStopsAtIndex:(NSUInteger) ix;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">// a variety of ways to fill a path</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;- (void)                fillRect:(NSRect)rect;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;- (void)                fillPath:(NSBezierPath*) path;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (void)                fillPath:(NSBezierPath*) path centreOffset:(NSPoint) co;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;- (void)                fillPath:(NSBezierPath*) path startingAtPoint:(NSPoint) sp</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                startRadius:(CGFloat) sr endingAtPoint:(NSPoint) ep endRadius:(CGFloat) er;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;+ (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         gradientWithStartingColor:(NSColor*) c1 endingColor:(NSColor*) c2 type:(NSInteger) gt angle:(CGFloat) degrees;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">// modified copies:</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         gradientByColorizingWithColor:(NSColor*) color;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;- (<a class="code" href="interface_d_k_gradient.html">DKGradient</a>*)         gradientWithAlpha:(CGFloat) alpha;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (void)                fillContext:(CGContextRef) context startingAtPoint:(NSPoint) sp</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                startRadius:(CGFloat) sr endingAtPoint:(NSPoint) ep endRadius:(CGFloat) er;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;- (NSColor*)            colorAtValue:(CGFloat) val;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// setting up the Color stops</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;- (<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*)        addColor:(NSColor*) Color at:(CGFloat) pos;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;- (void)                addColorStop:(<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*) stop;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">// setting the angle</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (void)                setAngle:(CGFloat) ang;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;- (CGFloat)             angle;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;- (void)                setAngleInDegrees:(CGFloat) degrees;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;- (CGFloat)             angleInDegrees;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;- (void)                setAngleWithoutNotifying:(CGFloat) ang;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">// setting gradient type, blending and interpolation settings</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;- (void)                setGradientType:(<a class="code" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8">DKGradientType</a>) gt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;- (<a class="code" href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8">DKGradientType</a>)      gradientType;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;- (void)                setGradientBlending:(<a class="code" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107b">DKGradientBlending</a>) bt;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;- (<a class="code" href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107b">DKGradientBlending</a>)  gradientBlending;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;- (void)                removeLastColor;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;- (void)                removeColorStop:(<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*) stop;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;- (void)                removeAllColors;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;- (void)                setGradientInterpolation:(<a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9">DKGradientInterpolation</a>) intrp;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;- (<a class="code" href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9">DKGradientInterpolation</a>) gradientInterpolation;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">// swatch images</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;- (NSImage*)            swatchImageWithSize:(NSSize) size withBorder:(BOOL) showBorder;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;- (NSImage*)            standardSwatchImage;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;- (void)                setColorStops:(NSArray*) stops;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#define DKGradientSwatchSize (NSMakeSize (20, 20))</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="_d_k_gradient_8h.html#a8bd35e6c7ab1bddfd10b47ded9793da3">  132</a></span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_color_stop.html">DKColorStop</a> : NSObject &lt;NSCoding, NSCopying&gt;</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="interface_d_k_color_stop.html">  137</a></span>&#160;{</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    NSColor*            <a class="code" href="interface_d_k_color_stop.html#a7f0f10b2d25e8435e950b449eca8c965">mColor</a>;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    CGFloat             <a class="code" href="interface_d_k_color_stop.html#a21b902eed835cd82add79ba58e91a2de">position</a>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="interface_d_k_color_stop.html#a7f0f10b2d25e8435e950b449eca8c965">  140</a></span>&#160;    <a class="code" href="interface_d_k_gradient.html">DKGradient</a>*         <a class="code" href="interface_d_k_color_stop.html#abe80e2dbec748ed24c4cb7b22234e153">m_ownerRef</a>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="interface_d_k_color_stop.html#a106c78322d3d4387004228699058cd80">  141</a></span>&#160;<span class="keyword">@public</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="interface_d_k_color_stop.html#abe80e2dbec748ed24c4cb7b22234e153">  142</a></span>&#160;    CGFloat             <a class="code" href="interface_d_k_color_stop.html#af445f7a332a8850783ee25ac08eaa7f7">components</a>[4];  <span class="comment">// cached rgba values</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="interface_d_k_color_stop.html#af445f7a332a8850783ee25ac08eaa7f7">  144</a></span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;- (id)                  initWithColor:(NSColor*) aColor at:(CGFloat) pos;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;- (NSColor*)            color;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;- (void)                setColor:(NSColor*) aColor;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;- (void)                setAlpha:(CGFloat) alpha;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;- (NSArray*)            colorStops;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;- (void)                sortColorStops;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;- (void)                reverseColorStops;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;- (CGFloat)             position;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;- (void)                setPosition:(CGFloat) pos;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">// notifications sent by DKGradient:</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">extern</span> NSString*    <a class="code" href="_d_k_gradient_8h.html#aa27a6b4f48ca994261c131c270e95ec8">kDKNotificationGradientWillAddColorStop</a>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">extern</span> NSString*    <a class="code" href="_d_k_gradient_8h.html#a2b9f6b5d5f89faa70bfbcd166177e60c">kDKNotificationGradientDidAddColorStop</a>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">extern</span> NSString*    <a class="code" href="_d_k_gradient_8h.html#af12d36485d4ca87c89e17926f0e65f92">kDKNotificationGradientWillRemoveColorStop</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">extern</span> NSString*    <a class="code" href="_d_k_gradient_8h.html#a96ef534536d6ee1228a77a36847b1a51">kDKNotificationGradientDidRemoveColorStop</a>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">extern</span> NSString*    <a class="code" href="_d_k_gradient_8h.html#a193bcad3cb1317e39866fa8e3b6620d0">kDKNotificationGradientWillChange</a>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">extern</span> NSString*    <a class="code" href="_d_k_gradient_8h.html#ae410dcb2f2cf1f2a77512373f1a33834">kDKNotificationGradientDidChange</a>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">// DKGradient is a simplified version of GCGradient as used in GradientPanel. Because this responds to exactly the same</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">// methods, you can cast a GCGradient to a DKGradient and it will work. This allows the GradientPanel to be used in a DK-based</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">// application without there being a clash between different frameworks.</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">// DKGradient drops the UI convenience methods and support for wavelength-based gradients</span></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a55f505c54fb96a22740f6be55538b7b9"><div class="ttname"><a href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9">DKGradientInterpolation</a></div><div class="ttdeci">DKGradientInterpolation</div><div class="ttdef"><b>Definition:</b> DKGradient.h:38</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a1f211739bec0068767a16ae42434107ba516df0def5712317dee303b3e4bc17d2"><div class="ttname"><a href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107ba516df0def5712317dee303b3e4bc17d2">kDKGradientAlphaBlending</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:33</div></div>
-<div class="ttc" id="interface_d_k_color_stop_html_abe80e2dbec748ed24c4cb7b22234e153"><div class="ttname"><a href="interface_d_k_color_stop.html#abe80e2dbec748ed24c4cb7b22234e153">DKColorStop::m_ownerRef</a></div><div class="ttdeci">DKGradient * m_ownerRef</div><div class="ttdef"><b>Definition:</b> DKGradient.h:142</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a1f211739bec0068767a16ae42434107ba2f2eb75f78898abe47ae6a3be15bb6d7"><div class="ttname"><a href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107ba2f2eb75f78898abe47ae6a3be15bb6d7">kDKGradientRGBBlending</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:31</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a55f505c54fb96a22740f6be55538b7b9afc3f0030146446ac3c55c67425ca3f1c"><div class="ttname"><a href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9afc3f0030146446ac3c55c67425ca3f1c">kDKGradientInterpSinus</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:43</div></div>
-<div class="ttc" id="interface_d_k_color_stop_html_af445f7a332a8850783ee25ac08eaa7f7"><div class="ttname"><a href="interface_d_k_color_stop.html#af445f7a332a8850783ee25ac08eaa7f7">DKColorStop::components</a></div><div class="ttdeci">CGFloat components[4]</div><div class="ttdef"><b>Definition:</b> DKGradient.h:144</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a95e1a3cd1d390ed63c2747cd508137a8a8a2d6976d0476eefc6de9d6cf56e12d7"><div class="ttname"><a href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8a8a2d6976d0476eefc6de9d6cf56e12d7">kDKGradientTypeRadial</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:22</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a95e1a3cd1d390ed63c2747cd508137a8"><div class="ttname"><a href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8">DKGradientType</a></div><div class="ttdeci">DKGradientType</div><div class="ttdef"><b>Definition:</b> DKGradient.h:19</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_aa27a6b4f48ca994261c131c270e95ec8"><div class="ttname"><a href="_d_k_gradient_8h.html#aa27a6b4f48ca994261c131c270e95ec8">kDKNotificationGradientWillAddColorStop</a></div><div class="ttdeci">NSString * kDKNotificationGradientWillAddColorStop</div><div class="ttdef"><b>Definition:</b> DKGradient.m:25</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_ae410dcb2f2cf1f2a77512373f1a33834"><div class="ttname"><a href="_d_k_gradient_8h.html#ae410dcb2f2cf1f2a77512373f1a33834">kDKNotificationGradientDidChange</a></div><div class="ttdeci">NSString * kDKNotificationGradientDidChange</div><div class="ttdef"><b>Definition:</b> DKGradient.m:30</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a55f505c54fb96a22740f6be55538b7b9aa44eea9b06bd6762ac93c3da45a6c844"><div class="ttname"><a href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9aa44eea9b06bd6762ac93c3da45a6c844">kDKGradientInterpCubic</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:42</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a2b9f6b5d5f89faa70bfbcd166177e60c"><div class="ttname"><a href="_d_k_gradient_8h.html#a2b9f6b5d5f89faa70bfbcd166177e60c">kDKNotificationGradientDidAddColorStop</a></div><div class="ttdeci">NSString * kDKNotificationGradientDidAddColorStop</div><div class="ttdef"><b>Definition:</b> DKGradient.m:26</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a55f505c54fb96a22740f6be55538b7b9a7c01ccb57f2417c345a387358680b219"><div class="ttname"><a href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a7c01ccb57f2417c345a387358680b219">kDKGradientInterpQuadratic</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:41</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_af12d36485d4ca87c89e17926f0e65f92"><div class="ttname"><a href="_d_k_gradient_8h.html#af12d36485d4ca87c89e17926f0e65f92">kDKNotificationGradientWillRemoveColorStop</a></div><div class="ttdeci">NSString * kDKNotificationGradientWillRemoveColorStop</div><div class="ttdef"><b>Definition:</b> DKGradient.m:27</div></div>
-<div class="ttc" id="_g_c_observable_object_8h_html"><div class="ttname"><a href="_g_c_observable_object_8h.html">GCObservableObject.h</a></div></div>
-<div class="ttc" id="interface_d_k_color_stop_html"><div class="ttname"><a href="interface_d_k_color_stop.html">DKColorStop</a></div><div class="ttdoc">DKColorStop class - small object that links a Color with its relative position. </div><div class="ttdef"><b>Definition:</b> DKGradient.h:137</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a95e1a3cd1d390ed63c2747cd508137a8ab67adab078975c2cd27ec4ce13a18324"><div class="ttname"><a href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8ab67adab078975c2cd27ec4ce13a18324">kDKGradientSweptAngle</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:23</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a193bcad3cb1317e39866fa8e3b6620d0"><div class="ttname"><a href="_d_k_gradient_8h.html#a193bcad3cb1317e39866fa8e3b6620d0">kDKNotificationGradientWillChange</a></div><div class="ttdeci">NSString * kDKNotificationGradientWillChange</div><div class="ttdef"><b>Definition:</b> DKGradient.m:29</div></div>
-<div class="ttc" id="interface_d_k_gradient_html_a071796954a9e93497e0b561269891051"><div class="ttname"><a href="interface_d_k_gradient.html#a071796954a9e93497e0b561269891051">DKGradient::m_colorStops</a></div><div class="ttdeci">NSMutableArray * m_colorStops</div><div class="ttdef"><b>Definition:</b> DKGradient.h:53</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a1f211739bec0068767a16ae42434107bac4bdc321cf9af79a130181f2cffbe4e1"><div class="ttname"><a href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107bac4bdc321cf9af79a130181f2cffbe4e1">kDKGradientHSBBlending</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:32</div></div>
-<div class="ttc" id="interface_g_c_observable_object_html"><div class="ttname"><a href="interface_g_c_observable_object.html">GCObservableObject</a></div><div class="ttdef"><b>Definition:</b> GCObservableObject.h:14</div></div>
-<div class="ttc" id="interface_d_k_gradient_html_a768c67cab29eb9a69bf1c4088a4ebca6"><div class="ttname"><a href="interface_d_k_gradient.html#a768c67cab29eb9a69bf1c4088a4ebca6">DKGradient::m_cbfunc</a></div><div class="ttdeci">CGFunctionRef m_cbfunc</div><div class="ttdef"><b>Definition:</b> DKGradient.h:59</div></div>
-<div class="ttc" id="interface_d_k_gradient_html_a64b07f957ce71e75d71b7f5fc2c1a9c8"><div class="ttname"><a href="interface_d_k_gradient.html#a64b07f957ce71e75d71b7f5fc2c1a9c8">DKGradient::m_blending</a></div><div class="ttdeci">DKGradientBlending m_blending</div><div class="ttdef"><b>Definition:</b> DKGradient.h:57</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a95e1a3cd1d390ed63c2747cd508137a8a8b836ff3a46073c92833ba128e1730ba"><div class="ttname"><a href="_d_k_gradient_8h.html#a95e1a3cd1d390ed63c2747cd508137a8a8b836ff3a46073c92833ba128e1730ba">kDKGradientTypeLinear</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:21</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a96ef534536d6ee1228a77a36847b1a51"><div class="ttname"><a href="_d_k_gradient_8h.html#a96ef534536d6ee1228a77a36847b1a51">kDKNotificationGradientDidRemoveColorStop</a></div><div class="ttdeci">NSString * kDKNotificationGradientDidRemoveColorStop</div><div class="ttdef"><b>Definition:</b> DKGradient.m:28</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a55f505c54fb96a22740f6be55538b7b9a386d64cb1e2c6243441a17b1474a464f"><div class="ttname"><a href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a386d64cb1e2c6243441a17b1474a464f">kDKGradientInterpLinear</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:40</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a1f211739bec0068767a16ae42434107b"><div class="ttname"><a href="_d_k_gradient_8h.html#a1f211739bec0068767a16ae42434107b">DKGradientBlending</a></div><div class="ttdeci">DKGradientBlending</div><div class="ttdef"><b>Definition:</b> DKGradient.h:29</div></div>
-<div class="ttc" id="interface_d_k_gradient_html_ad0360ae31dc0c2e94eff28193201d75c"><div class="ttname"><a href="interface_d_k_gradient.html#ad0360ae31dc0c2e94eff28193201d75c">DKGradient::m_gradType</a></div><div class="ttdeci">DKGradientType m_gradType</div><div class="ttdef"><b>Definition:</b> DKGradient.h:56</div></div>
-<div class="ttc" id="interface_d_k_gradient_html_adb6c3031bedeb586ead363cb811aeb18"><div class="ttname"><a href="interface_d_k_gradient.html#adb6c3031bedeb586ead363cb811aeb18">DKGradient::m_extensionData</a></div><div class="ttdeci">id m_extensionData</div><div class="ttdef"><b>Definition:</b> DKGradient.h:54</div></div>
-<div class="ttc" id="interface_d_k_color_stop_html_a21b902eed835cd82add79ba58e91a2de"><div class="ttname"><a href="interface_d_k_color_stop.html#a21b902eed835cd82add79ba58e91a2de">-[DKColorStop position]</a></div><div class="ttdeci">CGFloat position()</div><div class="ttdef"><b>Definition:</b> DKGradient.m:1626</div></div>
-<div class="ttc" id="interface_d_k_color_stop_html_a7f0f10b2d25e8435e950b449eca8c965"><div class="ttname"><a href="interface_d_k_color_stop.html#a7f0f10b2d25e8435e950b449eca8c965">DKColorStop::mColor</a></div><div class="ttdeci">NSColor * mColor</div><div class="ttdef"><b>Definition:</b> DKGradient.h:140</div></div>
-<div class="ttc" id="interface_d_k_gradient_html_af3b6544f2f35e6e1448e3b0083e3657e"><div class="ttname"><a href="interface_d_k_gradient.html#af3b6544f2f35e6e1448e3b0083e3657e">DKGradient::m_gradAngle</a></div><div class="ttdeci">CGFloat m_gradAngle</div><div class="ttdef"><b>Definition:</b> DKGradient.h:55</div></div>
-<div class="ttc" id="interface_d_k_gradient_html_a0702364bc5a78c6940dd77e56eba2c4a"><div class="ttname"><a href="interface_d_k_gradient.html#a0702364bc5a78c6940dd77e56eba2c4a">DKGradient::m_interp</a></div><div class="ttdeci">DKGradientInterpolation m_interp</div><div class="ttdef"><b>Definition:</b> DKGradient.h:58</div></div>
-<div class="ttc" id="_d_k_gradient_8h_html_a55f505c54fb96a22740f6be55538b7b9a4d374fedd3706dd5e53928a59137b62d"><div class="ttname"><a href="_d_k_gradient_8h.html#a55f505c54fb96a22740f6be55538b7b9a4d374fedd3706dd5e53928a59137b62d">kDKGradientInterpSinus2</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:44</div></div>
-<div class="ttc" id="interface_d_k_gradient_html"><div class="ttname"><a href="interface_d_k_gradient.html">DKGradient</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:50</div></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">// KVO compliant accessors:</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;- (NSUInteger)      countOfColorStops;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;- (<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*)        objectInColorStopsAtIndex:(NSUInteger) ix;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;- (void)                insertObject:(<a class="code" href="interface_d_k_color_stop.html">DKColorStop</a>*) stop inColorStopsAtIndex:(NSUInteger) ix;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;- (void)                removeObjectFromColorStopsAtIndex:(NSUInteger) ix;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">// a variety of ways to fill a path</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;- (void)                fillRect:(NSRect)rect;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;- (void)                fillPath:(NSBezierPath*) path;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;- (void)                fillPath:(NSBezierPath*) path centreOffset:(NSPoint) co;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;- (void)                fillPath:(NSBezierPath*) path startingAtPoint:(NSPoint) sp</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                startRadius:(CGFloat) sr endingAtPoint:(NSPoint) ep endRadius:(CGFloat) er;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;- (void)                fillContext:(CGContextRef) context startingAtPoint:(NSPoint) sp</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                startRadius:(CGFloat) sr endingAtPoint:(NSPoint) ep endRadius:(CGFloat) er;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;- (NSColor*)            colorAtValue:(CGFloat) val;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">// setting the angle</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;- (void)                setAngle:(CGFloat) ang;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;- (CGFloat)             angle;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;- (void)                setAngleInDegrees:(CGFloat) degrees;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;- (CGFloat)             angleInDegrees;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;- (void)                setAngleWithoutNotifying:(CGFloat) ang;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">// setting gradient type, blending and interpolation settings</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;- (void)                setGradientType:(DKGradientType) gt;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;- (DKGradientType)      gradientType;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;- (void)                setGradientBlending:(DKGradientBlending) bt;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;- (DKGradientBlending)  gradientBlending;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;- (void)                setGradientInterpolation:(DKGradientInterpolation) intrp;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;- (DKGradientInterpolation) gradientInterpolation;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">// swatch images</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;- (NSImage*)            swatchImageWithSize:(NSSize) size withBorder:(BOOL) showBorder;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;- (NSImage*)            standardSwatchImage;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#define DKGradientSwatchSize (NSMakeSize (20, 20))</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_color_stop.html">DKColorStop</a> : NSObject &lt;NSCoding, NSCopying&gt;</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="interface_d_k_color_stop.html">  281</a></span>&#160;{</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    NSColor*            mColor;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    CGFloat             <a class="code" href="interface_d_k_color_stop.html#a21b902eed835cd82add79ba58e91a2de">position</a>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <a class="code" href="interface_d_k_gradient.html">DKGradient</a>*         m_ownerRef;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">@public</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    CGFloat             components[4];  <span class="comment">// cached rgba values</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;- (id)                  initWithColor:(NSColor*) aColor at:(CGFloat) pos;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;- (NSColor*)            color;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;- (void)                setColor:(NSColor*) aColor;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;- (void)                setAlpha:(CGFloat) alpha;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;- (CGFloat)             position;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;- (void)                setPosition:(CGFloat) pos;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">// notifications sent by DKGradient:</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keyword">extern</span> NSString*    kDKNotificationGradientWillAddColorStop;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="keyword">extern</span> NSString*    kDKNotificationGradientDidAddColorStop;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keyword">extern</span> NSString*    kDKNotificationGradientWillRemoveColorStop;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">extern</span> NSString*    kDKNotificationGradientDidRemoveColorStop;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keyword">extern</span> NSString*    kDKNotificationGradientWillChange;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keyword">extern</span> NSString*    kDKNotificationGradientDidChange;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">// DKGradient is a simplified version of GCGradient as used in GradientPanel. Because this responds to exactly the same</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">// methods, you can cast a GCGradient to a DKGradient and it will work. This allows the GradientPanel to be used in a DK-based</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">// application without there being a clash between different frameworks.</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">// DKGradient drops the UI convenience methods and support for wavelength-based gradients</span></div>
+<div class="ttc" id="interface_d_k_color_stop_html"><div class="ttname"><a href="interface_d_k_color_stop.html">DKColorStop</a></div><div class="ttdoc">DKColorStop class - small object that links a Color with its relative position. </div><div class="ttdef"><b>Definition:</b> DKGradient.h:281</div></div>
+<div class="ttc" id="interface_g_c_observable_object_html"><div class="ttname"><a href="interface_g_c_observable_object.html">GCObservableObject</a></div><div class="ttdef"><b>Definition:</b> GCObservableObject.h:11</div></div>
+<div class="ttc" id="interface_d_k_color_stop_html_a21b902eed835cd82add79ba58e91a2de"><div class="ttname"><a href="interface_d_k_color_stop.html#a21b902eed835cd82add79ba58e91a2de">-[DKColorStop position]</a></div><div class="ttdeci">CGFloat position()</div><div class="ttdoc">get the stop&amp;#39;s relative position </div><div class="ttdef"><b>Definition:</b> DKGradient.m:1192</div></div>
+<div class="ttc" id="interface_d_k_gradient_html"><div class="ttname"><a href="interface_d_k_gradient.html">DKGradient</a></div><div class="ttdef"><b>Definition:</b> DKGradient.h:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:12 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

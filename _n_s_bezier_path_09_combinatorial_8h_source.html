@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/NSBezierPath+Combinatorial.h Source File</title>
+<title>DrawKit: NSBezierPath+Combinatorial.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,41 +88,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">NSBezierPath+Combinatorial.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_n_s_bezier_path_09_combinatorial_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  NSBezierPath+Combinatorial.h</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Graham Cox on 28/05/2008.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2fa">   12</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa9c430b88da48dd6523369aaced98c931">   14</a></span>&#160;    <a class="code" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa9c430b88da48dd6523369aaced98c931">kDKBooleanOpUnion</a>           = 0,</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa249cb42a8c1d39912aa485c6bfde99e7">   15</a></span>&#160;    <a class="code" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa249cb42a8c1d39912aa485c6bfde99e7">kDKBooleanOpIntersection</a>    = 1,</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa97aa053a7e1fdbb79e7332ae8c9859f5">   16</a></span>&#160;    <a class="code" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa97aa053a7e1fdbb79e7332ae8c9859f5">kDKBooleanOpDifference</a>      = 2,</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faab57954d98346497e544e9ddf784e8957">   17</a></span>&#160;    <a class="code" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faab57954d98346497e544e9ddf784e8957">kDKBooleanOpExclusiveOR</a>     = 3</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2fa">DKBooleanOperation</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="category_n_s_bezier_path_07_combinatorial_08.html">   22</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_bezier_path_07_combinatorial_08.html">NSBezierPath (Combinatorial)</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (void)            showIntersectionsWithPath:(NSBezierPath*) path;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (NSBezierPath*)   <a class="code" href="category_n_s_bezier_path_07_combinatorial_08.html#a113bf091ab845c0c81ca0beb7953746a">renormalizePath</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (NSArray*)        dividePathWithPath:(NSBezierPath*) path;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (NSBezierPath*)   performBooleanOp:(<a class="code" href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2fa">DKBooleanOperation</a>) op withPath:(NSBezierPath*) path;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//  NSBezierPath+Combinatorial.h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//  Created by Graham Cox on 28/05/2008.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    kDKBooleanOpUnion           = 0,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    kDKBooleanOpIntersection    = 1,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    kDKBooleanOpDifference      = 2,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    kDKBooleanOpExclusiveOR     = 3</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;DKBooleanOperation;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="category_n_s_bezier_path_07_combinatorial_08.html">   28</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_bezier_path_07_combinatorial_08.html">NSBezierPath (Combinatorial)</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (void)            showIntersectionsWithPath:(NSBezierPath*) path;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;- (NSBezierPath*)   renormalizePath;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (NSArray*)        dividePathWithPath:(NSBezierPath*) path;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;- (NSBezierPath*)   performBooleanOp:(DKBooleanOperation) op withPath:(NSBezierPath*) path;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">######## NOTE ######## NOT YET IMPLEMENTED - DO NOT USE - THESE FILES ARE A PLACEHOLDER ONLY</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span></div>
@@ -141,21 +134,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">then, the paths are split up into new path fragments at the intersecting points. Depending on which operation is being performed, some of these paths will be</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">thrown away, and the rest joined up into the new path.</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="ttc" id="category_n_s_bezier_path_07_combinatorial_08_html"><div class="ttname"><a href="category_n_s_bezier_path_07_combinatorial_08.html">NSBezierPath(Combinatorial)</a></div><div class="ttdef"><b>Definition:</b> NSBezierPath+Combinatorial.h:22</div></div>
-<div class="ttc" id="category_n_s_bezier_path_07_combinatorial_08_html_a113bf091ab845c0c81ca0beb7953746a"><div class="ttname"><a href="category_n_s_bezier_path_07_combinatorial_08.html#a113bf091ab845c0c81ca0beb7953746a">-[NSBezierPath(Combinatorial) renormalizePath]</a></div><div class="ttdeci">NSBezierPath * renormalizePath()</div><div class="ttdef"><b>Definition:</b> NSBezierPath+Combinatorial.m:82</div></div>
-<div class="ttc" id="_n_s_bezier_path_09_combinatorial_8h_html_af04ca7e4d0d5172ff3e7cd949d32d2faa97aa053a7e1fdbb79e7332ae8c9859f5"><div class="ttname"><a href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa97aa053a7e1fdbb79e7332ae8c9859f5">kDKBooleanOpDifference</a></div><div class="ttdef"><b>Definition:</b> NSBezierPath+Combinatorial.h:16</div></div>
-<div class="ttc" id="_n_s_bezier_path_09_combinatorial_8h_html_af04ca7e4d0d5172ff3e7cd949d32d2faab57954d98346497e544e9ddf784e8957"><div class="ttname"><a href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faab57954d98346497e544e9ddf784e8957">kDKBooleanOpExclusiveOR</a></div><div class="ttdef"><b>Definition:</b> NSBezierPath+Combinatorial.h:17</div></div>
-<div class="ttc" id="_n_s_bezier_path_09_combinatorial_8h_html_af04ca7e4d0d5172ff3e7cd949d32d2faa249cb42a8c1d39912aa485c6bfde99e7"><div class="ttname"><a href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa249cb42a8c1d39912aa485c6bfde99e7">kDKBooleanOpIntersection</a></div><div class="ttdef"><b>Definition:</b> NSBezierPath+Combinatorial.h:15</div></div>
-<div class="ttc" id="_n_s_bezier_path_09_combinatorial_8h_html_af04ca7e4d0d5172ff3e7cd949d32d2faa9c430b88da48dd6523369aaced98c931"><div class="ttname"><a href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2faa9c430b88da48dd6523369aaced98c931">kDKBooleanOpUnion</a></div><div class="ttdef"><b>Definition:</b> NSBezierPath+Combinatorial.h:14</div></div>
-<div class="ttc" id="_n_s_bezier_path_09_combinatorial_8h_html_af04ca7e4d0d5172ff3e7cd949d32d2fa"><div class="ttname"><a href="_n_s_bezier_path_09_combinatorial_8h.html#af04ca7e4d0d5172ff3e7cd949d32d2fa">DKBooleanOperation</a></div><div class="ttdeci">DKBooleanOperation</div><div class="ttdoc">DrawKit ©2005-2008 Apptree.net. </div><div class="ttdef"><b>Definition:</b> NSBezierPath+Combinatorial.h:12</div></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="category_n_s_bezier_path_07_combinatorial_08_html"><div class="ttname"><a href="category_n_s_bezier_path_07_combinatorial_08.html">NSBezierPath(Combinatorial)</a></div><div class="ttdef"><b>Definition:</b> NSBezierPath+Combinatorial.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

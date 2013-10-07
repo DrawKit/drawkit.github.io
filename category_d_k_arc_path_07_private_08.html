@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,11 +94,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:abf23e5dbe23c85c86a9cc4900f7d6ee3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_arc_path_07_private_08.html#abf23e5dbe23c85c86a9cc4900f7d6ee3">calculatePath</a></td></tr>
+<tr class="memdesc:abf23e5dbe23c85c86a9cc4900f7d6ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the path based on the current arc parameters  <a href="#abf23e5dbe23c85c86a9cc4900f7d6ee3">More...</a><br/></td></tr>
 <tr class="separator:abf23e5dbe23c85c86a9cc4900f7d6ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a077df0601c0fc4eafac1f6ee90b92f26"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_arc_path_07_private_08.html#a077df0601c0fc4eafac1f6ee90b92f26">movePart:toPoint:constrainAngle:</a></td></tr>
+<tr class="memdesc:a077df0601c0fc4eafac1f6ee90b92f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">adjusts the arc parameters based on the mouse location passed and the partcode, etc.  <a href="#a077df0601c0fc4eafac1f6ee90b92f26">More...</a><br/></td></tr>
 <tr class="separator:a077df0601c0fc4eafac1f6ee90b92f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Graham Cox, Apptree.net </dd>
+<dd>
+Graham Miln, miln.eu </dd>
+<dd>
+Contributions from the community </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2005-2013 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>This software is released subject to licensing conditions as detailed in DRAWKIT-LICENSING.TXT, which must accompany this source file. </dd></dl>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="abf23e5dbe23c85c86a9cc4900f7d6ee3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -111,6 +121,9 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>sets the path based on the current arc parameters </p>
+<dl class="section note"><dt>Note</dt><dd>calls setPath: which is recorded by undo </dd></dl>
 
 </div>
 </div>
@@ -144,15 +157,26 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>adjusts the arc parameters based on the mouse location passed and the partcode, etc. </p>
+<dl class="section note"><dt>Note</dt><dd>called from mouseDragged: to implement interactive editing </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pc</td><td>the partcode being manipulated </td></tr>
+    <tr><td class="paramname">mp</td><td>the current point (from the mouse) </td></tr>
+    <tr><td class="paramname">constrain</td><td>YES to constrain angles to 15° increments </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this category was generated from the following file:<ul>
-<li>framework/Code/<a class="el" href="_d_k_arc_path_8m.html">DKArcPath.m</a></li>
+<li>DKArcPath.m</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:03 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

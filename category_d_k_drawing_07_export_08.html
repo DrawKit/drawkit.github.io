@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,29 +96,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:a1ccdc7a85f80f3081d9f2bf99a3d9258"><td class="memItemLeft" align="right" valign="top">(CGImageRef)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#a1ccdc7a85f80f3081d9f2bf99a3d9258">CGImageWithResolution:hasAlpha:</a></td></tr>
+<tr class="memdesc:a1ccdc7a85f80f3081d9f2bf99a3d9258"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates the initial bitmap image that the various bitmap formats are created from.  <a href="#a1ccdc7a85f80f3081d9f2bf99a3d9258">More...</a><br/></td></tr>
 <tr class="separator:a1ccdc7a85f80f3081d9f2bf99a3d9258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb280837f7ee21b147ee89bf5f4e105c"><td class="memItemLeft" align="right" valign="top">(CGImageRef)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#afb280837f7ee21b147ee89bf5f4e105c">CGImageWithResolution:hasAlpha:relativeScale:</a></td></tr>
+<tr class="memitem:afb280837f7ee21b147ee89bf5f4e105c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb280837f7ee21b147ee89bf5f4e105c"></a>
+(CGImageRef)&#160;</td><td class="memItemRight" valign="bottom">- <b>CGImageWithResolution:hasAlpha:relativeScale:</b></td></tr>
 <tr class="separator:afb280837f7ee21b147ee89bf5f4e105c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4ab1a9f737633b1bbbaa1ed1d72bd1"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#afe4ab1a9f737633b1bbbaa1ed1d72bd1">JPEGDataWithProperties:</a></td></tr>
+<tr class="memdesc:afe4ab1a9f737633b1bbbaa1ed1d72bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns JPEG data for the drawing.  <a href="#afe4ab1a9f737633b1bbbaa1ed1d72bd1">More...</a><br/></td></tr>
 <tr class="separator:afe4ab1a9f737633b1bbbaa1ed1d72bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd6ac8f6da71450c5aa0e30f2e1c736"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#aebd6ac8f6da71450c5aa0e30f2e1c736">TIFFDataWithProperties:</a></td></tr>
+<tr class="memdesc:aebd6ac8f6da71450c5aa0e30f2e1c736"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns TIFF data for the drawing.  <a href="#aebd6ac8f6da71450c5aa0e30f2e1c736">More...</a><br/></td></tr>
 <tr class="separator:aebd6ac8f6da71450c5aa0e30f2e1c736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a011d6a6b9a19c0920052f619acd2a2da"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#a011d6a6b9a19c0920052f619acd2a2da">PNGDataWithProperties:</a></td></tr>
+<tr class="memdesc:a011d6a6b9a19c0920052f619acd2a2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns PNG data for the drawing.  <a href="#a011d6a6b9a19c0920052f619acd2a2da">More...</a><br/></td></tr>
 <tr class="separator:a011d6a6b9a19c0920052f619acd2a2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada88f7948cd21c882f633c4f9d8fdb12"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#ada88f7948cd21c882f633c4f9d8fdb12">JPEGDataWithResolution:quality:progressive:</a></td></tr>
+<tr class="memdesc:ada88f7948cd21c882f633c4f9d8fdb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns JPEG data for the drawing or nil if there was a problem  <a href="#ada88f7948cd21c882f633c4f9d8fdb12">More...</a><br/></td></tr>
 <tr class="separator:ada88f7948cd21c882f633c4f9d8fdb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe999f71be2a86e39e092fc3fe751306"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#afe999f71be2a86e39e092fc3fe751306">TIFFDataWithResolution:compressionType:</a></td></tr>
+<tr class="memdesc:afe999f71be2a86e39e092fc3fe751306"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns TIFF data for the drawing or nil if there was a problem  <a href="#afe999f71be2a86e39e092fc3fe751306">More...</a><br/></td></tr>
 <tr class="separator:afe999f71be2a86e39e092fc3fe751306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31fde453d4b5a5786e6ee6b3a7a0eeb3"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#a31fde453d4b5a5786e6ee6b3a7a0eeb3">PNGDataWithResolution:gamma:interlaced:</a></td></tr>
+<tr class="memdesc:a31fde453d4b5a5786e6ee6b3a7a0eeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns PNG data for the drawing or nil if there was a problem  <a href="#a31fde453d4b5a5786e6ee6b3a7a0eeb3">More...</a><br/></td></tr>
 <tr class="separator:a31fde453d4b5a5786e6ee6b3a7a0eeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b6213ee99d23bbde54351be6a88a7c"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#a37b6213ee99d23bbde54351be6a88a7c">thumbnailData</a></td></tr>
+<tr class="memdesc:a37b6213ee99d23bbde54351be6a88a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns JPEG data for the drawing at 50% actual size, with 50% quality  <a href="#a37b6213ee99d23bbde54351be6a88a7c">More...</a><br/></td></tr>
 <tr class="separator:a37b6213ee99d23bbde54351be6a88a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6efd4a2549c5ea50aab315bc973790"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#a1d6efd4a2549c5ea50aab315bc973790">layerBitmapsWithDPI:</a></td></tr>
+<tr class="memdesc:a1d6efd4a2549c5ea50aab315bc973790"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns an array of bitmaps (NSBitmapImageReps) one per layer  <a href="#a1d6efd4a2549c5ea50aab315bc973790">More...</a><br/></td></tr>
 <tr class="separator:a1d6efd4a2549c5ea50aab315bc973790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a30f4b66c4a93f408219eacb3e4695"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_drawing_07_export_08.html#a78a30f4b66c4a93f408219eacb3e4695">multipartTIFFDataWithResolution:</a></td></tr>
+<tr class="memdesc:a78a30f4b66c4a93f408219eacb3e4695"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns TIFF data  <a href="#a78a30f4b66c4a93f408219eacb3e4695">More...</a><br/></td></tr>
 <tr class="separator:a78a30f4b66c4a93f408219eacb3e4695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Graham Cox, Apptree.net </dd>
+<dd>
+Graham Miln, miln.eu </dd>
+<dd>
+Contributions from the community </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2005-2013 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>This software is released subject to licensing conditions as detailed in DRAWKIT-LICENSING.TXT, which must accompany this source file. </dd></dl>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a1ccdc7a85f80f3081d9f2bf99a3d9258"></a>
 <div class="memitem">
 <div class="memproto">
@@ -143,41 +162,19 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>creates the initial bitmap image that the various bitmap formats are created from. </p>
+<dl class="section note"><dt>Note</dt><dd>returned ref is autoreleased. The image always has an alpha channel, but the &lt;hasAlpha&gt; flag will paint the background in the paper colour if hasAlpha is NO. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dpi</td><td>the resolution of the image in dots per inch. </td></tr>
+    <tr><td class="paramname">hasAlpha</td><td>specifies whether the image is painted in the background paper colour or not. </td></tr>
+    <tr><td class="paramname">relScale</td><td>scaling factor, 1.0 = actual size, 0.5 = half size, etc. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a CG image that is used to generate the export image formats </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#a1ccdc7a85f80f3081d9f2bf99a3d9258">DKDrawing</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afb280837f7ee21b147ee89bf5f4e105c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (CGImageRef) CGImageWithResolution: </td>
-          <td></td>
-          <td class="paramtype">(NSInteger)&#160;</td>
-          <td class="paramname"><em>dpi</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">hasAlpha:</td>
-          <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>hasAlpha</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">relativeScale:</td>
-          <td></td>
-          <td class="paramtype">(CGFloat)&#160;</td>
-          <td class="paramname"><em>relScale</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Extends class <a class="el" href="interface_d_k_drawing.html#afb280837f7ee21b147ee89bf5f4e105c">DKDrawing</a>.</p>
 
 </div>
 </div>
@@ -194,6 +191,15 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns JPEG data for the drawing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">props</td><td>various parameters and properties </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JPEG data or nil if there was a problem DrawKit properties that control the data generation. Users may find the convenience methods below easier to use for many typical situations. </dd></dl>
 
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#afe4ab1a9f737633b1bbbaa1ed1d72bd1">DKDrawing</a>.</p>
 
@@ -229,6 +235,18 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns JPEG data for the drawing or nil if there was a problem </p>
+<dl class="section note"><dt>Note</dt><dd>this is a convenience wrapper around the dictionary-based methods above </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dpi</td><td>the resolution in dots per inch </td></tr>
+    <tr><td class="paramname">quality</td><td>a value 0..1 that indicates the amount of compression - 0 = max, 1 = none. </td></tr>
+    <tr><td class="paramname">progressive</td><td>YES if the data is progressive, NO otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JPEG data </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#ada88f7948cd21c882f633c4f9d8fdb12">DKDrawing</a>.</p>
 
 </div>
@@ -246,6 +264,16 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns an array of bitmaps (NSBitmapImageReps) one per layer </p>
+<dl class="section note"><dt>Note</dt><dd>the lowest index is the bottom layer. Hidden layers and non-printing layers are excluded. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dpi</td><td>the desired resolution in dots per inch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array of bitmaps </dd></dl>
 
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#a1d6efd4a2549c5ea50aab315bc973790">DKDrawing</a>.</p>
 
@@ -265,6 +293,16 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns TIFF data </p>
+<dl class="section note"><dt>Note</dt><dd>Each layer is written as a separate image. This is not the same as a layered TIFF however. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dpi</td><td>the desired resolution in dots per inch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TIFF data </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#a78a30f4b66c4a93f408219eacb3e4695">DKDrawing</a>.</p>
 
 </div>
@@ -282,6 +320,15 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns PNG data for the drawing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">props</td><td>various parameters and properties </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PNG data or nil if there was a problem DrawKit properties that control the data generation. Users may find the convenience methods below easier to use for many typical situations. </dd></dl>
 
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#a011d6a6b9a19c0920052f619acd2a2da">DKDrawing</a>.</p>
 
@@ -301,7 +348,7 @@ Instance Methods</h2></td></tr>
           <td class="paramkey">gamma:</td>
           <td></td>
           <td class="paramtype">(CGFloat)&#160;</td>
-          <td class="paramname"><em>gamma</em></td>
+          <td class="paramname"><em>gumma</em></td>
         </tr>
         <tr>
           <td class="paramkey">interlaced:</td>
@@ -316,6 +363,18 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns PNG data for the drawing or nil if there was a problem </p>
+<dl class="section note"><dt>Note</dt><dd>this is a convenience wrapper around the dictionary-based methods above </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dpi</td><td>the resolution in dots per inch </td></tr>
+    <tr><td class="paramname">gamma</td><td>the gamma value 0..1 </td></tr>
+    <tr><td class="paramname">interlaced</td><td>YES to interlace the image, NO otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PNG data </dd></dl>
 
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#a31fde453d4b5a5786e6ee6b3a7a0eeb3">DKDrawing</a>.</p>
 
@@ -334,6 +393,10 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns JPEG data for the drawing at 50% actual size, with 50% quality </p>
+<dl class="section note"><dt>Note</dt><dd>useful for e.g. generating QuickLook thumbnails </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JPEG data </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#a37b6213ee99d23bbde54351be6a88a7c">DKDrawing</a>.</p>
 
 </div>
@@ -351,6 +414,15 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns TIFF data for the drawing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">props</td><td>various parameters and properties </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TIFF data or nil if there was a problem DrawKit properties that control the data generation. Users may find the convenience methods below easier to use for many typical situations. </dd></dl>
 
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#aebd6ac8f6da71450c5aa0e30f2e1c736">DKDrawing</a>.</p>
 
@@ -380,18 +452,29 @@ Instance Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns TIFF data for the drawing or nil if there was a problem </p>
+<dl class="section note"><dt>Note</dt><dd>this is a convenience wrapper around the dictionary-based methods above </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dpi</td><td>the resolution in dots per inch </td></tr>
+    <tr><td class="paramname">compType</td><td>a valid TIFF compression type (see NSBitMapImageRep.h) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TIFF data </dd></dl>
+
 <p>Extends class <a class="el" href="interface_d_k_drawing.html#afe999f71be2a86e39e092fc3fe751306">DKDrawing</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this category was generated from the following files:<ul>
-<li>framework/Code/<a class="el" href="_d_k_drawing_09_export_8h_source.html">DKDrawing+Export.h</a></li>
-<li>framework/Code/<a class="el" href="_d_k_drawing_09_export_8m.html">DKDrawing+Export.m</a></li>
+<li><a class="el" href="_d_k_drawing_09_export_8h_source.html">DKDrawing+Export.h</a></li>
+<li>DKDrawing+Export.m</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:03 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

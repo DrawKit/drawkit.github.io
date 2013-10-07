@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKTextSubstitutor.h Source File</title>
+<title>DrawKit: DKTextSubstitutor.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,111 +88,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKTextSubstitutor.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_text_substitutor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  DKTextSubstitutor.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  GCDrawKit</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Graham Cox on 24/04/09.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright 2009 Apptree.net. All rights reserved.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitutor.html">   12</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_text_substitutor.html">DKTextSubstitutor</a> : NSObject &lt;NSCoding&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    NSAttributedString* <a class="code" href="interface_d_k_text_substitutor.html#ab911773a094c600817e8c77d5d648ec3">mMasterString</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitutor.html#ab911773a094c600817e8c77d5d648ec3">   15</a></span>&#160;    NSMutableArray*     <a class="code" href="interface_d_k_text_substitutor.html#ac81ba1824ed4c4d8bd06a9248e1f874e">mKeys</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitutor.html#ac81ba1824ed4c4d8bd06a9248e1f874e">   16</a></span>&#160;    BOOL                <a class="code" href="interface_d_k_text_substitutor.html#ae5c6ea8fc433be81302a91055ef5a51e">mNeedsToEvaluate</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitutor.html#ae5c6ea8fc433be81302a91055ef5a51e">   17</a></span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;+ (NSString*)           delimiterString;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;+ (void)                setDelimiterString:(NSString*) delim;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;+ (NSCharacterSet*)     keyBreakingCharacterSet;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (id)                  initWithString:(NSString*) aString;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;- (id)                  initWithAttributedString:(NSAttributedString*) aString;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (void)                setMasterString:(NSAttributedString*) master;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (NSAttributedString*) masterString;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//  DKTextSubstitutor.h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  GCDrawKit</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//  Created by Graham Cox on 24/04/09.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//  Copyright 2009 Apptree.net. All rights reserved.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitutor.html">   18</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_text_substitutor.html">DKTextSubstitutor</a> : NSObject &lt;NSCoding&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    NSAttributedString* mMasterString;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    NSMutableArray*     mKeys;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    BOOL                mNeedsToEvaluate;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;+ (NSString*)           delimiterString;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;+ (void)                setDelimiterString:(NSString*) delim;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;+ (NSCharacterSet*)     keyBreakingCharacterSet;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (void)                setString:(NSString*) aString withAttributes:(NSDictionary*) attrs;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (NSString*)           string;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (id)                  initWithString:(NSString*) aString;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (id)                  initWithAttributedString:(NSAttributedString*) aString;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (void)                setAttributes:(NSDictionary*) attrs;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;- (NSDictionary*)       attributes;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (void)                setMasterString:(NSAttributedString*) master;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;- (NSAttributedString*) masterString;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;- (void)                processMasterString;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;- (NSArray*)            allKeys;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;- (void)                setString:(NSString*) aString withAttributes:(NSDictionary*) attrs;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;- (NSString*)           string;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;- (NSAttributedString*) substitutedStringWithObject:(<span class="keywordtype">id</span>) anObject;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;- (NSString*)           metadataStringFromObject:(<span class="keywordtype">id</span>) object;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;- (void)                setAttributes:(NSDictionary*) attrs;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;- (NSDictionary*)       attributes;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_text_substitutor_8h.html#a655bef55bfa67410140005a16ade62ad">kDKTextSubstitutorNewStringNotification</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define     DEFAULT_DELIMITER_STRING    @&quot;%%&quot;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_d_k_text_substitutor_8h.html#a90caa8d1e1b99008d9804a434cdddf03">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define     PADDING_DELIMITER           &#39;#&#39;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_d_k_text_substitutor_8h.html#abecf756ef36d3fbc0c45ea29ea9d3b24">   48</a></span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_text_substitution_key.html">DKTextSubstitutionKey</a>    : NSObject</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitution_key.html">   50</a></span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    NSString*           <a class="code" href="interface_d_k_text_substitution_key.html#a1a2b338ff1871ce334f50085fa01c4b3">mKey</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitution_key.html#a1a2b338ff1871ce334f50085fa01c4b3">   52</a></span>&#160;    NSRange             <a class="code" href="interface_d_k_text_substitution_key.html#a9685c2171c09fa11c296d700bd3aa976">mRange</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitution_key.html#a9685c2171c09fa11c296d700bd3aa976">   53</a></span>&#160;    NSArray*            <a class="code" href="interface_d_k_text_substitution_key.html#ac81cb1f7de5895c87af271f192822fa4">mSubKeys</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitution_key.html#ac81cb1f7de5895c87af271f192822fa4">   54</a></span>&#160;    NSUInteger          <a class="code" href="interface_d_k_text_substitution_key.html#aedd0cece8c54531a7f095a7e355e33af">mPadLength</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitution_key.html#aedd0cece8c54531a7f095a7e355e33af">   55</a></span>&#160;    NSString*           <a class="code" href="interface_d_k_text_substitution_key.html#a66b6f4c9c659f212e4c8de2b2966c89b">mPadCharacter</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitution_key.html#a66b6f4c9c659f212e4c8de2b2966c89b">   56</a></span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;+ (NSCharacterSet*) validSubkeysCharacterSet;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;+ (NSDictionary*)   abbreviationDictionary;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;+ (void)            setAbbreviationDictionary:(NSDictionary*) abbreviations;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;- (id)              initWithKey:(NSString*) key range:(NSRange) aRange;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;- (NSString*)       key;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;- (NSRange)         range;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;- (BOOL)            isPropertyKeyPath;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (NSArray*)        subKeys;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;- (NSString*)       stringByApplyingSubkeysToString:(NSString*) inString;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;- (void)            setPadding:(NSUInteger) padLength;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- (NSUInteger)      padding;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;- (void)            setPaddingCharacter:(NSString*) padStr;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;- (NSString*)       paddingCharacter;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;- (void)                processMasterString;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;- (NSArray*)            allKeys;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;- (NSAttributedString*) substitutedStringWithObject:(<span class="keywordtype">id</span>) anObject;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;- (NSString*)           metadataStringFromObject:(<span class="keywordtype">id</span>) object;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> NSString*        kDKTextSubstitutorNewStringNotification;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define     DEFAULT_DELIMITER_STRING    @&quot;%%&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define     PADDING_DELIMITER           &#39;#&#39;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_text_substitution_key.html">DKTextSubstitutionKey</a>    : NSObject</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="interface_d_k_text_substitution_key.html">   55</a></span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    NSString*           mKey;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    NSRange             mRange;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    NSArray*            mSubKeys;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    NSUInteger          mPadLength;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    NSString*           mPadCharacter;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;+ (NSCharacterSet*) validSubkeysCharacterSet;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;+ (NSDictionary*)   abbreviationDictionary;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;+ (void)            setAbbreviationDictionary:(NSDictionary*) abbreviations;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (id)              initWithKey:(NSString*) key range:(NSRange) aRange;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- (NSString*)       key;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;- (NSRange)         range;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- (BOOL)            isPropertyKeyPath;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;- (NSArray*)        subKeys;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;- (NSString*)       stringByApplyingSubkeysToString:(NSString*) inString;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">This objects abstracts the text substitution task used by text adornments, et. al. It allows strings of the form:</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> &quot;This is fixed text %%sub1 more fixed text %%sub2 and so on...&quot;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> Where %%sub1 and %%sub2 (where the word following %% represents a metadata key) are replaced by the metadata value keyed.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;- (void)            setPadding:(NSUInteger) padLength;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;- (NSUInteger)      padding;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (void)            setPaddingCharacter:(NSString*) padStr;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;- (NSString*)       paddingCharacter;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">This objects abstracts the text substitution task used by text adornments, et. al. It allows strings of the form:</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> A non-property key can also have further flags, called subKeys. These are . delimited single character attributes which invoke specific behaviours. By default these</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> are the digits 0-9 which extract the nth word from the original data, and the flags U, L and C which convert the data to upper, lower and capitalized strings respectively.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="ttc" id="_d_k_text_substitutor_8h_html_a655bef55bfa67410140005a16ade62ad"><div class="ttname"><a href="_d_k_text_substitutor_8h.html#a655bef55bfa67410140005a16ade62ad">kDKTextSubstitutorNewStringNotification</a></div><div class="ttdeci">NSString * kDKTextSubstitutorNewStringNotification</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.m:15</div></div>
-<div class="ttc" id="interface_d_k_text_substitutor_html"><div class="ttname"><a href="interface_d_k_text_substitutor.html">DKTextSubstitutor</a></div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:12</div></div>
-<div class="ttc" id="interface_d_k_text_substitutor_html_ab911773a094c600817e8c77d5d648ec3"><div class="ttname"><a href="interface_d_k_text_substitutor.html#ab911773a094c600817e8c77d5d648ec3">DKTextSubstitutor::mMasterString</a></div><div class="ttdeci">NSAttributedString * mMasterString</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:15</div></div>
-<div class="ttc" id="interface_d_k_text_substitution_key_html"><div class="ttname"><a href="interface_d_k_text_substitution_key.html">DKTextSubstitutionKey</a></div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:50</div></div>
-<div class="ttc" id="interface_d_k_text_substitutor_html_ae5c6ea8fc433be81302a91055ef5a51e"><div class="ttname"><a href="interface_d_k_text_substitutor.html#ae5c6ea8fc433be81302a91055ef5a51e">DKTextSubstitutor::mNeedsToEvaluate</a></div><div class="ttdeci">BOOL mNeedsToEvaluate</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:17</div></div>
-<div class="ttc" id="interface_d_k_text_substitution_key_html_ac81cb1f7de5895c87af271f192822fa4"><div class="ttname"><a href="interface_d_k_text_substitution_key.html#ac81cb1f7de5895c87af271f192822fa4">DKTextSubstitutionKey::mSubKeys</a></div><div class="ttdeci">NSArray * mSubKeys</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:54</div></div>
-<div class="ttc" id="interface_d_k_text_substitution_key_html_a9685c2171c09fa11c296d700bd3aa976"><div class="ttname"><a href="interface_d_k_text_substitution_key.html#a9685c2171c09fa11c296d700bd3aa976">DKTextSubstitutionKey::mRange</a></div><div class="ttdeci">NSRange mRange</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:53</div></div>
-<div class="ttc" id="interface_d_k_text_substitutor_html_ac81ba1824ed4c4d8bd06a9248e1f874e"><div class="ttname"><a href="interface_d_k_text_substitutor.html#ac81ba1824ed4c4d8bd06a9248e1f874e">DKTextSubstitutor::mKeys</a></div><div class="ttdeci">NSMutableArray * mKeys</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:16</div></div>
-<div class="ttc" id="interface_d_k_text_substitution_key_html_aedd0cece8c54531a7f095a7e355e33af"><div class="ttname"><a href="interface_d_k_text_substitution_key.html#aedd0cece8c54531a7f095a7e355e33af">DKTextSubstitutionKey::mPadLength</a></div><div class="ttdeci">NSUInteger mPadLength</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:55</div></div>
-<div class="ttc" id="interface_d_k_text_substitution_key_html_a1a2b338ff1871ce334f50085fa01c4b3"><div class="ttname"><a href="interface_d_k_text_substitution_key.html#a1a2b338ff1871ce334f50085fa01c4b3">DKTextSubstitutionKey::mKey</a></div><div class="ttdeci">NSString * mKey</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:52</div></div>
-<div class="ttc" id="interface_d_k_text_substitution_key_html_a66b6f4c9c659f212e4c8de2b2966c89b"><div class="ttname"><a href="interface_d_k_text_substitution_key.html#a66b6f4c9c659f212e4c8de2b2966c89b">DKTextSubstitutionKey::mPadCharacter</a></div><div class="ttdeci">NSString * mPadCharacter</div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:56</div></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> &quot;This is fixed text %%sub1 more fixed text %%sub2 and so on...&quot;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> Where %%sub1 and %%sub2 (where the word following %% represents a metadata key) are replaced by the metadata value keyed.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> A non-property key can also have further flags, called subKeys. These are . delimited single character attributes which invoke specific behaviours. By default these</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> are the digits 0-9 which extract the nth word from the original data, and the flags U, L and C which convert the data to upper, lower and capitalized strings respectively.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="interface_d_k_text_substitutor_html"><div class="ttname"><a href="interface_d_k_text_substitutor.html">DKTextSubstitutor</a></div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:18</div></div>
+<div class="ttc" id="interface_d_k_text_substitution_key_html"><div class="ttname"><a href="interface_d_k_text_substitution_key.html">DKTextSubstitutionKey</a></div><div class="ttdef"><b>Definition:</b> DKTextSubstitutor.h:55</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

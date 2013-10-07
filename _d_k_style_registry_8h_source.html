@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKStyleRegistry.h Source File</title>
+<title>DrawKit: DKStyleRegistry.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,259 +88,251 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKStyleRegistry.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_style_registry_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  DKStyleRegistry.h</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Graham Cox on 15/03/2008.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_d_k_category_manager_8h.html">DKCategoryManager.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_d_k_style.html">DKStyle</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// options flags - control behaviour when styles from a document are merged with the registry</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5aa1a6cf817c3c76b11079832714a0d61c">   20</a></span>&#160;    <a class="code" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5aa1a6cf817c3c76b11079832714a0d61c">kDKIgnoreUnsharedStyles</a>     = ( 1 &lt;&lt; 0 ),       <span class="comment">// compatibility with old registry - styles with sharing off are ignored</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5a5e1eea2acce5acaaf906cb19311d1ed8">   21</a></span>&#160;    <a class="code" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5a5e1eea2acce5acaaf906cb19311d1ed8">kDKReplaceExistingStyles</a>    = ( 1 &lt;&lt; 1 ),       <span class="comment">// styles passed in replace those with the same key (doc -&gt; reg)</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5a193ee7783e71003a7eddf576a1f81c58">   22</a></span>&#160;    <a class="code" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5a193ee7783e71003a7eddf576a1f81c58">kDKReturnExistingStyles</a>     = ( 1 &lt;&lt; 2 ),       <span class="comment">// styles in reg with the same keys are returned (reg -&gt; doc)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5afe30826ef44a9481513abaa1c7361c69">   23</a></span>&#160;    <a class="code" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5afe30826ef44a9481513abaa1c7361c69">kDKAddStylesAsNewVersions</a>   = ( 1 &lt;&lt; 3 )        <span class="comment">// styles with the same keys are copied and registered again (reg || doc)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5">DKStyleMergeOptions</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// values you can test for in result of compareStylesInSet:</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">enum</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a690f8f441f0d7679fb8e5d9756f46028">   32</a></span>&#160;    <a class="code" href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a690f8f441f0d7679fb8e5d9756f46028">kDKStyleNotRegistered</a>       = 0,</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409ac3b4b03067a7ff471e7700837131c6f2">   33</a></span>&#160;    <a class="code" href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409ac3b4b03067a7ff471e7700837131c6f2">kDKStyleIsOlder</a>             = 1,</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4bbd9abb95e65b785f19d0179e1fdef7">   34</a></span>&#160;    <a class="code" href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4bbd9abb95e65b785f19d0179e1fdef7">kDKStyleUnchanged</a>           = 2,</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5162ef7d49596b51a4bf5d61c29a5178">   35</a></span>&#160;    <a class="code" href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5162ef7d49596b51a4bf5d61c29a5178">kDKStyleIsNewer</a>             = 3</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// class:</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="interface_d_k_style_registry.html">   42</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_style_registry.html">DKStyleRegistry</a> : <a class="code" href="interface_d_k_category_manager.html">DKCategoryManager</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// retrieving the registry and styles</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;+ (<a class="code" href="interface_d_k_style_registry.html">DKStyleRegistry</a>*)        <a class="code" href="interface_d_k_style_registry.html#a70f71f1592cb3afef3e87159a7de153f">sharedStyleRegistry</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;+ (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)                styleForKey:(NSString*) styleID;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;+ (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)                styleForKeyAddingToRecentlyUsed:(NSString*) styleID;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// registering a style</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;+ (void)                    registerStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) aStyle;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;+ (void)                    registerStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) aStyle inCategories:(NSArray*) styleCategories;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;+ (void)                    registerStylesFromArray:(NSArray*) styles inCategories:(NSArray*) styleCategories;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;+ (void)                    registerStylesFromArray:(NSArray*) styles inCategories:(NSArray*) styleCategories ignoringDuplicateNames:(BOOL) ignoreDupes;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;+ (void)                    unregisterStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) aStyle;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;+ (void)                    <a class="code" href="interface_d_k_style_registry.html#ae9fe168ec29aa12ebea6a69de3cae191">setNeedsUIUpdate</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;+ (void)                    setStyleNotificationsEnabled:(BOOL) enable;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// merging sets of styles read in with a document</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;+ (NSSet*)                  mergeStyles:(NSSet*) styles inCategories:(NSArray*) styleCategories options:(<a class="code" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5">DKStyleMergeOptions</a>) options mergeDelegate:(<span class="keywordtype">id</span>) aDel;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;+ (NSDictionary*)           compareStylesInSet:(NSSet*) styles;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// high-level data access</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//  DKStyleRegistry.h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//  Created by Graham Cox on 15/03/2008.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#import &quot;DKCategoryManager.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_d_k_style.html">DKStyle</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// options flags - control behaviour when styles from a document are merged with the registry</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    kDKIgnoreUnsharedStyles     = ( 1 &lt;&lt; 0 ),       <span class="comment">// compatibility with old registry - styles with sharing off are ignored</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    kDKReplaceExistingStyles    = ( 1 &lt;&lt; 1 ),       <span class="comment">// styles passed in replace those with the same key (doc -&gt; reg)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    kDKReturnExistingStyles     = ( 1 &lt;&lt; 2 ),       <span class="comment">// styles in reg with the same keys are returned (reg -&gt; doc)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    kDKAddStylesAsNewVersions   = ( 1 &lt;&lt; 3 )        <span class="comment">// styles with the same keys are copied and registered again (reg || doc)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;DKStyleMergeOptions;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// values you can test for in result of compareStylesInSet:</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">enum</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    kDKStyleNotRegistered       = 0,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    kDKStyleIsOlder             = 1,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    kDKStyleUnchanged           = 2,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    kDKStyleIsNewer             = 3</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// class:</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="interface_d_k_style_registry.html">   45</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_style_registry.html">DKStyleRegistry</a> : <a class="code" href="interface_d_k_category_manager.html">DKCategoryManager</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// retrieving the registry and styles</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;+ (<a class="code" href="interface_d_k_style_registry.html">DKStyleRegistry</a>*)        <a class="code" href="interface_d_k_style_registry.html#a146356961f3b2b51293927d8c03e274b">sharedStyleRegistry</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;+ (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)                styleForKey:(NSString*) styleID;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;+ (NSArray*)                <a class="code" href="interface_d_k_style_registry.html#a40e5f2188e9fe53b0d97a86dc1044140">registeredStyleKeys</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;+ (NSData*)                 <a class="code" href="interface_d_k_style_registry.html#ac9fbf18e02dbe9e375ee9043d0a4c442">registeredStylesData</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;+ (void)                    <a class="code" href="interface_d_k_style_registry.html#a199e1b11fe3f4b26d49c4d880544d76a">saveDefaults</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;+ (void)                    <a class="code" href="interface_d_k_style_registry.html#a14418e7a6d37d9f488e28c9550bbbf86">loadDefaults</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;+ (void)                    <a class="code" href="interface_d_k_style_registry.html#a04011c33a7836fb18c7ebfdd7353b44b">resetRegistry</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;+ (void)                    registerSolidColourFillsFromListNamed:(NSString*) name asCategory:(NSString*) catName;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;+ (void)                    registerSolidColourStrokesFromListNamed:(NSString*) name asCategory:(NSString*) catName;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;+ (void)                    setShouldNotAddDKDefaultCategory:(BOOL) noDKDefaults;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;+ (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)                styleForKeyAddingToRecentlyUsed:(NSString*) styleID;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// getting a fully-managed menu for all styles, organised by category:</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// registering a style</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;+ (NSMenu*)                 managedStylesMenuWithItemTarget:(<span class="keywordtype">id</span>) target itemAction:(<span class="keywordtype">SEL</span>) selector;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// low-level instance methods</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;- (NSString*)               styleNameForKey:(NSString*) styleID;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)                styleForKey:(NSString*) styleID;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (NSSet*)                  stylesInCategories:(NSArray*) cats;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (NSString*)               uniqueNameForName:(NSString*) name;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (NSArray*)                <a class="code" href="interface_d_k_style_registry.html#aaff1427972af0b358e4175bc3bc1c778">styleNames</a>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;- (NSArray*)                styleNamesInCategory:(NSString*) catName;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;- (BOOL)                    writeToFile:(NSString*) path atomically:(BOOL) atom;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;- (BOOL)                    readFromFile:(NSString*) path mergeOptions:(<a class="code" href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5">DKStyleMergeOptions</a>) options mergeDelegate:(<span class="keywordtype">id</span>) aDel;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;- (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)                mergeFromStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) aStyle mergeDelegate:(<span class="keywordtype">id</span>) aDel;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;- (void)                    <a class="code" href="interface_d_k_style_registry.html#a2c326e3f08423e5682c963a57d058738">removeAllStyles</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;- (void)                    <a class="code" href="interface_d_k_style_registry.html#ae9fe168ec29aa12ebea6a69de3cae191">setNeedsUIUpdate</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (void)                    styleDidChange:(NSNotification*) note;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;- (NSMenu*)                 managedStylesMenuWithItemTarget:(<span class="keywordtype">id</span>) target itemAction:(<span class="keywordtype">SEL</span>) selector;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">// default registry category names:</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_style_registry_8h.html#af0de1a038d47efbf310ec1617f6e036c">kDKStyleLibraryStylesCategory</a>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_style_registry_8h.html#a657c8ac12e610e996238f08c95cbcb5f">kDKStyleTemporaryDocumentCategory</a>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_style_registry_8h.html#a3208c443e5d7da54ef99a289b7bebc24">kDKStyleRegistryDKDefaultsCategory</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_style_registry_8h.html#a21be97ce627b65727d7a02f6d155f61d">kDKStyleRegistryTextStylesCategory</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">// notifications</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_style_registry_8h.html#adf67ba63a84926fb2c342dbd2ccb1c5c">kDKStyleRegistryDidFlagPossibleUIChange</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_style_registry_8h.html#a10fdb9b0a1aea3242a3b57fae1faf433">kDKStyleWasRegisteredNotification</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_style_registry_8h.html#aa814ee2b8dce4c7b566239a4f2474ba7">kDKStyleWasRemovedFromRegistryNotification</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">extern</span> NSString*        <a class="code" href="_d_k_style_registry_8h.html#a917af1e73eeec7c59e1dc8e130be62eb">kDKStyleWasEditedWhileRegisteredNotification</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">// delegate informal protocol allows the delegate to decide which of a pair of styles should be used</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="category_n_s_object_07_d_k_style_registry_delegate_08.html">  123</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_object_07_d_k_style_registry_delegate_08.html">NSObject (DKStyleRegistryDelegate)</a></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;- (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)            registry:(<a class="code" href="interface_d_k_style_registry.html">DKStyleRegistry</a>*) reg shouldReplaceStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) regStyle withStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) docStyle;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="category_n_s_object_07_style_registry_substitution_08.html">  129</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_object_07_style_registry_substitution_08.html">NSObject (StyleRegistrySubstitution)</a></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;- (<a class="code" href="interface_d_k_style_registry.html">DKStyleRegistry</a>*)    applicationWillReturnStyleRegistry;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;+ (void)                    registerStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) aStyle;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;+ (void)                    registerStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) aStyle inCategories:(NSArray*) styleCategories;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;+ (void)                    registerStylesFromArray:(NSArray*) styles inCategories:(NSArray*) styleCategories;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;+ (void)                    registerStylesFromArray:(NSArray*) styles inCategories:(NSArray*) styleCategories ignoringDuplicateNames:(BOOL) ignoreDupes;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;+ (void)                    unregisterStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) aStyle;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">The style registry is a singleton category manager instance that consolidates styles from a variety of sources into a single app-wide &quot;database&quot;</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">of styles, organised into categories.</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">Styles can come from these sources:</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">1. The application defaults, if the app is launched with no library preferences available (i.e. first run).</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">2. The styles library, which is the complete registry saved to disk (user prefs) at quit time.</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">3. A document, when it is opened.</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">4. A separate file containing just styles.</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">5. A new style being created and registered by the user as the app is used.</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">The point of the registry is twofold:</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">A. It permits the construction of a UI for accessing pre-built styles and applying them to objects in a drawing. By organising styles into categories,</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">potentially large number of styles may be managed effectively.</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">B. It tracks styles across any number of documents as they are created. For example if a document uses a particular registered style, when that</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">document is reopened at a later date, the style can be recognised and linked to the same style in the registry. If the style has changed in the</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">meantime so that there is a difference between the saved style and the currently registered version, the user can be offered the option to</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">update the style in the document to match the registry, update the registry to match the document, or to re-register the style as a new version.</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">Note the registry is not mandatory - an app using DK can use styles without registering them if it wishes. The advantage of the registry is that it</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">permits styles to persist and be tracked across multiple documents, saving the user from having to redefine styles for every new graphic.</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">In order for the registry to uniquely and positively identify a style, its unique ID is used as its key. The unique ID is assigned when the style</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">first comes into existence and cannot be changed. It is a string representation of a UUID so is guaranteed unique.</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">UUID&#39;s are not very user friendly and should never be exposed by an application&#39;s user interface. Thus a style also has an ordinary descriptive</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">name which can be displayed in the UI. Such names are not guaranteed to be unique however, as the user is free to enter whatever name they wish.</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">When a style is first registered the name may be changed to avoid a collision with an already registered style having the same name - this is</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">done by appending 1, 2, 3 etc until the name doesn&#39;t collide. However this is just done to disambiguate the style for the user - it is not intended</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">to guarantee uniqueness so that the name can be used as a key to the object.</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">A user interface will want to use the ordinary names, but internally must be set up to use the unique ID or the object itself to avoid any confusion</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">as to which style is actually being referred to. For example a menu of available styles could use the UUID or the object as the represented object</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">of the menu item. DO NOT USE THE ORDINARY NAME AS A KEY.</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">Locking. Styles in the registry are usually locked. This is to prevent accidental alteration of a style that may be being used across many</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">documents. When a style is added to the registry, it should be unlocked (because the name might need to be automatically changed) but the</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">registry will lock the style upon a successful operation.</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">Styles in a document. Styles used in a document may or may not be registered. A user may never register a style, but still have many styles</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">defined in a document. Such styles work normally and can be copied and pasted and shared between objects if set to do so - use of styles is not</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">dependent in any way upon the registry. When the document is saved, a flag as to whether the style was registered or not is saved with it. When</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">the document is opened again later, such flagged styles will be optionally reconnected to the style registry so that the actual style used is</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">always the registered style, so if the style is updated, existing documents are offered the opportunity to use the updated version.</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">As well as any user-defined categories, documents may wish to create a temporary category using the document&#39;s name which gives the user a</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">way to quickly discover the complete set of registered styles used in a document. The category should be removed when the document is closed.</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">DKDrawDocument implements this behaviour by default, so if your document class is based on it, your app can get this feature for free.</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">Registering a style. The style registry performs the following steps:</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">1. It checks that the style is not already registered. If it is, it does no more.</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">2. It checks that the style is unlocked. If not, an exception is thrown.</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">3. It resolves the style&#39;s name so that there are no collisions with any existing style&#39;s name, and changes the style&#39;s name if needed.</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">4. It creates any new categories as requested (depends on the particular method used to register the style). If no specific categories are</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">    requested, the style is added to the default category.</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">5. It adds the style to the registry using its unique ID as the key.</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">6. It locks the style.</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">Cut/Paste: cut and paste of styles works independently of the registry, including dealing with shared styles. See DKStyle for more info.</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="ttc" id="interface_d_k_style_registry_html_a70f71f1592cb3afef3e87159a7de153f"><div class="ttname"><a href="interface_d_k_style_registry.html#a70f71f1592cb3afef3e87159a7de153f">+[DKStyleRegistry sharedStyleRegistry]</a></div><div class="ttdeci">DKStyleRegistry * sharedStyleRegistry()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:82</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html_ac9fbf18e02dbe9e375ee9043d0a4c442"><div class="ttname"><a href="interface_d_k_style_registry.html#ac9fbf18e02dbe9e375ee9043d0a4c442">+[DKStyleRegistry registeredStylesData]</a></div><div class="ttdeci">NSData * registeredStylesData()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:579</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_a3208c443e5d7da54ef99a289b7bebc24"><div class="ttname"><a href="_d_k_style_registry_8h.html#a3208c443e5d7da54ef99a289b7bebc24">kDKStyleRegistryDKDefaultsCategory</a></div><div class="ttdeci">NSString * kDKStyleRegistryDKDefaultsCategory</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:22</div></div>
-<div class="ttc" id="category_n_s_object_07_d_k_style_registry_delegate_08_html"><div class="ttname"><a href="category_n_s_object_07_d_k_style_registry_delegate_08.html">NSObject(DKStyleRegistryDelegate)</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:123</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a4bbd9abb95e65b785f19d0179e1fdef7"><div class="ttname"><a href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4bbd9abb95e65b785f19d0179e1fdef7">kDKStyleUnchanged</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:34</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a690f8f441f0d7679fb8e5d9756f46028"><div class="ttname"><a href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a690f8f441f0d7679fb8e5d9756f46028">kDKStyleNotRegistered</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:32</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_aecccafba179e0e3f2b51a4563d3747f5"><div class="ttname"><a href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5">DKStyleMergeOptions</a></div><div class="ttdeci">DKStyleMergeOptions</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:18</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html"><div class="ttname"><a href="interface_d_k_style_registry.html">DKStyleRegistry</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:42</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html_a04011c33a7836fb18c7ebfdd7353b44b"><div class="ttname"><a href="interface_d_k_style_registry.html#a04011c33a7836fb18c7ebfdd7353b44b">+[DKStyleRegistry resetRegistry]</a></div><div class="ttdeci">void resetRegistry()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:645</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_adf67ba63a84926fb2c342dbd2ccb1c5c"><div class="ttname"><a href="_d_k_style_registry_8h.html#adf67ba63a84926fb2c342dbd2ccb1c5c">kDKStyleRegistryDidFlagPossibleUIChange</a></div><div class="ttdeci">NSString * kDKStyleRegistryDidFlagPossibleUIChange</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:25</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html_a2c326e3f08423e5682c963a57d058738"><div class="ttname"><a href="interface_d_k_style_registry.html#a2c326e3f08423e5682c963a57d058738">-[DKStyleRegistry removeAllStyles]</a></div><div class="ttdeci">void removeAllStyles()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:1164</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html_aaff1427972af0b358e4175bc3bc1c778"><div class="ttname"><a href="interface_d_k_style_registry.html#aaff1427972af0b358e4175bc3bc1c778">-[DKStyleRegistry styleNames]</a></div><div class="ttdeci">NSArray * styleNames()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:935</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_a10fdb9b0a1aea3242a3b57fae1faf433"><div class="ttname"><a href="_d_k_style_registry_8h.html#a10fdb9b0a1aea3242a3b57fae1faf433">kDKStyleWasRegisteredNotification</a></div><div class="ttdeci">NSString * kDKStyleWasRegisteredNotification</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:26</div></div>
-<div class="ttc" id="category_n_s_object_07_style_registry_substitution_08_html"><div class="ttname"><a href="category_n_s_object_07_style_registry_substitution_08.html">NSObject(StyleRegistrySubstitution)</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:129</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_aa814ee2b8dce4c7b566239a4f2474ba7"><div class="ttname"><a href="_d_k_style_registry_8h.html#aa814ee2b8dce4c7b566239a4f2474ba7">kDKStyleWasRemovedFromRegistryNotification</a></div><div class="ttdeci">NSString * kDKStyleWasRemovedFromRegistryNotification</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:27</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html_a40e5f2188e9fe53b0d97a86dc1044140"><div class="ttname"><a href="interface_d_k_style_registry.html#a40e5f2188e9fe53b0d97a86dc1044140">+[DKStyleRegistry registeredStyleKeys]</a></div><div class="ttdeci">NSArray * registeredStyleKeys()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:559</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a5162ef7d49596b51a4bf5d61c29a5178"><div class="ttname"><a href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5162ef7d49596b51a4bf5d61c29a5178">kDKStyleIsNewer</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:35</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html_a14418e7a6d37d9f488e28c9550bbbf86"><div class="ttname"><a href="interface_d_k_style_registry.html#a14418e7a6d37d9f488e28c9550bbbf86">+[DKStyleRegistry loadDefaults]</a></div><div class="ttdeci">void loadDefaults()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:619</div></div>
-<div class="ttc" id="interface_d_k_style_html"><div class="ttname"><a href="interface_d_k_style.html">DKStyle</a></div><div class="ttdef"><b>Definition:</b> DKStyle.h:48</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html_ae9fe168ec29aa12ebea6a69de3cae191"><div class="ttname"><a href="interface_d_k_style_registry.html#ae9fe168ec29aa12ebea6a69de3cae191">+[DKStyleRegistry setNeedsUIUpdate]</a></div><div class="ttdeci">void setNeedsUIUpdate()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:355</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_aecccafba179e0e3f2b51a4563d3747f5a5e1eea2acce5acaaf906cb19311d1ed8"><div class="ttname"><a href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5a5e1eea2acce5acaaf906cb19311d1ed8">kDKReplaceExistingStyles</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:21</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_aecccafba179e0e3f2b51a4563d3747f5aa1a6cf817c3c76b11079832714a0d61c"><div class="ttname"><a href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5aa1a6cf817c3c76b11079832714a0d61c">kDKIgnoreUnsharedStyles</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:20</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_af0de1a038d47efbf310ec1617f6e036c"><div class="ttname"><a href="_d_k_style_registry_8h.html#af0de1a038d47efbf310ec1617f6e036c">kDKStyleLibraryStylesCategory</a></div><div class="ttdeci">NSString * kDKStyleLibraryStylesCategory</div><div class="ttdoc">DrawKit ©2005-2008 Apptree.net. </div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:20</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_a917af1e73eeec7c59e1dc8e130be62eb"><div class="ttname"><a href="_d_k_style_registry_8h.html#a917af1e73eeec7c59e1dc8e130be62eb">kDKStyleWasEditedWhileRegisteredNotification</a></div><div class="ttdeci">NSString * kDKStyleWasEditedWhileRegisteredNotification</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:28</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_aecccafba179e0e3f2b51a4563d3747f5a193ee7783e71003a7eddf576a1f81c58"><div class="ttname"><a href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5a193ee7783e71003a7eddf576a1f81c58">kDKReturnExistingStyles</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:22</div></div>
-<div class="ttc" id="interface_d_k_category_manager_html"><div class="ttname"><a href="interface_d_k_category_manager.html">DKCategoryManager</a></div><div class="ttdef"><b>Definition:</b> DKCategoryManager.h:37</div></div>
-<div class="ttc" id="_d_k_category_manager_8h_html"><div class="ttname"><a href="_d_k_category_manager_8h.html">DKCategoryManager.h</a></div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_adb49720dc49f7d4e4cf9adbf2948e409ac3b4b03067a7ff471e7700837131c6f2"><div class="ttname"><a href="_d_k_style_registry_8h.html#adb49720dc49f7d4e4cf9adbf2948e409ac3b4b03067a7ff471e7700837131c6f2">kDKStyleIsOlder</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:33</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_a21be97ce627b65727d7a02f6d155f61d"><div class="ttname"><a href="_d_k_style_registry_8h.html#a21be97ce627b65727d7a02f6d155f61d">kDKStyleRegistryTextStylesCategory</a></div><div class="ttdeci">NSString * kDKStyleRegistryTextStylesCategory</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:23</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_a657c8ac12e610e996238f08c95cbcb5f"><div class="ttname"><a href="_d_k_style_registry_8h.html#a657c8ac12e610e996238f08c95cbcb5f">kDKStyleTemporaryDocumentCategory</a></div><div class="ttdeci">NSString * kDKStyleTemporaryDocumentCategory</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:21</div></div>
-<div class="ttc" id="interface_d_k_style_registry_html_a199e1b11fe3f4b26d49c4d880544d76a"><div class="ttname"><a href="interface_d_k_style_registry.html#a199e1b11fe3f4b26d49c4d880544d76a">+[DKStyleRegistry saveDefaults]</a></div><div class="ttdeci">void saveDefaults()</div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.m:599</div></div>
-<div class="ttc" id="_d_k_style_registry_8h_html_aecccafba179e0e3f2b51a4563d3747f5afe30826ef44a9481513abaa1c7361c69"><div class="ttname"><a href="_d_k_style_registry_8h.html#aecccafba179e0e3f2b51a4563d3747f5afe30826ef44a9481513abaa1c7361c69">kDKAddStylesAsNewVersions</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:23</div></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;+ (void)                    <a class="code" href="interface_d_k_style_registry.html#ae9fe168ec29aa12ebea6a69de3cae191">setNeedsUIUpdate</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;+ (void)                    setStyleNotificationsEnabled:(BOOL) enable;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">// merging sets of styles read in with a document</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;+ (NSSet*)                  mergeStyles:(NSSet*) styles inCategories:(NSArray*) styleCategories options:(DKStyleMergeOptions) options mergeDelegate:(<span class="keywordtype">id</span>) aDel;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;+ (NSDictionary*)           compareStylesInSet:(NSSet*) styles;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">// high-level data access</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;+ (NSArray*)                <a class="code" href="interface_d_k_style_registry.html#abe05e38cdcecabd315e0dfbb51a90731">registeredStyleKeys</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;+ (NSData*)                 <a class="code" href="interface_d_k_style_registry.html#a41e5d4fee34f6ee6a6dd3e28ec1a8243">registeredStylesData</a>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;+ (void)                    <a class="code" href="interface_d_k_style_registry.html#a199e1b11fe3f4b26d49c4d880544d76a">saveDefaults</a>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;+ (void)                    <a class="code" href="interface_d_k_style_registry.html#a14418e7a6d37d9f488e28c9550bbbf86">loadDefaults</a>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;+ (void)                    <a class="code" href="interface_d_k_style_registry.html#a04011c33a7836fb18c7ebfdd7353b44b">resetRegistry</a>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;+ (void)                    registerSolidColourFillsFromListNamed:(NSString*) name asCategory:(NSString*) catName;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;+ (void)                    registerSolidColourStrokesFromListNamed:(NSString*) name asCategory:(NSString*) catName;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;+ (void)                    setShouldNotAddDKDefaultCategory:(BOOL) noDKDefaults;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">// getting a fully-managed menu for all styles, organised by category:</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;+ (NSMenu*)                 managedStylesMenuWithItemTarget:(<span class="keywordtype">id</span>) target itemAction:(<span class="keywordtype">SEL</span>) selector;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">// low-level instance methods</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;- (NSString*)               styleNameForKey:(NSString*) styleID;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;- (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)                styleForKey:(NSString*) styleID;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;- (NSSet*)                  stylesInCategories:(NSArray*) cats;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;- (NSString*)               uniqueNameForName:(NSString*) name;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;- (NSArray*)                <a class="code" href="interface_d_k_style_registry.html#a5be90370d3bc4c8cec91d9d09be44b26">styleNames</a>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;- (NSArray*)                styleNamesInCategory:(NSString*) catName;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;- (BOOL)                    writeToFile:(NSString*) path atomically:(BOOL) atom;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;- (BOOL)                    readFromFile:(NSString*) path mergeOptions:(DKStyleMergeOptions) options mergeDelegate:(<span class="keywordtype">id</span>) aDel;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;- (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)                mergeFromStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) aStyle mergeDelegate:(<span class="keywordtype">id</span>) aDel;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;- (void)                    <a class="code" href="interface_d_k_style_registry.html#a2c326e3f08423e5682c963a57d058738">removeAllStyles</a>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;- (void)                    <a class="code" href="interface_d_k_style_registry.html#ae9fe168ec29aa12ebea6a69de3cae191">setNeedsUIUpdate</a>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;- (void)                    styleDidChange:(NSNotification*) note;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;- (NSMenu*)                 managedStylesMenuWithItemTarget:(<span class="keywordtype">id</span>) target itemAction:(<span class="keywordtype">SEL</span>) selector;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">// default registry category names:</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">extern</span> NSString*        kDKStyleLibraryStylesCategory;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">extern</span> NSString*        kDKStyleTemporaryDocumentCategory;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">extern</span> NSString*        kDKStyleRegistryDKDefaultsCategory;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keyword">extern</span> NSString*        kDKStyleRegistryTextStylesCategory;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">// notifications</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">extern</span> NSString*        kDKStyleRegistryDidFlagPossibleUIChange;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">extern</span> NSString*        kDKStyleWasRegisteredNotification;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="keyword">extern</span> NSString*        kDKStyleWasRemovedFromRegistryNotification;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keyword">extern</span> NSString*        kDKStyleWasEditedWhileRegisteredNotification;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">// delegate informal protocol allows the delegate to decide which of a pair of styles should be used</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="category_n_s_object_07_d_k_style_registry_delegate_08.html">  368</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_object_07_d_k_style_registry_delegate_08.html">NSObject (DKStyleRegistryDelegate)</a></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;- (<a class="code" href="interface_d_k_style.html">DKStyle</a>*)            registry:(<a class="code" href="interface_d_k_style_registry.html">DKStyleRegistry</a>*) reg shouldReplaceStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) regStyle withStyle:(<a class="code" href="interface_d_k_style.html">DKStyle</a>*) docStyle;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="category_n_s_object_07_style_registry_substitution_08.html">  374</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_object_07_style_registry_substitution_08.html">NSObject (StyleRegistrySubstitution)</a></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;- (<a class="code" href="interface_d_k_style_registry.html">DKStyleRegistry</a>*)    applicationWillReturnStyleRegistry;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">The style registry is a singleton category manager instance that consolidates styles from a variety of sources into a single app-wide &quot;database&quot;</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">of styles, organised into categories.</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">Styles can come from these sources:</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">1. The application defaults, if the app is launched with no library preferences available (i.e. first run).</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">2. The styles library, which is the complete registry saved to disk (user prefs) at quit time.</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">3. A document, when it is opened.</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">4. A separate file containing just styles.</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">5. A new style being created and registered by the user as the app is used.</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">The point of the registry is twofold:</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">A. It permits the construction of a UI for accessing pre-built styles and applying them to objects in a drawing. By organising styles into categories,</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">potentially large number of styles may be managed effectively.</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">B. It tracks styles across any number of documents as they are created. For example if a document uses a particular registered style, when that</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">document is reopened at a later date, the style can be recognised and linked to the same style in the registry. If the style has changed in the</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">meantime so that there is a difference between the saved style and the currently registered version, the user can be offered the option to</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">update the style in the document to match the registry, update the registry to match the document, or to re-register the style as a new version.</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">Note the registry is not mandatory - an app using DK can use styles without registering them if it wishes. The advantage of the registry is that it</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">permits styles to persist and be tracked across multiple documents, saving the user from having to redefine styles for every new graphic.</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">In order for the registry to uniquely and positively identify a style, its unique ID is used as its key. The unique ID is assigned when the style</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">first comes into existence and cannot be changed. It is a string representation of a UUID so is guaranteed unique.</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">UUID&#39;s are not very user friendly and should never be exposed by an application&#39;s user interface. Thus a style also has an ordinary descriptive</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">name which can be displayed in the UI. Such names are not guaranteed to be unique however, as the user is free to enter whatever name they wish.</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">When a style is first registered the name may be changed to avoid a collision with an already registered style having the same name - this is</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">done by appending 1, 2, 3 etc until the name doesn&#39;t collide. However this is just done to disambiguate the style for the user - it is not intended</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">to guarantee uniqueness so that the name can be used as a key to the object.</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">A user interface will want to use the ordinary names, but internally must be set up to use the unique ID or the object itself to avoid any confusion</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">as to which style is actually being referred to. For example a menu of available styles could use the UUID or the object as the represented object</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">of the menu item. DO NOT USE THE ORDINARY NAME AS A KEY.</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">Locking. Styles in the registry are usually locked. This is to prevent accidental alteration of a style that may be being used across many</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">documents. When a style is added to the registry, it should be unlocked (because the name might need to be automatically changed) but the</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">registry will lock the style upon a successful operation.</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">Styles in a document. Styles used in a document may or may not be registered. A user may never register a style, but still have many styles</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">defined in a document. Such styles work normally and can be copied and pasted and shared between objects if set to do so - use of styles is not</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">dependent in any way upon the registry. When the document is saved, a flag as to whether the style was registered or not is saved with it. When</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">the document is opened again later, such flagged styles will be optionally reconnected to the style registry so that the actual style used is</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">always the registered style, so if the style is updated, existing documents are offered the opportunity to use the updated version.</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">As well as any user-defined categories, documents may wish to create a temporary category using the document&#39;s name which gives the user a</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">way to quickly discover the complete set of registered styles used in a document. The category should be removed when the document is closed.</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">DKDrawDocument implements this behaviour by default, so if your document class is based on it, your app can get this feature for free.</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">Registering a style. The style registry performs the following steps:</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment">1. It checks that the style is not already registered. If it is, it does no more.</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">2. It checks that the style is unlocked. If not, an exception is thrown.</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment">3. It resolves the style&#39;s name so that there are no collisions with any existing style&#39;s name, and changes the style&#39;s name if needed.</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="comment">4. It creates any new categories as requested (depends on the particular method used to register the style). If no specific categories are</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">    requested, the style is added to the default category.</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">5. It adds the style to the registry using its unique ID as the key.</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">6. It locks the style.</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="comment">-------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment">Cut/Paste: cut and paste of styles works independently of the registry, including dealing with shared styles. See DKStyle for more info.</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="category_n_s_object_07_d_k_style_registry_delegate_08_html"><div class="ttname"><a href="category_n_s_object_07_d_k_style_registry_delegate_08.html">NSObject(DKStyleRegistryDelegate)</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:368</div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_a41e5d4fee34f6ee6a6dd3e28ec1a8243"><div class="ttname"><a href="interface_d_k_style_registry.html#a41e5d4fee34f6ee6a6dd3e28ec1a8243">+[DKStyleRegistry registeredStylesData]</a></div><div class="ttdeci">NSData * registeredStylesData()</div><div class="ttdoc">return data that can be saved to a file, etc. representing the registry </div></div>
+<div class="ttc" id="interface_d_k_style_registry_html"><div class="ttname"><a href="interface_d_k_style_registry.html">DKStyleRegistry</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:45</div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_a04011c33a7836fb18c7ebfdd7353b44b"><div class="ttname"><a href="interface_d_k_style_registry.html#a04011c33a7836fb18c7ebfdd7353b44b">+[DKStyleRegistry resetRegistry]</a></div><div class="ttdeci">void resetRegistry()</div><div class="ttdoc">reset the registry back to a &amp;quot;first run&amp;quot; condition </div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_a2c326e3f08423e5682c963a57d058738"><div class="ttname"><a href="interface_d_k_style_registry.html#a2c326e3f08423e5682c963a57d058738">-[DKStyleRegistry removeAllStyles]</a></div><div class="ttdeci">void removeAllStyles()</div><div class="ttdoc">set the registry empty </div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_a146356961f3b2b51293927d8c03e274b"><div class="ttname"><a href="interface_d_k_style_registry.html#a146356961f3b2b51293927d8c03e274b">+[DKStyleRegistry sharedStyleRegistry]</a></div><div class="ttdeci">DKStyleRegistry * sharedStyleRegistry()</div><div class="ttdoc">return the single global style registry object </div></div>
+<div class="ttc" id="category_n_s_object_07_style_registry_substitution_08_html"><div class="ttname"><a href="category_n_s_object_07_style_registry_substitution_08.html">NSObject(StyleRegistrySubstitution)</a></div><div class="ttdef"><b>Definition:</b> DKStyleRegistry.h:374</div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_a14418e7a6d37d9f488e28c9550bbbf86"><div class="ttname"><a href="interface_d_k_style_registry.html#a14418e7a6d37d9f488e28c9550bbbf86">+[DKStyleRegistry loadDefaults]</a></div><div class="ttdeci">void loadDefaults()</div><div class="ttdoc">loads the registry from the current user defaults </div></div>
+<div class="ttc" id="interface_d_k_style_html"><div class="ttname"><a href="interface_d_k_style.html">DKStyle</a></div><div class="ttdef"><b>Definition:</b> DKStyle.h:87</div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_ae9fe168ec29aa12ebea6a69de3cae191"><div class="ttname"><a href="interface_d_k_style_registry.html#ae9fe168ec29aa12ebea6a69de3cae191">+[DKStyleRegistry setNeedsUIUpdate]</a></div><div class="ttdeci">void setNeedsUIUpdate()</div><div class="ttdoc">send a notification that the contents of the registry has changed so any UI displaying it should be u...</div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_abe05e38cdcecabd315e0dfbb51a90731"><div class="ttname"><a href="interface_d_k_style_registry.html#abe05e38cdcecabd315e0dfbb51a90731">+[DKStyleRegistry registeredStyleKeys]</a></div><div class="ttdeci">NSArray * registeredStyleKeys()</div><div class="ttdoc">return the entire list of keys of the styles in the registry </div></div>
+<div class="ttc" id="interface_d_k_category_manager_html"><div class="ttname"><a href="interface_d_k_category_manager.html">DKCategoryManager</a></div><div class="ttdef"><b>Definition:</b> DKCategoryManager.h:33</div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_a5be90370d3bc4c8cec91d9d09be44b26"><div class="ttname"><a href="interface_d_k_style_registry.html#a5be90370d3bc4c8cec91d9d09be44b26">-[DKStyleRegistry styleNames]</a></div><div class="ttdeci">NSArray * styleNames()</div><div class="ttdoc">return a list of all the registered styles&amp;#39; names, in alphabetical order </div></div>
+<div class="ttc" id="interface_d_k_style_registry_html_a199e1b11fe3f4b26d49c4d880544d76a"><div class="ttname"><a href="interface_d_k_style_registry.html#a199e1b11fe3f4b26d49c4d880544d76a">+[DKStyleRegistry saveDefaults]</a></div><div class="ttdeci">void saveDefaults()</div><div class="ttdoc">saves the registry to the current user defaults </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

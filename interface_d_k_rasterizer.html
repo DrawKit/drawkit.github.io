@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,8 +91,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKRasterizer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#import &lt;<a class="el" href="_d_k_rasterizer_8h_source.html">DKRasterizer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DKRasterizer:</div>
 <div class="dyncontent">
@@ -122,74 +120,106 @@ Inheritance diagram for DKRasterizer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:a4816b72b08e87dd1599ac6dbd61c8ba3"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_rast_group.html">DKRastGroup</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a4816b72b08e87dd1599ac6dbd61c8ba3">container</a></td></tr>
+<tr class="memdesc:a4816b72b08e87dd1599ac6dbd61c8ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the immediate container of this object, if owned by a group  <a href="#a4816b72b08e87dd1599ac6dbd61c8ba3">More...</a><br/></td></tr>
 <tr class="separator:a4816b72b08e87dd1599ac6dbd61c8ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a866152efb353b8848f4ddb80070bc495"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a866152efb353b8848f4ddb80070bc495">setContainer:</a></td></tr>
+<tr class="memdesc:a866152efb353b8848f4ddb80070bc495"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the immediate container of this object  <a href="#a866152efb353b8848f4ddb80070bc495">More...</a><br/></td></tr>
 <tr class="separator:a866152efb353b8848f4ddb80070bc495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec7da09dc207ba50eda08cc2009bff7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a3ec7da09dc207ba50eda08cc2009bff7">setName:</a></td></tr>
+<tr class="memdesc:a3ec7da09dc207ba50eda08cc2009bff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the name of the renderer  <a href="#a3ec7da09dc207ba50eda08cc2009bff7">More...</a><br/></td></tr>
 <tr class="separator:a3ec7da09dc207ba50eda08cc2009bff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5993eaf50bda82248c81b5101a3c7b1"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#ad5993eaf50bda82248c81b5101a3c7b1">name</a></td></tr>
+<tr class="memdesc:ad5993eaf50bda82248c81b5101a3c7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the name of the renderer  <a href="#ad5993eaf50bda82248c81b5101a3c7b1">More...</a><br/></td></tr>
 <tr class="separator:ad5993eaf50bda82248c81b5101a3c7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af19d803f6aaa5050619e3351fd5743be"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#af19d803f6aaa5050619e3351fd5743be">label</a></td></tr>
+<tr class="memdesc:af19d803f6aaa5050619e3351fd5743be"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the name or classname of the renderer  <a href="#af19d803f6aaa5050619e3351fd5743be">More...</a><br/></td></tr>
 <tr class="separator:af19d803f6aaa5050619e3351fd5743be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2aa198abdd53ff1436a6065d5822722"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#aa2aa198abdd53ff1436a6065d5822722">isValid</a></td></tr>
+<tr class="memdesc:aa2aa198abdd53ff1436a6065d5822722"><td class="mdescLeft">&#160;</td><td class="mdescRight">queries whether the renderer is valid, that is, it will draw something.  <a href="#aa2aa198abdd53ff1436a6065d5822722">More...</a><br/></td></tr>
 <tr class="separator:aa2aa198abdd53ff1436a6065d5822722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03eae6a31174a2f22a80c19c93f9e730"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a03eae6a31174a2f22a80c19c93f9e730">styleScript</a></td></tr>
+<tr class="memdesc:a03eae6a31174a2f22a80c19c93f9e730"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the equivalent style script for this renderer  <a href="#a03eae6a31174a2f22a80c19c93f9e730">More...</a><br/></td></tr>
 <tr class="separator:a03eae6a31174a2f22a80c19c93f9e730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023fbe1a6e381849c48010663bd9bf55"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a023fbe1a6e381849c48010663bd9bf55">setEnabled:</a></td></tr>
+<tr class="memdesc:a023fbe1a6e381849c48010663bd9bf55"><td class="mdescLeft">&#160;</td><td class="mdescRight">set whether the renderer is enabled or not  <a href="#a023fbe1a6e381849c48010663bd9bf55">More...</a><br/></td></tr>
 <tr class="separator:a023fbe1a6e381849c48010663bd9bf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f84cd9b752df08e4b4cc0cf19258b25"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a8f84cd9b752df08e4b4cc0cf19258b25">enabled</a></td></tr>
+<tr class="memdesc:a8f84cd9b752df08e4b4cc0cf19258b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">query whether the renderer is enabled or not  <a href="#a8f84cd9b752df08e4b4cc0cf19258b25">More...</a><br/></td></tr>
 <tr class="separator:a8f84cd9b752df08e4b4cc0cf19258b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc0e5739ebb117fbc09f8a5ad6fd9074"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#acc0e5739ebb117fbc09f8a5ad6fd9074">setClipping:</a></td></tr>
+<tr class="memdesc:acc0e5739ebb117fbc09f8a5ad6fd9074"><td class="mdescLeft">&#160;</td><td class="mdescRight">set whether the rasterizer's effect is clipped to the path or not, and if so, which side  <a href="#acc0e5739ebb117fbc09f8a5ad6fd9074">More...</a><br/></td></tr>
 <tr class="separator:acc0e5739ebb117fbc09f8a5ad6fd9074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74675e22501821f83b86d1e5f7d40e14"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a74675e22501821f83b86d1e5f7d40e14">setClippingWithoutNotifying:</a></td></tr>
+<tr class="memitem:a74675e22501821f83b86d1e5f7d40e14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74675e22501821f83b86d1e5f7d40e14"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>setClippingWithoutNotifying:</b></td></tr>
 <tr class="separator:a74675e22501821f83b86d1e5f7d40e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9880e2be2c43a98a155d9c65a4d0f3fc"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="_d_k_rasterizer_8h.html#ac939e29c7f1a5a1aba1a500aa8bac4de">DKClippingOption</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a9880e2be2c43a98a155d9c65a4d0f3fc">clipping</a></td></tr>
+<tr class="memitem:a9880e2be2c43a98a155d9c65a4d0f3fc"><td class="memItemLeft" align="right" valign="top">(DKClippingOption)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a9880e2be2c43a98a155d9c65a4d0f3fc">clipping</a></td></tr>
+<tr class="memdesc:a9880e2be2c43a98a155d9c65a4d0f3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether the rasterizer's effect is clipped to the path or not, and if so, which side  <a href="#a9880e2be2c43a98a155d9c65a4d0f3fc">More...</a><br/></td></tr>
 <tr class="separator:a9880e2be2c43a98a155d9c65a4d0f3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cbe050d51ac5919f898170699bce150"><td class="memItemLeft" align="right" valign="top">(NSBezierPath *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a3cbe050d51ac5919f898170699bce150">renderingPathForObject:</a></td></tr>
+<tr class="memdesc:a3cbe050d51ac5919f898170699bce150"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the path to render given the object doing the rendering  <a href="#a3cbe050d51ac5919f898170699bce150">More...</a><br/></td></tr>
 <tr class="separator:a3cbe050d51ac5919f898170699bce150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63d49734dfafb53e79227b1e0d8808e1"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_rasterizer.html#a63d49734dfafb53e79227b1e0d8808e1">copyToPasteboard:</a></td></tr>
+<tr class="memitem:a63d49734dfafb53e79227b1e0d8808e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63d49734dfafb53e79227b1e0d8808e1"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>copyToPasteboard:</b></td></tr>
 <tr class="separator:a63d49734dfafb53e79227b1e0d8808e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_g_c_observable_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_g_c_observable_object')"><img src="closed.png" alt="-"/>&#160;Instance Methods inherited from <a class="el" href="interface_g_c_observable_object.html">GCObservableObject</a></td></tr>
-<tr class="memitem:a671e6244289d608eb1e12fb3c95fa31c inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#a671e6244289d608eb1e12fb3c95fa31c">setUpKVOForObserver:</a></td></tr>
+<tr class="memitem:a671e6244289d608eb1e12fb3c95fa31c inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a671e6244289d608eb1e12fb3c95fa31c"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>setUpKVOForObserver:</b></td></tr>
 <tr class="separator:a671e6244289d608eb1e12fb3c95fa31c inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a132e7c95fd855cfcfeb98dcee3a24c inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#a6a132e7c95fd855cfcfeb98dcee3a24c">tearDownKVOForObserver:</a></td></tr>
+<tr class="memitem:a6a132e7c95fd855cfcfeb98dcee3a24c inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a132e7c95fd855cfcfeb98dcee3a24c"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>tearDownKVOForObserver:</b></td></tr>
 <tr class="separator:a6a132e7c95fd855cfcfeb98dcee3a24c inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9f4a4f92d11b74d74335240435ee491 inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#aa9f4a4f92d11b74d74335240435ee491">setUpObservables:forObserver:</a></td></tr>
+<tr class="memitem:aa9f4a4f92d11b74d74335240435ee491 inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9f4a4f92d11b74d74335240435ee491"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>setUpObservables:forObserver:</b></td></tr>
 <tr class="separator:aa9f4a4f92d11b74d74335240435ee491 inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abace7bef831491715144bf78a19e3b42 inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#abace7bef831491715144bf78a19e3b42">tearDownObservables:forObserver:</a></td></tr>
+<tr class="memitem:abace7bef831491715144bf78a19e3b42 inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abace7bef831491715144bf78a19e3b42"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>tearDownObservables:forObserver:</b></td></tr>
 <tr class="separator:abace7bef831491715144bf78a19e3b42 inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40345c964650a4af34dcfe80e60a38f inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#ad40345c964650a4af34dcfe80e60a38f">registerActionNames</a></td></tr>
+<tr class="memitem:ad40345c964650a4af34dcfe80e60a38f inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad40345c964650a4af34dcfe80e60a38f"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>registerActionNames</b></td></tr>
 <tr class="separator:ad40345c964650a4af34dcfe80e60a38f inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f88c5504c261f86a48669a754f38fd inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#a72f88c5504c261f86a48669a754f38fd">actionNameForKeyPath:</a></td></tr>
+<tr class="memitem:a72f88c5504c261f86a48669a754f38fd inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f88c5504c261f86a48669a754f38fd"></a>
+(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <b>actionNameForKeyPath:</b></td></tr>
 <tr class="separator:a72f88c5504c261f86a48669a754f38fd inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae32e378d18cf42fcb5f789a7eafbb78e inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#ae32e378d18cf42fcb5f789a7eafbb78e">actionNameForKeyPath:changeKind:</a></td></tr>
+<tr class="memitem:ae32e378d18cf42fcb5f789a7eafbb78e inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae32e378d18cf42fcb5f789a7eafbb78e"></a>
+(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <b>actionNameForKeyPath:changeKind:</b></td></tr>
 <tr class="separator:ae32e378d18cf42fcb5f789a7eafbb78e inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56cd3c0c2a01439ed155f017f5fe17f5 inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#a56cd3c0c2a01439ed155f017f5fe17f5">setActionName:forKeyPath:</a></td></tr>
+<tr class="memitem:a56cd3c0c2a01439ed155f017f5fe17f5 inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56cd3c0c2a01439ed155f017f5fe17f5"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>setActionName:forKeyPath:</b></td></tr>
 <tr class="separator:a56cd3c0c2a01439ed155f017f5fe17f5 inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ae4c721fe3f0f482e0802944387c1a inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#ad5ae4c721fe3f0f482e0802944387c1a">oldArrayValueForKeyPath:</a></td></tr>
+<tr class="memitem:ad5ae4c721fe3f0f482e0802944387c1a inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5ae4c721fe3f0f482e0802944387c1a"></a>
+(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <b>oldArrayValueForKeyPath:</b></td></tr>
 <tr class="separator:ad5ae4c721fe3f0f482e0802944387c1a inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa425e17e7f2def93e4ac2bdade98a128 inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_observable_object.html#aa425e17e7f2def93e4ac2bdade98a128">sendInitialValuesForAllPropertiesToObserver:context:</a></td></tr>
+<tr class="memitem:aa425e17e7f2def93e4ac2bdade98a128 inherit pub_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa425e17e7f2def93e4ac2bdade98a128"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>sendInitialValuesForAllPropertiesToObserver:context:</b></td></tr>
 <tr class="separator:aa425e17e7f2def93e4ac2bdade98a128 inherit pub_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_protocol_d_k_rasterizer-p"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_protocol_d_k_rasterizer-p')"><img src="closed.png" alt="-"/>&#160;Instance Methods inherited from <a class="el" href="protocol_d_k_rasterizer-p.html">&lt;DKRasterizer&gt;</a></td></tr>
-<tr class="memitem:a2b1eaea794f5430322ee98f5753a8dde inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memItemLeft" align="right" valign="top">(NSSize)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_rasterizer-p.html#a2b1eaea794f5430322ee98f5753a8dde">extraSpaceNeeded</a></td></tr>
+<tr class="memitem:a2b1eaea794f5430322ee98f5753a8dde inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b1eaea794f5430322ee98f5753a8dde"></a>
+(NSSize)&#160;</td><td class="memItemRight" valign="bottom">- <b>extraSpaceNeeded</b></td></tr>
 <tr class="separator:a2b1eaea794f5430322ee98f5753a8dde inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a303db407223eb2ca29cc76525a6f996e inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_rasterizer-p.html#a303db407223eb2ca29cc76525a6f996e">render:</a></td></tr>
+<tr class="memitem:a303db407223eb2ca29cc76525a6f996e inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a303db407223eb2ca29cc76525a6f996e"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>render:</b></td></tr>
 <tr class="separator:a303db407223eb2ca29cc76525a6f996e inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522e3599ef65b745af100607c7cf77fd inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_rasterizer-p.html#a522e3599ef65b745af100607c7cf77fd">renderPath:</a></td></tr>
+<tr class="memitem:a522e3599ef65b745af100607c7cf77fd inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a522e3599ef65b745af100607c7cf77fd"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>renderPath:</b></td></tr>
 <tr class="separator:a522e3599ef65b745af100607c7cf77fd inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c2a785b2091585685948d84a655effe inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_d_k_rasterizer-p.html#a8c2a785b2091585685948d84a655effe">isFill</a></td></tr>
+<tr class="memitem:a8c2a785b2091585685948d84a655effe inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c2a785b2091585685948d84a655effe"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>isFill</b></td></tr>
 <tr class="separator:a8c2a785b2091585685948d84a655effe inherit pub_methods_protocol_d_k_rasterizer-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
-<tr class="memitem:a01f68e383fc8203671a6bdb328d7efab"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_rasterizer.html">DKRasterizer</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_rasterizer.html#a01f68e383fc8203671a6bdb328d7efab">rasterizerFromPasteboard:</a></td></tr>
+<tr class="memitem:a01f68e383fc8203671a6bdb328d7efab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01f68e383fc8203671a6bdb328d7efab"></a>
+(<a class="el" href="interface_d_k_rasterizer.html">DKRasterizer</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <b>rasterizerFromPasteboard:</b></td></tr>
 <tr class="separator:a01f68e383fc8203671a6bdb328d7efab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_interface_g_c_observable_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_interface_g_c_observable_object')"><img src="closed.png" alt="-"/>&#160;Class Methods inherited from <a class="el" href="interface_g_c_observable_object.html">GCObservableObject</a></td></tr>
-<tr class="memitem:a1a4f72b8d1f03ba6d560c635d5505933 inherit pub_static_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_observable_object.html#a1a4f72b8d1f03ba6d560c635d5505933">registerActionName:forKeyPath:objClass:</a></td></tr>
+<tr class="memitem:a1a4f72b8d1f03ba6d560c635d5505933 inherit pub_static_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a4f72b8d1f03ba6d560c635d5505933"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>registerActionName:forKeyPath:objClass:</b></td></tr>
 <tr class="separator:a1a4f72b8d1f03ba6d560c635d5505933 inherit pub_static_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5668e90cdbd7d3b6092939b181defdf3 inherit pub_static_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_observable_object.html#a5668e90cdbd7d3b6092939b181defdf3">actionNameForKeyPath:objClass:</a></td></tr>
+<tr class="memitem:a5668e90cdbd7d3b6092939b181defdf3 inherit pub_static_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5668e90cdbd7d3b6092939b181defdf3"></a>
+(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <b>actionNameForKeyPath:objClass:</b></td></tr>
 <tr class="separator:a5668e90cdbd7d3b6092939b181defdf3 inherit pub_static_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a794fc73e886425210c78112abd95c253 inherit pub_static_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_observable_object.html#a794fc73e886425210c78112abd95c253">observableKeyPaths</a></td></tr>
+<tr class="memitem:a794fc73e886425210c78112abd95c253 inherit pub_static_methods_interface_g_c_observable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a794fc73e886425210c78112abd95c253"></a>
+(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">+ <b>observableKeyPaths</b></td></tr>
 <tr class="separator:a794fc73e886425210c78112abd95c253 inherit pub_static_methods_interface_g_c_observable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
@@ -198,13 +228,16 @@ Class Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="_d_k_rasterizer_8h.html#ac939e29c7f1a5a1aba1a500aa8bac4de">DKClippingOption</a>) clipping </td>
+          <td class="memname">- (DKClippingOption) clipping </td>
           <td></td>
           <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>whether the rasterizer's effect is clipped to the path or not, and if so, which side </p>
+<dl class="section return"><dt>Returns</dt><dd>a DKClippingOption value </dd></dl>
 
 </div>
 </div>
@@ -221,23 +254,8 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a63d49734dfafb53e79227b1e0d8808e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) copyToPasteboard: </td>
-          <td></td>
-          <td class="paramtype">(NSPasteboard*)&#160;</td>
-          <td class="paramname"><em>pb</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="interface_d_k_style.html#ac6aa25e08bab9f99f1722f6161b7873a">DKStyle</a>.</p>
+<p>returns the immediate container of this object, if owned by a group </p>
+<dl class="section return"><dt>Returns</dt><dd>the object's container group, if any </dd></dl>
 
 </div>
 </div>
@@ -254,6 +272,10 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>query whether the renderer is enabled or not </p>
+<dl class="section note"><dt>Note</dt><dd>disabled renderers won't draw anything, so this can be used to temporarily turn off part of a larget set of renderers (in a style, say) from the UI, but without actually deleting the renderer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if enabled, NO if not </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aa2aa198abdd53ff1436a6065d5822722"></a>
@@ -268,6 +290,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>queries whether the renderer is valid, that is, it will draw something. </p>
+<dl class="section note"><dt>Note</dt><dd>used to optimize drawing - invalid renderers are skipped </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if the renderer will draw something, NO otherwise </dd></dl>
 
 <p>Reimplemented in <a class="el" href="interface_d_k_rast_group.html#a1646313da7129a143e5567575fa970bf">DKRastGroup</a>.</p>
 
@@ -286,6 +312,10 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>get the name or classname of the renderer </p>
+<dl class="section note"><dt>Note</dt><dd>named renderers can be referred to in scripts or bound to in the UI </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the renderer's name or classname </dd></dl>
+
 <p>Reimplemented in <a class="el" href="interface_d_k_text_adornment.html#aee050b2bc67e6de5ccd2838d2031bc8e">DKTextAdornment</a>.</p>
 
 </div>
@@ -303,21 +333,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a01f68e383fc8203671a6bdb328d7efab"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (<a class="el" href="interface_d_k_rasterizer.html">DKRasterizer</a> *) rasterizerFromPasteboard: </td>
-          <td></td>
-          <td class="paramtype">(NSPasteboard*)&#160;</td>
-          <td class="paramname"><em>pb</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>get the name of the renderer </p>
+<dl class="section note"><dt>Note</dt><dd>named renderers can be referred to in scripts or bound to in the UI </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the renderer's name </dd></dl>
 
 </div>
 </div>
@@ -335,6 +353,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns the path to render given the object doing the rendering </p>
+<dl class="section note"><dt>Note</dt><dd>this method is called internally by render: to obtain the path to be rendered. It is factored to allow a delegate to modify the path just before rendering, and to allow special subclasses to override it to modify the path for special effects. The normal behaviour is simply to ask the object for its rendering path. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>the object to render </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the rendering path </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="acc0e5739ebb117fbc09f8a5ad6fd9074"></a>
@@ -344,28 +372,20 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">- (void) setClipping: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="_d_k_rasterizer_8h.html#ac939e29c7f1a5a1aba1a500aa8bac4de">DKClippingOption</a>)&#160;</td>
+          <td class="paramtype">(DKClippingOption)&#160;</td>
           <td class="paramname"><em>clipping</em></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a74675e22501821f83b86d1e5f7d40e14"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) setClippingWithoutNotifying: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="_d_k_rasterizer_8h.html#ac939e29c7f1a5a1aba1a500aa8bac4de">DKClippingOption</a>)&#160;</td>
-          <td class="paramname"><em>clipping</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>set whether the rasterizer's effect is clipped to the path or not, and if so, which side </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clipping</td><td>a DKClippingOption value </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -383,6 +403,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>sets the immediate container of this object </p>
+<dl class="section note"><dt>Note</dt><dd>this is a weak reference as the object is owned by its container. Generally this is called as required when the object is added to a group, so should not be used by app code </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">container</td><td>the objects's container - must be a group, or nil </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a023fbe1a6e381849c48010663bd9bf55"></a>
@@ -398,6 +427,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>set whether the renderer is enabled or not </p>
+<dl class="section note"><dt>Note</dt><dd>disabled renderers won't draw anything, so this can be used to temporarily turn off part of a larget set of renderers (in a style, say) from the UI, but without actually deleting the renderer </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>YES to enable, NO to disable </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -415,6 +453,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>set the name of the renderer </p>
+<dl class="section note"><dt>Note</dt><dd>named renderers can be referred to in scripts or bound to in the UI. The name is copied for safety. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name to give the renderer </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a03eae6a31174a2f22a80c19c93f9e730"></a>
@@ -430,16 +477,20 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return the equivalent style script for this renderer </p>
+<dl class="section note"><dt>Note</dt><dd>subclasses shold override this - the default method returns the object's description for debugging. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a string, representing the script that would create an equivalent renderer if parsed </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>framework/Code/<a class="el" href="_d_k_rasterizer_8h_source.html">DKRasterizer.h</a></li>
-<li>framework/Code/<a class="el" href="_d_k_rasterizer_8m.html">DKRasterizer.m</a></li>
+<li><a class="el" href="_d_k_rasterizer_8h_source.html">DKRasterizer.h</a></li>
+<li>DKRasterizer.m</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:04 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:15 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

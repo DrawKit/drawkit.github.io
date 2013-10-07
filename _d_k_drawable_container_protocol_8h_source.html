@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKDrawableContainerProtocol.h Source File</title>
+<title>DrawKit: DKDrawableContainerProtocol.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKDrawableContainerProtocol.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_drawable_container_protocol_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
@@ -98,10 +97,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="protocol_d_k_drawable_container-p.html">   17</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_d_k_drawable_container-p.html">DKDrawableContainer</a> &lt;NSObject&gt;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;- (<a class="code" href="interface_d_k_drawing.html">DKDrawing</a>*)              <a class="code" href="protocol_d_k_drawable_container-p.html#a88aba239493ff99f957202d8c7e7ce39">drawing</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;- (DKLayer*)                <a class="code" href="protocol_d_k_drawable_container-p.html#af0e9bd48d6ff7094d5d45b5faa087d4b">layer</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;- (NSAffineTransform*)      <a class="code" href="protocol_d_k_drawable_container-p.html#a57e275601c3a85f0750aad11910ad1da">renderingTransform</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;- (DKImageDataManager*)     <a class="code" href="protocol_d_k_drawable_container-p.html#ab6f21ad7c913a5c1c3b14b2645af162f">imageManager</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;- (<a class="code" href="interface_d_k_drawing.html">DKDrawing</a>*)              drawing;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;- (DKLayer*)                layer;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;- (NSAffineTransform*)      renderingTransform;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;- (DKImageDataManager*)     imageManager;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (NSUInteger)              indexOfObject:(DKDrawableObject*) obj;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@optional</span></div>
@@ -124,20 +123,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="ttc" id="interface_d_k_drawing_html"><div class="ttname"><a href="interface_d_k_drawing.html">DKDrawing</a></div><div class="ttdef"><b>Definition:</b> DKDrawing.h:17</div></div>
-<div class="ttc" id="interface_d_k_image_data_manager_html"><div class="ttname"><a href="interface_d_k_image_data_manager.html">DKImageDataManager</a></div><div class="ttdef"><b>Definition:</b> DKImageDataManager.h:12</div></div>
-<div class="ttc" id="interface_d_k_metadata_item_html"><div class="ttname"><a href="interface_d_k_metadata_item.html">DKMetadataItem</a></div><div class="ttdef"><b>Definition:</b> DKMetadataItem.h:38</div></div>
-<div class="ttc" id="protocol_d_k_drawable_container-p_html_af0e9bd48d6ff7094d5d45b5faa087d4b"><div class="ttname"><a href="protocol_d_k_drawable_container-p.html#af0e9bd48d6ff7094d5d45b5faa087d4b">-[DKDrawableContainer-p layer]</a></div><div class="ttdeci">DKLayer * layer()</div></div>
+<div class="ttc" id="interface_d_k_drawing_html"><div class="ttname"><a href="interface_d_k_drawing.html">DKDrawing</a></div><div class="ttdef"><b>Definition:</b> DKDrawing.h:21</div></div>
+<div class="ttc" id="interface_d_k_image_data_manager_html"><div class="ttname"><a href="interface_d_k_image_data_manager.html">DKImageDataManager</a></div><div class="ttdef"><b>Definition:</b> DKImageDataManager.h:18</div></div>
+<div class="ttc" id="interface_d_k_metadata_item_html"><div class="ttname"><a href="interface_d_k_metadata_item.html">DKMetadataItem</a></div><div class="ttdef"><b>Definition:</b> DKMetadataItem.h:42</div></div>
 <div class="ttc" id="protocol_d_k_drawable_container-p_html"><div class="ttname"><a href="protocol_d_k_drawable_container-p.html">DKDrawableContainer-p</a></div><div class="ttdef"><b>Definition:</b> DKDrawableContainerProtocol.h:17</div></div>
-<div class="ttc" id="interface_d_k_layer_html"><div class="ttname"><a href="interface_d_k_layer.html">DKLayer</a></div><div class="ttdef"><b>Definition:</b> DKLayer.h:18</div></div>
-<div class="ttc" id="protocol_d_k_drawable_container-p_html_ab6f21ad7c913a5c1c3b14b2645af162f"><div class="ttname"><a href="protocol_d_k_drawable_container-p.html#ab6f21ad7c913a5c1c3b14b2645af162f">-[DKDrawableContainer-p imageManager]</a></div><div class="ttdeci">DKImageDataManager * imageManager()</div></div>
-<div class="ttc" id="protocol_d_k_drawable_container-p_html_a88aba239493ff99f957202d8c7e7ce39"><div class="ttname"><a href="protocol_d_k_drawable_container-p.html#a88aba239493ff99f957202d8c7e7ce39">-[DKDrawableContainer-p drawing]</a></div><div class="ttdeci">DKDrawing * drawing()</div></div>
-<div class="ttc" id="interface_d_k_drawable_object_html"><div class="ttname"><a href="interface_d_k_drawable_object.html">DKDrawableObject</a></div><div class="ttdef"><b>Definition:</b> DKDrawableObject.h:21</div></div>
-<div class="ttc" id="protocol_d_k_drawable_container-p_html_a57e275601c3a85f0750aad11910ad1da"><div class="ttname"><a href="protocol_d_k_drawable_container-p.html#a57e275601c3a85f0750aad11910ad1da">-[DKDrawableContainer-p renderingTransform]</a></div><div class="ttdeci">NSAffineTransform * renderingTransform()</div></div>
+<div class="ttc" id="interface_d_k_layer_html"><div class="ttname"><a href="interface_d_k_layer.html">DKLayer</a></div><div class="ttdef"><b>Definition:</b> DKLayer.h:16</div></div>
+<div class="ttc" id="interface_d_k_drawable_object_html"><div class="ttname"><a href="interface_d_k_drawable_object.html">DKDrawableObject</a></div><div class="ttdef"><b>Definition:</b> DKDrawableObject.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:12 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

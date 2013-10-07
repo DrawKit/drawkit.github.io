@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,8 +91,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKCategoryManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#import &lt;<a class="el" href="_d_k_category_manager_8h_source.html">DKCategoryManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DKCategoryManager:</div>
 <div class="dyncontent">
@@ -106,151 +104,223 @@ Inheritance diagram for DKCategoryManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:a471b1178142da45398be343f9ef0a52d"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a471b1178142da45398be343f9ef0a52d">initWithData:</a></td></tr>
+<tr class="memdesc:a471b1178142da45398be343f9ef0a52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialized a category manager object from archive data  <a href="#a471b1178142da45398be343f9ef0a52d">More...</a><br/></td></tr>
 <tr class="separator:a471b1178142da45398be343f9ef0a52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c7748189f323da5bae240d77d98b67c"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a5c7748189f323da5bae240d77d98b67c">initWithDictionary:</a></td></tr>
+<tr class="memdesc:a5c7748189f323da5bae240d77d98b67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialized a category manager object from an existing dictionary  <a href="#a5c7748189f323da5bae240d77d98b67c">More...</a><br/></td></tr>
 <tr class="separator:a5c7748189f323da5bae240d77d98b67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f0ebdcea8652f330e08183c6ace1d03"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a5f0ebdcea8652f330e08183c6ace1d03">addObject:forKey:toCategory:createCategory:</a></td></tr>
+<tr class="memdesc:a5f0ebdcea8652f330e08183c6ace1d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">add an object to the container, associating with a key and optionally a category.  <a href="#a5f0ebdcea8652f330e08183c6ace1d03">More...</a><br/></td></tr>
 <tr class="separator:a5f0ebdcea8652f330e08183c6ace1d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6a7b8bcbd3b9a4a86ce7e49ae5458fc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ab6a7b8bcbd3b9a4a86ce7e49ae5458fc">addObject:forKey:toCategories:createCategories:</a></td></tr>
+<tr class="memdesc:ab6a7b8bcbd3b9a4a86ce7e49ae5458fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">add an object to the container, associating with a key and optionally a number of categories.  <a href="#ab6a7b8bcbd3b9a4a86ce7e49ae5458fc">More...</a><br/></td></tr>
 <tr class="separator:ab6a7b8bcbd3b9a4a86ce7e49ae5458fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34bd33daf2f4eca1b12e2b15d6be0c50"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a34bd33daf2f4eca1b12e2b15d6be0c50">removeObjectForKey:</a></td></tr>
+<tr class="memdesc:a34bd33daf2f4eca1b12e2b15d6be0c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove an object from the container  <a href="#a34bd33daf2f4eca1b12e2b15d6be0c50">More...</a><br/></td></tr>
 <tr class="separator:a34bd33daf2f4eca1b12e2b15d6be0c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0dbbc4044689cfdade2720af9aa279"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a8e0dbbc4044689cfdade2720af9aa279">removeObjectsForKeys:</a></td></tr>
+<tr class="memdesc:a8e0dbbc4044689cfdade2720af9aa279"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove multiple objects from the container  <a href="#a8e0dbbc4044689cfdade2720af9aa279">More...</a><br/></td></tr>
 <tr class="separator:a8e0dbbc4044689cfdade2720af9aa279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7dcc6755c72d0e708b03388fc9d2bc0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ae7dcc6755c72d0e708b03388fc9d2bc0">removeAllObjects</a></td></tr>
+<tr class="memdesc:ae7dcc6755c72d0e708b03388fc9d2bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes all objects from the container  <a href="#ae7dcc6755c72d0e708b03388fc9d2bc0">More...</a><br/></td></tr>
 <tr class="separator:ae7dcc6755c72d0e708b03388fc9d2bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea44f48031670ef3d66354f5a8c2653f"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#aea44f48031670ef3d66354f5a8c2653f">containsKey:</a></td></tr>
+<tr class="memdesc:aea44f48031670ef3d66354f5a8c2653f"><td class="mdescLeft">&#160;</td><td class="mdescRight">test whether the key is known to the container  <a href="#aea44f48031670ef3d66354f5a8c2653f">More...</a><br/></td></tr>
 <tr class="separator:aea44f48031670ef3d66354f5a8c2653f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec801666509bde1ab8c9f67d3ba4f76d"><td class="memItemLeft" align="right" valign="top">(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#aec801666509bde1ab8c9f67d3ba4f76d">count</a></td></tr>
+<tr class="memdesc:aec801666509bde1ab8c9f67d3ba4f76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return total number of stored objects in container  <a href="#aec801666509bde1ab8c9f67d3ba4f76d">More...</a><br/></td></tr>
 <tr class="separator:aec801666509bde1ab8c9f67d3ba4f76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af809e967d21b80a9a8c0dd4fbc416a3f"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#af809e967d21b80a9a8c0dd4fbc416a3f">objectForKey:</a></td></tr>
+<tr class="memdesc:af809e967d21b80a9a8c0dd4fbc416a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the object for the given key, but do not remember it in the "recently used" list  <a href="#af809e967d21b80a9a8c0dd4fbc416a3f">More...</a><br/></td></tr>
 <tr class="separator:af809e967d21b80a9a8c0dd4fbc416a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14891820d0eb21577353eb4462fa889e"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a14891820d0eb21577353eb4462fa889e">objectForKey:addToRecentlyUsedItems:</a></td></tr>
+<tr class="memdesc:a14891820d0eb21577353eb4462fa889e"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the object for the given key, optionally remembering it in the "recently used" list  <a href="#a14891820d0eb21577353eb4462fa889e">More...</a><br/></td></tr>
 <tr class="separator:a14891820d0eb21577353eb4462fa889e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a634c2867195a8e2a49a09ae4ca5db356"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a634c2867195a8e2a49a09ae4ca5db356">keysForObject:</a></td></tr>
+<tr class="memdesc:a634c2867195a8e2a49a09ae4ca5db356"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a list of all unique keys that refer to the given object  <a href="#a634c2867195a8e2a49a09ae4ca5db356">More...</a><br/></td></tr>
 <tr class="separator:a634c2867195a8e2a49a09ae4ca5db356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad055e14eb4999da6ebc966a62a2d4c85"><td class="memItemLeft" align="right" valign="top">(NSDictionary *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ad055e14eb4999da6ebc966a62a2d4c85">dictionary</a></td></tr>
+<tr class="memdesc:ad055e14eb4999da6ebc966a62a2d4c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a copy of the master dictionary  <a href="#ad055e14eb4999da6ebc966a62a2d4c85">More...</a><br/></td></tr>
 <tr class="separator:ad055e14eb4999da6ebc966a62a2d4c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf327aae32496c857ad960ef80a25de6"><td class="memItemLeft" align="right" valign="top">(NSSet *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#aaf327aae32496c857ad960ef80a25de6">mergeObjectsFromSet:inCategories:mergeOptions:mergeDelegate:</a></td></tr>
+<tr class="memdesc:aaf327aae32496c857ad960ef80a25de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">smartly merges objects into the category manager  <a href="#aaf327aae32496c857ad960ef80a25de6">More...</a><br/></td></tr>
 <tr class="separator:aaf327aae32496c857ad960ef80a25de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc5208b4720023589af791184c4f952"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a0dc5208b4720023589af791184c4f952">mergeObject:mergeDelegate:</a></td></tr>
+<tr class="memdesc:a0dc5208b4720023589af791184c4f952"><td class="mdescLeft">&#160;</td><td class="mdescRight">asks delegate to make decision about the merging of an object  <a href="#a0dc5208b4720023589af791184c4f952">More...</a><br/></td></tr>
 <tr class="separator:a0dc5208b4720023589af791184c4f952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c049a27f3d81ee8c26dfed17f5e84e1"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a9c049a27f3d81ee8c26dfed17f5e84e1">objectsInCategory:</a></td></tr>
+<tr class="memdesc:a9c049a27f3d81ee8c26dfed17f5e84e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all of the objects belonging to a given category  <a href="#a9c049a27f3d81ee8c26dfed17f5e84e1">More...</a><br/></td></tr>
 <tr class="separator:a9c049a27f3d81ee8c26dfed17f5e84e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f0c4c44c059475a6db0ae2919da2849"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a4f0c4c44c059475a6db0ae2919da2849">objectsInCategories:</a></td></tr>
+<tr class="memdesc:a4f0c4c44c059475a6db0ae2919da2849"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all of the objects belonging to the given categories  <a href="#a4f0c4c44c059475a6db0ae2919da2849">More...</a><br/></td></tr>
 <tr class="separator:a4f0c4c44c059475a6db0ae2919da2849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad80345b5b77f23bfec084d1a32b88b64"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ad80345b5b77f23bfec084d1a32b88b64">allKeysInCategory:</a></td></tr>
+<tr class="memdesc:ad80345b5b77f23bfec084d1a32b88b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all of the keys in a given category  <a href="#ad80345b5b77f23bfec084d1a32b88b64">More...</a><br/></td></tr>
 <tr class="separator:ad80345b5b77f23bfec084d1a32b88b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8d8c85980d4123ccbfbbc03a87442d"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a5c8d8c85980d4123ccbfbbc03a87442d">allKeysInCategories:</a></td></tr>
+<tr class="memdesc:a5c8d8c85980d4123ccbfbbc03a87442d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all of the keys in all given categories  <a href="#a5c8d8c85980d4123ccbfbbc03a87442d">More...</a><br/></td></tr>
 <tr class="separator:a5c8d8c85980d4123ccbfbbc03a87442d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d54729829c6cf87a5e12640b7a5380b"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a5d54729829c6cf87a5e12640b7a5380b">allKeys</a></td></tr>
+<tr class="memitem:a5d54729829c6cf87a5e12640b7a5380b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d54729829c6cf87a5e12640b7a5380b"></a>
+(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <b>allKeys</b></td></tr>
 <tr class="separator:a5d54729829c6cf87a5e12640b7a5380b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543080844dc1b59952837e3c4fe3a860"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a543080844dc1b59952837e3c4fe3a860">allObjects</a></td></tr>
+<tr class="memdesc:a543080844dc1b59952837e3c4fe3a860"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all of the objects  <a href="#a543080844dc1b59952837e3c4fe3a860">More...</a><br/></td></tr>
 <tr class="separator:a543080844dc1b59952837e3c4fe3a860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab51ab041178190f7b6d2fa96293ddf42"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ab51ab041178190f7b6d2fa96293ddf42">allSortedKeysInCategory:</a></td></tr>
+<tr class="memdesc:ab51ab041178190f7b6d2fa96293ddf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all of the keys in a given category, sorted into some useful order  <a href="#ab51ab041178190f7b6d2fa96293ddf42">More...</a><br/></td></tr>
 <tr class="separator:ab51ab041178190f7b6d2fa96293ddf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd380954feb03ba161a05e6d64abb23"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#acfd380954feb03ba161a05e6d64abb23">allSortedNamesInCategory:</a></td></tr>
+<tr class="memdesc:acfd380954feb03ba161a05e6d64abb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all of the names in a given category, sorted into some useful order  <a href="#acfd380954feb03ba161a05e6d64abb23">More...</a><br/></td></tr>
 <tr class="separator:acfd380954feb03ba161a05e6d64abb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab7a5bce97828fe9a0b73786cebe84c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a6ab7a5bce97828fe9a0b73786cebe84c">setRecentlyAddedItems:</a></td></tr>
+<tr class="memdesc:a6ab7a5bce97828fe9a0b73786cebe84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">replaces the recently added items with new items, up to the current max.  <a href="#a6ab7a5bce97828fe9a0b73786cebe84c">More...</a><br/></td></tr>
 <tr class="separator:a6ab7a5bce97828fe9a0b73786cebe84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6f9b8033e980245673b99ff59ac70bb"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ae6f9b8033e980245673b99ff59ac70bb">recentlyAddedItems</a></td></tr>
+<tr class="memdesc:ae6f9b8033e980245673b99ff59ac70bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the list of recently added items  <a href="#ae6f9b8033e980245673b99ff59ac70bb">More...</a><br/></td></tr>
 <tr class="separator:ae6f9b8033e980245673b99ff59ac70bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00d621791cab86f6469cb2f028af373b"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a00d621791cab86f6469cb2f028af373b">recentlyUsedItems</a></td></tr>
+<tr class="memdesc:a00d621791cab86f6469cb2f028af373b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the list of recently used items  <a href="#a00d621791cab86f6469cb2f028af373b">More...</a><br/></td></tr>
 <tr class="separator:a00d621791cab86f6469cb2f028af373b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa10156ae220301d3fb5d3369aa4201b1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#aa10156ae220301d3fb5d3369aa4201b1">addDefaultCategories</a></td></tr>
+<tr class="memdesc:aa10156ae220301d3fb5d3369aa4201b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">add the default categories defined for this class or object  <a href="#aa10156ae220301d3fb5d3369aa4201b1">More...</a><br/></td></tr>
 <tr class="separator:aa10156ae220301d3fb5d3369aa4201b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b23f97d4dd51a01585999ed7fc14991"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a6b23f97d4dd51a01585999ed7fc14991">defaultCategories</a></td></tr>
+<tr class="memdesc:a6b23f97d4dd51a01585999ed7fc14991"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the default categories defined for this class or object  <a href="#a6b23f97d4dd51a01585999ed7fc14991">More...</a><br/></td></tr>
 <tr class="separator:a6b23f97d4dd51a01585999ed7fc14991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b77a53768456ee574a92d8239ef99f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a31b77a53768456ee574a92d8239ef99f">addCategory:</a></td></tr>
+<tr class="memdesc:a31b77a53768456ee574a92d8239ef99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a new category with the given name  <a href="#a31b77a53768456ee574a92d8239ef99f">More...</a><br/></td></tr>
 <tr class="separator:a31b77a53768456ee574a92d8239ef99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a253997705b492478586dfab012c148"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a3a253997705b492478586dfab012c148">addCategories:</a></td></tr>
+<tr class="memdesc:a3a253997705b492478586dfab012c148"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a new categories with the given names  <a href="#a3a253997705b492478586dfab012c148">More...</a><br/></td></tr>
 <tr class="separator:a3a253997705b492478586dfab012c148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0671acee1f7fe95b4f823ec5ff7b0480"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a0671acee1f7fe95b4f823ec5ff7b0480">removeCategory:</a></td></tr>
+<tr class="memdesc:a0671acee1f7fe95b4f823ec5ff7b0480"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove a category with the given name  <a href="#a0671acee1f7fe95b4f823ec5ff7b0480">More...</a><br/></td></tr>
 <tr class="separator:a0671acee1f7fe95b4f823ec5ff7b0480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1051a0df5bd85b25e60a23a17275d8c2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a1051a0df5bd85b25e60a23a17275d8c2">renameCategory:to:</a></td></tr>
+<tr class="memdesc:a1051a0df5bd85b25e60a23a17275d8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">change a category's name  <a href="#a1051a0df5bd85b25e60a23a17275d8c2">More...</a><br/></td></tr>
 <tr class="separator:a1051a0df5bd85b25e60a23a17275d8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43e2c5e338344a4fe7373487d5aae79f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a43e2c5e338344a4fe7373487d5aae79f">removeAllCategories</a></td></tr>
+<tr class="memdesc:a43e2c5e338344a4fe7373487d5aae79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes all categories and objects from the CM.  <a href="#a43e2c5e338344a4fe7373487d5aae79f">More...</a><br/></td></tr>
 <tr class="separator:a43e2c5e338344a4fe7373487d5aae79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13c8d289a3f3437abbda0d6a2bd15b9d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a13c8d289a3f3437abbda0d6a2bd15b9d">addKey:toCategory:createCategory:</a></td></tr>
+<tr class="memdesc:a13c8d289a3f3437abbda0d6a2bd15b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a new key to a category, optionally creating it if necessary  <a href="#a13c8d289a3f3437abbda0d6a2bd15b9d">More...</a><br/></td></tr>
 <tr class="separator:a13c8d289a3f3437abbda0d6a2bd15b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a465c25b019cff3e219ac8629896e2f26"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a465c25b019cff3e219ac8629896e2f26">addKey:toCategories:createCategories:</a></td></tr>
+<tr class="memdesc:a465c25b019cff3e219ac8629896e2f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a new key to several categories, optionally creating any if necessary  <a href="#a465c25b019cff3e219ac8629896e2f26">More...</a><br/></td></tr>
 <tr class="separator:a465c25b019cff3e219ac8629896e2f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712570e5433ae44a763d1a15e4d10ab2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a712570e5433ae44a763d1a15e4d10ab2">removeKey:fromCategory:</a></td></tr>
+<tr class="memdesc:a712570e5433ae44a763d1a15e4d10ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a key from a category  <a href="#a712570e5433ae44a763d1a15e4d10ab2">More...</a><br/></td></tr>
 <tr class="separator:a712570e5433ae44a763d1a15e4d10ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5628000aec461d96c44d8956851ff739"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a5628000aec461d96c44d8956851ff739">removeKey:fromCategories:</a></td></tr>
+<tr class="memdesc:a5628000aec461d96c44d8956851ff739"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a key from a number of categories  <a href="#a5628000aec461d96c44d8956851ff739">More...</a><br/></td></tr>
 <tr class="separator:a5628000aec461d96c44d8956851ff739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb9d9caca32600745ad0abffcd12d226"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#adb9d9caca32600745ad0abffcd12d226">removeKeyFromAllCategories:</a></td></tr>
+<tr class="memdesc:adb9d9caca32600745ad0abffcd12d226"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a key from all categories  <a href="#adb9d9caca32600745ad0abffcd12d226">More...</a><br/></td></tr>
 <tr class="separator:adb9d9caca32600745ad0abffcd12d226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1700abd0acd419236a0fe785fea71b85"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a1700abd0acd419236a0fe785fea71b85">fixUpCategories</a></td></tr>
+<tr class="memdesc:a1700abd0acd419236a0fe785fea71b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks that all keys refer to real objects, removing any that do not  <a href="#a1700abd0acd419236a0fe785fea71b85">More...</a><br/></td></tr>
 <tr class="separator:a1700abd0acd419236a0fe785fea71b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e81eba5906e8d755aec54afc7336ce4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a5e81eba5906e8d755aec54afc7336ce4">renameKey:to:</a></td></tr>
+<tr class="memdesc:a5e81eba5906e8d755aec54afc7336ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">renames an object's key throughout  <a href="#a5e81eba5906e8d755aec54afc7336ce4">More...</a><br/></td></tr>
 <tr class="separator:a5e81eba5906e8d755aec54afc7336ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a449509c9a7e6aab0317c0ce637256dc2"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a449509c9a7e6aab0317c0ce637256dc2">allCategories</a></td></tr>
+<tr class="memdesc:a449509c9a7e6aab0317c0ce637256dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a list of all categories  <a href="#a449509c9a7e6aab0317c0ce637256dc2">More...</a><br/></td></tr>
 <tr class="separator:a449509c9a7e6aab0317c0ce637256dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72924a7daceeb0a331be575178970b6b"><td class="memItemLeft" align="right" valign="top">(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a72924a7daceeb0a331be575178970b6b">countOfCategories</a></td></tr>
+<tr class="memdesc:a72924a7daceeb0a331be575178970b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the count of all categories  <a href="#a72924a7daceeb0a331be575178970b6b">More...</a><br/></td></tr>
 <tr class="separator:a72924a7daceeb0a331be575178970b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83fb24740ddd5be179d264cc93c54342"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a83fb24740ddd5be179d264cc93c54342">categoriesContainingKey:</a></td></tr>
+<tr class="memdesc:a83fb24740ddd5be179d264cc93c54342"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a list of all categories that contain a given key  <a href="#a83fb24740ddd5be179d264cc93c54342">More...</a><br/></td></tr>
 <tr class="separator:a83fb24740ddd5be179d264cc93c54342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04ac89c9b914976c361b99bd4e1eaef2"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a04ac89c9b914976c361b99bd4e1eaef2">categoriesContainingKey:withSorting:</a></td></tr>
+<tr class="memitem:a04ac89c9b914976c361b99bd4e1eaef2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04ac89c9b914976c361b99bd4e1eaef2"></a>
+(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <b>categoriesContainingKey:withSorting:</b></td></tr>
 <tr class="separator:a04ac89c9b914976c361b99bd4e1eaef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0467d985fc03b76b2cb98c8783c45806"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a0467d985fc03b76b2cb98c8783c45806">reservedCategories</a></td></tr>
+<tr class="memdesc:a0467d985fc03b76b2cb98c8783c45806"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a list of reserved categories - those that should not be deleted or renamed  <a href="#a0467d985fc03b76b2cb98c8783c45806">More...</a><br/></td></tr>
 <tr class="separator:a0467d985fc03b76b2cb98c8783c45806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98de0658b304f3a3a4a2d94552fab21"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#af98de0658b304f3a3a4a2d94552fab21">categoryExists:</a></td></tr>
+<tr class="memdesc:af98de0658b304f3a3a4a2d94552fab21"><td class="mdescLeft">&#160;</td><td class="mdescRight">test whether there is a category of the given name  <a href="#af98de0658b304f3a3a4a2d94552fab21">More...</a><br/></td></tr>
 <tr class="separator:af98de0658b304f3a3a4a2d94552fab21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdcd92e1213ee6d4975f9d59316718f1"><td class="memItemLeft" align="right" valign="top">(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#abdcd92e1213ee6d4975f9d59316718f1">countOfObjectsInCategory:</a></td></tr>
+<tr class="memdesc:abdcd92e1213ee6d4975f9d59316718f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">count how many objects in the category of the given name  <a href="#abdcd92e1213ee6d4975f9d59316718f1">More...</a><br/></td></tr>
 <tr class="separator:abdcd92e1213ee6d4975f9d59316718f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab185a5eb2b641ceb1af1670fd7ea0378"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ab185a5eb2b641ceb1af1670fd7ea0378">key:existsInCategory:</a></td></tr>
+<tr class="memdesc:ab185a5eb2b641ceb1af1670fd7ea0378"><td class="mdescLeft">&#160;</td><td class="mdescRight">query whether a given key is present in a particular category  <a href="#ab185a5eb2b641ceb1af1670fd7ea0378">More...</a><br/></td></tr>
 <tr class="separator:ab185a5eb2b641ceb1af1670fd7ea0378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fcb9b3505ec85c34e3276b2fbb6bf07"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a4fcb9b3505ec85c34e3276b2fbb6bf07">setRecentlyAddedListEnabled:</a></td></tr>
+<tr class="memdesc:a4fcb9b3505ec85c34e3276b2fbb6bf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">set whether the "recent;y added" list accepts new items or not  <a href="#a4fcb9b3505ec85c34e3276b2fbb6bf07">More...</a><br/></td></tr>
 <tr class="separator:a4fcb9b3505ec85c34e3276b2fbb6bf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398ed666663eb41fee12ad87441a0522"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a398ed666663eb41fee12ad87441a0522">addKey:toRecentList:</a></td></tr>
+<tr class="memdesc:a398ed666663eb41fee12ad87441a0522"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a key to one of the 'recent' lists  <a href="#a398ed666663eb41fee12ad87441a0522">More...</a><br/></td></tr>
 <tr class="separator:a398ed666663eb41fee12ad87441a0522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f52c77d12da9a4879f9b80ee380c214"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a2f52c77d12da9a4879f9b80ee380c214">removeKey:fromRecentList:</a></td></tr>
+<tr class="memdesc:a2f52c77d12da9a4879f9b80ee380c214"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove a key from one of the 'recent' lists  <a href="#a2f52c77d12da9a4879f9b80ee380c214">More...</a><br/></td></tr>
 <tr class="separator:a2f52c77d12da9a4879f9b80ee380c214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaa158c04ba5877cf9ae9236261043a8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#aaaa158c04ba5877cf9ae9236261043a8">setRecentList:maxItems:</a></td></tr>
+<tr class="memdesc:aaaa158c04ba5877cf9ae9236261043a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the maximum length of on eof the 'recent' lists  <a href="#aaaa158c04ba5877cf9ae9236261043a8">More...</a><br/></td></tr>
 <tr class="separator:aaaa158c04ba5877cf9ae9236261043a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e285681e4d6b75e6b8ebb8b3ad22a7"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a47e285681e4d6b75e6b8ebb8b3ad22a7">data</a></td></tr>
+<tr class="memdesc:a47e285681e4d6b75e6b8ebb8b3ad22a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">archives the container to a data object (for saving, etc)  <a href="#a47e285681e4d6b75e6b8ebb8b3ad22a7">More...</a><br/></td></tr>
 <tr class="separator:a47e285681e4d6b75e6b8ebb8b3ad22a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d3be95ad8820589a9a550e52839f34"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ac5d3be95ad8820589a9a550e52839f34">dataWithFormat:</a></td></tr>
+<tr class="memitem:ac5d3be95ad8820589a9a550e52839f34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5d3be95ad8820589a9a550e52839f34"></a>
+(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <b>dataWithFormat:</b></td></tr>
 <tr class="separator:ac5d3be95ad8820589a9a550e52839f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac223fadccf209e42f7183ab0cdfbc4c6"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ac223fadccf209e42f7183ab0cdfbc4c6">fileType</a></td></tr>
+<tr class="memdesc:ac223fadccf209e42f7183ab0cdfbc4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the filetype (for saving, etc)  <a href="#ac223fadccf209e42f7183ab0cdfbc4c6">More...</a><br/></td></tr>
 <tr class="separator:ac223fadccf209e42f7183ab0cdfbc4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24cdacab1e8438a45bd00fa2fb2f5610"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a24cdacab1e8438a45bd00fa2fb2f5610">replaceContentsWithData:</a></td></tr>
+<tr class="memdesc:a24cdacab1e8438a45bd00fa2fb2f5610"><td class="mdescLeft">&#160;</td><td class="mdescRight">discard all existing content, then reload from the archive data passed  <a href="#a24cdacab1e8438a45bd00fa2fb2f5610">More...</a><br/></td></tr>
 <tr class="separator:a24cdacab1e8438a45bd00fa2fb2f5610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537454a933a78869b460d7d0cbc0c4cf"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a537454a933a78869b460d7d0cbc0c4cf">appendContentsWithData:</a></td></tr>
+<tr class="memdesc:a537454a933a78869b460d7d0cbc0c4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">retain all existing content, and load additional content from the archive data passed  <a href="#a537454a933a78869b460d7d0cbc0c4cf">More...</a><br/></td></tr>
 <tr class="separator:a537454a933a78869b460d7d0cbc0c4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a05974e1ac4108b42472173cb144967"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a7a05974e1ac4108b42472173cb144967">copyItemsFromCategoryManager:</a></td></tr>
+<tr class="memdesc:a7a05974e1ac4108b42472173cb144967"><td class="mdescLeft">&#160;</td><td class="mdescRight">retain all existing content, and load additional content from the cat manager passed  <a href="#a7a05974e1ac4108b42472173cb144967">More...</a><br/></td></tr>
 <tr class="separator:a7a05974e1ac4108b42472173cb144967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f99a0628ecb60054a1c0918016d2be"><td class="memItemLeft" align="right" valign="top">(NSMenu *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a48f99a0628ecb60054a1c0918016d2be">categoriesMenuWithSelector:target:</a></td></tr>
+<tr class="memdesc:a48f99a0628ecb60054a1c0918016d2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a menu of categories, recent items and All Items  <a href="#a48f99a0628ecb60054a1c0918016d2be">More...</a><br/></td></tr>
 <tr class="separator:a48f99a0628ecb60054a1c0918016d2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a93b8986797c6322b83ef6c4554389"><td class="memItemLeft" align="right" valign="top">(NSMenu *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a07a93b8986797c6322b83ef6c4554389">categoriesMenuWithSelector:target:options:</a></td></tr>
+<tr class="memdesc:a07a93b8986797c6322b83ef6c4554389"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a menu of categories, recent items and All Items  <a href="#a07a93b8986797c6322b83ef6c4554389">More...</a><br/></td></tr>
 <tr class="separator:a07a93b8986797c6322b83ef6c4554389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d516f7f53901bae57697ad87d25fb55"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a0d516f7f53901bae57697ad87d25fb55">checkItemsInMenu:forCategoriesContainingKey:</a></td></tr>
+<tr class="memdesc:a0d516f7f53901bae57697ad87d25fb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the checkmarks in a menu of category names to reflect the presence of &lt;key&gt; in those categories  <a href="#a0d516f7f53901bae57697ad87d25fb55">More...</a><br/></td></tr>
 <tr class="separator:a0d516f7f53901bae57697ad87d25fb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c7c38bf7e5fe0db1a4393e542c80fa8"><td class="memItemLeft" align="right" valign="top">(NSMenu *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a0c7c38bf7e5fe0db1a4393e542c80fa8">createMenuWithItemDelegate:isPopUpMenu:</a></td></tr>
+<tr class="memdesc:a0c7c38bf7e5fe0db1a4393e542c80fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a complete menu of the entire contents of the receiver, arranged by category  <a href="#a0c7c38bf7e5fe0db1a4393e542c80fa8">More...</a><br/></td></tr>
 <tr class="separator:a0c7c38bf7e5fe0db1a4393e542c80fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdf2b47387ce2e3c47b1b190ff1fd99f"><td class="memItemLeft" align="right" valign="top">(NSMenu *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#afdf2b47387ce2e3c47b1b190ff1fd99f">createMenuWithItemDelegate:options:</a></td></tr>
+<tr class="memitem:afdf2b47387ce2e3c47b1b190ff1fd99f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdf2b47387ce2e3c47b1b190ff1fd99f"></a>
+(NSMenu *)&#160;</td><td class="memItemRight" valign="bottom">- <b>createMenuWithItemDelegate:options:</b></td></tr>
 <tr class="separator:afdf2b47387ce2e3c47b1b190ff1fd99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac672c9838226fd037837c4b10815e986"><td class="memItemLeft" align="right" valign="top">(NSMenu *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#ac672c9838226fd037837c4b10815e986">createMenuWithItemDelegate:itemTarget:itemAction:options:</a></td></tr>
+<tr class="memitem:ac672c9838226fd037837c4b10815e986"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac672c9838226fd037837c4b10815e986"></a>
+(NSMenu *)&#160;</td><td class="memItemRight" valign="bottom">- <b>createMenuWithItemDelegate:itemTarget:itemAction:options:</b></td></tr>
 <tr class="separator:ac672c9838226fd037837c4b10815e986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1cc66da8a7d09bcf7c606ead8e181ac"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#aa1cc66da8a7d09bcf7c606ead8e181ac">removeMenu:</a></td></tr>
+<tr class="memdesc:aa1cc66da8a7d09bcf7c606ead8e181ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the menu from the list of managed menus  <a href="#aa1cc66da8a7d09bcf7c606ead8e181ac">More...</a><br/></td></tr>
 <tr class="separator:aa1cc66da8a7d09bcf7c606ead8e181ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a584955d355a7e09daa4a1a58f5562660"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_category_manager.html#a584955d355a7e09daa4a1a58f5562660">updateMenusForKey:</a></td></tr>
+<tr class="memdesc:a584955d355a7e09daa4a1a58f5562660"><td class="mdescLeft">&#160;</td><td class="mdescRight">synchronises the menus to reflect any change of the object referenced by &lt;key&gt;  <a href="#a584955d355a7e09daa4a1a58f5562660">More...</a><br/></td></tr>
 <tr class="separator:a584955d355a7e09daa4a1a58f5562660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
 <tr class="memitem:a8610369869dad94304b6e325c6728118"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_category_manager.html">DKCategoryManager</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_category_manager.html#a8610369869dad94304b6e325c6728118">categoryManager</a></td></tr>
+<tr class="memdesc:a8610369869dad94304b6e325c6728118"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a new category manager object  <a href="#a8610369869dad94304b6e325c6728118">More...</a><br/></td></tr>
 <tr class="separator:a8610369869dad94304b6e325c6728118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab80419455e64b7b78b1d40d68df702a7"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_category_manager.html">DKCategoryManager</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_category_manager.html#ab80419455e64b7b78b1d40d68df702a7">categoryManagerWithDictionary:</a></td></tr>
+<tr class="memdesc:ab80419455e64b7b78b1d40d68df702a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a new category manager object based on an existing dictionary  <a href="#ab80419455e64b7b78b1d40d68df702a7">More...</a><br/></td></tr>
 <tr class="separator:ab80419455e64b7b78b1d40d68df702a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d4a2873544bc76f36455642426fcde"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_category_manager.html#a61d4a2873544bc76f36455642426fcde">defaultCategories</a></td></tr>
+<tr class="memdesc:a61d4a2873544bc76f36455642426fcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the default categories defined for this class  <a href="#a61d4a2873544bc76f36455642426fcde">More...</a><br/></td></tr>
 <tr class="separator:a61d4a2873544bc76f36455642426fcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ccddb1c0c29d1296b562e4268db255"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_category_manager.html#a02ccddb1c0c29d1296b562e4268db255">categoryManagerKeyForObject:</a></td></tr>
+<tr class="memdesc:a02ccddb1c0c29d1296b562e4268db255"><td class="mdescLeft">&#160;</td><td class="mdescRight">given an object, return a key that can be used to store it in the category manager.  <a href="#a02ccddb1c0c29d1296b562e4268db255">More...</a><br/></td></tr>
 <tr class="separator:a02ccddb1c0c29d1296b562e4268db255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a897d5be126c6acf916fae68cebabc442"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_category_manager.html#a897d5be126c6acf916fae68cebabc442">dearchivingHelper</a></td></tr>
+<tr class="memitem:a897d5be126c6acf916fae68cebabc442"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a897d5be126c6acf916fae68cebabc442"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>dearchivingHelper</b></td></tr>
 <tr class="separator:a897d5be126c6acf916fae68cebabc442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4598eded10f08e99464efa99d5b0e1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_category_manager.html#aaa4598eded10f08e99464efa99d5b0e1">setDearchivingHelper:</a></td></tr>
+<tr class="memitem:aaa4598eded10f08e99464efa99d5b0e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa4598eded10f08e99464efa99d5b0e1"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setDearchivingHelper:</b></td></tr>
 <tr class="separator:aaa4598eded10f08e99464efa99d5b0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
@@ -268,6 +338,14 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>create a new categories with the given names </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catNames</td><td>a list of the names of the new categories </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a31b77a53768456ee574a92d8239ef99f"></a>
@@ -284,6 +362,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>create a new category with the given name </p>
+<dl class="section note"><dt>Note</dt><dd>if the name is already a category name, this does nothing </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the name of the new category </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aa10156ae220301d3fb5d3369aa4201b1"></a>
@@ -298,6 +385,9 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>add the default categories defined for this class or object </p>
+<dl class="section note"><dt>Note</dt><dd>is called as part of the initialisation of the CM object </dd></dl>
 
 </div>
 </div>
@@ -331,6 +421,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>adds a new key to several categories, optionally creating any if necessary </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key to add </td></tr>
+    <tr><td class="paramname">catNames</td><td>a list of categories to add it to </td></tr>
+    <tr><td class="paramname">cg</td><td>YES to create the category if it doesn't exist, NO otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a13c8d289a3f3437abbda0d6a2bd15b9d"></a>
@@ -363,6 +463,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>adds a new key to a category, optionally creating it if necessary </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key to add </td></tr>
+    <tr><td class="paramname">catName</td><td>the category to add it to </td></tr>
+    <tr><td class="paramname">cg</td><td>YES to create the category if it doesn't exist, NO otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a398ed666663eb41fee12ad87441a0522"></a>
@@ -388,6 +498,17 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>add a key to one of the 'recent' lists </p>
+<dl class="section note"><dt>Note</dt><dd>acceptable list IDs are kDKListRecentlyAdded and kDKListRecentlyUsed </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key to add </td></tr>
+    <tr><td class="paramname">whichList</td><td>an identifier for the list in question </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return YES if the key was added, otherwise NO (i.e. if list already contains item) </dd></dl>
 
 </div>
 </div>
@@ -427,6 +548,18 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>add an object to the container, associating with a key and optionally a number of categories. </p>
+<dl class="section note"><dt>Note</dt><dd>&lt;obj&gt; and &lt;name&gt; cannot be nil. All objects are added to the default category regardless of &lt;catNames&gt; </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>the object to add </td></tr>
+    <tr><td class="paramname">name</td><td>the object's key </td></tr>
+    <tr><td class="paramname">catNames</td><td>the names of the categories to add it to, or nil for defaults </td></tr>
+    <tr><td class="paramname">cg</td><td>YES to create the categories if they don't exist. NO not to do so </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a5f0ebdcea8652f330e08183c6ace1d03"></a>
@@ -465,6 +598,18 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>add an object to the container, associating with a key and optionally a category. </p>
+<dl class="section note"><dt>Note</dt><dd>&lt;obj&gt; and &lt;name&gt; cannot be nil. All objects are added to the default category regardless of &lt;catName&gt; </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>the object to add </td></tr>
+    <tr><td class="paramname">name</td><td>the object's key </td></tr>
+    <tr><td class="paramname">catName</td><td>the name of the category to add it to, or nil for defaults only </td></tr>
+    <tr><td class="paramname">cg</td><td>YES to create the category if it doesn't exist. NO not to do so </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a449509c9a7e6aab0317c0ce637256dc2"></a>
@@ -480,20 +625,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a5d54729829c6cf87a5e12640b7a5380b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSArray *) allKeys </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>get a list of all categories </p>
+<dl class="section note"><dt>Note</dt><dd>the list is alphabetically sorted for the convenience of a user interface </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an array containg a list of all category names </dd></dl>
 
 </div>
 </div>
@@ -511,6 +645,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return all of the keys in all given categories </p>
+<dl class="section note"><dt>Note</dt><dd>returned objects are in no particular order. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catNames</td><td>an array of category names </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, the union of keys in listed categories. May be empty. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ad80345b5b77f23bfec084d1a32b88b64"></a>
@@ -527,6 +671,18 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return all of the keys in a given category </p>
+<dl class="section note"><dt>Note</dt><dd>returned objects are in no particular order. This also treats the "recently used" and "recently added" items as pseudo-category names, returning these arrays if the catName matches. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the category name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, the list of keys indicated by the category. May be empty.return all of the keys </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>returned objects are in no particular order. The keys are obtained by enumerating the categories because the master list contains case-modified keys that may not be matched with categories. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, all keys (listed only once) </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a543080844dc1b59952837e3c4fe3a860"></a>
@@ -541,6 +697,9 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return all of the objects </p>
+<dl class="section return"><dt>Returns</dt><dd>an array, all objects (listed only once, in arbitrary order) </dd></dl>
 
 </div>
 </div>
@@ -558,6 +717,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return all of the keys in a given category, sorted into some useful order </p>
+<dl class="section note"><dt>Note</dt><dd>by default the keys are sorted alphabetically. The UI-building methods call this, so a subclass can override it and return keys sorted by some other criteria if required. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the category name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, the list of keys indicated by the category. May be empty. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="acfd380954feb03ba161a05e6d64abb23"></a>
@@ -573,6 +742,16 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return all of the names in a given category, sorted into some useful order </p>
+<dl class="section note"><dt>Note</dt><dd>For an ordinary <a class="el" href="interface_d_k_category_manager.html">DKCategoryManager</a>, names == keys. However, subclasses may store keys in some other fashion (hint: they do) and so another method is needed to convert keys to names. Those subclasses must override this and do what's appropriate. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the category name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, the list of names indicated by the category. May be empty. </dd></dl>
 
 </div>
 </div>
@@ -590,6 +769,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>retain all existing content, and load additional content from the archive data passed </p>
+<dl class="section note"><dt>Note</dt><dd>because at this level <a class="el" href="interface_d_k_category_manager.html">DKCategoryManager</a> has no knowledge of the objects it is storing, it has no means to be smart about merging objects that are the same in some higher abstract way. Thus it's entirely possible to end up with multiple copies of the "same" object after this operation. Subclasses may prefer to do something smarter. Note however that duplicate categories are not created. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data, being an archive earlier obtained using -data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if the archive could be read, NO otherwise </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a83fb24740ddd5be179d264cc93c54342"></a>
@@ -606,31 +795,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a04ac89c9b914976c361b99bd4e1eaef2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSArray *) <a class="el" href="interface_d_k_category_manager.html#a83fb24740ddd5be179d264cc93c54342">categoriesContainingKey:</a> </td>
-          <td></td>
-          <td class="paramtype">(NSString*)&#160;</td>
-          <td class="paramname"><em>key</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">withSorting:</td>
-          <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>sortIt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>get a list of all categories that contain a given key </p>
+<dl class="section note"><dt>Note</dt><dd>the list is alphabetically sorted for the convenience of a user interface </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key in question </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array containing a list of categories which contain the key </dd></dl>
 
 </div>
 </div>
@@ -657,6 +830,17 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>creates a menu of categories, recent items and All Items </p>
+<dl class="section note"><dt>Note</dt><dd>sel and target may be nil </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sel</td><td>the selector which is set as the action for each added item </td></tr>
+    <tr><td class="paramname">target</td><td>the target of category item actions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a menu populated with category and other names </dd></dl>
 
 </div>
 </div>
@@ -690,6 +874,18 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>creates a menu of categories, recent items and All Items </p>
+<dl class="section note"><dt>Note</dt><dd>sel and target may be nil, options may be 0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sel</td><td>the selector which is set as the action for each category item </td></tr>
+    <tr><td class="paramname">target</td><td>the target of category item actions </td></tr>
+    <tr><td class="paramname">options</td><td>various flags which set which items are added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a menu populated with category and other names </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af98de0658b304f3a3a4a2d94552fab21"></a>
@@ -706,6 +902,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>test whether there is a category of the given name </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the category name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if a category exists with the name, NO otherwise </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8610369869dad94304b6e325c6728118"></a>
@@ -720,6 +925,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns a new category manager object </p>
+<dl class="section note"><dt>Note</dt><dd>convenience method. Initial categories only consist of "All Items" </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a category manager object </dd></dl>
 
 </div>
 </div>
@@ -737,6 +946,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>given an object, return a key that can be used to store it in the category manager. </p>
+<dl class="section note"><dt>Note</dt><dd>subclasses will need to define this differently - used for merging. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>an object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a key string </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ab80419455e64b7b78b1d40d68df702a7"></a>
@@ -752,6 +971,16 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns a new category manager object based on an existing dictionary </p>
+<dl class="section note"><dt>Note</dt><dd>convenience method. Initial categories only consist of "All Items" </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dict</td><td>an existign dictionary </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a category manager object </dd></dl>
 
 </div>
 </div>
@@ -779,6 +1008,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>sets the checkmarks in a menu of category names to reflect the presence of &lt;key&gt; in those categories </p>
+<dl class="section note"><dt>Note</dt><dd>assumes that item names will be the category names. For localized names, you should handle the localization external to this class so that both category names and menu items use the same strings. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menu</td><td>the menu to examine </td></tr>
+    <tr><td class="paramname">key</td><td>the key to test against </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aea44f48031670ef3d66354f5a8c2653f"></a>
@@ -789,11 +1028,20 @@ Class Methods</h2></td></tr>
           <td class="memname">- (BOOL) containsKey: </td>
           <td></td>
           <td class="paramtype">(NSString*)&#160;</td>
-          <td class="paramname"><em>name</em></td>
+          <td class="paramname"><em>key</em></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>test whether the key is known to the container </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the object's key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if known, NO if not </dd></dl>
 
 </div>
 </div>
@@ -811,6 +1059,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>retain all existing content, and load additional content from the cat manager passed </p>
+<dl class="section note"><dt>Note</dt><dd>categories not present in the receiver but exist in &lt;cm&gt; are created, and objects present in &lt;cm&gt; are added to the receiver if not already present (as determined solely by address). This method disables the "recently added" list while it adds the items. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cm</td><td>a category manager object </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aec801666509bde1ab8c9f67d3ba4f76d"></a>
@@ -825,6 +1082,9 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return total number of stored objects in container </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of objects </dd></dl>
 
 </div>
 </div>
@@ -841,6 +1101,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>get the count of all categories </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of categories currently defined </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="abdcd92e1213ee6d4975f9d59316718f1"></a>
@@ -856,6 +1119,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>count how many objects in the category of the given name </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the category name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of objects in the category </dd></dl>
 
 </div>
 </div>
@@ -883,69 +1155,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ac672c9838226fd037837c4b10815e986"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSMenu *) createMenuWithItemDelegate: </td>
-          <td></td>
-          <td class="paramtype">(id)&#160;</td>
-          <td class="paramname"><em>del</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">itemTarget:</td>
-          <td></td>
-          <td class="paramtype">(id)&#160;</td>
-          <td class="paramname"><em>target</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">itemAction:</td>
-          <td></td>
-          <td class="paramtype">(SEL)&#160;</td>
-          <td class="paramname"><em>action</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">options:</td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="_d_k_category_manager_8h.html#aca431e29d8be528ff776fe1fc753c9ea">DKCategoryMenuOptions</a>)&#160;</td>
-          <td class="paramname"><em>options</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afdf2b47387ce2e3c47b1b190ff1fd99f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSMenu *) createMenuWithItemDelegate: </td>
-          <td></td>
-          <td class="paramtype">(id)&#160;</td>
-          <td class="paramname"><em>del</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">options:</td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="_d_k_category_manager_8h.html#aca431e29d8be528ff776fe1fc753c9ea">DKCategoryMenuOptions</a>)&#160;</td>
-          <td class="paramname"><em>options</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>creates a complete menu of the entire contents of the receiver, arranged by category </p>
+<dl class="section note"><dt>Note</dt><dd>the menu returned lists the categories, each of which is a submenu containing the actual objects corresponding to the category contents. It also populates a recent items and added items submenu. the callback object needs to set up the menu item based on the object itself. The object is added automatically as the menu item's represented object. This is one easy way to create a simple UI to the cat manager, where you can simply pick an item from the menu. Note that the returned menu is fully managed - as objects are added and removed the menu will be directly managed to keep in synch. Thus the client code does not need to bother doing this just to keep the menus up to date. The menu updating is done very efficiently for performance. If the content of a menu item needs to change, call -updateMenusForKey: for the object key in question. When the client is dealloc'd, it should call -removeMenu: for any menus it obtained using this, so that stale references to the callback object are cleared out. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>an object that is called back with each menu item created (may be nil) </td></tr>
+    <tr><td class="paramname">isPopUp</td><td>set YES if menu is destined for use as a popup (adds extra zeroth item) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a menu object </dd></dl>
 
 </div>
 </div>
@@ -962,36 +1181,8 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ac5d3be95ad8820589a9a550e52839f34"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSData *) dataWithFormat: </td>
-          <td></td>
-          <td class="paramtype">(NSPropertyListFormat)&#160;</td>
-          <td class="paramname"><em>format</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a897d5be126c6acf916fae68cebabc442"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (id) dearchivingHelper </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>archives the container to a data object (for saving, etc) </p>
+<dl class="section return"><dt>Returns</dt><dd>a data object, the archive of the container </dd></dl>
 
 </div>
 </div>
@@ -1008,6 +1199,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return the default categories defined for this class or object </p>
+<dl class="section return"><dt>Returns</dt><dd>an array of categories </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a61d4a2873544bc76f36455642426fcde"></a>
@@ -1022,6 +1216,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return the default categories defined for this class </p>
+<p>return the default categories defined for this class or object</p>
+<dl class="section return"><dt>Returns</dt><dd>an array of categories </dd></dl>
 
 </div>
 </div>
@@ -1038,6 +1236,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return a copy of the master dictionary </p>
+<dl class="section return"><dt>Returns</dt><dd>the main dictionary </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ac223fadccf209e42f7183ab0cdfbc4c6"></a>
@@ -1053,6 +1254,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return the filetype (for saving, etc) </p>
+<dl class="section note"><dt>Note</dt><dd>subclasses should override to change the filetype used for specific examples of this object </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a1700abd0acd419236a0fe785fea71b85"></a>
@@ -1067,6 +1271,9 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>checks that all keys refer to real objects, removing any that do not </p>
+<dl class="section note"><dt>Note</dt><dd>rarely needed, but can correct for corrupted registries where objects got removed but not all keys that refer to it did for some reason (such as an exception). </dd></dl>
 
 </div>
 </div>
@@ -1084,6 +1291,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>initialized a category manager object from archive data </p>
+<dl class="section note"><dt>Note</dt><dd>data is permitted also to be an archived dictionary </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data containing a correctly archived category manager </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the category manager object </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a5c7748189f323da5bae240d77d98b67c"></a>
@@ -1099,6 +1316,16 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>initialized a category manager object from an existing dictionary </p>
+<dl class="section note"><dt>Note</dt><dd>no categories other than "All Items" are created by default. The recently added list is empty. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dict</td><td>dictionary containing a set of objects and keys </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the category manager object </dd></dl>
 
 </div>
 </div>
@@ -1126,6 +1353,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>query whether a given key is present in a particular category </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key </td></tr>
+    <tr><td class="paramname">catName</td><td>the category name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if the category contains &lt;key&gt;, NO if it doesn't </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a634c2867195a8e2a49a09ae4ca5db356"></a>
@@ -1141,6 +1378,16 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns a list of all unique keys that refer to the given object </p>
+<dl class="section note"><dt>Note</dt><dd>The result may contain no keys if the object is unknown </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>the object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, listing all the unique keys that refer to the object. </dd></dl>
 
 </div>
 </div>
@@ -1168,6 +1415,17 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>asks delegate to make decision about the merging of an object </p>
+<dl class="section note"><dt>Note</dt><dd>subclasses must override this to make use of it. Returning nil means use existing object. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>the object to consider </td></tr>
+    <tr><td class="paramname">aDelegate</td><td>the delegate to ask </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an equivalent object or nil. May be the supplied object or another having an identical ID. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aaf327aae32496c857ad960ef80a25de6"></a>
@@ -1189,7 +1447,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="paramkey">mergeOptions:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="_d_k_category_manager_8h.html#afa9cd0053f872ec36d9e1bf85da6ec80">DKCatManagerMergeOptions</a>)&#160;</td>
+          <td class="paramtype">(DKCatManagerMergeOptions)&#160;</td>
           <td class="paramname"><em>options</em></td>
         </tr>
         <tr>
@@ -1206,6 +1464,18 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>smartly merges objects into the category manager </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aSet</td><td>a set of objects of the same kind as the current contents </td></tr>
+    <tr><td class="paramname">categories</td><td>an optional list of categories to add th eobjects to. Categories will be created if needed. </td></tr>
+    <tr><td class="paramname">options</td><td>replacxement options. Delegate may override these. </td></tr>
+    <tr><td class="paramname">adelegate</td><td>an optional delegate that can be asked to make decisions about which objects get replaced. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a set, possibly empty. The set contains those objects that already existed in the CM that should replace equivalent items in the supplied set. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af809e967d21b80a9a8c0dd4fbc416a3f"></a>
@@ -1221,6 +1491,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return the object for the given key, but do not remember it in the "recently used" list </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the object's key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the object if available, else nil </dd></dl>
 
 </div>
 </div>
@@ -1248,6 +1527,17 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return the object for the given key, optionally remembering it in the "recently used" list </p>
+<dl class="section note"><dt>Note</dt><dd>use this method when you wish this access of the object to result in it being added to "recently used" </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the object's key </td></tr>
+    <tr><td class="paramname">add</td><td>if YES, object's key is added to recently used items </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the object if available, else nil </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4f0c4c44c059475a6db0ae2919da2849"></a>
@@ -1263,6 +1553,16 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return all of the objects belonging to the given categories </p>
+<dl class="section note"><dt>Note</dt><dd>returned objects are in no particular order, but do match the key order obtained by -allKeysInCategories:. Should any key not exist (which should never normally occur), the entry will be represented by a NSNull object </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catNames</td><td>list of categories </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, the list of objects indicated by the categories. May be empty. </dd></dl>
 
 </div>
 </div>
@@ -1280,6 +1580,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return all of the objects belonging to a given category </p>
+<dl class="section note"><dt>Note</dt><dd>returned objects are in no particular order, but do match the key order obtained by -allkeysInCategory. Should any key not exist (which should never normally occur), the entry will be represented by a NSNull object </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the category name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, the list of objects indicated by the category. May be empty. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ae6f9b8033e980245673b99ff59ac70bb"></a>
@@ -1294,6 +1604,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return the list of recently added items </p>
+<dl class="section note"><dt>Note</dt><dd>returned objects are in order of addition, most recent first. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, the list of keys recently added. </dd></dl>
 
 </div>
 </div>
@@ -1310,6 +1624,10 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return the list of recently used items </p>
+<dl class="section note"><dt>Note</dt><dd>returned objects are in order of use, most recent first. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an array, the list of keys recently used. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a43e2c5e338344a4fe7373487d5aae79f"></a>
@@ -1324,6 +1642,9 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>removes all categories and objects from the CM. </p>
+<dl class="section note"><dt>Note</dt><dd>after this the CM is entirely empty. </dd></dl>
 
 </div>
 </div>
@@ -1340,6 +1661,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>removes all objects from the container </p>
+<dl class="section note"><dt>Note</dt><dd>does not remove the categories, but leaves them all empty. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0671acee1f7fe95b4f823ec5ff7b0480"></a>
@@ -1355,6 +1679,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>remove a category with the given name </p>
+<dl class="section note"><dt>Note</dt><dd>The objects listed in the category are not removed, as they may also be listed by other categories. If they are not, they can become orphaned however. To avoid this, never delete the "All Items" category. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the category to remove </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1382,6 +1715,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>removes a key from a number of categories </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key to remove </td></tr>
+    <tr><td class="paramname">catNames</td><td>the list of categories to remove it from </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a712570e5433ae44a763d1a15e4d10ab2"></a>
@@ -1407,6 +1749,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>removes a key from a category </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key to remove </td></tr>
+    <tr><td class="paramname">catName</td><td>the category to remove it from </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1434,6 +1785,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>remove a key from one of the 'recent' lists </p>
+<dl class="section note"><dt>Note</dt><dd>acceptable list IDs are kDKListRecentlyAdded and kDKListRecentlyUsed </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key to remove </td></tr>
+    <tr><td class="paramname">whichList</td><td>an identifier for the list in question </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="adb9d9caca32600745ad0abffcd12d226"></a>
@@ -1449,6 +1810,14 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>removes a key from all categories </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key to remove </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1466,6 +1835,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>removes the menu from the list of managed menus </p>
+<dl class="section note"><dt>Note</dt><dd>an object using a menu created by the category manager must remove it from management when it is no longer needed as a stale reference can cause a crash. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menu</td><td>a menu managed by this object </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a34bd33daf2f4eca1b12e2b15d6be0c50"></a>
@@ -1482,6 +1860,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>remove an object from the container </p>
+<dl class="section note"><dt>Note</dt><dd>after this the key will not be found in any category or either list </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the object's key </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a8e0dbbc4044689cfdade2720af9aa279"></a>
@@ -1497,6 +1884,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>remove multiple objects from the container </p>
+<dl class="section note"><dt>Note</dt><dd>after this no keys will not be found in any category or either list </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td>a list of keys </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1524,6 +1920,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>change a category's name </p>
+<dl class="section note"><dt>Note</dt><dd>if &lt;newname&gt; already exists, it will be replaced by the entries in &lt;catname&gt; </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">catName</td><td>the category's old name </td></tr>
+    <tr><td class="paramname">newname</td><td>the category's new name </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a5e81eba5906e8d755aec54afc7336ce4"></a>
@@ -1550,6 +1956,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>renames an object's key throughout </p>
+<dl class="section note"><dt>Note</dt><dd>if &lt;key&gt; doesn't exist, or if &lt;newkey&gt; already exists, throws an exception. After this the same object that could be located using &lt;key&gt; can be located using &lt;newKey&gt; in the same categories as it appeared in originally. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the existing key </td></tr>
+    <tr><td class="paramname">newKey</td><td>the new key </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a24cdacab1e8438a45bd00fa2fb2f5610"></a>
@@ -1566,6 +1982,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>discard all existing content, then reload from the archive data passed </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data, being an archive earlier obtained using -data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if the archive could be read, NO otherwise </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0467d985fc03b76b2cb98c8783c45806"></a>
@@ -1581,21 +2006,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="aaa4598eded10f08e99464efa99d5b0e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (void) setDearchivingHelper: </td>
-          <td></td>
-          <td class="paramtype">(id)&#160;</td>
-          <td class="paramname"><em>helper</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>get a list of reserved categories - those that should not be deleted or renamed </p>
+<dl class="section note"><dt>Note</dt><dd>this list is advisory - a UI is responsible for honouring it, the cat manager itself ignores it. The default implementation returns the same as the default categories, thus reserving all default cats. Subclasses can change this as they wish. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an array containing a list of the reserved categories </dd></dl>
 
 </div>
 </div>
@@ -1623,6 +2036,16 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>sets the maximum length of on eof the 'recent' lists </p>
+<dl class="section note"><dt>Note</dt><dd>acceptable list IDs are kDKListRecentlyAdded and kDKListRecentlyUsed </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">whichList</td><td>an identifier for the list in question </td></tr>
+    <tr><td class="paramname">max</td><td>the maximum length to which a list may grow </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a6ab7a5bce97828fe9a0b73786cebe84c"></a>
@@ -1638,6 +2061,14 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>replaces the recently added items with new items, up to the current max. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>an array of suitable objects </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1655,6 +2086,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>set whether the "recent;y added" list accepts new items or not </p>
+<dl class="section note"><dt>Note</dt><dd>this allows the recently added items to be temporarily disabled when bulk adding items to the manager. By default the recently added items list is enabled. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>YES to allow new items to be added, NO otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a584955d355a7e09daa4a1a58f5562660"></a>
@@ -1671,16 +2111,25 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>synchronises the menus to reflect any change of the object referenced by &lt;key&gt; </p>
+<dl class="section note"><dt>Note</dt><dd>any change to a stored object that affects the menus' appearance can be handled by calling this. this only changes the menu items that represent the object, and not the entire menu, so is an efficient way to keep menus up to date with changes. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>an object's key </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>framework/Code/<a class="el" href="_d_k_category_manager_8h_source.html">DKCategoryManager.h</a></li>
-<li>framework/Code/<a class="el" href="_d_k_category_manager_8m.html">DKCategoryManager.m</a></li>
+<li><a class="el" href="_d_k_category_manager_8h_source.html">DKCategoryManager.h</a></li>
+<li>DKCategoryManager.m</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:03 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

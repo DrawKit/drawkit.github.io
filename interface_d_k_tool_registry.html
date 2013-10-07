@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,8 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKToolRegistry Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#import &lt;<a class="el" href="_d_k_tool_registry_8h_source.html">DKToolRegistry.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DKToolRegistry:</div>
 <div class="dyncontent">
@@ -106,47 +104,40 @@ Inheritance diagram for DKToolRegistry:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:a37e59c718e3b3340c8d2cb8bb9445555"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_drawing_tool.html">DKDrawingTool</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a37e59c718e3b3340c8d2cb8bb9445555">drawingToolWithName:</a></td></tr>
+<tr class="memdesc:a37e59c718e3b3340c8d2cb8bb9445555"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a named tool from the registry  <a href="#a37e59c718e3b3340c8d2cb8bb9445555">More...</a><br/></td></tr>
 <tr class="separator:a37e59c718e3b3340c8d2cb8bb9445555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ad67c0519085993d1e31cd35e15677"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a29ad67c0519085993d1e31cd35e15677">registerDrawingTool:withName:</a></td></tr>
+<tr class="memdesc:a29ad67c0519085993d1e31cd35e15677"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a tool to the registry  <a href="#a29ad67c0519085993d1e31cd35e15677">More...</a><br/></td></tr>
 <tr class="separator:a29ad67c0519085993d1e31cd35e15677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fc32ed6084646e6cb7ba8694cf50cb8"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_drawing_tool.html">DKDrawingTool</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a6fc32ed6084646e6cb7ba8694cf50cb8">drawingToolWithKeyboardEquivalent:</a></td></tr>
+<tr class="memdesc:a6fc32ed6084646e6cb7ba8694cf50cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the tool having a key equivalent matching the key event  <a href="#a6fc32ed6084646e6cb7ba8694cf50cb8">More...</a><br/></td></tr>
 <tr class="separator:a6fc32ed6084646e6cb7ba8694cf50cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a348adf6002c3c89662a7113095f754ba"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a348adf6002c3c89662a7113095f754ba">registerStandardTools</a></td></tr>
+<tr class="memitem:a348adf6002c3c89662a7113095f754ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a348adf6002c3c89662a7113095f754ba"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>registerStandardTools</b></td></tr>
 <tr class="separator:a348adf6002c3c89662a7113095f754ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bebb6bfce8d788ea7bb698e9e3c3b36"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a0bebb6bfce8d788ea7bb698e9e3c3b36">toolNames</a></td></tr>
+<tr class="memitem:a0bebb6bfce8d788ea7bb698e9e3c3b36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bebb6bfce8d788ea7bb698e9e3c3b36"></a>
+(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <b>toolNames</b></td></tr>
 <tr class="separator:a0bebb6bfce8d788ea7bb698e9e3c3b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f8c3943036b5f06e034f68eb963cd4"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a12f8c3943036b5f06e034f68eb963cd4">allKeysForTool:</a></td></tr>
+<tr class="memitem:a12f8c3943036b5f06e034f68eb963cd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12f8c3943036b5f06e034f68eb963cd4"></a>
+(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <b>allKeysForTool:</b></td></tr>
 <tr class="separator:a12f8c3943036b5f06e034f68eb963cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50b5f959911eaf33d097fe4acf21469"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#aa50b5f959911eaf33d097fe4acf21469">tools</a></td></tr>
+<tr class="memitem:aa50b5f959911eaf33d097fe4acf21469"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa50b5f959911eaf33d097fe4acf21469"></a>
+(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <b>tools</b></td></tr>
 <tr class="separator:aa50b5f959911eaf33d097fe4acf21469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
 <tr class="memitem:a74b7bf5d9f294d139c7bf3223138bb21"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_tool_registry.html">DKToolRegistry</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_tool_registry.html#a74b7bf5d9f294d139c7bf3223138bb21">sharedToolRegistry</a></td></tr>
+<tr class="memdesc:a74b7bf5d9f294d139c7bf3223138bb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the shared tool registry  <a href="#a74b7bf5d9f294d139c7bf3223138bb21">More...</a><br/></td></tr>
 <tr class="separator:a74b7bf5d9f294d139c7bf3223138bb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab99ac9bf80ee93eaaa7a909166594aff"><td class="memItemLeft" align="right" valign="top">NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_d_k_tool_registry.html#ab99ac9bf80ee93eaaa7a909166594aff">mToolsReg</a></td></tr>
+<tr class="memitem:ab99ac9bf80ee93eaaa7a909166594aff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab99ac9bf80ee93eaaa7a909166594aff"></a>
+NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>mToolsReg</b></td></tr>
 <tr class="separator:ab99ac9bf80ee93eaaa7a909166594aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a12f8c3943036b5f06e034f68eb963cd4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSArray *) allKeysForTool: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_d_k_drawing_tool.html">DKDrawingTool</a>*)&#160;</td>
-          <td class="paramname"><em>tool</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a6fc32ed6084646e6cb7ba8694cf50cb8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -160,6 +151,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>find the tool having a key equivalent matching the key event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyEvent</td><td>the key event to match </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the tool if found, or nil </dd></dl>
 
 </div>
 </div>
@@ -176,6 +176,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return a named tool from the registry </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the tool of interest </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the tool if found, or nil if not </dd></dl>
 
 </div>
 </div>
@@ -203,20 +212,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a348adf6002c3c89662a7113095f754ba"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) registerStandardTools </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>add a tool to the registry </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tool</td><td>the tool to register </td></tr>
+    <tr><td class="paramname">name</td><td>the name of the tool of interest </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -233,67 +236,20 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a0bebb6bfce8d788ea7bb698e9e3c3b36"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSArray *) toolNames </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa50b5f959911eaf33d097fe4acf21469"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSArray *) tools </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ab99ac9bf80ee93eaaa7a909166594aff"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSMutableDictionary*) mToolsReg</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>return the shared tool registry </p>
+<dl class="section note"><dt>Note</dt><dd>creates the registry if needed and installs the standard tools. For other tool collections you can instantiate a <a class="el" href="interface_d_k_tool_registry.html">DKToolRegistry</a> and add tools to it. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a shared <a class="el" href="interface_d_k_tool_registry.html">DKToolRegistry</a> object </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>framework/Code/<a class="el" href="_d_k_tool_registry_8h_source.html">DKToolRegistry.h</a></li>
-<li>framework/Code/<a class="el" href="_d_k_tool_registry_8m.html">DKToolRegistry.m</a></li>
+<li><a class="el" href="_d_k_tool_registry_8h_source.html">DKToolRegistry.h</a></li>
+<li>DKToolRegistry.m</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:04 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:15 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

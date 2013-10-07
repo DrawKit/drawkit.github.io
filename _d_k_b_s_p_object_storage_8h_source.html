@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKBSPObjectStorage.h Source File</title>
+<title>DrawKit: DKBSPObjectStorage.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,112 +88,91 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKBSPObjectStorage.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_b_s_p_object_storage_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_d_k_linear_object_storage_8h.html">DKLinearObjectStorage.h</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;DKLinearObjectStorage.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_d_k_b_s_p_index_tree.html">DKBSPIndexTree</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_d_k_b_s_p_index_tree.html">DKBSPIndexTree</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415afbd2b656599fd32c8e6f0c231c86ebf8">   20</a></span>&#160;    <a class="code" href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415afbd2b656599fd32c8e6f0c231c86ebf8">kNodeHorizontal</a>,</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415a1fc45de6a37e0b1a91e4ffbd4a3da8f9">   21</a></span>&#160;    <a class="code" href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415a1fc45de6a37e0b1a91e4ffbd4a3da8f9">kNodeVertical</a>,</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415a1fd64d2acd1674010f05a60d09c2b95a">   22</a></span>&#160;    <a class="code" href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415a1fd64d2acd1674010f05a60d09c2b95a">kNodeLeaf</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415">DKLeafType</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    kNodeHorizontal,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    kNodeVertical,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    kNodeLeaf</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;DKLeafType;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294a290a11901e0a258dea605f803a603a12">   30</a></span>&#160;    <a class="code" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294a290a11901e0a258dea605f803a603a12">kDKOperationInsert</a>,</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294a5bf9b00400721bfd1f6a7c9e96974117">   31</a></span>&#160;    <a class="code" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294a5bf9b00400721bfd1f6a7c9e96974117">kDKOperationDelete</a>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294ac802caba529faafe174997380a8acae5">   32</a></span>&#160;    <a class="code" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294ac802caba529faafe174997380a8acae5">kDKOperationAccumulate</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294">DKBSPOperation</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_object_storage.html">   40</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_b_s_p_object_storage.html">DKBSPObjectStorage</a> : <a class="code" href="interface_d_k_linear_object_storage.html">DKLinearObjectStorage</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">@private</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="interface_d_k_b_s_p_index_tree.html">DKBSPIndexTree</a>* mTree;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    NSUInteger      mTreeDepth;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    NSUInteger      mLastItemCount;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;- (void)            setTreeDepth:(NSUInteger) aDepth;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;- (id)              tree;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    kDKOperationInsert,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    kDKOperationDelete,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    kDKOperationAccumulate</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;DKBSPOperation;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_object_storage.html">   38</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_b_s_p_object_storage.html">DKBSPObjectStorage</a> : <a class="code" href="interface_d_k_linear_object_storage.html">DKLinearObjectStorage</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">@private</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="interface_d_k_b_s_p_index_tree.html">DKBSPIndexTree</a>* mTree;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    NSUInteger      mTreeDepth;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    NSUInteger      mLastItemCount;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;- (void)            setTreeDepth:(NSUInteger) aDepth;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (id)              tree;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html">   65</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_b_s_p_index_tree.html">DKBSPIndexTree</a> : NSObject</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">@protected</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html#ac2a63df8bf56df37338db615c52f7dae">   68</a></span>&#160;    NSMutableArray*     <a class="code" href="interface_d_k_b_s_p_index_tree.html#ac2a63df8bf56df37338db615c52f7dae">mLeaves</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html#a986e5ddf67efbdadae0290321a7c3b8e">   69</a></span>&#160;    NSMutableArray*     <a class="code" href="interface_d_k_b_s_p_index_tree.html#a986e5ddf67efbdadae0290321a7c3b8e">mNodes</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html#a694c41ed31dfcf5be37289320192f91a">   70</a></span>&#160;    NSMutableIndexSet*  <a class="code" href="interface_d_k_b_s_p_index_tree.html#a694c41ed31dfcf5be37289320192f91a">mResults</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html#a78a5b3481a9c12ed464c9287b15bca6a">   71</a></span>&#160;    NSSize              <a class="code" href="interface_d_k_b_s_p_index_tree.html#a78a5b3481a9c12ed464c9287b15bca6a">mCanvasSize</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html#a600fc52e9200f05b62fbf2f60d6cddae">   72</a></span>&#160;    <a class="code" href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294">DKBSPOperation</a>      <a class="code" href="interface_d_k_b_s_p_index_tree.html#a600fc52e9200f05b62fbf2f60d6cddae">mOp</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html#aca8c28872335882e30cff745ab6c9796">   73</a></span>&#160;    NSUInteger          <a class="code" href="interface_d_k_b_s_p_index_tree.html#aca8c28872335882e30cff745ab6c9796">mOpIndex</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html#a99405f7a0223750491bf57a49877b4b0">   74</a></span>&#160;    NSBezierPath*       <a class="code" href="interface_d_k_b_s_p_index_tree.html#a99405f7a0223750491bf57a49877b4b0">mDebugPath</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;+ (Class)           leafClass;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="interface_d_k_b_s_p_index_tree.html">   62</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_b_s_p_index_tree.html">DKBSPIndexTree</a> : NSObject</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">@protected</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    NSMutableArray*     mLeaves;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    NSMutableArray*     mNodes;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    NSMutableIndexSet*  mResults;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    NSSize              mCanvasSize;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    DKBSPOperation      mOp;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    NSUInteger          mOpIndex;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    NSBezierPath*       mDebugPath;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;+ (Class)           leafClass;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;- (id)              initWithCanvasSize:(NSSize) size depth:(NSUInteger) depth;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (NSSize)          canvasSize;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (id)              initWithCanvasSize:(NSSize) size depth:(NSUInteger) depth;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;- (NSSize)          canvasSize;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (void)            setDepth:(NSUInteger) depth;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;- (NSUInteger)      countOfLeaves;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;- (void)            setDepth:(NSUInteger) depth;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;- (NSUInteger)      countOfLeaves;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;- (void)            insertItemIndex:(NSUInteger) idx withRect:(NSRect) rect;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;- (void)            removeItemIndex:(NSUInteger) idx withRect:(NSRect) rect;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (void)            insertItemIndex:(NSUInteger) idx withRect:(NSRect) rect;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (void)            removeItemIndex:(NSUInteger) idx withRect:(NSRect) rect;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (NSIndexSet*)     itemsIntersectingRects:(const NSRect*) rects count:(NSUInteger) count;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (NSIndexSet*)     itemsIntersectingRect:(NSRect) rect;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;- (NSIndexSet*)     itemsIntersectingPoint:(NSPoint) point;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;- (void)            shiftIndexesStartingAtIndex:(NSUInteger) startIndex by:(NSInteger) delta;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;- (NSBezierPath*)   debugStorageDivisions;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#a4c8b2b7e7bb97c7e651317fa79c3c854">  102</a></span>&#160;<span class="preprocessor">#define kDKBSPSlack             48</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#a01b7bc44d5cfe996180817f13549f1da">  103</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kDKMinimumDepth         10U</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="_d_k_b_s_p_object_storage_8h.html#a0fe8a3c5e434b738d367f3724e5c8e76">  104</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kDKMaximumDepth         0U      // set 0 for no limit</span></div>
-<div class="ttc" id="interface_d_k_b_s_p_index_tree_html_aca8c28872335882e30cff745ab6c9796"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html#aca8c28872335882e30cff745ab6c9796">DKBSPIndexTree::mOpIndex</a></div><div class="ttdeci">NSUInteger mOpIndex</div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:73</div></div>
-<div class="ttc" id="_d_k_b_s_p_object_storage_8h_html_acbb9c95e5d51dbd4d744bc6314f04415a1fd64d2acd1674010f05a60d09c2b95a"><div class="ttname"><a href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415a1fd64d2acd1674010f05a60d09c2b95a">kNodeLeaf</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:22</div></div>
-<div class="ttc" id="_d_k_b_s_p_object_storage_8h_html_a8673b0d63bdc32c93a93af9bbfdc9294"><div class="ttname"><a href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294">DKBSPOperation</a></div><div class="ttdeci">DKBSPOperation</div><div class="ttdoc">tree operations </div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:28</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_index_tree_html_a99405f7a0223750491bf57a49877b4b0"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html#a99405f7a0223750491bf57a49877b4b0">DKBSPIndexTree::mDebugPath</a></div><div class="ttdeci">NSBezierPath * mDebugPath</div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:74</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_index_tree_html_ac2a63df8bf56df37338db615c52f7dae"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html#ac2a63df8bf56df37338db615c52f7dae">DKBSPIndexTree::mLeaves</a></div><div class="ttdeci">NSMutableArray * mLeaves</div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:68</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_index_tree_html_a78a5b3481a9c12ed464c9287b15bca6a"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html#a78a5b3481a9c12ed464c9287b15bca6a">DKBSPIndexTree::mCanvasSize</a></div><div class="ttdeci">NSSize mCanvasSize</div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:71</div></div>
-<div class="ttc" id="_d_k_linear_object_storage_8h_html"><div class="ttname"><a href="_d_k_linear_object_storage_8h.html">DKLinearObjectStorage.h</a></div></div>
-<div class="ttc" id="_d_k_b_s_p_object_storage_8h_html_acbb9c95e5d51dbd4d744bc6314f04415"><div class="ttname"><a href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415">DKLeafType</a></div><div class="ttdeci">DKLeafType</div><div class="ttdoc">node types </div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:18</div></div>
-<div class="ttc" id="_d_k_b_s_p_object_storage_8h_html_acbb9c95e5d51dbd4d744bc6314f04415a1fc45de6a37e0b1a91e4ffbd4a3da8f9"><div class="ttname"><a href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415a1fc45de6a37e0b1a91e4ffbd4a3da8f9">kNodeVertical</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:21</div></div>
-<div class="ttc" id="_d_k_b_s_p_object_storage_8h_html_a8673b0d63bdc32c93a93af9bbfdc9294ac802caba529faafe174997380a8acae5"><div class="ttname"><a href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294ac802caba529faafe174997380a8acae5">kDKOperationAccumulate</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:32</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_object_storage_html"><div class="ttname"><a href="interface_d_k_b_s_p_object_storage.html">DKBSPObjectStorage</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:40</div></div>
-<div class="ttc" id="_d_k_b_s_p_object_storage_8h_html_a8673b0d63bdc32c93a93af9bbfdc9294a290a11901e0a258dea605f803a603a12"><div class="ttname"><a href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294a290a11901e0a258dea605f803a603a12">kDKOperationInsert</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:30</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_index_tree_html_a986e5ddf67efbdadae0290321a7c3b8e"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html#a986e5ddf67efbdadae0290321a7c3b8e">DKBSPIndexTree::mNodes</a></div><div class="ttdeci">NSMutableArray * mNodes</div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:69</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_index_tree_html_a694c41ed31dfcf5be37289320192f91a"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html#a694c41ed31dfcf5be37289320192f91a">DKBSPIndexTree::mResults</a></div><div class="ttdeci">NSMutableIndexSet * mResults</div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:70</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_index_tree_html"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html">DKBSPIndexTree</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:65</div></div>
-<div class="ttc" id="_d_k_b_s_p_object_storage_8h_html_a8673b0d63bdc32c93a93af9bbfdc9294a5bf9b00400721bfd1f6a7c9e96974117"><div class="ttname"><a href="_d_k_b_s_p_object_storage_8h.html#a8673b0d63bdc32c93a93af9bbfdc9294a5bf9b00400721bfd1f6a7c9e96974117">kDKOperationDelete</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:31</div></div>
-<div class="ttc" id="_d_k_b_s_p_object_storage_8h_html_acbb9c95e5d51dbd4d744bc6314f04415afbd2b656599fd32c8e6f0c231c86ebf8"><div class="ttname"><a href="_d_k_b_s_p_object_storage_8h.html#acbb9c95e5d51dbd4d744bc6314f04415afbd2b656599fd32c8e6f0c231c86ebf8">kNodeHorizontal</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:20</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_index_tree_html_a600fc52e9200f05b62fbf2f60d6cddae"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html#a600fc52e9200f05b62fbf2f60d6cddae">DKBSPIndexTree::mOp</a></div><div class="ttdeci">DKBSPOperation mOp</div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:72</div></div>
-<div class="ttc" id="interface_d_k_linear_object_storage_html"><div class="ttname"><a href="interface_d_k_linear_object_storage.html">DKLinearObjectStorage</a></div><div class="ttdef"><b>Definition:</b> DKLinearObjectStorage.h:17</div></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (NSIndexSet*)     itemsIntersectingRects:(const NSRect*) rects count:(NSUInteger) count;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (NSIndexSet*)     itemsIntersectingRect:(NSRect) rect;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (NSIndexSet*)     itemsIntersectingPoint:(NSPoint) point;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)            shiftIndexesStartingAtIndex:(NSUInteger) startIndex by:(NSInteger) delta;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (NSBezierPath*)   debugStorageDivisions;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#define kDKBSPSlack             48</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kDKMinimumDepth         10U</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kDKMaximumDepth         0U      // set 0 for no limit</span></div>
+<div class="ttc" id="interface_d_k_b_s_p_object_storage_html"><div class="ttname"><a href="interface_d_k_b_s_p_object_storage.html">DKBSPObjectStorage</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:38</div></div>
+<div class="ttc" id="interface_d_k_b_s_p_index_tree_html"><div class="ttname"><a href="interface_d_k_b_s_p_index_tree.html">DKBSPIndexTree</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:62</div></div>
+<div class="ttc" id="interface_d_k_linear_object_storage_html"><div class="ttname"><a href="interface_d_k_linear_object_storage.html">DKLinearObjectStorage</a></div><div class="ttdef"><b>Definition:</b> DKLinearObjectStorage.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:12 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

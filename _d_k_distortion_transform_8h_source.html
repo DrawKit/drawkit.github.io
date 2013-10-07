@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKDistortionTransform.h Source File</title>
+<title>DrawKit: DKDistortionTransform.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,15 +88,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKDistortionTransform.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_distortion_transform_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="interface_d_k_distortion_transform.html">   14</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_distortion_transform.html">DKDistortionTransform</a> : NSObject &lt;NSCoding, NSCopying&gt;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    NSPoint     <a class="code" href="interface_d_k_distortion_transform.html#aa53abdb6b119caff1751e626d9996130">m_q</a>[4];</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_d_k_distortion_transform.html#aa53abdb6b119caff1751e626d9996130">   17</a></span>&#160;    BOOL        <a class="code" href="interface_d_k_distortion_transform.html#aa502df65c79e0ce95095c231b7d50547">m_inverted</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_d_k_distortion_transform.html#aa502df65c79e0ce95095c231b7d50547">   18</a></span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    NSPoint     m_q[4];</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    BOOL        m_inverted;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;+ (<a class="code" href="interface_d_k_distortion_transform.html">DKDistortionTransform</a>*)  transformWithInitialRect:(NSRect) rect;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
@@ -134,12 +133,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">*/</span></div>
 <div class="ttc" id="interface_d_k_distortion_transform_html"><div class="ttname"><a href="interface_d_k_distortion_transform.html">DKDistortionTransform</a></div><div class="ttdef"><b>Definition:</b> DKDistortionTransform.h:14</div></div>
-<div class="ttc" id="interface_d_k_distortion_transform_html_aa53abdb6b119caff1751e626d9996130"><div class="ttname"><a href="interface_d_k_distortion_transform.html#aa53abdb6b119caff1751e626d9996130">DKDistortionTransform::m_q</a></div><div class="ttdeci">NSPoint m_q[4]</div><div class="ttdef"><b>Definition:</b> DKDistortionTransform.h:17</div></div>
-<div class="ttc" id="interface_d_k_distortion_transform_html_aa502df65c79e0ce95095c231b7d50547"><div class="ttname"><a href="interface_d_k_distortion_transform.html#aa502df65c79e0ce95095c231b7d50547">DKDistortionTransform::m_inverted</a></div><div class="ttdeci">BOOL m_inverted</div><div class="ttdef"><b>Definition:</b> DKDistortionTransform.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:12 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

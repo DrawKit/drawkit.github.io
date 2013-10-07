@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKColourQuantizer.h Source File</title>
+<title>DrawKit: DKColourQuantizer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,111 +88,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKColourQuantizer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_colour_quantizer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// generic interface and simple quantizer which performs uniform quantization. Results with this quantizer are generally only</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// barely acceptable - colours may be mapped to something grossly different from the original since this does not take any notice of</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// the pixels actually used in the image, only the basic size of the RGB colour space it is given.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_d_k_colour_quantizer.html">   18</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_colour_quantizer.html">DKColourQuantizer</a> : NSObject</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_d_k_colour_quantizer.html#a39fdf9f766057b75b46389744a8fde46">   20</a></span>&#160;    NSUInteger      <a class="code" href="interface_d_k_colour_quantizer.html#a39fdf9f766057b75b46389744a8fde46">m_maxColours</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="interface_d_k_colour_quantizer.html#a32ab25d7d64512c082b4d390c9593045">   21</a></span>&#160;    NSUInteger      <a class="code" href="interface_d_k_colour_quantizer.html#a32ab25d7d64512c082b4d390c9593045">m_nBits</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interface_d_k_colour_quantizer.html#a9be09778b47d1c41f5be1b7080ef2ee1">   22</a></span>&#160;    NSSize          <a class="code" href="interface_d_k_colour_quantizer.html#a9be09778b47d1c41f5be1b7080ef2ee1">m_imageSize</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interface_d_k_colour_quantizer.html#ac8d737c1dc600c8648c957a104a759ad">   23</a></span>&#160;    NSMutableArray* <a class="code" href="interface_d_k_colour_quantizer.html#ac8d737c1dc600c8648c957a104a759ad">m_cTable</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (id)              initWithBitmapImageRep:(NSBitmapImageRep*) rep maxColours:(NSUInteger) maxColours colourBits:(NSUInteger) nBits;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (NSUInteger)      indexForRGB:(NSUInteger[]) rgb;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;- (NSColor*)        colourForIndex:(NSUInteger) index;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (NSArray*)        colourTable;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (NSInteger)               numberOfColours;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (void)            analyse:(NSBitmapImageRep*) rep;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// generic interface and simple quantizer which performs uniform quantization. Results with this quantizer are generally only</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// barely acceptable - colours may be mapped to something grossly different from the original since this does not take any notice of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// the pixels actually used in the image, only the basic size of the RGB colour space it is given.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="interface_d_k_colour_quantizer.html">   15</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_colour_quantizer.html">DKColourQuantizer</a> : NSObject</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    NSUInteger      m_maxColours;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    NSUInteger      m_nBits;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    NSSize          m_imageSize;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    NSMutableArray* m_cTable;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (id)              initWithBitmapImageRep:(NSBitmapImageRep*) rep maxColours:(NSUInteger) maxColours colourBits:(NSUInteger) nBits;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;- (NSUInteger)      indexForRGB:(NSUInteger[]) rgb;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (NSColor*)        colourForIndex:(NSUInteger) index;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (NSArray*)        colourTable;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (NSInteger)               numberOfColours;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (void)            analyse:(NSBitmapImageRep*) rep;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// octree quantizer which does a much better job</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// this code is mostly a port of CQuantizer (c)  1996-1997 Jeff Prosise</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// octree quantizer which does a much better job</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// this code is mostly a port of CQuantizer (c)  1996-1997 Jeff Prosise</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html">   44</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___n_o_d_e.html">_NODE</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#aa7d2a5adb645f3c9acd737ce4e9443cb">   46</a></span>&#160;    BOOL            <a class="code" href="struct___n_o_d_e.html#aa7d2a5adb645f3c9acd737ce4e9443cb">bIsLeaf</a>;               <span class="comment">// YES if node has no children</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#a7cc5bc813ccf6c3ca978c457a1b1add9">   47</a></span>&#160;    NSUInteger      <a class="code" href="struct___n_o_d_e.html#a7cc5bc813ccf6c3ca978c457a1b1add9">nPixelCount</a>;           <span class="comment">// Number of pixels represented by this leaf</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#ad92bb64fedae4bbd376f8ae406c37913">   48</a></span>&#160;    NSUInteger      <a class="code" href="struct___n_o_d_e.html#ad92bb64fedae4bbd376f8ae406c37913">nRedSum</a>;               <span class="comment">// Sum of red components</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#aa2fe6d31590a20575c997397e9181bee">   49</a></span>&#160;    NSUInteger      <a class="code" href="struct___n_o_d_e.html#aa2fe6d31590a20575c997397e9181bee">nGreenSum</a>;             <span class="comment">// Sum of green components</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#aea6316380dccfcdcfd1c0723a37c5260">   50</a></span>&#160;    NSUInteger      <a class="code" href="struct___n_o_d_e.html#aea6316380dccfcdcfd1c0723a37c5260">nBlueSum</a>;              <span class="comment">// Sum of blue components</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#a4c6d68f2c371689c34f855dd7decfdd0">   51</a></span>&#160;    NSUInteger      <a class="code" href="struct___n_o_d_e.html#a4c6d68f2c371689c34f855dd7decfdd0">nAlphaSum</a>;             <span class="comment">// Sum of alpha components</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#a94c85ab0e2a048b0f4d88f566e286249">   52</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct___n_o_d_e.html">_NODE</a>*   <a class="code" href="struct___n_o_d_e.html#a94c85ab0e2a048b0f4d88f566e286249">pChild</a>[8];              <span class="comment">// Pointers to child nodes</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#a1233905469de33ffbf2880cf52d7e458">   53</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct___n_o_d_e.html">_NODE</a>*   <a class="code" href="struct___n_o_d_e.html#a1233905469de33ffbf2880cf52d7e458">pNext</a>;                  <span class="comment">// Pointer to next reducible node</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html#a27c4aa971e5e3feb29b2f3b6303aea99">   54</a></span>&#160;    NSInteger               <a class="code" href="struct___n_o_d_e.html#a27c4aa971e5e3feb29b2f3b6303aea99">indexValue</a>;             <span class="comment">// for looking up RGB-&gt;index</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="_d_k_colour_quantizer_8h.html#a179204755851725785eac3c62992c2d0">NODE</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct__rgb__triple.html">   58</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__rgb__triple.html">_rgb_triple</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="struct__rgb__triple.html#ac79f177823856979f7f224223814fbb9">   60</a></span>&#160;    CGFloat <a class="code" href="struct__rgb__triple.html#ac79f177823856979f7f224223814fbb9">r</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="struct__rgb__triple.html#a2ef3385c36eb11117f37ae07f5e1bc65">   61</a></span>&#160;    CGFloat <a class="code" href="struct__rgb__triple.html#a2ef3385c36eb11117f37ae07f5e1bc65">g</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="struct__rgb__triple.html#ac4e494f3341f0ddcbb8753c4ae1fc80f">   62</a></span>&#160;    CGFloat <a class="code" href="struct__rgb__triple.html#ac4e494f3341f0ddcbb8753c4ae1fc80f">b</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="_d_k_colour_quantizer_8h.html#a99db1e0f22ce8272109005b3a0a3c05b">rgb_triple</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="interface_d_k_octree_quantizer.html">   67</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_octree_quantizer.html">DKOctreeQuantizer</a> : <a class="code" href="interface_d_k_colour_quantizer.html">DKColourQuantizer</a></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="interface_d_k_octree_quantizer.html#aada0a3629d1ce2f43dc46adac4c1fc9f">   69</a></span>&#160;    <a class="code" href="struct___n_o_d_e.html">NODE</a>*       <a class="code" href="interface_d_k_octree_quantizer.html#aada0a3629d1ce2f43dc46adac4c1fc9f">m_pTree</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="interface_d_k_octree_quantizer.html#a482db18e6091387e84a39a6fb2933ebb">   70</a></span>&#160;    NSUInteger  <a class="code" href="interface_d_k_octree_quantizer.html#a482db18e6091387e84a39a6fb2933ebb">m_nLeafCount</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="interface_d_k_octree_quantizer.html#a543f7bc4834552ab965abc9213be1cb7">   71</a></span>&#160;    <a class="code" href="struct___n_o_d_e.html">NODE</a>*       <a class="code" href="interface_d_k_octree_quantizer.html#a543f7bc4834552ab965abc9213be1cb7">m_pReducibleNodes</a>[9];</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="interface_d_k_octree_quantizer.html#a40cb8e9567a070b7e672707458dcaaa7">   72</a></span>&#160;    NSUInteger  <a class="code" href="interface_d_k_octree_quantizer.html#a40cb8e9567a070b7e672707458dcaaa7">m_nOutputMaxColors</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct___n_o_d_e.html">   38</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___n_o_d_e.html">_NODE</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    BOOL            bIsLeaf;               <span class="comment">// YES if node has no children</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    NSUInteger      nPixelCount;           <span class="comment">// Number of pixels represented by this leaf</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    NSUInteger      nRedSum;               <span class="comment">// Sum of red components</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    NSUInteger      nGreenSum;             <span class="comment">// Sum of green components</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    NSUInteger      nBlueSum;              <span class="comment">// Sum of blue components</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    NSUInteger      nAlphaSum;             <span class="comment">// Sum of alpha components</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct___n_o_d_e.html">_NODE</a>*   pChild[8];              <span class="comment">// Pointers to child nodes</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct___n_o_d_e.html">_NODE</a>*   pNext;                  <span class="comment">// Pointer to next reducible node</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    NSInteger               indexValue;             <span class="comment">// for looking up RGB-&gt;index</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="struct___n_o_d_e.html">NODE</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct__rgb__triple.html">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__rgb__triple.html">_rgb_triple</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    CGFloat r;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    CGFloat g;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    CGFloat b;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="struct__rgb__triple.html">rgb_triple</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="interface_d_k_octree_quantizer.html">   60</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_octree_quantizer.html">DKOctreeQuantizer</a> : <a class="code" href="interface_d_k_colour_quantizer.html">DKColourQuantizer</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="struct___n_o_d_e.html">NODE</a>*       m_pTree;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    NSUInteger  m_nLeafCount;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="struct___n_o_d_e.html">NODE</a>*       m_pReducibleNodes[9];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    NSUInteger  m_nOutputMaxColors;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;- (void)        addNode:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) ppNode colour:(NSUInteger[]) rgb level:(NSUInteger) level leafCount:(NSUInteger *) leafCount reducibleNodes:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) redNodes;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- (<a class="code" href="struct___n_o_d_e.html">NODE</a>*)       createNodeAtLevel:(NSUInteger) level leafCount:(NSUInteger *) leafCount reducibleNodes:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) redNodes;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;- (void)        reduceTreeLeafCount:(NSUInteger *) leafCount reducibleNodes:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) redNodes;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- (void)        deleteTree:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) ppNode;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;- (void)        paletteColour:(<a class="code" href="struct___n_o_d_e.html">NODE</a>*) pTree index:(NSUInteger *) pIndex colour:(<a class="code" href="struct__rgb__triple.html">rgb_triple</a>[]) rgb;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;- (void)        lookUpNode:(<a class="code" href="struct___n_o_d_e.html">NODE</a>*) pTree level:(NSUInteger) level colour:(NSUInteger[]) rgb index:(NSInteger*) index;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;- (void)        addNode:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) ppNode colour:(NSUInteger[]) rgb level:(NSUInteger) level leafCount:(NSUInteger *) leafCount reducibleNodes:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) redNodes;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (<a class="code" href="struct___n_o_d_e.html">NODE</a>*)       createNodeAtLevel:(NSUInteger) level leafCount:(NSUInteger *) leafCount reducibleNodes:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) redNodes;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;- (void)        reduceTreeLeafCount:(NSUInteger *) leafCount reducibleNodes:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) redNodes;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (void)        deleteTree:(<a class="code" href="struct___n_o_d_e.html">NODE</a>**) ppNode;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;- (void)        paletteColour:(<a class="code" href="struct___n_o_d_e.html">NODE</a>*) pTree index:(NSUInteger *) pIndex colour:(<a class="code" href="struct__rgb__triple.html">rgb_triple</a>[]) rgb;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;- (void)        lookUpNode:(<a class="code" href="struct___n_o_d_e.html">NODE</a>*) pTree level:(NSUInteger) level colour:(NSUInteger[]) rgb index:(NSInteger*) index;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="ttc" id="struct___n_o_d_e_html_aa7d2a5adb645f3c9acd737ce4e9443cb"><div class="ttname"><a href="struct___n_o_d_e.html#aa7d2a5adb645f3c9acd737ce4e9443cb">_NODE::bIsLeaf</a></div><div class="ttdeci">BOOL bIsLeaf</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:46</div></div>
-<div class="ttc" id="struct___n_o_d_e_html_ad92bb64fedae4bbd376f8ae406c37913"><div class="ttname"><a href="struct___n_o_d_e.html#ad92bb64fedae4bbd376f8ae406c37913">_NODE::nRedSum</a></div><div class="ttdeci">NSUInteger nRedSum</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:48</div></div>
-<div class="ttc" id="interface_d_k_colour_quantizer_html"><div class="ttname"><a href="interface_d_k_colour_quantizer.html">DKColourQuantizer</a></div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:18</div></div>
-<div class="ttc" id="struct___n_o_d_e_html_a27c4aa971e5e3feb29b2f3b6303aea99"><div class="ttname"><a href="struct___n_o_d_e.html#a27c4aa971e5e3feb29b2f3b6303aea99">_NODE::indexValue</a></div><div class="ttdeci">NSInteger indexValue</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:54</div></div>
-<div class="ttc" id="_d_k_colour_quantizer_8h_html_a179204755851725785eac3c62992c2d0"><div class="ttname"><a href="_d_k_colour_quantizer_8h.html#a179204755851725785eac3c62992c2d0">NODE</a></div><div class="ttdeci">struct _NODE NODE</div></div>
-<div class="ttc" id="struct___n_o_d_e_html_a7cc5bc813ccf6c3ca978c457a1b1add9"><div class="ttname"><a href="struct___n_o_d_e.html#a7cc5bc813ccf6c3ca978c457a1b1add9">_NODE::nPixelCount</a></div><div class="ttdeci">NSUInteger nPixelCount</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:47</div></div>
-<div class="ttc" id="interface_d_k_colour_quantizer_html_a9be09778b47d1c41f5be1b7080ef2ee1"><div class="ttname"><a href="interface_d_k_colour_quantizer.html#a9be09778b47d1c41f5be1b7080ef2ee1">DKColourQuantizer::m_imageSize</a></div><div class="ttdeci">NSSize m_imageSize</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:22</div></div>
-<div class="ttc" id="struct___n_o_d_e_html_aea6316380dccfcdcfd1c0723a37c5260"><div class="ttname"><a href="struct___n_o_d_e.html#aea6316380dccfcdcfd1c0723a37c5260">_NODE::nBlueSum</a></div><div class="ttdeci">NSUInteger nBlueSum</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:50</div></div>
-<div class="ttc" id="struct___n_o_d_e_html_aa2fe6d31590a20575c997397e9181bee"><div class="ttname"><a href="struct___n_o_d_e.html#aa2fe6d31590a20575c997397e9181bee">_NODE::nGreenSum</a></div><div class="ttdeci">NSUInteger nGreenSum</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:49</div></div>
-<div class="ttc" id="interface_d_k_colour_quantizer_html_ac8d737c1dc600c8648c957a104a759ad"><div class="ttname"><a href="interface_d_k_colour_quantizer.html#ac8d737c1dc600c8648c957a104a759ad">DKColourQuantizer::m_cTable</a></div><div class="ttdeci">NSMutableArray * m_cTable</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:23</div></div>
-<div class="ttc" id="struct___n_o_d_e_html_a1233905469de33ffbf2880cf52d7e458"><div class="ttname"><a href="struct___n_o_d_e.html#a1233905469de33ffbf2880cf52d7e458">_NODE::pNext</a></div><div class="ttdeci">struct _NODE * pNext</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:53</div></div>
-<div class="ttc" id="struct__rgb__triple_html_a2ef3385c36eb11117f37ae07f5e1bc65"><div class="ttname"><a href="struct__rgb__triple.html#a2ef3385c36eb11117f37ae07f5e1bc65">_rgb_triple::g</a></div><div class="ttdeci">CGFloat g</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:61</div></div>
-<div class="ttc" id="struct___n_o_d_e_html_a94c85ab0e2a048b0f4d88f566e286249"><div class="ttname"><a href="struct___n_o_d_e.html#a94c85ab0e2a048b0f4d88f566e286249">_NODE::pChild</a></div><div class="ttdeci">struct _NODE * pChild[8]</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:52</div></div>
-<div class="ttc" id="interface_d_k_octree_quantizer_html"><div class="ttname"><a href="interface_d_k_octree_quantizer.html">DKOctreeQuantizer</a></div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:67</div></div>
-<div class="ttc" id="interface_d_k_octree_quantizer_html_a40cb8e9567a070b7e672707458dcaaa7"><div class="ttname"><a href="interface_d_k_octree_quantizer.html#a40cb8e9567a070b7e672707458dcaaa7">DKOctreeQuantizer::m_nOutputMaxColors</a></div><div class="ttdeci">NSUInteger m_nOutputMaxColors</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:72</div></div>
-<div class="ttc" id="interface_d_k_octree_quantizer_html_a482db18e6091387e84a39a6fb2933ebb"><div class="ttname"><a href="interface_d_k_octree_quantizer.html#a482db18e6091387e84a39a6fb2933ebb">DKOctreeQuantizer::m_nLeafCount</a></div><div class="ttdeci">NSUInteger m_nLeafCount</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:70</div></div>
-<div class="ttc" id="_d_k_colour_quantizer_8h_html_a99db1e0f22ce8272109005b3a0a3c05b"><div class="ttname"><a href="_d_k_colour_quantizer_8h.html#a99db1e0f22ce8272109005b3a0a3c05b">rgb_triple</a></div><div class="ttdeci">struct _rgb_triple rgb_triple</div></div>
-<div class="ttc" id="struct___n_o_d_e_html"><div class="ttname"><a href="struct___n_o_d_e.html">_NODE</a></div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:44</div></div>
-<div class="ttc" id="interface_d_k_octree_quantizer_html_aada0a3629d1ce2f43dc46adac4c1fc9f"><div class="ttname"><a href="interface_d_k_octree_quantizer.html#aada0a3629d1ce2f43dc46adac4c1fc9f">DKOctreeQuantizer::m_pTree</a></div><div class="ttdeci">NODE * m_pTree</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:69</div></div>
-<div class="ttc" id="interface_d_k_colour_quantizer_html_a32ab25d7d64512c082b4d390c9593045"><div class="ttname"><a href="interface_d_k_colour_quantizer.html#a32ab25d7d64512c082b4d390c9593045">DKColourQuantizer::m_nBits</a></div><div class="ttdeci">NSUInteger m_nBits</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:21</div></div>
-<div class="ttc" id="struct___n_o_d_e_html_a4c6d68f2c371689c34f855dd7decfdd0"><div class="ttname"><a href="struct___n_o_d_e.html#a4c6d68f2c371689c34f855dd7decfdd0">_NODE::nAlphaSum</a></div><div class="ttdeci">NSUInteger nAlphaSum</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:51</div></div>
-<div class="ttc" id="interface_d_k_octree_quantizer_html_a543f7bc4834552ab965abc9213be1cb7"><div class="ttname"><a href="interface_d_k_octree_quantizer.html#a543f7bc4834552ab965abc9213be1cb7">DKOctreeQuantizer::m_pReducibleNodes</a></div><div class="ttdeci">NODE * m_pReducibleNodes[9]</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:71</div></div>
-<div class="ttc" id="interface_d_k_colour_quantizer_html_a39fdf9f766057b75b46389744a8fde46"><div class="ttname"><a href="interface_d_k_colour_quantizer.html#a39fdf9f766057b75b46389744a8fde46">DKColourQuantizer::m_maxColours</a></div><div class="ttdeci">NSUInteger m_maxColours</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:20</div></div>
-<div class="ttc" id="struct__rgb__triple_html"><div class="ttname"><a href="struct__rgb__triple.html">_rgb_triple</a></div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:58</div></div>
-<div class="ttc" id="struct__rgb__triple_html_ac79f177823856979f7f224223814fbb9"><div class="ttname"><a href="struct__rgb__triple.html#ac79f177823856979f7f224223814fbb9">_rgb_triple::r</a></div><div class="ttdeci">CGFloat r</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:60</div></div>
-<div class="ttc" id="struct__rgb__triple_html_ac4e494f3341f0ddcbb8753c4ae1fc80f"><div class="ttname"><a href="struct__rgb__triple.html#ac4e494f3341f0ddcbb8753c4ae1fc80f">_rgb_triple::b</a></div><div class="ttdeci">CGFloat b</div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:62</div></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_d_k_colour_quantizer_html"><div class="ttname"><a href="interface_d_k_colour_quantizer.html">DKColourQuantizer</a></div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:15</div></div>
+<div class="ttc" id="interface_d_k_octree_quantizer_html"><div class="ttname"><a href="interface_d_k_octree_quantizer.html">DKOctreeQuantizer</a></div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:60</div></div>
+<div class="ttc" id="struct___n_o_d_e_html"><div class="ttname"><a href="struct___n_o_d_e.html">_NODE</a></div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:38</div></div>
+<div class="ttc" id="struct__rgb__triple_html"><div class="ttname"><a href="struct__rgb__triple.html">_rgb_triple</a></div><div class="ttdef"><b>Definition:</b> DKColourQuantizer.h:52</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:12 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

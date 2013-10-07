@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/DKArrowStroke.h Source File</title>
+<title>DrawKit: DKArrowStroke.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,201 +88,168 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKArrowStroke.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_k_arrow_stroke_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_d_k_stroke_8h.html">DKStroke.h</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;DKStroke.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// arrow head kinds - each end can be specified independently:</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// arrow head kinds - each end can be specified independently:</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa0ee21f007c36ccb11c9cf443614bf1d4">   18</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa0ee21f007c36ccb11c9cf443614bf1d4">kDKArrowHeadNone</a>                    = 0,</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa0aa895706e80329a2b191ffc9ba13257">   19</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa0aa895706e80329a2b191ffc9ba13257">kDKArrowHeadStandard</a>                = 1,</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa92123914a74c76d0a3529cfc0f04384d">   20</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa92123914a74c76d0a3529cfc0f04384d">kDKArrowHeadInflected</a>               = 2,</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa433d849e15203cf32d78cab2cc0bf834">   21</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa433d849e15203cf32d78cab2cc0bf834">kDKArrowHeadRound</a>                   = 3,</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa034190ac2d5d5e42ca09f9fa7cb26bfe">   22</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa034190ac2d5d5e42ca09f9fa7cb26bfe">kDKArrowHeadSingleFeather</a>           = 4,</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa75d8ae062bd4c19ec17a23899c725969">   23</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa75d8ae062bd4c19ec17a23899c725969">kDKArrowHeadDoubleFeather</a>           = 5,</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807faa799ce3a85a6a816a2f372de40019b6c">   24</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807faa799ce3a85a6a816a2f372de40019b6c">kDKArrowHeadTripleFeather</a>           = 6,</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa2c6e42b1b86660e3d4c723a581b8142f">   25</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa2c6e42b1b86660e3d4c723a581b8142f">kDKArrowHeadDimensionLine</a>           = 7,</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fad8166705000b625c9009d3179929d14c">   26</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fad8166705000b625c9009d3179929d14c">kDKArrowHeadDimensionLineAndBar</a>     = 8,</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa31b4d7c324d73e80b404cda1e58dcb87">   27</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa31b4d7c324d73e80b404cda1e58dcb87">kDKArrowHeadSquare</a>                  = 9,</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa9bf7822a247f573d763e57a64ef86a95">   28</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa9bf7822a247f573d763e57a64ef86a95">kDKArrowHeadDiamond</a>                 = 10</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">DKArrowHeadKind</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// positioning of dimension label, or none:</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573">   35</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a8cdd6b81f8feed88818b643e8dcf06b1">   37</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a8cdd6b81f8feed88818b643e8dcf06b1">kDKDimensionNone</a>                    = 0,</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a6297fa17bacdb35967d61876e69d75de">   38</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a6297fa17bacdb35967d61876e69d75de">kDKDimensionPlaceAboveLine</a>          = 1,</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573aec208905c800663476ba7283f55c2c48">   39</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573aec208905c800663476ba7283f55c2c48">kDKDimensionPlaceInLine</a>             = 2,</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a923be2512e16c542b1d0ef55d084205f">   40</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a923be2512e16c542b1d0ef55d084205f">kDKDimensionPlaceBelowLine</a>          = 3</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573">DKDimensioningLineOptions</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// dimension kind - sets additional embellishments on the dimension text:</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652">   46</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652acbb22513c01de71a381c9c14c6ff19a5">   48</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652acbb22513c01de71a381c9c14c6ff19a5">kDKDimensionLinear</a>                  = 0,</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a5c794588ec0276cdf6efbc5263c0806c">   49</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a5c794588ec0276cdf6efbc5263c0806c">kDKDimensionDiameter</a>                = 1,</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a1e5c23361db58072298ed94b558523ce">   50</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a1e5c23361db58072298ed94b558523ce">kDKDimensionRadius</a>                  = 2,</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a687bc7b7f2b0824b3931eab612477456">   51</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a687bc7b7f2b0824b3931eab612477456">kDKDimensionAngle</a>                   = 3</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652">DKDimensionTextKind</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// tolerance options:</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5df">   57</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5dfac7106b4e433d3c7607a048114080f4c9">   59</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5dfac7106b4e433d3c7607a048114080f4c9">kDKDimensionToleranceNotShown</a>       = 0,</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5dfa7a8fd091628e21bb661fd0678c95e5af">   60</a></span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5dfa7a8fd091628e21bb661fd0678c95e5af">kDKDimensionToleranceShown</a>          = 1</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5df">DKDimensionToleranceOption</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// the class:</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="interface_d_k_arrow_stroke.html">   66</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_arrow_stroke.html">DKArrowStroke</a> : <a class="code" href="interface_d_k_stroke.html">DKStroke</a> &lt;NSCoding, NSCopying&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">@private</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">DKArrowHeadKind</a>             mArrowHeadAtStart;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">DKArrowHeadKind</a>             mArrowHeadAtEnd;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    CGFloat                     m_arrowLength;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    CGFloat                     m_arrowWidth;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573">DKDimensioningLineOptions</a>   mDimensionOptions;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    NSNumberFormatter*          m_dims_formatter;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    NSColor*                    m_outlineColour;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    CGFloat                     m_outlineWidth;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652">DKDimensionTextKind</a>         mDimTextKind;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5df">DKDimensionToleranceOption</a>  mDimToleranceOptions;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;+ (void)                        setDimensioningLineTextAttributes:(NSDictionary*) attrs;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;+ (NSDictionary*)               dimensioningLineTextAttributes;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;+ (<a class="code" href="interface_d_k_arrow_stroke.html">DKArrowStroke</a>*)              standardDimensioningLine;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;+ (NSNumberFormatter*)          defaultDimensionLineFormatter;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">// head kind at each end</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (void)                        setArrowHeadAtStart:(<a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">DKArrowHeadKind</a>) kind;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)                        setArrowHeadAtEnd:(<a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">DKArrowHeadKind</a>) kind;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;- (<a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">DKArrowHeadKind</a>)             arrowHeadAtStart;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (<a class="code" href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">DKArrowHeadKind</a>)             arrowHeadAtEnd;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">// head widths and lengths (some head kinds may set these also)</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;- (void)                        setArrowHeadWidth:(CGFloat) width;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (CGFloat)                     arrowHeadWidth;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;- (void)                        setArrowHeadLength:(CGFloat) length;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;- (CGFloat)                     arrowHeadLength;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (void)                        standardArrowForStrokeWidth:(CGFloat) sw;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#ifdef DRAWKIT_DEPRECATED</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span>- (void)                        setOutlineColour:(NSColor*) colour width:(CGFloat) width;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;- (void)                        setOutlineColour:(NSColor*) colour;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (NSColor*)                    outlineColour;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;- (void)                        setOutlineWidth:(CGFloat) width;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;- (CGFloat)                     outlineWidth;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;- (NSImage*)                    arrowSwatchImageWithSize:(NSSize) size strokeWidth:(CGFloat) width;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;- (NSImage*)                    standardArrowSwatchImage;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    kDKArrowHeadNone                    = 0,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    kDKArrowHeadStandard                = 1,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    kDKArrowHeadInflected               = 2,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    kDKArrowHeadRound                   = 3,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    kDKArrowHeadSingleFeather           = 4,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    kDKArrowHeadDoubleFeather           = 5,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    kDKArrowHeadTripleFeather           = 6,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    kDKArrowHeadDimensionLine           = 7,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    kDKArrowHeadDimensionLineAndBar     = 8,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    kDKArrowHeadSquare                  = 9,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    kDKArrowHeadDiamond                 = 10</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;DKArrowHeadKind;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// positioning of dimension label, or none:</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    kDKDimensionNone                    = 0,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    kDKDimensionPlaceAboveLine          = 1,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    kDKDimensionPlaceInLine             = 2,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    kDKDimensionPlaceBelowLine          = 3</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;DKDimensioningLineOptions;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// dimension kind - sets additional embellishments on the dimension text:</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    kDKDimensionLinear                  = 0,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    kDKDimensionDiameter                = 1,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    kDKDimensionRadius                  = 2,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    kDKDimensionAngle                   = 3</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;DKDimensionTextKind;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// tolerance options:</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    kDKDimensionToleranceNotShown       = 0,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    kDKDimensionToleranceShown          = 1</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;DKDimensionToleranceOption;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// the class:</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="interface_d_k_arrow_stroke.html">   62</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_d_k_arrow_stroke.html">DKArrowStroke</a> : <a class="code" href="interface_d_k_stroke.html">DKStroke</a> &lt;NSCoding, NSCopying&gt;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">@private</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    DKArrowHeadKind             mArrowHeadAtStart;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    DKArrowHeadKind             mArrowHeadAtEnd;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    CGFloat                     m_arrowLength;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    CGFloat                     m_arrowWidth;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    DKDimensioningLineOptions   mDimensionOptions;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    NSNumberFormatter*          m_dims_formatter;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    NSColor*                    m_outlineColour;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    CGFloat                     m_outlineWidth;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    DKDimensionTextKind         mDimTextKind;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    DKDimensionToleranceOption  mDimToleranceOptions;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;+ (void)                        setDimensioningLineTextAttributes:(NSDictionary*) attrs;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;+ (NSDictionary*)               dimensioningLineTextAttributes;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;+ (<a class="code" href="interface_d_k_arrow_stroke.html">DKArrowStroke</a>*)              standardDimensioningLine;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;+ (NSNumberFormatter*)          defaultDimensionLineFormatter;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// head kind at each end</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;- (void)                        setArrowHeadAtStart:(DKArrowHeadKind) kind;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (void)                        setArrowHeadAtEnd:(DKArrowHeadKind) kind;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (DKArrowHeadKind)             arrowHeadAtStart;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (DKArrowHeadKind)             arrowHeadAtEnd;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// head widths and lengths (some head kinds may set these also)</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (void)                        setArrowHeadWidth:(CGFloat) width;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;- (CGFloat)                     arrowHeadWidth;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;- (void)                        setArrowHeadLength:(CGFloat) length;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;- (CGFloat)                     arrowHeadLength;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (void)                        standardArrowForStrokeWidth:(CGFloat) sw;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#ifdef DRAWKIT_DEPRECATED</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span>- (void)                        setOutlineColour:(NSColor*) colour width:(CGFloat) width;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;- (void)                        setOutlineColour:(NSColor*) colour;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;- (NSColor*)                    outlineColour;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;- (void)                        setOutlineWidth:(CGFloat) width;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;- (CGFloat)                     outlineWidth;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (NSImage*)                    arrowSwatchImageWithSize:(NSSize) size strokeWidth:(CGFloat) width;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;- (NSImage*)                    standardArrowSwatchImage;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;- (NSBezierPath*)               arrowPathFromOriginalPath:(NSBezierPath*) inPath fromObject:(<span class="keywordtype">id</span>) obj;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">// dimensioning lines:</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;- (NSBezierPath*)               arrowPathFromOriginalPath:(NSBezierPath*) inPath fromObject:(<span class="keywordtype">id</span>) obj;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// dimensioning lines:</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;- (void)                        setFormatter:(NSNumberFormatter*) fmt;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;- (NSNumberFormatter*)          formatter;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;- (void)                        setFormat:(NSString*) format;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;- (void)                        setFormatter:(NSNumberFormatter*) fmt;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;- (NSNumberFormatter*)          formatter;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;- (void)                        setFormat:(NSString*) format;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;- (void)                        setDimensioningLineOptions:(<a class="code" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573">DKDimensioningLineOptions</a>) dimOps;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;- (<a class="code" href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573">DKDimensioningLineOptions</a>)   dimensioningLineOptions;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;- (void)                        setDimensioningLineOptions:(DKDimensioningLineOptions) dimOps;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;- (DKDimensioningLineOptions)   dimensioningLineOptions;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;- (NSAttributedString*)         dimensionTextForObject:(<span class="keywordtype">id</span>) obj;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;- (CGFloat)                     widthOfDimensionTextForObject:(<span class="keywordtype">id</span>) obj;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;- (NSString*)                   toleranceTextForObject:(<span class="keywordtype">id</span>) object;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;- (NSAttributedString*)         dimensionTextForObject:(<span class="keywordtype">id</span>) obj;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;- (CGFloat)                     widthOfDimensionTextForObject:(<span class="keywordtype">id</span>) obj;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;- (NSString*)                   toleranceTextForObject:(<span class="keywordtype">id</span>) object;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;- (void)                        setDimensionTextKind:(<a class="code" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652">DKDimensionTextKind</a>) kind;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;- (<a class="code" href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652">DKDimensionTextKind</a>)         dimensionTextKind;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;- (void)                        setDimensionToleranceOption:(<a class="code" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5df">DKDimensionToleranceOption</a>) option;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;- (<a class="code" href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5df">DKDimensionToleranceOption</a>)  dimensionToleranceOption;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;- (void)                        setTextAttributes:(NSDictionary*) dict;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;- (NSDictionary*)               textAttributes;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;- (void)                        setFont:(NSFont*) font;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;- (NSFont*)                     font;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">// informal protocol for requesting dimension information from an object. If it does not respond, the rasterizer infers the values from the path length and</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">// its internal values.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;- (void)                        setDimensionTextKind:(DKDimensionTextKind) kind;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;- (DKDimensionTextKind)         dimensionTextKind;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;- (void)                        setDimensionToleranceOption:(DKDimensionToleranceOption) option;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;- (DKDimensionToleranceOption)  dimensionToleranceOption;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;- (void)                        setTextAttributes:(NSDictionary*) dict;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;- (NSDictionary*)               textAttributes;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;- (void)                        setFont:(NSFont*) font;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;- (NSFont*)                     font;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">// informal protocol for requesting dimension information from an object. If it does not respond, the rasterizer infers the values from the path length and</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">// its internal values.</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_object_07_d_k_arrow_sroke_dimensioning_08.html">NSObject (DKArrowSrokeDimensioning)</a></div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="category_n_s_object_07_d_k_arrow_sroke_dimensioning_08.html">  142</a></span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;- (NSDictionary*)               dimensionValuesForArrowStroke:(<a class="code" href="interface_d_k_arrow_stroke.html">DKArrowStroke</a>*) arrowStroke;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_object_07_d_k_arrow_sroke_dimensioning_08.html">NSObject (DKArrowSrokeDimensioning)</a></div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="category_n_s_object_07_d_k_arrow_sroke_dimensioning_08.html">  146</a></span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;- (NSDictionary*)               dimensionValuesForArrowStroke:(<a class="code" href="interface_d_k_arrow_stroke.html">DKArrowStroke</a>*) arrowStroke;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#define         kDKStandardArrowSwatchImageSize     (NSMakeSize( 80.0, 9.0 ))</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a544d9b95727975418652cfacefc4d8a5">  153</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define         kDKStandardArrowSwatchStrokeWidth   3.0</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="_d_k_arrow_stroke_8h.html#a2d428de380a2cb40383c054ecd85e1a3">  154</a></span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">extern</span> NSString*                <a class="code" href="_d_k_arrow_stroke_8h.html#a47cfe88efa7631416a1bd871a6fc2bc3">kDKPositiveToleranceKey</a>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">extern</span> NSString*                <a class="code" href="_d_k_arrow_stroke_8h.html#a98a7d5109ab13c57324de92a5b313583">kDKNegativeToleranceKey</a>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">extern</span> NSString*                <a class="code" href="_d_k_arrow_stroke_8h.html#aa4f32e49a1aa0e24525dde5ad3aa65ed">kDKDimensionValueKey</a>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">extern</span> NSString*                <a class="code" href="_d_k_arrow_stroke_8h.html#a911185655de8100369625a83b0204875">kDKDimensionUnitsKey</a>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#define         kDKStandardArrowSwatchImageSize     (NSMakeSize( 80.0, 9.0 ))</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define         kDKStandardArrowSwatchStrokeWidth   3.0</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">extern</span> NSString*                kDKPositiveToleranceKey;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">extern</span> NSString*                kDKNegativeToleranceKey;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">extern</span> NSString*                kDKDimensionValueKey;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">extern</span> NSString*                kDKDimensionUnitsKey;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">DKArrowStroke is a rasterizer that implements arrowheads on the ends of paths. The heads are drawn by filling the</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">arrowhead using the same colour as the stroke, thus seamlessly blending the head into the path. Where multiple</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">strokes are used, the resulting effect should be correct when angles are kept the same and lengths are calculated</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">from the stroke width.</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">DKArrowStroke is a rasterizer that implements arrowheads on the ends of paths. The heads are drawn by filling the</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">arrowhead using the same colour as the stroke, thus seamlessly blending the head into the path. Where multiple</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">strokes are used, the resulting effect should be correct when angles are kept the same and lengths are calculated</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">from the stroke width.</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">*/</span></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa75d8ae062bd4c19ec17a23899c725969"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa75d8ae062bd4c19ec17a23899c725969">kDKArrowHeadDoubleFeather</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:23</div></div>
-<div class="ttc" id="category_n_s_object_07_d_k_arrow_sroke_dimensioning_08_html"><div class="ttname"><a href="category_n_s_object_07_d_k_arrow_sroke_dimensioning_08.html">NSObject(DKArrowSrokeDimensioning)</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:146</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa433d849e15203cf32d78cab2cc0bf834"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa433d849e15203cf32d78cab2cc0bf834">kDKArrowHeadRound</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:21</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a1ee5e1b2b591acd7e97e1fd1d7dfa5dfa7a8fd091628e21bb661fd0678c95e5af"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5dfa7a8fd091628e21bb661fd0678c95e5af">kDKDimensionToleranceShown</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:60</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa0aa895706e80329a2b191ffc9ba13257"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa0aa895706e80329a2b191ffc9ba13257">kDKArrowHeadStandard</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:19</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_aa4f32e49a1aa0e24525dde5ad3aa65ed"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#aa4f32e49a1aa0e24525dde5ad3aa65ed">kDKDimensionValueKey</a></div><div class="ttdeci">NSString * kDKDimensionValueKey</div><div class="ttdef"><b>Definition:</b> DKArrowStroke.m:26</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa0ee21f007c36ccb11c9cf443614bf1d4"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa0ee21f007c36ccb11c9cf443614bf1d4">kDKArrowHeadNone</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:18</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a59c0ec81b0afb75f94b08282e0c56652a1e5c23361db58072298ed94b558523ce"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a1e5c23361db58072298ed94b558523ce">kDKDimensionRadius</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:50</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807faa799ce3a85a6a816a2f372de40019b6c"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807faa799ce3a85a6a816a2f372de40019b6c">kDKArrowHeadTripleFeather</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:24</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a1ee5e1b2b591acd7e97e1fd1d7dfa5dfac7106b4e433d3c7607a048114080f4c9"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5dfac7106b4e433d3c7607a048114080f4c9">kDKDimensionToleranceNotShown</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:59</div></div>
-<div class="ttc" id="interface_d_k_arrow_stroke_html"><div class="ttname"><a href="interface_d_k_arrow_stroke.html">DKArrowStroke</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:66</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa92123914a74c76d0a3529cfc0f04384d"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa92123914a74c76d0a3529cfc0f04384d">kDKArrowHeadInflected</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:20</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a59c0ec81b0afb75f94b08282e0c56652a687bc7b7f2b0824b3931eab612477456"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a687bc7b7f2b0824b3931eab612477456">kDKDimensionAngle</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:51</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a98a7d5109ab13c57324de92a5b313583"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a98a7d5109ab13c57324de92a5b313583">kDKNegativeToleranceKey</a></div><div class="ttdeci">NSString * kDKNegativeToleranceKey</div><div class="ttdef"><b>Definition:</b> DKArrowStroke.m:25</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa9bf7822a247f573d763e57a64ef86a95"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa9bf7822a247f573d763e57a64ef86a95">kDKArrowHeadDiamond</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:28</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a5fe3c379d98a751c4d911c3757131573aec208905c800663476ba7283f55c2c48"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573aec208905c800663476ba7283f55c2c48">kDKDimensionPlaceInLine</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:39</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a5fe3c379d98a751c4d911c3757131573a6297fa17bacdb35967d61876e69d75de"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a6297fa17bacdb35967d61876e69d75de">kDKDimensionPlaceAboveLine</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:38</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a5fe3c379d98a751c4d911c3757131573a923be2512e16c542b1d0ef55d084205f"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a923be2512e16c542b1d0ef55d084205f">kDKDimensionPlaceBelowLine</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:40</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a911185655de8100369625a83b0204875"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a911185655de8100369625a83b0204875">kDKDimensionUnitsKey</a></div><div class="ttdeci">NSString * kDKDimensionUnitsKey</div><div class="ttdef"><b>Definition:</b> DKArrowStroke.m:27</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a59c0ec81b0afb75f94b08282e0c56652a5c794588ec0276cdf6efbc5263c0806c"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652a5c794588ec0276cdf6efbc5263c0806c">kDKDimensionDiameter</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:49</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fad8166705000b625c9009d3179929d14c"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fad8166705000b625c9009d3179929d14c">kDKArrowHeadDimensionLineAndBar</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:26</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa2c6e42b1b86660e3d4c723a581b8142f"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa2c6e42b1b86660e3d4c723a581b8142f">kDKArrowHeadDimensionLine</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:25</div></div>
-<div class="ttc" id="_d_k_stroke_8h_html"><div class="ttname"><a href="_d_k_stroke_8h.html">DKStroke.h</a></div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa034190ac2d5d5e42ca09f9fa7cb26bfe"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa034190ac2d5d5e42ca09f9fa7cb26bfe">kDKArrowHeadSingleFeather</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:22</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a5fe3c379d98a751c4d911c3757131573"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573">DKDimensioningLineOptions</a></div><div class="ttdeci">DKDimensioningLineOptions</div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:35</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807fa31b4d7c324d73e80b404cda1e58dcb87"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807fa31b4d7c324d73e80b404cda1e58dcb87">kDKArrowHeadSquare</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:27</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a1ee5e1b2b591acd7e97e1fd1d7dfa5df"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a1ee5e1b2b591acd7e97e1fd1d7dfa5df">DKDimensionToleranceOption</a></div><div class="ttdeci">DKDimensionToleranceOption</div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:57</div></div>
-<div class="ttc" id="interface_d_k_stroke_html"><div class="ttname"><a href="interface_d_k_stroke.html">DKStroke</a></div><div class="ttdef"><b>Definition:</b> DKStroke.h:17</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a5fe3c379d98a751c4d911c3757131573a8cdd6b81f8feed88818b643e8dcf06b1"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a5fe3c379d98a751c4d911c3757131573a8cdd6b81f8feed88818b643e8dcf06b1">kDKDimensionNone</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:37</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a47cfe88efa7631416a1bd871a6fc2bc3"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a47cfe88efa7631416a1bd871a6fc2bc3">kDKPositiveToleranceKey</a></div><div class="ttdeci">NSString * kDKPositiveToleranceKey</div><div class="ttdef"><b>Definition:</b> DKArrowStroke.m:24</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a80e6f7dd98e61beb0ffe6de66718807f"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a80e6f7dd98e61beb0ffe6de66718807f">DKArrowHeadKind</a></div><div class="ttdeci">DKArrowHeadKind</div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:16</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a59c0ec81b0afb75f94b08282e0c56652acbb22513c01de71a381c9c14c6ff19a5"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652acbb22513c01de71a381c9c14c6ff19a5">kDKDimensionLinear</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:48</div></div>
-<div class="ttc" id="_d_k_arrow_stroke_8h_html_a59c0ec81b0afb75f94b08282e0c56652"><div class="ttname"><a href="_d_k_arrow_stroke_8h.html#a59c0ec81b0afb75f94b08282e0c56652">DKDimensionTextKind</a></div><div class="ttdeci">DKDimensionTextKind</div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:46</div></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="category_n_s_object_07_d_k_arrow_sroke_dimensioning_08_html"><div class="ttname"><a href="category_n_s_object_07_d_k_arrow_sroke_dimensioning_08.html">NSObject(DKArrowSrokeDimensioning)</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:142</div></div>
+<div class="ttc" id="interface_d_k_arrow_stroke_html"><div class="ttname"><a href="interface_d_k_arrow_stroke.html">DKArrowStroke</a></div><div class="ttdef"><b>Definition:</b> DKArrowStroke.h:62</div></div>
+<div class="ttc" id="interface_d_k_stroke_html"><div class="ttname"><a href="interface_d_k_stroke.html">DKStroke</a></div><div class="ttdef"><b>Definition:</b> DKStroke.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:12 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

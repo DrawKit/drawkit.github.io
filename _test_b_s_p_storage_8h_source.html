@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DrawKit: framework/Code/TestBSPStorage.h Source File</title>
+<title>DrawKit: TestBSPStorage.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,90 +88,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">TestBSPStorage.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_test_b_s_p_storage_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  TestBSPStorage.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  GCDrawKit</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Graham Cox on 10/03/09.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright 2009 Apptree.net. All rights reserved.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;SenTestingKit/SenTestingKit.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_d_k_b_s_p_direct_object_storage_8h.html">DKBSPDirectObjectStorage.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="interface_test_b_s_p_storage.html">   14</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_test_b_s_p_storage.html">TestBSPStorage</a> : SenTestCase</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//  TestBSPStorage.h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  GCDrawKit</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//  Created by Graham Cox on 10/03/09.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//  Copyright 2009 Apptree.net. All rights reserved.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;- (void)    <a class="code" href="interface_test_b_s_p_storage.html#a3a36a1738ea9afe9559a9a81dab4e7f4">testBSPStorage</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;- (void)    <a class="code" href="interface_test_b_s_p_storage.html#a76e77cf70832db416e316c1f1b247817">testIndexedBSPStorage</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;- (void)    populateStorage:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;- (void)    deletionTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;- (void)    insertionTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (void)    replacementTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;- (void)    retrievalTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (void)    pointRetrievalTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (void)    repositioningTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (void)    reorderingTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (void)    verifyRenumbering:(<a class="code" href="interface_d_k_b_s_p_direct_object_storage.html">DKBSPDirectObjectStorage</a>*) storage;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (void)    verifyStorageIntegrity:(<a class="code" href="interface_d_k_b_s_p_direct_object_storage.html">DKBSPDirectObjectStorage</a>*) storage;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;- (void)    verifyIndexSpotcheck:(<a class="code" href="interface_d_k_b_s_p_direct_object_storage.html">DKBSPDirectObjectStorage</a>*) storage;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#import &lt;SenTestingKit/SenTestingKit.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#import &quot;DKBSPDirectObjectStorage.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="interface_test_b_s_p_storage.html">   19</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_test_b_s_p_storage.html">TestBSPStorage</a> : SenTestCase</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;- (void)    testBSPStorage;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;- (void)    testIndexedBSPStorage;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;- (void)    populateStorage:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (void)    deletionTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (void)    insertionTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (void)    replacementTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;- (void)    retrievalTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (void)    pointRetrievalTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (void)    repositioningTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage canvasSize:(NSSize) canvasSize;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;- (void)    reorderingTest:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_d_k_object_storage-p.html">DKObjectStorage</a>&gt;) storage;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;- (void)    verifyIndexedStorageIntegrity:(<a class="code" href="interface_d_k_b_s_p_object_storage.html">DKBSPObjectStorage</a>*) storage;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;- (void)    verifyRenumbering:(<a class="code" href="interface_d_k_b_s_p_direct_object_storage.html">DKBSPDirectObjectStorage</a>*) storage;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;- (void)    verifyStorageIntegrity:(<a class="code" href="interface_d_k_b_s_p_direct_object_storage.html">DKBSPDirectObjectStorage</a>*) storage;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;- (void)    verifyIndexSpotcheck:(<a class="code" href="interface_d_k_b_s_p_direct_object_storage.html">DKBSPDirectObjectStorage</a>*) storage;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;- (void)    verifyIndexedStorageIntegrity:(<a class="code" href="interface_d_k_b_s_p_object_storage.html">DKBSPObjectStorage</a>*) storage;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="interfacetest_storable_object.html">   39</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interfacetest_storable_object.html">testStorableObject</a> : NSObject &lt;<a class="code" href="protocol_d_k_storable_object-p.html">DKStorableObject</a>&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    NSRect                  <a class="code" href="interfacetest_storable_object.html#a2b367f6d8ffe4be8c4bf0de01f6da909">_bounds</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="interfacetest_storable_object.html#a2b367f6d8ffe4be8c4bf0de01f6da909">   42</a></span>&#160;    NSUInteger              <a class="code" href="interfacetest_storable_object.html#abf6164e97c45812f8d11754091f40e61">_index</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interfacetest_storable_object.html#abf6164e97c45812f8d11754091f40e61">   43</a></span>&#160;    BOOL                    <a class="code" href="interfacetest_storable_object.html#a9787e1892043b6ae402c90859514607e">_marked</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="interfacetest_storable_object.html#a9787e1892043b6ae402c90859514607e">   44</a></span>&#160;    id&lt;DKObjectStorage&gt;     <a class="code" href="interfacetest_storable_object.html#ae07dd5373e2bc112f6fa6c4be6e3ef63">_storage</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="interfacetest_storable_object.html#ae07dd5373e2bc112f6fa6c4be6e3ef63">   45</a></span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (void)                    setBounds:(NSRect) newBounds;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="interfacetest_storable_object.html">   41</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interfacetest_storable_object.html">testStorableObject</a> : NSObject &lt;<a class="code" href="protocol_d_k_storable_object-p.html">DKStorableObject</a>&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    NSRect                  _bounds;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    NSUInteger              _index;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    BOOL                    _marked;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    id&lt;DKObjectStorage&gt;     _storage;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;- (void)                    setBounds:(NSRect) newBounds;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> Unit Test for the BSP storage sub-system. This works by populating a storage instance with dummy objects (instances of testStorableObject) then randomly operating on them.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> The objects are randomly deleted, inserted, moved, reordered and retrieved many times. If any problems with the storage exist this should throw light on it.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> The dummy objects conform to the storable protocol as they are required to do but otherwise merely store their parameters. This ensures that the tests here truly apply to the</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> storage, and not to real storable objects. Other unit tests may test real storables in isolation.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> Unit Test for the BSP storage sub-system. This works by populating a storage instance with dummy objects (instances of testStorableObject) then randomly operating on them.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> The objects are randomly deleted, inserted, moved, reordered and retrieved many times. If any problems with the storage exist this should throw light on it.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> The dummy objects conform to the storable protocol as they are required to do but otherwise merely store their parameters. This ensures that the tests here truly apply to the</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> storage, and not to real storable objects. Other unit tests may test real storables in isolation.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> </span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> */</span></div>
 <div class="ttc" id="protocol_d_k_storable_object-p_html"><div class="ttname"><a href="protocol_d_k_storable_object-p.html">DKStorableObject-p</a></div><div class="ttdef"><b>Definition:</b> DKObjectStorageProtocol.h:27</div></div>
-<div class="ttc" id="interfacetest_storable_object_html_abf6164e97c45812f8d11754091f40e61"><div class="ttname"><a href="interfacetest_storable_object.html#abf6164e97c45812f8d11754091f40e61">testStorableObject::_index</a></div><div class="ttdeci">NSUInteger _index</div><div class="ttdef"><b>Definition:</b> TestBSPStorage.h:43</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_direct_object_storage_html"><div class="ttname"><a href="interface_d_k_b_s_p_direct_object_storage.html">DKBSPDirectObjectStorage</a></div><div class="ttdef"><b>Definition:</b> DKBSPDirectObjectStorage.h:15</div></div>
-<div class="ttc" id="interface_test_b_s_p_storage_html_a3a36a1738ea9afe9559a9a81dab4e7f4"><div class="ttname"><a href="interface_test_b_s_p_storage.html#a3a36a1738ea9afe9559a9a81dab4e7f4">-[TestBSPStorage testBSPStorage]</a></div><div class="ttdeci">void testBSPStorage()</div><div class="ttdef"><b>Definition:</b> TestBSPStorage.m:58</div></div>
-<div class="ttc" id="interfacetest_storable_object_html_a9787e1892043b6ae402c90859514607e"><div class="ttname"><a href="interfacetest_storable_object.html#a9787e1892043b6ae402c90859514607e">testStorableObject::_marked</a></div><div class="ttdeci">BOOL _marked</div><div class="ttdef"><b>Definition:</b> TestBSPStorage.h:44</div></div>
-<div class="ttc" id="interfacetest_storable_object_html_ae07dd5373e2bc112f6fa6c4be6e3ef63"><div class="ttname"><a href="interfacetest_storable_object.html#ae07dd5373e2bc112f6fa6c4be6e3ef63">testStorableObject::_storage</a></div><div class="ttdeci">id&lt; DKObjectStorage &gt; _storage</div><div class="ttdef"><b>Definition:</b> TestBSPStorage.h:45</div></div>
-<div class="ttc" id="interface_test_b_s_p_storage_html_a76e77cf70832db416e316c1f1b247817"><div class="ttname"><a href="interface_test_b_s_p_storage.html#a76e77cf70832db416e316c1f1b247817">-[TestBSPStorage testIndexedBSPStorage]</a></div><div class="ttdeci">void testIndexedBSPStorage()</div><div class="ttdef"><b>Definition:</b> TestBSPStorage.m:162</div></div>
-<div class="ttc" id="_d_k_b_s_p_direct_object_storage_8h_html"><div class="ttname"><a href="_d_k_b_s_p_direct_object_storage_8h.html">DKBSPDirectObjectStorage.h</a></div></div>
+<div class="ttc" id="interface_d_k_b_s_p_direct_object_storage_html"><div class="ttname"><a href="interface_d_k_b_s_p_direct_object_storage.html">DKBSPDirectObjectStorage</a></div><div class="ttdef"><b>Definition:</b> DKBSPDirectObjectStorage.h:21</div></div>
 <div class="ttc" id="protocol_d_k_object_storage-p_html"><div class="ttname"><a href="protocol_d_k_object_storage-p.html">DKObjectStorage-p</a></div><div class="ttdef"><b>Definition:</b> DKObjectStorageProtocol.h:45</div></div>
-<div class="ttc" id="interface_d_k_b_s_p_object_storage_html"><div class="ttname"><a href="interface_d_k_b_s_p_object_storage.html">DKBSPObjectStorage</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:40</div></div>
-<div class="ttc" id="interfacetest_storable_object_html_a2b367f6d8ffe4be8c4bf0de01f6da909"><div class="ttname"><a href="interfacetest_storable_object.html#a2b367f6d8ffe4be8c4bf0de01f6da909">testStorableObject::_bounds</a></div><div class="ttdeci">NSRect _bounds</div><div class="ttdef"><b>Definition:</b> TestBSPStorage.h:42</div></div>
-<div class="ttc" id="interfacetest_storable_object_html"><div class="ttname"><a href="interfacetest_storable_object.html">testStorableObject</a></div><div class="ttdef"><b>Definition:</b> TestBSPStorage.h:39</div></div>
-<div class="ttc" id="interface_test_b_s_p_storage_html"><div class="ttname"><a href="interface_test_b_s_p_storage.html">TestBSPStorage</a></div><div class="ttdef"><b>Definition:</b> TestBSPStorage.h:14</div></div>
+<div class="ttc" id="interface_d_k_b_s_p_object_storage_html"><div class="ttname"><a href="interface_d_k_b_s_p_object_storage.html">DKBSPObjectStorage</a></div><div class="ttdef"><b>Definition:</b> DKBSPObjectStorage.h:38</div></div>
+<div class="ttc" id="interfacetest_storable_object_html"><div class="ttname"><a href="interfacetest_storable_object.html">testStorableObject</a></div><div class="ttdef"><b>Definition:</b> TestBSPStorage.h:41</div></div>
+<div class="ttc" id="interface_test_b_s_p_storage_html"><div class="ttname"><a href="interface_test_b_s_p_storage.html">TestBSPStorage</a></div><div class="ttdef"><b>Definition:</b> TestBSPStorage.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:02 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:13 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

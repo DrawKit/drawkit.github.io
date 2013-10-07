@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,8 +91,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DKViewController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#import &lt;<a class="el" href="_d_k_view_controller_8h_source.html">DKViewController.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DKViewController:</div>
 <div class="dyncontent">
@@ -106,109 +104,157 @@ Inheritance diagram for DKViewController:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:a5f4b71c39da14ea9d22afcc6a28b5661"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a5f4b71c39da14ea9d22afcc6a28b5661">initWithView:</a></td></tr>
+<tr class="memdesc:a5f4b71c39da14ea9d22afcc6a28b5661"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the controller  <a href="#a5f4b71c39da14ea9d22afcc6a28b5661">More...</a><br/></td></tr>
 <tr class="separator:a5f4b71c39da14ea9d22afcc6a28b5661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adabd66065d6de01339e54cf36ab18afa"><td class="memItemLeft" align="right" valign="top">(NSView *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#adabd66065d6de01339e54cf36ab18afa">view</a></td></tr>
+<tr class="memdesc:adabd66065d6de01339e54cf36ab18afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the controller's view  <a href="#adabd66065d6de01339e54cf36ab18afa">More...</a><br/></td></tr>
 <tr class="separator:adabd66065d6de01339e54cf36ab18afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3970d77dcc0581473e2441a72ba61488"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_drawing.html">DKDrawing</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a3970d77dcc0581473e2441a72ba61488">drawing</a></td></tr>
+<tr class="memdesc:a3970d77dcc0581473e2441a72ba61488"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the controller's drawing  <a href="#a3970d77dcc0581473e2441a72ba61488">More...</a><br/></td></tr>
 <tr class="separator:a3970d77dcc0581473e2441a72ba61488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b6ad2c403f3189ac0dd43815fe3e1b6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a8b6ad2c403f3189ac0dd43815fe3e1b6">setViewNeedsDisplay:</a></td></tr>
+<tr class="memdesc:a8b6ad2c403f3189ac0dd43815fe3e1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">mark the entire view for update  <a href="#a8b6ad2c403f3189ac0dd43815fe3e1b6">More...</a><br/></td></tr>
 <tr class="separator:a8b6ad2c403f3189ac0dd43815fe3e1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023335e03face35c24d45d4d1d7bfa8d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a023335e03face35c24d45d4d1d7bfa8d">setViewNeedsDisplayInRect:</a></td></tr>
+<tr class="memdesc:a023335e03face35c24d45d4d1d7bfa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">mark part of the view for update  <a href="#a023335e03face35c24d45d4d1d7bfa8d">More...</a><br/></td></tr>
 <tr class="separator:a023335e03face35c24d45d4d1d7bfa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59a2d61f79e0d7a74bc8cb589f94dc20"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a59a2d61f79e0d7a74bc8cb589f94dc20">drawingDidChangeToSize:</a></td></tr>
+<tr class="memdesc:a59a2d61f79e0d7a74bc8cb589f94dc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">notify that the drawing has had its size changed  <a href="#a59a2d61f79e0d7a74bc8cb589f94dc20">More...</a><br/></td></tr>
 <tr class="separator:a59a2d61f79e0d7a74bc8cb589f94dc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ee5eeaf3b91228a3ba29a319624b73a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a6ee5eeaf3b91228a3ba29a319624b73a">scrollViewToRect:</a></td></tr>
+<tr class="memdesc:a6ee5eeaf3b91228a3ba29a319624b73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">scroll the view so that the given area is visible  <a href="#a6ee5eeaf3b91228a3ba29a319624b73a">More...</a><br/></td></tr>
 <tr class="separator:a6ee5eeaf3b91228a3ba29a319624b73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5de3e5f4cf101a767dcf29b10c9a635d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a5de3e5f4cf101a767dcf29b10c9a635d">updateViewRulerMarkersForRect:</a></td></tr>
+<tr class="memdesc:a5de3e5f4cf101a767dcf29b10c9a635d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the ruler markers to the given rect  <a href="#a5de3e5f4cf101a767dcf29b10c9a635d">More...</a><br/></td></tr>
 <tr class="separator:a5de3e5f4cf101a767dcf29b10c9a635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af04bbaaa75f7ad32ee0217cf83be3e82"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#af04bbaaa75f7ad32ee0217cf83be3e82">hideViewRulerMarkers</a></td></tr>
+<tr class="memdesc:af04bbaaa75f7ad32ee0217cf83be3e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">hide the view's ruler markers  <a href="#af04bbaaa75f7ad32ee0217cf83be3e82">More...</a><br/></td></tr>
 <tr class="separator:af04bbaaa75f7ad32ee0217cf83be3e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dbf18cac429e86276b4a6d0f2fea61c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a6dbf18cac429e86276b4a6d0f2fea61c">synchronizeViewRulersWithUnits:</a></td></tr>
+<tr class="memdesc:a6dbf18cac429e86276b4a6d0f2fea61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the rulers to match the unit string  <a href="#a6dbf18cac429e86276b4a6d0f2fea61c">More...</a><br/></td></tr>
 <tr class="separator:a6dbf18cac429e86276b4a6d0f2fea61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07de78e2030de9a2ea9e49a858a5be9b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a07de78e2030de9a2ea9e49a858a5be9b">invalidateCursors</a></td></tr>
+<tr class="memdesc:a07de78e2030de9a2ea9e49a858a5be9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">invalidate the cursor rects for the view  <a href="#a07de78e2030de9a2ea9e49a858a5be9b">More...</a><br/></td></tr>
 <tr class="separator:a07de78e2030de9a2ea9e49a858a5be9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab99831418860267fff3015607be420ea"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#ab99831418860267fff3015607be420ea">exitTemporaryTextEditingMode</a></td></tr>
+<tr class="memdesc:ab99831418860267fff3015607be420ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop any text editing that may be taking place in the view  <a href="#ab99831418860267fff3015607be420ea">More...</a><br/></td></tr>
 <tr class="separator:ab99831418860267fff3015607be420ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af14150d6cff8b43a526f86d8e5e564da"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#af14150d6cff8b43a526f86d8e5e564da">objectDidNotifyStatusChange:</a></td></tr>
+<tr class="memdesc:af14150d6cff8b43a526f86d8e5e564da"><td class="mdescLeft">&#160;</td><td class="mdescRight">an object in the drawing notified a status (rather than visual) change  <a href="#af14150d6cff8b43a526f86d8e5e564da">More...</a><br/></td></tr>
 <tr class="separator:af14150d6cff8b43a526f86d8e5e564da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7d62ffc011e037bc155620eef78051d"><td class="memItemLeft" align="right" valign="top">(CGFloat)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#ab7d62ffc011e037bc155620eef78051d">viewScale</a></td></tr>
+<tr class="memdesc:ab7d62ffc011e037bc155620eef78051d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the current scale of the view  <a href="#ab7d62ffc011e037bc155620eef78051d">More...</a><br/></td></tr>
 <tr class="separator:ab7d62ffc011e037bc155620eef78051d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa710ba4adfc11db846e4b732e6258f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a2fa710ba4adfc11db846e4b732e6258f">mouseDown:</a></td></tr>
+<tr class="memdesc:a2fa710ba4adfc11db846e4b732e6258f"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the mouse down event  <a href="#a2fa710ba4adfc11db846e4b732e6258f">More...</a><br/></td></tr>
 <tr class="separator:a2fa710ba4adfc11db846e4b732e6258f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abebb3050581ec347660ecdad3398ac94"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#abebb3050581ec347660ecdad3398ac94">mouseDragged:</a></td></tr>
+<tr class="memdesc:abebb3050581ec347660ecdad3398ac94"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the mouse dragged event  <a href="#abebb3050581ec347660ecdad3398ac94">More...</a><br/></td></tr>
 <tr class="separator:abebb3050581ec347660ecdad3398ac94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d7f7e76c40f82fe2ce8a987d088dc0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#aa3d7f7e76c40f82fe2ce8a987d088dc0">mouseUp:</a></td></tr>
+<tr class="memdesc:aa3d7f7e76c40f82fe2ce8a987d088dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the mouse up event  <a href="#aa3d7f7e76c40f82fe2ce8a987d088dc0">More...</a><br/></td></tr>
 <tr class="separator:aa3d7f7e76c40f82fe2ce8a987d088dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2aeb11df6ebbc984ca944717ae6096"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a3d2aeb11df6ebbc984ca944717ae6096">mouseMoved:</a></td></tr>
+<tr class="memdesc:a3d2aeb11df6ebbc984ca944717ae6096"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the mouse moved event  <a href="#a3d2aeb11df6ebbc984ca944717ae6096">More...</a><br/></td></tr>
 <tr class="separator:a3d2aeb11df6ebbc984ca944717ae6096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4eac4d73be0de7f440cc347fe079bf93"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a4eac4d73be0de7f440cc347fe079bf93">flagsChanged:</a></td></tr>
+<tr class="memdesc:a4eac4d73be0de7f440cc347fe079bf93"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the flags changed event  <a href="#a4eac4d73be0de7f440cc347fe079bf93">More...</a><br/></td></tr>
 <tr class="separator:a4eac4d73be0de7f440cc347fe079bf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cc80c1c5dcadabc57f3de6fe16e3da"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a82cc80c1c5dcadabc57f3de6fe16e3da">rulerView:handleMouseDown:</a></td></tr>
+<tr class="memdesc:a82cc80c1c5dcadabc57f3de6fe16e3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">respond to a mouse-down in one of the view's rulers  <a href="#a82cc80c1c5dcadabc57f3de6fe16e3da">More...</a><br/></td></tr>
 <tr class="separator:a82cc80c1c5dcadabc57f3de6fe16e3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f2d53103ebc3e7ed2f9bd2c4887c52"><td class="memItemLeft" align="right" valign="top">(NSCursor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#ac7f2d53103ebc3e7ed2f9bd2c4887c52">cursor</a></td></tr>
+<tr class="memdesc:ac7f2d53103ebc3e7ed2f9bd2c4887c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the cursor to display when the mouse is in the view  <a href="#ac7f2d53103ebc3e7ed2f9bd2c4887c52">More...</a><br/></td></tr>
 <tr class="separator:ac7f2d53103ebc3e7ed2f9bd2c4887c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade642dc49c09537806d09dbad19b899e"><td class="memItemLeft" align="right" valign="top">(NSRect)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#ade642dc49c09537806d09dbad19b899e">activeCursorRect</a></td></tr>
+<tr class="memdesc:ade642dc49c09537806d09dbad19b899e"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the active cursor rect  <a href="#ade642dc49c09537806d09dbad19b899e">More...</a><br/></td></tr>
 <tr class="separator:ade642dc49c09537806d09dbad19b899e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fd42c7997856866239f94e4fb36999f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a9fd42c7997856866239f94e4fb36999f">setContextualMenusEnabled:</a></td></tr>
+<tr class="memdesc:a9fd42c7997856866239f94e4fb36999f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set whether the standard contextual menus within DK are enabled or not  <a href="#a9fd42c7997856866239f94e4fb36999f">More...</a><br/></td></tr>
 <tr class="separator:a9fd42c7997856866239f94e4fb36999f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d95080289e2fc0b629b15861f9b26da"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a1d95080289e2fc0b629b15861f9b26da">contextualMenusEnabled</a></td></tr>
+<tr class="memdesc:a1d95080289e2fc0b629b15861f9b26da"><td class="mdescLeft">&#160;</td><td class="mdescRight">are the standard contextual menus within DK are enabled or not?  <a href="#a1d95080289e2fc0b629b15861f9b26da">More...</a><br/></td></tr>
 <tr class="separator:a1d95080289e2fc0b629b15861f9b26da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dfe9ab7ed0364142e377887a4e72d30"><td class="memItemLeft" align="right" valign="top">(NSMenu *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a1dfe9ab7ed0364142e377887a4e72d30">menuForEvent:</a></td></tr>
+<tr class="memdesc:a1dfe9ab7ed0364142e377887a4e72d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">build a menu for a right-click event  <a href="#a1dfe9ab7ed0364142e377887a4e72d30">More...</a><br/></td></tr>
 <tr class="separator:a1dfe9ab7ed0364142e377887a4e72d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bf194826195bd38a3abfc6163d1c1be"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a8bf194826195bd38a3abfc6163d1c1be">startAutoscrolling</a></td></tr>
+<tr class="memdesc:a8bf194826195bd38a3abfc6163d1c1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">start the autoscroll timer  <a href="#a8bf194826195bd38a3abfc6163d1c1be">More...</a><br/></td></tr>
 <tr class="separator:a8bf194826195bd38a3abfc6163d1c1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a367d380efc05e898be02f6cf40d59a7c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a367d380efc05e898be02f6cf40d59a7c">stopAutoscrolling</a></td></tr>
+<tr class="memdesc:a367d380efc05e898be02f6cf40d59a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop the autoscroll timer  <a href="#a367d380efc05e898be02f6cf40d59a7c">More...</a><br/></td></tr>
 <tr class="separator:a367d380efc05e898be02f6cf40d59a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5391c730ad543b1959057f87ec16ad9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#ad5391c730ad543b1959057f87ec16ad9">autoscrollTimerCallback:</a></td></tr>
-<tr class="memdesc:ad5391c730ad543b1959057f87ec16ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><hr/>
-  <a href="#ad5391c730ad543b1959057f87ec16ad9">More...</a><br/></td></tr>
+<tr class="memdesc:ad5391c730ad543b1959057f87ec16ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles autoscrolling  <a href="#ad5391c730ad543b1959057f87ec16ad9">More...</a><br/></td></tr>
 <tr class="separator:ad5391c730ad543b1959057f87ec16ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a538612f35394aeac5498535cb760063d"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_layer.html">DKLayer</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a538612f35394aeac5498535cb760063d">activeLayer</a></td></tr>
+<tr class="memdesc:a538612f35394aeac5498535cb760063d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the drawing's current active layer  <a href="#a538612f35394aeac5498535cb760063d">More...</a><br/></td></tr>
 <tr class="separator:a538612f35394aeac5498535cb760063d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a096b018bbf120711543fc6777299ccf7"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a096b018bbf120711543fc6777299ccf7">activeLayerOfClass:</a></td></tr>
+<tr class="memdesc:a096b018bbf120711543fc6777299ccf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the drawing's current active layer if it matches the given class, else nil  <a href="#a096b018bbf120711543fc6777299ccf7">More...</a><br/></td></tr>
 <tr class="separator:a096b018bbf120711543fc6777299ccf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db6fa540776439f1323990f57531c1c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a2db6fa540776439f1323990f57531c1c">setActivatesLayersAutomatically:</a></td></tr>
+<tr class="memdesc:a2db6fa540776439f1323990f57531c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">should a mouse down activate the layer it hits automatically?  <a href="#a2db6fa540776439f1323990f57531c1c">More...</a><br/></td></tr>
 <tr class="separator:a2db6fa540776439f1323990f57531c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa355cd361d08411dd46cce917323f780"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#aa355cd361d08411dd46cce917323f780">activatesLayersAutomatically</a></td></tr>
+<tr class="memdesc:aa355cd361d08411dd46cce917323f780"><td class="mdescLeft">&#160;</td><td class="mdescRight">should a mouse down activate the layer it hits automatically?  <a href="#aa355cd361d08411dd46cce917323f780">More...</a><br/></td></tr>
 <tr class="separator:aa355cd361d08411dd46cce917323f780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e4356472e86e613c19aaf940332990c"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_layer.html">DKLayer</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a2e4356472e86e613c19aaf940332990c">findLayer:</a></td></tr>
+<tr class="memdesc:a2e4356472e86e613c19aaf940332990c"><td class="mdescLeft">&#160;</td><td class="mdescRight">which layer did the point hit?  <a href="#a2e4356472e86e613c19aaf940332990c">More...</a><br/></td></tr>
 <tr class="separator:a2e4356472e86e613c19aaf940332990c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdad2d1d7fd87618e7b701395e701b29"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#acdad2d1d7fd87618e7b701395e701b29">activeLayerWillChangeToLayer:</a></td></tr>
+<tr class="memdesc:acdad2d1d7fd87618e7b701395e701b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">a new layer is about to be activated  <a href="#acdad2d1d7fd87618e7b701395e701b29">More...</a><br/></td></tr>
 <tr class="separator:acdad2d1d7fd87618e7b701395e701b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ca4a07a71a709d823aad838e01356da"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a0ca4a07a71a709d823aad838e01356da">activeLayerDidChangeToLayer:</a></td></tr>
+<tr class="memdesc:a0ca4a07a71a709d823aad838e01356da"><td class="mdescLeft">&#160;</td><td class="mdescRight">a new layer was activated  <a href="#a0ca4a07a71a709d823aad838e01356da">More...</a><br/></td></tr>
 <tr class="separator:a0ca4a07a71a709d823aad838e01356da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2142a72f2ccbf9b72001cfd38f9a6d58"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a2142a72f2ccbf9b72001cfd38f9a6d58">autoActivateLayerWithEvent:</a></td></tr>
+<tr class="memdesc:a2142a72f2ccbf9b72001cfd38f9a6d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">if layers can be automatically activated, perform that switch  <a href="#a2142a72f2ccbf9b72001cfd38f9a6d58">More...</a><br/></td></tr>
 <tr class="separator:a2142a72f2ccbf9b72001cfd38f9a6d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75ce236a3d09a10689cfaa780fe21b4c"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a75ce236a3d09a10689cfaa780fe21b4c">layerBringToFront:</a></td></tr>
+<tr class="memdesc:a75ce236a3d09a10689cfaa780fe21b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">bring the active layer to the front of its group  <a href="#a75ce236a3d09a10689cfaa780fe21b4c">More...</a><br/></td></tr>
 <tr class="separator:a75ce236a3d09a10689cfaa780fe21b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca85ba9d3cb7f39359079131a15715d3"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#aca85ba9d3cb7f39359079131a15715d3">layerBringForward:</a></td></tr>
+<tr class="memdesc:aca85ba9d3cb7f39359079131a15715d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the active layer 1 position forward within its group  <a href="#aca85ba9d3cb7f39359079131a15715d3">More...</a><br/></td></tr>
 <tr class="separator:aca85ba9d3cb7f39359079131a15715d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c0c752c15cc5c640af20de6aa8ac2f"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a03c0c752c15cc5c640af20de6aa8ac2f">layerSendToBack:</a></td></tr>
+<tr class="memdesc:a03c0c752c15cc5c640af20de6aa8ac2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the active layer to the back within its group  <a href="#a03c0c752c15cc5c640af20de6aa8ac2f">More...</a><br/></td></tr>
 <tr class="separator:a03c0c752c15cc5c640af20de6aa8ac2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a08ef550d059b4ee3c5a232d817fae"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#af1a08ef550d059b4ee3c5a232d817fae">layerSendBackward:</a></td></tr>
+<tr class="memdesc:af1a08ef550d059b4ee3c5a232d817fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the active layer 1 position towards the back within its group  <a href="#af1a08ef550d059b4ee3c5a232d817fae">More...</a><br/></td></tr>
 <tr class="separator:af1a08ef550d059b4ee3c5a232d817fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2663450bfec2c532832260692ec238b5"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a2663450bfec2c532832260692ec238b5">hideInactiveLayers:</a></td></tr>
+<tr class="memdesc:a2663450bfec2c532832260692ec238b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">hides all inactive layers and shows the active layer (if it's hidden)  <a href="#a2663450bfec2c532832260692ec238b5">More...</a><br/></td></tr>
 <tr class="separator:a2663450bfec2c532832260692ec238b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd501d74024a95be49d2b38a5e8e923"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a5bd501d74024a95be49d2b38a5e8e923">showAllLayers:</a></td></tr>
+<tr class="memdesc:a5bd501d74024a95be49d2b38a5e8e923"><td class="mdescLeft">&#160;</td><td class="mdescRight">shows all layers  <a href="#a5bd501d74024a95be49d2b38a5e8e923">More...</a><br/></td></tr>
 <tr class="separator:a5bd501d74024a95be49d2b38a5e8e923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a760927e6b77be2812b9d11f92f4a239f"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a760927e6b77be2812b9d11f92f4a239f">toggleSnapToGrid:</a></td></tr>
+<tr class="memdesc:a760927e6b77be2812b9d11f92f4a239f"><td class="mdescLeft">&#160;</td><td class="mdescRight">toggle whether snapping to grid is enabled  <a href="#a760927e6b77be2812b9d11f92f4a239f">More...</a><br/></td></tr>
 <tr class="separator:a760927e6b77be2812b9d11f92f4a239f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fba47da5ae0a1104e4094c8aa51812f"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a4fba47da5ae0a1104e4094c8aa51812f">toggleSnapToGuides:</a></td></tr>
+<tr class="memdesc:a4fba47da5ae0a1104e4094c8aa51812f"><td class="mdescLeft">&#160;</td><td class="mdescRight">toggle whether snapping to guides is enabled  <a href="#a4fba47da5ae0a1104e4094c8aa51812f">More...</a><br/></td></tr>
 <tr class="separator:a4fba47da5ae0a1104e4094c8aa51812f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf52006ef0a74abace809739aa79fef7"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#acf52006ef0a74abace809739aa79fef7">toggleGridVisible:</a></td></tr>
+<tr class="memdesc:acf52006ef0a74abace809739aa79fef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">toggle whether the grid layer is visible  <a href="#acf52006ef0a74abace809739aa79fef7">More...</a><br/></td></tr>
 <tr class="separator:acf52006ef0a74abace809739aa79fef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13dbcdff9cde4d5c520f5bab328f2d0c"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a13dbcdff9cde4d5c520f5bab328f2d0c">toggleGuidesVisible:</a></td></tr>
+<tr class="memdesc:a13dbcdff9cde4d5c520f5bab328f2d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">toggle whether the guide layer is visible  <a href="#a13dbcdff9cde4d5c520f5bab328f2d0c">More...</a><br/></td></tr>
 <tr class="separator:a13dbcdff9cde4d5c520f5bab328f2d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7a2cdebb9f25e8c45a8ed2e167989b"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a0f7a2cdebb9f25e8c45a8ed2e167989b">copyDrawing:</a></td></tr>
+<tr class="memdesc:a0f7a2cdebb9f25e8c45a8ed2e167989b"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies the entire drawing to the general pasteboard  <a href="#a0f7a2cdebb9f25e8c45a8ed2e167989b">More...</a><br/></td></tr>
 <tr class="separator:a0f7a2cdebb9f25e8c45a8ed2e167989b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2633cfeb7f7b5de2346f2e9b21c7b8be"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a2633cfeb7f7b5de2346f2e9b21c7b8be">setDrawing:</a></td></tr>
+<tr class="memdesc:a2633cfeb7f7b5de2346f2e9b21c7b8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the drawing that the controller is attached to  <a href="#a2633cfeb7f7b5de2346f2e9b21c7b8be">More...</a><br/></td></tr>
 <tr class="separator:a2633cfeb7f7b5de2346f2e9b21c7b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976d20512d1426758e0bb1f3f7d7db98"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_view_controller.html#a976d20512d1426758e0bb1f3f7d7db98">setView:</a></td></tr>
+<tr class="memdesc:a976d20512d1426758e0bb1f3f7d7db98"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the view that the controller is associated with  <a href="#a976d20512d1426758e0bb1f3f7d7db98">More...</a><br/></td></tr>
 <tr class="separator:a976d20512d1426758e0bb1f3f7d7db98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a0049da4da3fb862ebbdc2d7f5dda16ce"><td class="memItemLeft" align="right" valign="top">NSEvent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_d_k_view_controller.html#a0049da4da3fb862ebbdc2d7f5dda16ce">mDragEvent</a></td></tr>
+<tr class="memitem:a0049da4da3fb862ebbdc2d7f5dda16ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0049da4da3fb862ebbdc2d7f5dda16ce"></a>
+NSEvent *&#160;</td><td class="memItemRight" valign="bottom"><b>mDragEvent</b></td></tr>
 <tr class="separator:a0049da4da3fb862ebbdc2d7f5dda16ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
@@ -225,6 +271,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>should a mouse down activate the layer it hits automatically? </p>
+<dl class="section note"><dt>Note</dt><dd>the default is YES </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>YES to auto-activate a layer, NO to leave it to someone else </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ade642dc49c09537806d09dbad19b899e"></a>
@@ -240,6 +290,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return the active cursor rect </p>
+<dl class="section note"><dt>Note</dt><dd>defines the area in which -cursor will be displayed - outside this rect the arrow cursor is displayed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a rect </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a538612f35394aeac5498535cb760063d"></a>
@@ -254,6 +308,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return the drawing's current active layer </p>
+<dl class="section return"><dt>Returns</dt><dd>the active layer </dd></dl>
 
 </div>
 </div>
@@ -271,6 +328,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>a new layer was activated </p>
+<dl class="section note"><dt>Note</dt><dd>the default method sets up the drag types for the view based on what drag types the layer is able to receive. If you override this, call super to ensure dragging still operates correctly. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aLayer</td><td>the layer that was activated </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a096b018bbf120711543fc6777299ccf7"></a>
@@ -286,6 +352,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return the drawing's current active layer if it matches the given class, else nil </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aClass</td><td>a layer class </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the active layer if it matches the class, otherwise nil </dd></dl>
 
 </div>
 </div>
@@ -303,6 +378,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>a new layer is about to be activated </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aLayer</td><td>the layer about to be activated </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a2142a72f2ccbf9b72001cfd38f9a6d58"></a>
@@ -318,6 +401,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>if layers can be automatically activated, perform that switch </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the initiating event - typically a mouseDown event. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if a new layer was actually made active, NO if it remained the same </dd></dl>
 
 </div>
 </div>
@@ -335,8 +427,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><hr/>
- </p>
+<p>handles autoscrolling </p>
+<dl class="section note"><dt>Note</dt><dd>autscrolls the view if the mouse is outside it during a drag, then invokes the controller's </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>the timer </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -352,6 +450,10 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>are the standard contextual menus within DK are enabled or not? </p>
+<dl class="section note"><dt>Note</dt><dd>the default is to enable the menus </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if standard contextual menus are enabled, NO if not </dd></dl>
 
 </div>
 </div>
@@ -369,6 +471,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>copies the entire drawing to the general pasteboard </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Drawing is copied as a PDF. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ac7f2d53103ebc3e7ed2f9bd2c4887c52"></a>
@@ -384,6 +495,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return the cursor to display when the mouse is in the view </p>
+<dl class="section return"><dt>Returns</dt><dd>a cursor </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a3970d77dcc0581473e2441a72ba61488"></a>
@@ -398,6 +512,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return the controller's drawing </p>
+<dl class="section return"><dt>Returns</dt><dd>the controller's drawing </dd></dl>
 
 </div>
 </div>
@@ -415,6 +532,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>notify that the drawing has had its size changed </p>
+<dl class="section note"><dt>Note</dt><dd>the view's bounds and frame are adjusted to enclose the full drawing size and the view is updated </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drawingSizeValue</td><td>an NSValue containing a sizeValue </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ab99831418860267fff3015607be420ea"></a>
@@ -429,6 +555,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>stop any text editing that may be taking place in the view </p>
+<dl class="section note"><dt>Note</dt><dd>this is called by the drawing - generally you shouldn't call it directly, but instead use the similar drawing methods that take simple parameter types </dd></dl>
 
 </div>
 </div>
@@ -446,6 +575,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>which layer did the point hit? </p>
+<dl class="section note"><dt>Note</dt><dd>test layers top-down. Each layer can decide for itself what constitutes a "hit". Typically a layer is hit when any object it contains is hit. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>a point in local coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the topmost layer hit by the given point, else nil </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4eac4d73be0de7f440cc347fe079bf93"></a>
@@ -461,6 +600,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>handle the flags changed event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -478,6 +625,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>hides all inactive layers and shows the active layer (if it's hidden) </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="af04bbaaa75f7ad32ee0217cf83be3e82"></a>
@@ -492,6 +648,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>hide the view's ruler markers </p>
+<dl class="section note"><dt>Note</dt><dd>this is called by the drawing - generally you shouldn't call it directly, but instead use the similar drawing methods that take simple parameter types </dd></dl>
 
 </div>
 </div>
@@ -509,6 +668,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>initialize the controller </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aView</td><td>the view object that this controller manages </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the controller object </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a07de78e2030de9a2ea9e49a858a5be9b"></a>
@@ -523,6 +691,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>invalidate the cursor rects for the view </p>
+<dl class="section note"><dt>Note</dt><dd>this is called by the drawing - generally you shouldn't call it directly, but instead use the similar drawing methods that take simple parameter types </dd></dl>
 
 </div>
 </div>
@@ -540,6 +711,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>move the active layer 1 position forward within its group </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Undoably moves the layer forward. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a75ce236a3d09a10689cfaa780fe21b4c"></a>
@@ -555,6 +735,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>bring the active layer to the front of its group </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Undoably moves the layer to front. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -572,6 +761,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>move the active layer 1 position towards the back within its group </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Undoably moves the layer backwards. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a03c0c752c15cc5c640af20de6aa8ac2f"></a>
@@ -587,6 +785,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>move the active layer to the back within its group </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Undoably moves the layer to the back. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -604,6 +811,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>build a menu for a right-click event </p>
+<dl class="section note"><dt>Note</dt><dd>this just defers to the active layer. If menus are disabled, returns nil. Note that locked layers still receive this message - individual items may be sensitive to the lock state. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a menu, or nil </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a2fa710ba4adfc11db846e4b732e6258f"></a>
@@ -619,6 +836,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>handle the mouse down event </p>
+<dl class="section note"><dt>Note</dt><dd>if set to activate layers automatically, this will do so if the mouse hit something. It also starts a timer for autoscrolling, so if you override this, call super to get autoscrolling, or call startAutoscrolling on mouseDown. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -636,6 +862,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>handle the mouse dragged event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a3d2aeb11df6ebbc984ca944717ae6096"></a>
@@ -651,6 +885,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>handle the mouse moved event </p>
+<dl class="section note"><dt>Note</dt><dd>the basic controller ignores this - override to use it. <a class="el" href="interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. ">DKDrawingView</a> turns on mouse moved events by default but other view types may not. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -668,6 +911,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>handle the mouse up event </p>
+<dl class="section note"><dt>Note</dt><dd>this stops the autoscrolling. If you override it, call super or stopAutoscrolling to ensure auto- scrolling works as intended. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="af14150d6cff8b43a526f86d8e5e564da"></a>
@@ -683,6 +935,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>an object in the drawing notified a status (rather than visual) change </p>
+<dl class="section note"><dt>Note</dt><dd>override to make use of this - the normal view controller just ignores this </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>the object that changed </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -710,6 +971,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>respond to a mouse-down in one of the view's rulers </p>
+<dl class="section note"><dt>Note</dt><dd>this implements the dragging of a guide "off' a ruler and into place in the drawing's guide layer. If there is no guide layer it does nothing. This keeps control during the drag and invokes </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aRulerView</td><td>the ruler view that started the event </td></tr>
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a6ee5eeaf3b91228a3ba29a319624b73a"></a>
@@ -725,6 +996,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>scroll the view so that the given area is visible </p>
+<dl class="section note"><dt>Note</dt><dd>this is called by the drawing - generally you shouldn't call it directly, but instead use the similar drawing methods that take simple parameter types </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectValue</td><td>an NSValue containing a rectValue, the rect to scroll into view </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -742,6 +1022,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>should a mouse down activate the layer it hits automatically? </p>
+<dl class="section note"><dt>Note</dt><dd>the default is YES </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">acts</td><td>YES to auto-activate a layer, NO to leave it to someone else </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a9fd42c7997856866239f94e4fb36999f"></a>
@@ -757,6 +1046,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>set whether the standard contextual menus within DK are enabled or not </p>
+<dl class="section note"><dt>Note</dt><dd>the default is to enable the menus - some apps may wish to turn off the standard menus altogether rather than overriding each point where they are set up. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>YES to enable the menus, NO to disable them </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -774,6 +1072,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>set the drawing that the controller is attached to </p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="interface_d_k_drawing.html">DKDrawing</a> objects own the controllers added to them. You should not call this directly - <a class="el" href="interface_d_k_drawing.html">DKDrawing</a> calls this at the appropriate time when the controller is added. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aDrawing</td><td>the drawing object </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a976d20512d1426758e0bb1f3f7d7db98"></a>
@@ -789,6 +1096,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>set the view that the controller is associated with </p>
+<dl class="section note"><dt>Note</dt><dd>You should not call this directly, it is called by the designated initializer </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aView</td><td>the view </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -806,6 +1122,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>mark the entire view for update </p>
+<dl class="section note"><dt>Note</dt><dd>this is called by the drawing - generally you shouldn't call it directly, but instead use the similar drawing methods that take simple parameter types </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">updateBoolValue</td><td>an NSNumber containing a boolValue, YES to update, NO to not update </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a023335e03face35c24d45d4d1d7bfa8d"></a>
@@ -821,6 +1146,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>mark part of the view for update </p>
+<dl class="section note"><dt>Note</dt><dd>this is called by the drawing - generally you shouldn't call it directly, but instead use the similar drawing methods that take simple parameter types </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">updateRectValue</td><td>an NSValue containing a rectValue, the area to mark for update </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -838,6 +1172,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>shows all layers </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a8bf194826195bd38a3abfc6163d1c1be"></a>
@@ -853,6 +1196,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>start the autoscroll timer </p>
+<dl class="section note"><dt>Note</dt><dd>starts a timer running at 20fps which will cause autscrolling as long as the mouse is outside the view. Normally autoscrolling should start on mouse down and stop on mouse up. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a367d380efc05e898be02f6cf40d59a7c"></a>
@@ -867,6 +1213,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>stop the autoscroll timer </p>
+<dl class="section note"><dt>Note</dt><dd>Normally autoscrolling should start on mouse down and stop on mouse up. </dd></dl>
 
 </div>
 </div>
@@ -884,6 +1233,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>set the rulers to match the unit string </p>
+<dl class="section note"><dt>Note</dt><dd>this is called by the drawing - generally you shouldn't call it directly, but instead use the similar drawing methods that take simple parameter types </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unitString</td><td>a string used to look up the previously established ruler settings </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="acf52006ef0a74abace809739aa79fef7"></a>
@@ -899,6 +1257,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>toggle whether the grid layer is visible </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Flips the current state of grid visible. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -916,6 +1283,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>toggle whether the guide layer is visible </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Flips the current state of guide visible. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a760927e6b77be2812b9d11f92f4a239f"></a>
@@ -931,6 +1307,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>toggle whether snapping to grid is enabled </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Flips the current state of snap to grid. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -948,6 +1333,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>toggle whether snapping to guides is enabled </p>
+<dl class="section note"><dt>Note</dt><dd>high-level method can be invoked directly from a menu. Flips the current state of snap to guides. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a5de3e5f4cf101a767dcf29b10c9a635d"></a>
@@ -964,6 +1358,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>set the ruler markers to the given rect </p>
+<dl class="section note"><dt>Note</dt><dd>this is called by the drawing - generally you shouldn't call it directly, but instead use the similar drawing methods that take simple parameter types </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectValue</td><td>an NSValue containing a rectValue, the rect to move ruler markers to </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="adabd66065d6de01339e54cf36ab18afa"></a>
@@ -978,6 +1381,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return the controller's view </p>
+<dl class="section return"><dt>Returns</dt><dd>the controller's view </dd></dl>
 
 </div>
 </div>
@@ -994,37 +1400,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a0049da4da3fb862ebbdc2d7f5dda16ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSEvent*) mDragEvent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>return the current scale of the view </p>
+<dl class="section return"><dt>Returns</dt><dd>a float value representing the view's zoom scale, 1.0 = 100%, 2.0 = 200% etc. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>framework/Code/<a class="el" href="_d_k_view_controller_8h_source.html">DKViewController.h</a></li>
-<li>framework/Code/<a class="el" href="_d_k_view_controller_8m.html">DKViewController.m</a></li>
+<li><a class="el" href="_d_k_view_controller_8h_source.html">DKViewController.h</a></li>
+<li>DKViewController.m</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:04 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:15 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

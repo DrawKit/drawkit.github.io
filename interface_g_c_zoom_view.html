@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,81 +91,107 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">GCZoomView Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#import &lt;<a class="el" href="_g_c_zoom_view_8h_source.html">GCZoomView.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GCZoomView:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="interface_g_c_zoom_view.png" usemap="#GCZoomView_map" alt=""/>
   <map id="GCZoomView_map" name="GCZoomView_map">
-<area href="interface_d_k_drawing_view.html" alt="DKDrawingView" shape="rect" coords="144,112,278,136"/>
+<area href="interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="DKDrawingView" shape="rect" coords="144,112,278,136"/>
 <area href="interface_d_k_layer_p_d_f_view.html" alt="DKLayerPDFView" shape="rect" coords="0,168,134,192"/>
 <area href="interface_d_k_print_drawing_view.html" alt="DKPrintDrawingView" shape="rect" coords="144,168,278,192"/>
-<area href="interface_d_k_selection_p_d_f_view.html" title="DrawKit ©2005-2008 Apptree.net. " alt="DKSelectionPDFView" shape="rect" coords="288,168,422,192"/>
+<area href="interface_d_k_selection_p_d_f_view.html" alt="DKSelectionPDFView" shape="rect" coords="288,168,422,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:acefc1324f848925996a21cd563677b02"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#acefc1324f848925996a21cd563677b02">zoomIn:</a></td></tr>
+<tr class="memdesc:acefc1324f848925996a21cd563677b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">zoom in (scale up) by a factor of 2  <a href="#acefc1324f848925996a21cd563677b02">More...</a><br/></td></tr>
 <tr class="separator:acefc1324f848925996a21cd563677b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a340ce85aec5255b5e6a8dbab93c64c1d"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a340ce85aec5255b5e6a8dbab93c64c1d">zoomOut:</a></td></tr>
+<tr class="memdesc:a340ce85aec5255b5e6a8dbab93c64c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">zoom out (scale down) by a factor of 2  <a href="#a340ce85aec5255b5e6a8dbab93c64c1d">More...</a><br/></td></tr>
 <tr class="separator:a340ce85aec5255b5e6a8dbab93c64c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8103709d13de74b3b52bf97699a614"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a2d8103709d13de74b3b52bf97699a614">zoomToActualSize:</a></td></tr>
+<tr class="memdesc:a2d8103709d13de74b3b52bf97699a614"><td class="mdescLeft">&#160;</td><td class="mdescRight">restore the zoom to 100%  <a href="#a2d8103709d13de74b3b52bf97699a614">More...</a><br/></td></tr>
 <tr class="separator:a2d8103709d13de74b3b52bf97699a614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec9410c640f0fb0ee9fbf9fe7766c38"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#aeec9410c640f0fb0ee9fbf9fe7766c38">zoomFitInWindow:</a></td></tr>
+<tr class="memdesc:aeec9410c640f0fb0ee9fbf9fe7766c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">zoom so that the entire extent of the enclosing frame is visible  <a href="#aeec9410c640f0fb0ee9fbf9fe7766c38">More...</a><br/></td></tr>
 <tr class="separator:aeec9410c640f0fb0ee9fbf9fe7766c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0789aa6900c406492a141fd28cba229"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#ae0789aa6900c406492a141fd28cba229">zoomToPercentageWithTag:</a></td></tr>
+<tr class="memdesc:ae0789aa6900c406492a141fd28cba229"><td class="mdescLeft">&#160;</td><td class="mdescRight">takes the senders tag value as the desired percentage  <a href="#ae0789aa6900c406492a141fd28cba229">More...</a><br/></td></tr>
 <tr class="separator:ae0789aa6900c406492a141fd28cba229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38631e50a8192018260f39fe855cc1e"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#af38631e50a8192018260f39fe855cc1e">zoomMax:</a></td></tr>
+<tr class="memitem:af38631e50a8192018260f39fe855cc1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af38631e50a8192018260f39fe855cc1e"></a>
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>zoomMax:</b></td></tr>
 <tr class="separator:af38631e50a8192018260f39fe855cc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91ae71d1c3f9f311de3c0af55e87d0ba"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a91ae71d1c3f9f311de3c0af55e87d0ba">zoomMin:</a></td></tr>
+<tr class="memitem:a91ae71d1c3f9f311de3c0af55e87d0ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91ae71d1c3f9f311de3c0af55e87d0ba"></a>
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>zoomMin:</b></td></tr>
 <tr class="separator:a91ae71d1c3f9f311de3c0af55e87d0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c77d6921253dfcc65580e7e4a209c5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a34c77d6921253dfcc65580e7e4a209c5">zoomViewByFactor:</a></td></tr>
+<tr class="memdesc:a34c77d6921253dfcc65580e7e4a209c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">zoom by the desired scaling factor  <a href="#a34c77d6921253dfcc65580e7e4a209c5">More...</a><br/></td></tr>
 <tr class="separator:a34c77d6921253dfcc65580e7e4a209c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad03ed92e4b35e4f424ef1ce0183ff7f8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#ad03ed92e4b35e4f424ef1ce0183ff7f8">zoomViewToAbsoluteScale:</a></td></tr>
+<tr class="memdesc:ad03ed92e4b35e4f424ef1ce0183ff7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">zoom to a given absolute value  <a href="#ad03ed92e4b35e4f424ef1ce0183ff7f8">More...</a><br/></td></tr>
 <tr class="separator:ad03ed92e4b35e4f424ef1ce0183ff7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a539305a1d741a4cbfa37029a60855a89"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a539305a1d741a4cbfa37029a60855a89">zoomViewToFitRect:</a></td></tr>
+<tr class="memdesc:a539305a1d741a4cbfa37029a60855a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">zooms so that the passed rect will fit in the view  <a href="#a539305a1d741a4cbfa37029a60855a89">More...</a><br/></td></tr>
 <tr class="separator:a539305a1d741a4cbfa37029a60855a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84ea132348a2c6697281e3b838c5810e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a84ea132348a2c6697281e3b838c5810e">zoomViewToRect:</a></td></tr>
+<tr class="memdesc:a84ea132348a2c6697281e3b838c5810e"><td class="mdescLeft">&#160;</td><td class="mdescRight">zooms so that the passed rect fills the view  <a href="#a84ea132348a2c6697281e3b838c5810e">More...</a><br/></td></tr>
 <tr class="separator:a84ea132348a2c6697281e3b838c5810e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c40b82a30e5c99a2d54134f4f5730bc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a9c40b82a30e5c99a2d54134f4f5730bc">zoomViewByFactor:andCentrePoint:</a></td></tr>
+<tr class="memdesc:a9c40b82a30e5c99a2d54134f4f5730bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">zooms the view by the given factor and centres the passed point.  <a href="#a9c40b82a30e5c99a2d54134f4f5730bc">More...</a><br/></td></tr>
 <tr class="separator:a9c40b82a30e5c99a2d54134f4f5730bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7979a185a4de3b17e4a1644467c7ea0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#ae7979a185a4de3b17e4a1644467c7ea0">zoomWithScrollWheelDelta:toCentrePoint:</a></td></tr>
+<tr class="memdesc:ae7979a185a4de3b17e4a1644467c7ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts the scrollwheel delta value into a zoom factor and performs the zoom.  <a href="#ae7979a185a4de3b17e4a1644467c7ea0">More...</a><br/></td></tr>
 <tr class="separator:ae7979a185a4de3b17e4a1644467c7ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13fdb96ec9adbb3d64c22090b39f2e2"><td class="memItemLeft" align="right" valign="top">(NSPoint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#ab13fdb96ec9adbb3d64c22090b39f2e2">centredPointInDocView</a></td></tr>
+<tr class="memdesc:ab13fdb96ec9adbb3d64c22090b39f2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates the coordinates of the point that is visually centred in the view at the current scroll position and zoom.  <a href="#ab13fdb96ec9adbb3d64c22090b39f2e2">More...</a><br/></td></tr>
 <tr class="separator:ab13fdb96ec9adbb3d64c22090b39f2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83ffccc9f46adb02fecc1c87af3cfedf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a83ffccc9f46adb02fecc1c87af3cfedf">scrollPointToCentre:</a></td></tr>
+<tr class="memdesc:a83ffccc9f46adb02fecc1c87af3cfedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">scrolls the view so that the point ends up visually centred  <a href="#a83ffccc9f46adb02fecc1c87af3cfedf">More...</a><br/></td></tr>
 <tr class="separator:a83ffccc9f46adb02fecc1c87af3cfedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8e1bc44f90b888366e867bec7f4102"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a4a8e1bc44f90b888366e867bec7f4102">setScale:</a></td></tr>
+<tr class="memdesc:a4a8e1bc44f90b888366e867bec7f4102"><td class="mdescLeft">&#160;</td><td class="mdescRight">zooms the view to the given scale  <a href="#a4a8e1bc44f90b888366e867bec7f4102">More...</a><br/></td></tr>
 <tr class="separator:a4a8e1bc44f90b888366e867bec7f4102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad37e63ba4b71db834555a3d45fcadd03"><td class="memItemLeft" align="right" valign="top">(CGFloat)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#ad37e63ba4b71db834555a3d45fcadd03">scale</a></td></tr>
+<tr class="memdesc:ad37e63ba4b71db834555a3d45fcadd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the current view scale (zoom)  <a href="#ad37e63ba4b71db834555a3d45fcadd03">More...</a><br/></td></tr>
 <tr class="separator:ad37e63ba4b71db834555a3d45fcadd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664b748b75918d36dc641695933757a5"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a664b748b75918d36dc641695933757a5">isChangingScale</a></td></tr>
+<tr class="memdesc:a664b748b75918d36dc641695933757a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns whether the scale is being changed  <a href="#a664b748b75918d36dc641695933757a5">More...</a><br/></td></tr>
 <tr class="separator:a664b748b75918d36dc641695933757a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5eeac9954d074a33ffd3a8900959bea"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#ad5eeac9954d074a33ffd3a8900959bea">setMinimumScale:</a></td></tr>
+<tr class="memdesc:ad5eeac9954d074a33ffd3a8900959bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the minimum permitted view scale (zoom)  <a href="#ad5eeac9954d074a33ffd3a8900959bea">More...</a><br/></td></tr>
 <tr class="separator:ad5eeac9954d074a33ffd3a8900959bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02191d5c426f62dba618eb0ab1d5cb9b"><td class="memItemLeft" align="right" valign="top">(CGFloat)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a02191d5c426f62dba618eb0ab1d5cb9b">minimumScale</a></td></tr>
+<tr class="memdesc:a02191d5c426f62dba618eb0ab1d5cb9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the minimum permitted view scale (zoom)  <a href="#a02191d5c426f62dba618eb0ab1d5cb9b">More...</a><br/></td></tr>
 <tr class="separator:a02191d5c426f62dba618eb0ab1d5cb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a668bab3b427cfafc9146f748c12fee54"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#a668bab3b427cfafc9146f748c12fee54">setMaximumScale:</a></td></tr>
+<tr class="memdesc:a668bab3b427cfafc9146f748c12fee54"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the maximum permitted view scale (zoom)  <a href="#a668bab3b427cfafc9146f748c12fee54">More...</a><br/></td></tr>
 <tr class="separator:a668bab3b427cfafc9146f748c12fee54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adecb0f0490670b718f4cd3f9b3131c95"><td class="memItemLeft" align="right" valign="top">(CGFloat)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_zoom_view.html#adecb0f0490670b718f4cd3f9b3131c95">maximumScale</a></td></tr>
+<tr class="memdesc:adecb0f0490670b718f4cd3f9b3131c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the maximum permitted view scale (zoom)  <a href="#adecb0f0490670b718f4cd3f9b3131c95">More...</a><br/></td></tr>
 <tr class="separator:adecb0f0490670b718f4cd3f9b3131c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
 <tr class="memitem:a88b04bdb6821629e3062a49240e3d8f7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_zoom_view.html#a88b04bdb6821629e3062a49240e3d8f7">setScrollwheelZoomEnabled:</a></td></tr>
+<tr class="memdesc:a88b04bdb6821629e3062a49240e3d8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set whether scroll-wheel zooming is enabled  <a href="#a88b04bdb6821629e3062a49240e3d8f7">More...</a><br/></td></tr>
 <tr class="separator:a88b04bdb6821629e3062a49240e3d8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2bd55e2cbf2abb8a710ef2589b8314c"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_zoom_view.html#ae2bd55e2cbf2abb8a710ef2589b8314c">scrollwheelZoomEnabled</a></td></tr>
+<tr class="memdesc:ae2bd55e2cbf2abb8a710ef2589b8314c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return whether scroll-wheel zooming is enabled  <a href="#ae2bd55e2cbf2abb8a710ef2589b8314c">More...</a><br/></td></tr>
 <tr class="separator:ae2bd55e2cbf2abb8a710ef2589b8314c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad78def763925a1d5f8a3fd2cd3a1a41f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_zoom_view.html#ad78def763925a1d5f8a3fd2cd3a1a41f">setScrollwheelModiferKeyMask:</a></td></tr>
+<tr class="memdesc:ad78def763925a1d5f8a3fd2cd3a1a41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the modifier key(s) that will activate zooming using the scrollwheel  <a href="#ad78def763925a1d5f8a3fd2cd3a1a41f">More...</a><br/></td></tr>
 <tr class="separator:ad78def763925a1d5f8a3fd2cd3a1a41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e7e31180365d2dfff6d3499801868f0"><td class="memItemLeft" align="right" valign="top">(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_zoom_view.html#a4e7e31180365d2dfff6d3499801868f0">scrollwheelModifierKeyMask</a></td></tr>
+<tr class="memdesc:a4e7e31180365d2dfff6d3499801868f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the default zoom key mask used by new instances of this class  <a href="#a4e7e31180365d2dfff6d3499801868f0">More...</a><br/></td></tr>
 <tr class="separator:a4e7e31180365d2dfff6d3499801868f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf35f4370e0309a48427944f4f6da145"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_zoom_view.html#aaf35f4370e0309a48427944f4f6da145">setScrollwheelInverted:</a></td></tr>
+<tr class="memdesc:aaf35f4370e0309a48427944f4f6da145"><td class="mdescLeft">&#160;</td><td class="mdescRight">set whether view zooms in or out for a given scrollwheel rotation direction  <a href="#aaf35f4370e0309a48427944f4f6da145">More...</a><br/></td></tr>
 <tr class="separator:aaf35f4370e0309a48427944f4f6da145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466903c4c9966d7a59937782dcd4b0ff"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_g_c_zoom_view.html#a466903c4c9966d7a59937782dcd4b0ff">scrollwheelInverted</a></td></tr>
+<tr class="memdesc:a466903c4c9966d7a59937782dcd4b0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">return whether view zooms in or out for a given scrollwheel rotation direction  <a href="#a466903c4c9966d7a59937782dcd4b0ff">More...</a><br/></td></tr>
 <tr class="separator:a466903c4c9966d7a59937782dcd4b0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
@@ -182,6 +208,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>calculates the coordinates of the point that is visually centred in the view at the current scroll position and zoom. </p>
+<dl class="section return"><dt>Returns</dt><dd>the visually centred point </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a664b748b75918d36dc641695933757a5"></a>
@@ -196,6 +225,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns whether the scale is being changed </p>
+<dl class="section note"><dt>Note</dt><dd>This property can be used to detect whether the user is rapidly changing the scale, for example using the scrollwheel. When a scrollwheel change starts, this is set to YES and a timer is run which is retriggered by further events. If it times out, this resets to NO. It can be used as one part of a drawing strategy where rapid changes temporarily use a lower quality drawing mechanism for performance, but reverts to a higher quality when things settle. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>YES if the scale is changing, NO if not </dd></dl>
 
 </div>
 </div>
@@ -212,6 +245,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns the maximum permitted view scale (zoom) </p>
+<dl class="section return"><dt>Returns</dt><dd>the maximum scale </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a02191d5c426f62dba618eb0ab1d5cb9b"></a>
@@ -227,6 +263,9 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns the minimum permitted view scale (zoom) </p>
+<dl class="section return"><dt>Returns</dt><dd>the minimum scale </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ad37e63ba4b71db834555a3d45fcadd03"></a>
@@ -241,6 +280,9 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns the current view scale (zoom) </p>
+<dl class="section return"><dt>Returns</dt><dd>the current scale </dd></dl>
 
 </div>
 </div>
@@ -258,6 +300,14 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>scrolls the view so that the point ends up visually centred </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aPoint</td><td>the desired centre point </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a466903c4c9966d7a59937782dcd4b0ff"></a>
@@ -272,6 +322,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return whether view zooms in or out for a given scrollwheel rotation direction </p>
+<dl class="section note"><dt>Note</dt><dd>default sense is to zoom in when scrollwheel is rotated towards the user. Some apps (e.g. Google Earth) use the opposite convention, which feels less natural but may become a defacto "standard". </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>whether scroll wheel inverted </dd></dl>
 
 </div>
 </div>
@@ -288,6 +342,10 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return the default zoom key mask used by new instances of this class </p>
+<dl class="section note"><dt>Note</dt><dd>reads the value from the prefs. If not set or set to zero, defaults to option key. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a modifier key mask value </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ae2bd55e2cbf2abb8a710ef2589b8314c"></a>
@@ -302,6 +360,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>return whether scroll-wheel zooming is enabled </p>
+<dl class="section note"><dt>Note</dt><dd>default is YES </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>YES to enable, NO to disable </dd></dl>
 
 </div>
 </div>
@@ -319,6 +381,14 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>sets the maximum permitted view scale (zoom) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scmax</td><td>the maximum scale </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ad5eeac9954d074a33ffd3a8900959bea"></a>
@@ -334,6 +404,14 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>sets the minimum permitted view scale (zoom) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scmin</td><td>the minimum scale </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -351,6 +429,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>zooms the view to the given scale </p>
+<dl class="section note"><dt>Note</dt><dd>all zooms bottleneck through here. Scale passed is pinned within the min and max limits. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sc</td><td>- the desired scale </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aaf35f4370e0309a48427944f4f6da145"></a>
@@ -366,6 +453,9 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>set whether view zooms in or out for a given scrollwheel rotation direction </p>
+<dl class="section note"><dt>Note</dt><dd>default sense is to zoom in when scrollwheel is rotated towards the user. Some apps (e.g. Google Earth) use the opposite convention, which feels less natural but may become a defacto "standard". </dd></dl>
 
 </div>
 </div>
@@ -383,6 +473,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>set the modifier key(s) that will activate zooming using the scrollwheel </p>
+<dl class="section note"><dt>Note</dt><dd>operating the given modifier keys along with the scroll wheel will zoom the view </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aMask</td><td>a modifier key mask value </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a88b04bdb6821629e3062a49240e3d8f7"></a>
@@ -398,6 +497,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>set whether scroll-wheel zooming is enabled </p>
+<dl class="section note"><dt>Note</dt><dd>default is YES </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>YES to enable, NO to disable </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -415,6 +523,14 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>zoom so that the entire extent of the enclosing frame is visible </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>- the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="acefc1324f848925996a21cd563677b02"></a>
@@ -431,37 +547,13 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="af38631e50a8192018260f39fe855cc1e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (IBAction) zoomMax: </td>
-          <td></td>
-          <td class="paramtype">(id)&#160;</td>
-          <td class="paramname"><em>sender</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a91ae71d1c3f9f311de3c0af55e87d0ba"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (IBAction) zoomMin: </td>
-          <td></td>
-          <td class="paramtype">(id)&#160;</td>
-          <td class="paramname"><em>sender</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>zoom in (scale up) by a factor of 2 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>- the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -479,6 +571,14 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>zoom out (scale down) by a factor of 2 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>- the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a2d8103709d13de74b3b52bf97699a614"></a>
@@ -494,6 +594,14 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>restore the zoom to 100% </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>- the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -511,6 +619,14 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>takes the senders tag value as the desired percentage </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>- the sender of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a34c77d6921253dfcc65580e7e4a209c5"></a>
@@ -526,6 +642,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>zoom by the desired scaling factor </p>
+<dl class="section note"><dt>Note</dt><dd>a factor of 2.0 will double the zoom scale, from 100% to 200% say, a factor of 0.5 will zoom out. This also maintains the current visible centre point of the view so the zoom remains stable. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>- how much to change the current scale by </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -553,6 +678,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>zooms the view by the given factor and centres the passed point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>- relative zoom factor </td></tr>
+    <tr><td class="paramname">p</td><td>a point within the view that should be scrolled to the centre of the zoomed view. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ad03ed92e4b35e4f424ef1ce0183ff7f8"></a>
@@ -563,11 +697,20 @@ Class Methods</h2></td></tr>
           <td class="memname">- (void) zoomViewToAbsoluteScale: </td>
           <td></td>
           <td class="paramtype">(CGFloat)&#160;</td>
-          <td class="paramname"><em>scale</em></td>
+          <td class="paramname"><em>newScale</em></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>zoom to a given absolute value </p>
+<dl class="section note"><dt>Note</dt><dd>a scale of 1.0 sets 100% zoom. Scale is pinned bwtween min and max limits. Same as -setScale: </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newScale</td><td>- the desired scaling factor </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -585,6 +728,15 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>zooms so that the passed rect will fit in the view </p>
+<dl class="section note"><dt>Note</dt><dd>In general this should be used for a zoom OUT, such as a "fit to window" command, though it will zoom in if the view is smaller than the current frame. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aRect</td><td>- a rect </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a84ea132348a2c6697281e3b838c5810e"></a>
@@ -600,6 +752,15 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>zooms so that the passed rect fills the view </p>
+<dl class="section note"><dt>Note</dt><dd>The centre of the rect is centred in the view. In general this should be used for a zoom IN to a specific smaller rectange. &lt;aRect&gt; is in current view coordinates. This is good for a dragged rect zoom tool. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aRect</td><td>- a rect </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -627,16 +788,25 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>converts the scrollwheel delta value into a zoom factor and performs the zoom. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>- scrollwheel delta value </td></tr>
+    <tr><td class="paramname">cp</td><td>a point within the view that should be scrolled to the centre of the zoomed view. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>framework/Code/<a class="el" href="_g_c_zoom_view_8h_source.html">GCZoomView.h</a></li>
-<li>framework/Code/<a class="el" href="_g_c_zoom_view_8m.html">GCZoomView.m</a></li>
+<li><a class="el" href="_g_c_zoom_view_8h_source.html">GCZoomView.h</a></li>
+<li>GCZoomView.m</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:04 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:16 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

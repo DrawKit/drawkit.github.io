@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,71 +106,32 @@ Inheritance diagram for GCThreadQueue:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:a024030c276455a32f6fa3642709ecf26"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_thread_queue.html#a024030c276455a32f6fa3642709ecf26">enqueue:</a></td></tr>
+<tr class="memitem:a024030c276455a32f6fa3642709ecf26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a024030c276455a32f6fa3642709ecf26"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>enqueue:</b></td></tr>
 <tr class="separator:a024030c276455a32f6fa3642709ecf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a602af095bc02b1eb12f3b5def59cdc21"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_thread_queue.html#a602af095bc02b1eb12f3b5def59cdc21">dequeue</a></td></tr>
+<tr class="memitem:a602af095bc02b1eb12f3b5def59cdc21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a602af095bc02b1eb12f3b5def59cdc21"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>dequeue</b></td></tr>
 <tr class="separator:a602af095bc02b1eb12f3b5def59cdc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1929cc00356adccb5901032177c41bd2"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_g_c_thread_queue.html#a1929cc00356adccb5901032177c41bd2">tryDequeue</a></td></tr>
+<tr class="memitem:a1929cc00356adccb5901032177c41bd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1929cc00356adccb5901032177c41bd2"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>tryDequeue</b></td></tr>
 <tr class="separator:a1929cc00356adccb5901032177c41bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DrawKit ©2005-2008 Apptree.net. </p>
-<p>This software is released subject to licensing conditions as detailed in DRAWKIT-LICENSING.TXT, which must accompany this source file. </p>
-</div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a602af095bc02b1eb12f3b5def59cdc21"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id) dequeue </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a024030c276455a32f6fa3642709ecf26"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) enqueue: </td>
-          <td></td>
-          <td class="paramtype">(id)&#160;</td>
-          <td class="paramname"><em>object</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1929cc00356adccb5901032177c41bd2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id) tryDequeue </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>framework/Code/<a class="el" href="_g_c_thread_queue_8h_source.html">GCThreadQueue.h</a></li>
-<li>framework/Code/<a class="el" href="_g_c_thread_queue_8m.html">GCThreadQueue.m</a></li>
+<dl class="section author"><dt>Author</dt><dd>Graham Cox, Apptree.net </dd>
+<dd>
+Graham Miln, miln.eu </dd>
+<dd>
+Contributions from the community </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2005-2013 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>This software is released subject to licensing conditions as detailed in DRAWKIT-LICENSING.TXT, which must accompany this source file. This software is released subject to licensing conditions as detailed in DRAWKIT-LICENSING.TXT, which must accompany this source file. </dd></dl>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="_g_c_thread_queue_8h_source.html">GCThreadQueue.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 19 2013 18:42:04 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 20:38:16 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
