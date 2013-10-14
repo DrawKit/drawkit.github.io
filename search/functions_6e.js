@@ -8,6 +8,7 @@ var searchData=
   ['nearesthorizontalguidetoposition_3a',['nearestHorizontalGuideToPosition:',['../interface_d_k_guide_layer.html#a8306cf4b60d1c4deece16a547cdef113',1,'DKGuideLayer']]],
   ['nearestverticalguidetoposition_3a',['nearestVerticalGuideToPosition:',['../interface_d_k_guide_layer.html#ac776c1b9d1e265e4f14c02f5274fe5f5',1,'DKGuideLayer']]],
   ['newdrawinglayer_3a',['newDrawingLayer:',['../interface_d_k_drawing_document.html#a642d70fcb0b655bea14438073acc2424',1,'DKDrawingDocument']]],
+  ['newdrawingnumber',['newDrawingNumber',['../interface_d_k_drawing.html#a6ee3135b8acd3b3f33bd50b32ac1b310',1,'DKDrawing']]],
   ['newlayerwithselection_3a',['newLayerWithSelection:',['../interface_d_k_drawing_document.html#a421ff3056d130fc641ec491a0d376fff',1,'DKDrawingDocument']]],
   ['newquartzcolor',['newQuartzColor',['../category_n_s_color_07_d_k_additions_08.html#a987663df55e5904cbc1eb6954f02981b',1,'NSColor(DKAdditions)']]],
   ['notifyclientsafterchange',['notifyClientsAfterChange',['../interface_d_k_style.html#a835e85f002ad92247fd8ac9b5bb246a1',1,'DKStyle']]],

@@ -23,7 +23,7 @@ var searchData=
   ['flattenedlayersofclass_3aincludegroups_3a',['flattenedLayersOfClass:includeGroups:',['../interface_d_k_layer_group.html#acf2438c0a80faae6aae155992f88a338',1,'DKLayerGroup']]],
   ['fliphorizontally',['flipHorizontally',['../interface_d_k_drawable_shape.html#ae2f40d56cf47a7640275c79440a91e84',1,'DKDrawableShape']]],
   ['flipvertically',['flipVertically',['../interface_d_k_drawable_shape.html#a32aaafc375823cb6285ad7f0b6be224e',1,'DKDrawableShape']]],
-  ['font',['font',['../interface_d_k_text_shape.html#a425ca4ccaad6e4ac1ddb25ccb93df4b1',1,'DKTextShape']]],
+  ['font',['font',['../interface_d_k_text_shape.html#a896d6e589dfd637fb7cfd52f6e2f4fca',1,'DKTextShape']]],
   ['fontsize',['fontSize',['../interface_d_k_text_shape.html#ae01ecbb47094859c8da5304913fa416a',1,'DKTextShape']]],
   ['formattedconvertedlength_3a',['formattedConvertedLength:',['../interface_d_k_drawing.html#ad1f0e1e7dbda962aeec58dc026c2e905',1,'DKDrawing']]],
   ['formattedconvertedpoint_3a',['formattedConvertedPoint:',['../interface_d_k_drawing.html#a46851d017534efcafcdfadb40fc9d09e',1,'DKDrawing']]],

@@ -96,16 +96,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:aed10567c7cda38f1fd2c0cce13589a97"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_object_drawing_layer_07_duplication_08.html#aed10567c7cda38f1fd2c0cce13589a97">polarDuplicate:centre:numberOfCopies:incrementAngle:rotateCopies:</a></td></tr>
-<tr class="memdesc:aed10567c7cda38f1fd2c0cce13589a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">duplicates one or more objects radially around a common centre  <a href="#aed10567c7cda38f1fd2c0cce13589a97">More...</a><br/></td></tr>
+<tr class="memdesc:aed10567c7cda38f1fd2c0cce13589a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates one or more objects radially around a common centre.  <a href="#aed10567c7cda38f1fd2c0cce13589a97">More...</a><br/></td></tr>
 <tr class="separator:aed10567c7cda38f1fd2c0cce13589a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76e91a0f217a88b2941d802d3831d4b6"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_object_drawing_layer_07_duplication_08.html#a76e91a0f217a88b2941d802d3831d4b6">linearDuplicate:offset:numberOfCopies:</a></td></tr>
-<tr class="memdesc:a76e91a0f217a88b2941d802d3831d4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">duplicates one or more objects linearly  <a href="#a76e91a0f217a88b2941d802d3831d4b6">More...</a><br/></td></tr>
+<tr class="memdesc:a76e91a0f217a88b2941d802d3831d4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates one or more objects linearly.  <a href="#a76e91a0f217a88b2941d802d3831d4b6">More...</a><br/></td></tr>
 <tr class="separator:a76e91a0f217a88b2941d802d3831d4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3c145eb7000961435ba7747cedb155"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_object_drawing_layer_07_duplication_08.html#aaf3c145eb7000961435ba7747cedb155">autoPolarDuplicate:centre:</a></td></tr>
-<tr class="memdesc:aaf3c145eb7000961435ba7747cedb155"><td class="mdescLeft">&#160;</td><td class="mdescRight">automatically polar duplicates object to fit a circle exactly  <a href="#aaf3c145eb7000961435ba7747cedb155">More...</a><br/></td></tr>
+<tr class="memdesc:aaf3c145eb7000961435ba7747cedb155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically polar duplicates object to fit a circle exactly.  <a href="#aaf3c145eb7000961435ba7747cedb155">More...</a><br/></td></tr>
 <tr class="separator:aaf3c145eb7000961435ba7747cedb155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a541d2458a3c514a249761c6ab1fb41cd"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_d_k_object_drawing_layer_07_duplication_08.html#a541d2458a3c514a249761c6ab1fb41cd">concentricDuplicate:centre:numberOfCopies:insetBy:</a></td></tr>
-<tr class="memdesc:a541d2458a3c514a249761c6ab1fb41cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">duplicates one or more objects concentrically around a common centre  <a href="#a541d2458a3c514a249761c6ab1fb41cd">More...</a><br/></td></tr>
+<tr class="memdesc:a541d2458a3c514a249761c6ab1fb41cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates one or more objects concentrically around a common centre.  <a href="#a541d2458a3c514a249761c6ab1fb41cd">More...</a><br/></td></tr>
 <tr class="separator:a541d2458a3c514a249761c6ab1fb41cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -141,7 +141,7 @@ Contributions from the community </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>automatically polar duplicates object to fit a circle exactly </p>
+<p>Automatically polar duplicates object to fit a circle exactly. </p>
 <dl class="section note"><dt>Note</dt><dd>This computes the increment angle and number of copies needed to fit the object exactly into a circle. The angle is that subtended by the object's logical bounds at the centre. The radius will be adjusted outwards as necessary so that an integral number of copies fit a complete circle. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -192,8 +192,8 @@ Contributions from the community </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>duplicates one or more objects concentrically around a common centre </p>
-<dl class="section note"><dt>Note</dt><dd>objects in the result are obtained by copying the objects in the original list, and so will have the same types, styles, etc. While this works with paths, it works best with shapes or groups, because paths don't implement setSize: and their location is at their top, left. </dd></dl>
+<p>Duplicates one or more objects concentrically around a common centre. </p>
+<dl class="section note"><dt>Note</dt><dd>Objects in the result are obtained by copying the objects in the original list, and so will have the same types, styles, etc. While this works with paths, it works best with shapes or groups, because paths don't implement setSize: and their location is at their top, left. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectsToDuplicate</td><td>a list of DKDrawableObjects which will be copied </td></tr>
@@ -239,8 +239,8 @@ Contributions from the community </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>duplicates one or more objects linearly </p>
-<dl class="section note"><dt>Note</dt><dd>objects in the result are obtained by copying the objects in the original list, and so will have the same types, styles, etc. </dd></dl>
+<p>Duplicates one or more objects linearly. </p>
+<dl class="section note"><dt>Note</dt><dd>Objects in the result are obtained by copying the objects in the original list, and so will have the same types, styles, etc. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectsToDuplicate</td><td>a list of DKDrawableObjects which will be copied </td></tr>
@@ -297,8 +297,8 @@ Contributions from the community </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>duplicates one or more objects radially around a common centre </p>
-<dl class="section note"><dt>Note</dt><dd>objects in the result are obtained by copying the objects in the original list, and so will have the same types, styles, etc. </dd></dl>
+<p>Duplicates one or more objects radially around a common centre. </p>
+<dl class="section note"><dt>Note</dt><dd>Objects in the result are obtained by copying the objects in the original list, and so will have the same types, styles, etc. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectsToDuplicate</td><td>a list of DKDrawableObjects which will be copied </td></tr>
@@ -322,7 +322,7 @@ Contributions from the community </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 7 2013 20:38:14 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 14 2013 12:56:04 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -5,6 +5,7 @@ var searchData=
   ['nsarray_28stringvalue_29',['NSArray(StringValue)',['../category_n_s_array_07_string_value_08.html',1,'']]],
   ['nsattributedstring_28dkadditions_29',['NSAttributedString(DKAdditions)',['../category_n_s_attributed_string_07_d_k_additions_08.html',1,'']]],
   ['nsbezierpath_28combinatorial_29',['NSBezierPath(Combinatorial)',['../category_n_s_bezier_path_07_combinatorial_08.html',1,'']]],
+  ['nsbezierpath_28combinatorialprivate_29',['NSBezierPath(CombinatorialPrivate)',['../category_n_s_bezier_path_07_combinatorial_private_08.html',1,'']]],
   ['nsbezierpath_28dkediting_29',['NSBezierPath(DKEditing)',['../category_n_s_bezier_path_07_d_k_editing_08.html',1,'']]],
   ['nsbezierpath_28geometry_29',['NSBezierPath(Geometry)',['../category_n_s_bezier_path_07_geometry_08.html',1,'']]],
   ['nsbezierpath_28geometry_5fprivate_29',['NSBezierPath(Geometry_Private)',['../category_n_s_bezier_path_07_geometry___private_08.html',1,'']]],

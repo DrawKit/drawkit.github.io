@@ -25,6 +25,8 @@ var searchData=
   ['layoutstringonpath_3ayoffset_3ausinglayouthelper_3alayoutmanager_3acache_3a',['layoutStringOnPath:yOffset:usingLayoutHelper:layoutManager:cache:',['../category_n_s_bezier_path_07_text_on_path_08.html#a9bae7bdec768bcef38e7821f3002b9d2',1,'NSBezierPath(TextOnPath)']]],
   ['leftmargin',['leftMargin',['../interface_d_k_drawing.html#a98ff99f6bd02231782c163a5e0684137',1,'DKDrawing']]],
   ['length',['length',['../interface_d_k_drawable_path.html#acd3f38e6f8b2ef66082de864b1c3a70e',1,'DKDrawablePath']]],
+  ['lengthforpoint_3a',['lengthForPoint:',['../interface_d_k_drawable_path.html#a864425ed1edee5dab6bdf07acb84bc48',1,'DKDrawablePath']]],
+  ['lengthforpoint_3atolerance_3a',['lengthForPoint:tolerance:',['../interface_d_k_drawable_path.html#aba16d3b3ecde6011944f29a29d35633b',1,'DKDrawablePath']]],
   ['level',['level',['../interface_d_k_layer.html#a264d3812c7a16f1259400990a3314d82',1,'DKLayer::level()'],['../interface_d_k_layer_group.html#ac2bd8b4ed55adecc39580f0f834afd83',1,'DKLayerGroup::level()']]],
   ['lightercolorwithlevel_3a',['lighterColorWithLevel:',['../category_n_s_color_07_d_k_additions_08.html#a507f1ff4c5c65a686a9b53066e82023a',1,'NSColor(DKAdditions)']]],
   ['linearduplicate_3aoffset_3anumberofcopies_3a',['linearDuplicate:offset:numberOfCopies:',['../category_d_k_object_drawing_layer_07_duplication_08.html#a76e91a0f217a88b2941d802d3831d4b6',1,'DKObjectDrawingLayer(Duplication)::linearDuplicate:offset:numberOfCopies:()'],['../interface_d_k_object_drawing_layer.html#a76e91a0f217a88b2941d802d3831d4b6',1,'DKObjectDrawingLayer::linearDuplicate:offset:numberOfCopies:()']]],

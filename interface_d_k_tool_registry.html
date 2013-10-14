@@ -104,13 +104,13 @@ Inheritance diagram for DKToolRegistry:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:a37e59c718e3b3340c8d2cb8bb9445555"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_drawing_tool.html">DKDrawingTool</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a37e59c718e3b3340c8d2cb8bb9445555">drawingToolWithName:</a></td></tr>
-<tr class="memdesc:a37e59c718e3b3340c8d2cb8bb9445555"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a named tool from the registry  <a href="#a37e59c718e3b3340c8d2cb8bb9445555">More...</a><br/></td></tr>
+<tr class="memdesc:a37e59c718e3b3340c8d2cb8bb9445555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a named tool from the registry.  <a href="#a37e59c718e3b3340c8d2cb8bb9445555">More...</a><br/></td></tr>
 <tr class="separator:a37e59c718e3b3340c8d2cb8bb9445555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ad67c0519085993d1e31cd35e15677"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a29ad67c0519085993d1e31cd35e15677">registerDrawingTool:withName:</a></td></tr>
-<tr class="memdesc:a29ad67c0519085993d1e31cd35e15677"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a tool to the registry  <a href="#a29ad67c0519085993d1e31cd35e15677">More...</a><br/></td></tr>
+<tr class="memdesc:a29ad67c0519085993d1e31cd35e15677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a tool to the registry.  <a href="#a29ad67c0519085993d1e31cd35e15677">More...</a><br/></td></tr>
 <tr class="separator:a29ad67c0519085993d1e31cd35e15677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fc32ed6084646e6cb7ba8694cf50cb8"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_drawing_tool.html">DKDrawingTool</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_d_k_tool_registry.html#a6fc32ed6084646e6cb7ba8694cf50cb8">drawingToolWithKeyboardEquivalent:</a></td></tr>
-<tr class="memdesc:a6fc32ed6084646e6cb7ba8694cf50cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the tool having a key equivalent matching the key event  <a href="#a6fc32ed6084646e6cb7ba8694cf50cb8">More...</a><br/></td></tr>
+<tr class="memdesc:a6fc32ed6084646e6cb7ba8694cf50cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the tool having a key equivalent matching the key event.  <a href="#a6fc32ed6084646e6cb7ba8694cf50cb8">More...</a><br/></td></tr>
 <tr class="separator:a6fc32ed6084646e6cb7ba8694cf50cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348adf6002c3c89662a7113095f754ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a348adf6002c3c89662a7113095f754ba"></a>
 (void)&#160;</td><td class="memItemRight" valign="bottom">- <b>registerStandardTools</b></td></tr>
@@ -128,7 +128,7 @@ Instance Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
 <tr class="memitem:a74b7bf5d9f294d139c7bf3223138bb21"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_d_k_tool_registry.html">DKToolRegistry</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_d_k_tool_registry.html#a74b7bf5d9f294d139c7bf3223138bb21">sharedToolRegistry</a></td></tr>
-<tr class="memdesc:a74b7bf5d9f294d139c7bf3223138bb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the shared tool registry  <a href="#a74b7bf5d9f294d139c7bf3223138bb21">More...</a><br/></td></tr>
+<tr class="memdesc:a74b7bf5d9f294d139c7bf3223138bb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shared tool registry.  <a href="#a74b7bf5d9f294d139c7bf3223138bb21">More...</a><br/></td></tr>
 <tr class="separator:a74b7bf5d9f294d139c7bf3223138bb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -152,7 +152,7 @@ NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>mToo
       </table>
 </div><div class="memdoc">
 
-<p>find the tool having a key equivalent matching the key event </p>
+<p>Find the tool having a key equivalent matching the key event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keyEvent</td><td>the key event to match </td></tr>
@@ -177,7 +177,7 @@ NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>mToo
       </table>
 </div><div class="memdoc">
 
-<p>return a named tool from the registry </p>
+<p>Return a named tool from the registry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the name of the tool of interest </td></tr>
@@ -212,7 +212,7 @@ NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>mToo
       </table>
 </div><div class="memdoc">
 
-<p>add a tool to the registry </p>
+<p>Add a tool to the registry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tool</td><td>the tool to register </td></tr>
@@ -236,8 +236,8 @@ NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>mToo
       </table>
 </div><div class="memdoc">
 
-<p>return the shared tool registry </p>
-<dl class="section note"><dt>Note</dt><dd>creates the registry if needed and installs the standard tools. For other tool collections you can instantiate a <a class="el" href="interface_d_k_tool_registry.html">DKToolRegistry</a> and add tools to it. </dd></dl>
+<p>Return the shared tool registry. </p>
+<dl class="section note"><dt>Note</dt><dd>Creates the registry if needed and installs the standard tools. For other tool collections you can instantiate a <a class="el" href="interface_d_k_tool_registry.html">DKToolRegistry</a> and add tools to it. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>a shared <a class="el" href="interface_d_k_tool_registry.html">DKToolRegistry</a> object </dd></dl>
 
 </div>
@@ -249,7 +249,7 @@ NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>mToo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 7 2013 20:38:15 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 14 2013 12:56:05 for DrawKit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

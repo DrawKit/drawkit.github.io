@@ -10,7 +10,7 @@ var searchData=
   ['unionselectedobjects_3a',['unionSelectedObjects:',['../category_d_k_object_drawing_layer_07_boolean_ops_08.html#a0170a94df195dd23ae15f95cef03231b',1,'DKObjectDrawingLayer(BooleanOps)::unionSelectedObjects:()'],['../interface_d_k_object_drawing_layer.html#a0170a94df195dd23ae15f95cef03231b',1,'DKObjectDrawingLayer::unionSelectedObjects:()']]],
   ['uniquekey',['uniqueKey',['../interface_d_k_layer.html#acf1279f2e6913989ff0ebb4cab1b8c0b',1,'DKLayer::uniqueKey()'],['../interface_d_k_style.html#a89eba34c792e641ba571352356cff59c',1,'DKStyle::uniqueKey()']]],
   ['uniquelayernameforname_3a',['uniqueLayerNameForName:',['../interface_d_k_layer_group.html#a1f3efadd1318e4d1a79387bc6ca0eb63',1,'DKLayerGroup']]],
-  ['uniquenameforname_3a',['uniqueNameForName:',['../interface_d_k_style_registry.html#af75fb74d11622d84677c8ec4a11dc536',1,'DKStyleRegistry']]],
+  ['uniquenameforname_3a',['uniqueNameForName:',['../interface_d_k_style_registry.html#a1a71edb0b7a1776e69d71ebd9c3c1f1d',1,'DKStyleRegistry']]],
   ['unitrectatorigin',['unitRectAtOrigin',['../interface_d_k_drawable_shape.html#a057590e43e60e6070f28d490678f7cd9',1,'DKDrawableShape']]],
   ['unittopointsconversionfactor',['unitToPointsConversionFactor',['../interface_d_k_drawing.html#ad1682ed3da2f43e8057eaa7c157cac9d',1,'DKDrawing']]],
   ['unlocklayer_3a',['unlockLayer:',['../interface_d_k_layer.html#a9469d0f19d7c5745eba17200cceac04c',1,'DKLayer']]],
