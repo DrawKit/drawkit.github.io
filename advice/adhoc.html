@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Ad-hoc deployment of DrawKit &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Advice for Your App" href="index.html" />
+    <link rel="next" title="API Reference" href="../api/index.html" />
+    <link rel="prev" title="Subclass Notes" href="subclassing.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Ad-hoc deployment of DrawKit</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="subclassing.html">Subclass Notes</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../api/index.html">API Reference</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="ad-hoc-deployment-of-drawkit">
+<h1>Ad-hoc deployment of DrawKit<a class="headerlink" href="#ad-hoc-deployment-of-drawkit" title="Permalink to this headline">¶</a></h1>
+<p>DrawKit may find a good home in many applications that are not complete drawing applications. For example you might just have a dialog that pops up and allows you to define some quick graphic that you can use elsewhere. DrawKit is a good basis for these types of editors - you may not be using much of its power but it doesn&#8217;t greatly add to your application&#8217;s waistline or complexity, while still offering a lot of features &#8220;for free&#8221; if you want them.</p>
+<p>Deploying DrawKit is basically always the same process - create a <cite>DKDrawing</cite>, a <cite>DKDrawingView</cite> or some other interface, and bind them together with a <cite>DKViewController</cite> or subclass. You can do this manually whenever and wherever you want.</p>
+<p>There is another way however - you can let <cite>DKDrawingView</cite> do all the work. If a <cite>DKDrawingView</cite> is instantiated (from a nib, for example) and it gets as far as having its drawRect: method called with no drawing in place, it will create one, add a controller and stitch it all together. The view owns the drawing, in this case (the design of the controller prevents any awkward retain cycles). The drawing&#8217;s initial size is set to the view&#8217;s bounds, and is complete with a grid layer, a guide layer, and one drawable object layer ready to go. It has a tool controller set with the select/edit tool and works immediately. Of course you&#8217;ll probably want to tweak this setup, but at least the majority of the initial configuration is done. You can also override <cite>DKDrawingView</cite>&#8216;s createAutoDrawing method to make the drawing differently, or modify the default one. This mechanism is intended to mirror the functional concept of <cite>NSTextView</cite> - you add the view and it creates a fully operational text editor. Likewise, <cite>DKDrawingView</cite> implements a fully operational drawing editor, just by adding the view.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="subclassing.html">Subclass Notes</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../api/index.html">API Reference</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

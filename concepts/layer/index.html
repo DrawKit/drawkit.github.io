@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The Drawing and Layers &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Concepts" href="../index.html" />
+    <link rel="next" title="The layer containment hierarchy" href="hierarchy.html" />
+    <link rel="prev" title="Model, View and Controller" href="../mvc.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>The Drawing and Layers</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="../mvc.html">Model, View and Controller</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="hierarchy.html">The layer containment hierarchy</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="the-drawing-and-layers">
+<span id="layer"></span><h1>The Drawing and Layers<a class="headerlink" href="#the-drawing-and-layers" title="Permalink to this headline">¶</a></h1>
+<p><cite>DKDrawing</cite> is the class at the heart of DrawKit, and is at the root of the model. The concept of DrawKit is based on that of the &#8220;drawing&#8221; as a draughtsman might think of it - a single large &#8220;sheet of paper&#8221; on which drawing can be done. The principal property of a drawing is its size - how big it is in its horizontal and vertical dimensions.</p>
+<p>DrawKit internally uses Quartz coordinates throughout, and there are approximately 72 Quartz points per inch of drawing space, or 28.35 points per centimetre. Of course a drawing may be viewed on the screen at any scale so this does not necessarily mean one inch on the screen. However it should equal one inch in any printed output. Externally, DrawKit translates any coordinate values it displays to the current grid, which is set up entirely by you the programmer, who in turn may let the user set this. Thus from a user interface perspective, DrawKit works in &#8220;real world&#8221; values such as millimetres, inches, kilometres or what have you.</p>
+<p>The drawing consists of any number of layers which are overlaid on top of each other. Each layer is transparent by default and exactly covers the full drawing area. Layers are where actual graphical content is generated - the drawing itself is merely a container for its layers. All drawings must have at least one layer to have any content (at least this is true as long as we are not discussing subclassing <cite>DKDrawing</cite>).</p>
+<p>The drawing object represents a single drawing with all of its content. Typically an application might associate each document with a single drawing, though it is not required to do so - because <cite>DKDrawing</cite> is a separate object you could have more than one per document, or share a drawing among several though this would be unusual. A drawing can be viewed through as many views as you wish. A view can display the drawing content, or it might simply present a user interface to some aspect of the drawing - a list of its layers, for example. In any case, each view will be associated with a suitable controller, and the drawing maintains a list of all of the controllers that work with that particular drawing. The drawing owns the controllers while they exist, and each controller is associated with exactly one view.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hierarchy.html">The layer containment hierarchy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dklayer.html">DKLayer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dklayergroup.html">DKLayerGroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dkdrawing.html"><cite>DKDrawing</cite> - the root of the layer tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="active.html">The active layer</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="specialised-layers">
+<h1>Specialised Layers<a class="headerlink" href="#specialised-layers" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="grid.html">Grid Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides.html">Guides Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imageoverlay.html">Image overlays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="info.html">Drawing Information Layer</a></li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="../mvc.html">Model, View and Controller</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="hierarchy.html">The layer containment hierarchy</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

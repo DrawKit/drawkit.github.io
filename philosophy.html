@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Design Philosophy &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="index.html" />
+    <link rel="next" title="Concepts" href="concepts/index.html" />
+    <link rel="prev" title="DrawKit and You" href="expectations.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Design Philosophy</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="expectations.html">DrawKit and You</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="concepts/index.html">Concepts</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="design-philosophy">
+<h1>Design Philosophy<a class="headerlink" href="#design-philosophy" title="Permalink to this headline">¶</a></h1>
+<p>The design of DrawKit is very much driven by the classic 80/20 rule - its defaults and design decisions are intended to cover the 80% of typical uses with minimal set-up or configuration. If you find yourself in the other 20%, you&#8217;ll need to do a little more work, typically, and the more specialised your needs the more you&#8217;ll have to do. It&#8217;s inevitable that DrawKit cannot provide the perfect solution for all possible apps, even within the arena of vector drawing, since every programmer will have different needs.</p>
+<p>One thing that is true of nearly every class, is that they will &#8220;just work&#8221; with little or no set-up. A high proportion of objects require a straightforward alloc + init to instantiate, with very few requiring complicated designated initializers. Most classes have convenient construction methods to further simplify instantiation for the majority. Of course, these objects may not &#8220;just work&#8221; how you want them to in this state, but at least they will generally do <em>something</em> useful, and any further set up you need to do is really a case of moving them away from their default states. The point of this is to give the user of DrawKit an easier time - instead of wondering if you have marshalled a whole lot of configuration parameters in just the right way to get a working object, you simply start with a working object and gradually adapt it to your needs. It should help give confidence in the framework and be much less error prone. Most development proceeds iteratively, so typically you&#8217;ll start with a working, but probably non-optimal object, and one step at a time change it to do what you want, testing each time or after each few changes. This way it&#8217;s much easier to pick up a problem than if you had to start with many tens of settings &#8220;up front&#8221; . This philosophy reaches its zenith with the complete automatic instantiation of an entire working system by a view if you don&#8217;t do it for it. It&#8217;s also typical of much of Cocoa itself.</p>
+<p>While DrawKit has many classes that need to be assembled logically to build a working system, in general there&#8217;s not usually a strict order for doing things.</p>
+<p>For example, you could add a layer to a drawing, then add objects to the layer - or build a layer complete with objects and add it to the drawing. It&#8217;s up to you. It&#8217;s a similar story when styles are assembled from collections of rasterizers - order of assembly isn&#8217;t too critical.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="expectations.html">DrawKit and You</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="concepts/index.html">Concepts</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tools and the Tool Controller &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="View and Tool Controllers" href="index.html" />
+    <link rel="next" title="Creating New Objects" href="creatingnewobjects.html" />
+    <link rel="prev" title="Basics of Object Editing" href="objectediting.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Tools and the Tool Controller</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="objectediting.html">Basics of Object Editing</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="creatingnewobjects.html">Creating New Objects</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="tools-and-the-tool-controller">
+<h1>Tools and the Tool Controller<a class="headerlink" href="#tools-and-the-tool-controller" title="Permalink to this headline">¶</a></h1>
+<p>In a typical drawing application, the user is often presented with tools as a set of buttons in a palette - clicking the button selects that tool, putting the application into a mode where mouse activity achieves certain things. While DrawKit certainly has something like this kind of user interface in mind, its definition of a tool is more abstract and not tied to any particular UI.</p>
+<p>In DrawKit, a tool is an object that converts mouse events into meaningful actions and behaviours targeted at the active layer or objects within it (or perhaps both, as with the select and edit tool). The tool thus translates the general mouse gestures into specific actions. Because drawables are responsible for the nuts and bolts of their own editing, in DrawKit most tools are quite lightweight objects.</p>
+<p><cite>DKToolController</cite> is a view controller subclass that manages the tools and coordinates the selecting of the tool and feeding the basic mouse events to them according to the agreed protocol. Only one tool can be set at a time, since this establishes a mode of operation for mouse input, and the user can only use the mouse in one view at a time. Selecting the tool could correspond to a user selecting a button in a palette of tools - in fact implementing this kind of user interface is extremely straightforward, though any other UI that ultimately picks a tool will work equally well.</p>
+<p>DrawKit maintains a simple registry of tools (implemented by the <cite>DKDrawingTool</cite> class) which allows tools to be associated with a name. You can retrieve a tool by name and set it as the current tool in the tool controller. Convenient action methods in <cite>DKToolController</cite> allow you to do this very easily by hooking up a user interface element that has a -title property to the -setDrawingToolByName: action, set to the name of the desired tool. This could be a button for example (the title itself might be hidden, as with an icon button, but the title string itself is still readable as a tool name by DK&#8217;s code).</p>
+<p>Tools might vary in their scope of operation. For example one kind of tool might operate only in one particular layer or kind of layer, another might operate in a general way. To establish this, the tool controller initially asks the current tool whether the active layer is useful to it - by returning NO the tool can prevent any further call to itself. If YES, it will subsequently receive the usual mouse event methods. This allows a tool to decide its own target scope. For example, the zoom tool accepts anything, so it works no matter what type of layer is set as the active layer, even a hidden or locked one. Conversely, object creation tools can only work when an object drawing layer is active. This test is performed at mouseDown time, so having an inappropriate active layer doesn&#8217;t prevent a tool from being selected, it just stops it from receiving mouse events.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="objectediting.html">Basics of Object Editing</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="creatingnewobjects.html">Creating New Objects</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

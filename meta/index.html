@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Building the Site &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="next" title="Inherited To Do List" href="../todo.html" />
+    <link rel="prev" title="Licensing" href="../licensing.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Building the Site</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="../licensing.html">Licensing</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../todo.html">Inherited To Do List</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="building-the-site">
+<h1>Building the Site<a class="headerlink" href="#building-the-site" title="Permalink to this headline">¶</a></h1>
+<p>This web site is built using a collection of open source tools.</p>
+<div class="section" id="install-homebrew">
+<h2>Install Homebrew<a class="headerlink" href="#install-homebrew" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://brew.sh">Homebrew</a> is a package manager for Mac OS X. With Homebrew installed getting the required tools onto your Mac is much easier.</p>
+<p>To install Homebrew run this command in your Terminal.app</p>
+<div class="highlight-python"><pre>ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</pre>
+</div>
+</div>
+<div class="section" id="install-the-tools">
+<h2>Install the Tools<a class="headerlink" href="#install-the-tools" title="Permalink to this headline">¶</a></h2>
+<p>With Homebrew installed, get the following tools</p>
+<div class="highlight-python"><pre>brew install doxygen
+brew install graphviz
+pip install sphinx
+pip install breathe</pre>
+</div>
+<dl class="docutils">
+<dt><a class="reference external" href="http://www.doxygen.org">doxygen</a></dt>
+<dd>doxygen extracts the documentation from the source code and turns it into browsable content.</dd>
+<dt><a class="reference external" href="http://www.graphviz.org">graphviz</a></dt>
+<dd>graphviz is used by doxygen and sphinx to create diagrams. The class hierarchy diagrams are create by the graphviz tool dot.</dd>
+<dt><a class="reference external" href="http://sphinx-doc.org">sphinx</a></dt>
+<dd>sphinx turns the documentation you are reading now into a collection of web pages. The documentation is written in  <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> so it can be transformed into various useful formats for distribution, including this web site.</dd>
+<dt><a class="reference external" href="https://github.com/michaeljones/breathe">breathe</a></dt>
+<dd>breathe provides a link between sphinx and doxygen. Sphinx was built for the python language and it does not parse Objective-C. doxygen does parse Objective-C and breath lets sphinx stand on the shoulders of doxygen.</dd>
+</dl>
+</div>
+<div class="section" id="building">
+<h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
+<p>With all the tools installed, you can build the document with the commands</p>
+<div class="highlight-python"><pre>cd documentation
+make html</pre>
+</div>
+<p>Building will take a few moments and the output will appear in the _build folder. The _/html/ folder is published to the <a class="reference external" href="http://drawkit.github.io">DrawKit web site</a>.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="../licensing.html">Licensing</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../todo.html">Inherited To Do List</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

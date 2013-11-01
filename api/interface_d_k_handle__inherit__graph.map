@@ -1,0 +1,15 @@
+<map id="DKHandle" name="DKHandle">
+<area shape="rect" id="node3" href="$interface_d_k_bounding_rect_handle.html" title="DKBoundingRectHandle" alt="" coords="264,57,430,85"/>
+<area shape="rect" id="node6" href="$interface_d_k_on_path_point_handle.html" title="DKOnPathPointHandle" alt="" coords="268,187,426,215"/>
+<area shape="rect" id="node12" href="$interface_d_k_rotation_handle.html" title="DKRotationHandle" alt="" coords="281,239,413,267"/>
+<area shape="rect" id="node14" href="$interface_d_k_target_handle.html" title="DKTargetHandle" alt="" coords="287,291,406,319"/>
+<area shape="rect" id="node4" href="$interface_d_k_inactive_bounding_rect_handle.html" title="DKInactiveBoundingRectHandle" alt="" coords="478,5,690,33"/>
+<area shape="rect" id="node5" href="$interface_d_k_locked_bounding_rect_handle.html" title="DKLockedBoundingRectHandle" alt="" coords="480,57,688,85"/>
+<area shape="rect" id="node7" href="$interface_d_k_inactive_on_path_point_handle.html" title="DKInactiveOnPathPointHandle" alt="" coords="482,109,686,137"/>
+<area shape="rect" id="node8" href="$interface_d_k_locked_on_path_point_handle.html" title="DKLockedOnPathPointHandle" alt="" coords="484,161,684,189"/>
+<area shape="rect" id="node9" href="$interface_d_k_off_path_point_handle.html" title="DKOffPathPointHandle" alt="" coords="505,213,663,241"/>
+<area shape="rect" id="node10" href="$interface_d_k_inactive_off_path_point_handle.html" title="DKInactiveOffPathPointHandle" alt="" coords="740,187,943,215"/>
+<area shape="rect" id="node11" href="$interface_d_k_locked_off_path_point_handle.html" title="DKLockedOffPathPointHandle" alt="" coords="741,239,942,267"/>
+<area shape="rect" id="node13" href="$interface_d_k_locked_rotation_handle.html" title="DKLockedRotationHandle" alt="" coords="497,265,671,293"/>
+<area shape="rect" id="node15" href="$interface_d_k_locked_target_handle.html" title="DKLockedTargetHandle" alt="" coords="503,317,665,345"/>
+</map>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Drawing Pathway &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Graphical Appearance of Objects" href="index.html" />
+    <link rel="next" title="DKStyle and the Rasterizer Tree" href="rasterizertree.html" />
+    <link rel="prev" title="The Graphical Appearance of Objects" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Drawing Pathway</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">The Graphical Appearance of Objects</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rasterizertree.html"><cite>DKStyle</cite> and the Rasterizer Tree</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="drawing-pathway">
+<h1>Drawing Pathway<a class="headerlink" href="#drawing-pathway" title="Permalink to this headline">¶</a></h1>
+<p>When an object needs to be drawn, the drawing will start with a call to <cite>DKDrawingView</cite>&#8216;s -drawRect: method (as for any <cite>NSView</cite>). The view will start at the root <cite>DKDrawing</cite> and ask it to draw itself, which in turn will request each layer to draw itself in the right order using the -drawRect:inView: methods. When a <cite>DKObjectDrawingLayer</cite> gets a shot at the drawing, it will first weed out any objects that are outside of the update area and then request that those within it draw themselves. If the object is selected, that fact is also passed along so that the object can add the visible selection adornment.</p>
+<p>A <cite>DKDrawableObject</cite> is generally drawn primarily by its attached style object. The style is passed a -render: message with the object in question. The style applies each rasterizer in its list to the object&#8217;s path (returned by -renderingPath) in turn. The rasterizers can fill or stroke the path, add text or do anything they like.</p>
+<p>If the drawable has no style at all, a default light gray stroke of the path is performed. This is mainly to prevent any such objects from getting visually &#8220;lost&#8221; in the drawing, since they are still real objects, merely lacking any other way to make themselves visible. Generally drawables should have a style attached - if you genuinely want to suppress all drawing, you can do so by attaching a style having a single fill rasterizer with clearColor. Such objects will be effectively invisible but can still be selected.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">The Graphical Appearance of Objects</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rasterizertree.html"><cite>DKStyle</cite> and the Rasterizer Tree</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The Selection &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Concepts" href="index.html" />
+    <link rel="next" title="Drawables" href="drawables/index.html" />
+    <link rel="prev" title="Object Storage" href="objectstorage.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>The Selection</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="objectstorage.html">Object Storage</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="drawables/index.html">Drawables</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="the-selection">
+<h1>The Selection<a class="headerlink" href="#the-selection" title="Permalink to this headline">¶</a></h1>
+<p><cite>DKObjectDrawingLayer</cite> is a subclass of <cite>DKObjectOwnerLayer</cite> that supports a selection. The selection is simply a set (literally an <cite>NSSet</cite>) of objects that are &#8220;selected&#8221;, that is they are a member of the set. When drawables are drawn, their membership of this set is passed along as a boolean parameter so that the object is able to draw itself in a way that gives the user appropriate feedback that the object is indeed selected. For example shapes have &#8220;handles&#8221; (also known as &#8220;knobs&#8221;) arranged around their bounding rectangles, and paths have draggable control points.</p>
+<p>The selection permits objects to be more finely targeted for input. Some commands for example are able to operate on all of the objects in the selection. Some commands need to target one single unambiguous object*. <cite>DKObjectDrawingLayer</cite> provides support for doing both of these things - in the first case by implementing numerous &#8220;selection targeted&#8221; commands of its own, and in the second case by automatically forwarding messages it cannot handle itself to a single selected object which is able to respond. Once again this permits individual drawable objects to implement actions and methods as if it were an <cite>NSResponder</cite> in the responder chain.</p>
+<p><em>Note</em>: some specialised commands may operate on specific numbers of objects, typically two - for example joining paths.</p>
+<p>Because <cite>DKObjectDrawingLayer</cite> is able to provide so many &#8220;selection targeted&#8221; actions, for ease of maintenance and understanding they have been split across several categories:</p>
+<ul class="simple">
+<li><cite>DKObjectDrawingLayer+Alignment</cite> - handles a host of alignment actions</li>
+<li><cite>DKObjectDrawingLayer+BooleanOps</cite> - handles high-level boolean (set) operations between multiple objects (using the optional third-party GPC library)</li>
+<li><cite>DKObjectDrawingLayer+Duplication</cite> - handles a number of duplication actions</li>
+</ul>
+<p>The main class implements high-level actions for cut, copy, paste, delete, move (by keyboard), Z-ordering, grouping and ungrouping, show, hide lock and unlock among others. Your app is free to ignore them if it doesn&#8217;t need them or use them to get many useful features for next to no effort. All actions are undoable.</p>
+<p>To support drag and drop, <cite>DKObjectDrawingLayer</cite> allows the object under the mouse location to be selected dynamically during a drag, if the object is able to receive whatever it is that is being dragged. The coordination of this is fairly complex but the upshot is that objects can be dragged into the layer, or in many cases into a drawable object within the layer. A drawable that receives the drag is itself responsible for accepting and ultimately handling the data that is dropped.</p>
+<p><cite>DKObjectDrawingLayer</cite> can be set either to treat selection changes as undoable actions in their own right, or not (and so selection changes are only undone as part of some other operation). Different applications will take different views on this.</p>
+<div class="section" id="dkknob">
+<h2>DKKnob<a class="headerlink" href="#dkknob" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKKnob</cite> is a small helper class that is responsible for drawing the knobs or &#8220;handles&#8221; shown on selected paths and shapes. This helper object can be owned by a layer, or (by default, and because it subclasses <cite>DKLayer</cite>) the drawing. Showing the selected state of an object involves several steps - first, the object is added to the selection set in <cite>DKObjectDrawingLayer</cite>. Note that being &#8220;selected&#8221; means membership of this set, and nothing else - the state of the object itself does not change. However, an object is able to get notified when its selected &#8220;state&#8221; changes, and can also query this at any time.</p>
+<p>When the owning layer draws the object, the selected state is passed as a boolean flag. The object responds by making additional drawing calls to display this state. This will usually involve making use of a <cite>DKKnob</cite> instance to perform the actual knob drawing. The basic highlight colour for the selection is also supplied by the layer. The involvement of the layer and <cite>DKKnob</cite> is to provide a consistent appearance for selections, but is also a place that is considered an early target for customisation.</p>
+<p><cite>DKKnob</cite> is asked to draw a knob of a given type at a certain point, does so, and returns. The knob &#8220;type&#8221; is a purely logical classification that <cite>DKKnob</cite> can use to choose one of several appearances for the knob. It is not in itself a specific appearance - a <cite>DKKnob</cite> subclass may decide to render all knob types the same for example. Knob types are defined in <cite>DKCommonTypes</cite>.h As a convenience, you can also pass some extra flags along with the knob type to indicate a locked object, or a disabled object for example. <cite>DKKnob</cite> is responsible for the interpretation of these flags and turning them into distinct visual renderings.</p>
+<p>Note that clients of <cite>DKKnob</cite> (drawable objects) should not try to force <cite>DKKnob</cite> to draw one way or another. The point is to allow <cite>DKKnob</cite> to provide a consistent selection appearance when given any and all objects. Since <cite>DKKnob</cite> is drawing UI-related information (it is not part of the data model), it needs to take into account two aspects of the application&#8217;s UI - the view&#8217;s zoom scale and the view&#8217;s window&#8217;s active state. It does this by querying these via a simple formal protocol implemented by its owner - typically a <cite>DKLayer</cite>. The view&#8217;s scale is used to compensate the knob&#8217;s size for the zoom. By default, <cite>DKKnob</cite> does not cancel the zoom exactly - it allows a small amount of growth in proportion to the zoom (it grows about a third as fast) which gives better usability - the knobs grow, but not so large as to obliterate the content at large scales.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="objectstorage.html">Object Storage</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="drawables/index.html">Drawables</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>DKStyle and Key-Value Observing (KVO) &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Graphical Appearance of Objects" href="index.html" />
+    <link rel="next" title="Strokes" href="strokes.html" />
+    <link rel="prev" title="DKStyle and the Rasterizer Tree" href="rasterizertree.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>DKStyle and Key-Value Observing (KVO)</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rasterizertree.html"><cite>DKStyle</cite> and the Rasterizer Tree</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="strokes.html">Strokes</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="dkstyle-and-key-value-observing-kvo">
+<h1><cite>DKStyle</cite> and Key-Value Observing (KVO)<a class="headerlink" href="#dkstyle-and-key-value-observing-kvo" title="Permalink to this headline">¶</a></h1>
+<p>The immense variety and sheer number of properties embodied within a <cite>DKStyle</cite> and all its component rasterizers make managing them for Undo and notifying their clients quite a task. Luckily, Cocoa has a mechanism called Key-Value Observing (KVO) that considerably eases the amount of work we need to do. <cite>DKStyle</cite> uses KVO to &#8220;observe&#8221; all of the interesting properties of all of its component rasterizers. This allows it to centralise all of the Undo processing and also updating all of its clients when any property of any component is changed. The beauty of this approach is that the rasterizers themselves need to do very little work to take advantage of this - in fact each class just has to publish a simple list of strings which are the names of the KVC-compliant properties that it wants to be undoable. It can do this because <cite>DKRasterizer</cite> subclasses GCObservableObject, which simplifies much of the work needed to observe properties using KVO.</p>
+<p>Each rasterizer class has the method + observableKeyPaths which returns an array of strings, each being an undoable property of instances of the class. Subclasses can call super and add their own properties, so a list of all properties for any given class can be built up. When a rasterizer is added to a style, the style uses this list to set itself as an observer for all of the listed properties. When the style is released or a rasterizer removed, the style removes itself as an observer in the same way. As an observer, the style &#8220;sees&#8221; any changes to any of the published properties.</p>
+<p>To make handling Undo even more user-friendly, each rasterizer class should implement the -registerActionNames: method, and register an action name for each property. <cite>DKStyle</cite> will use these action names when setting up the Undo menu item for the observed property.</p>
+<dl class="docutils">
+<dt>As anyone who has worked with KVO will know, getting it right can sometimes be tricky.</dt>
+<dd>This might matter if you subclass <cite>DKRasterizer</cite>. In most cases you can implement +observableKeyPaths and -registerActionNames and be done, but if any sub-properties within the rasterizer are themselves observable, you need to also override -setUpKVOForObserver: and -tearDownKVOForObserver: (inherited from GCObservableObject) and set up observation for the properties of the additional sub-property object. (An example of this in DK is <cite>DKGradient</cite>, which is a property of <cite>DKFill</cite> but does itself have observable properties of its own). If your sub-property objects subclass GCObservableObject, you can extend the simplified KVO approach of publishing your observable key paths to such objects quite easily.</dd>
+</dl>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rasterizertree.html"><cite>DKStyle</cite> and the Rasterizer Tree</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="strokes.html">Strokes</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

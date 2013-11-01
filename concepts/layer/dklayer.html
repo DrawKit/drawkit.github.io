@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>DKLayer &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Drawing and Layers" href="index.html" />
+    <link rel="next" title="DKLayerGroup" href="dklayergroup.html" />
+    <link rel="prev" title="The layer containment hierarchy" href="hierarchy.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>DKLayer</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="hierarchy.html">The layer containment hierarchy</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="dklayergroup.html">DKLayerGroup</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="dklayer">
+<h1>DKLayer<a class="headerlink" href="#dklayer" title="Permalink to this headline">¶</a></h1>
+<p><cite>DKLayer</cite> is the semi-abstract base class for all layers. It provides some basic state variables common to all layers, and numerous useful methods for updating part of themselves (via the drawing, its controllers and views), handling basic mouse events, and other utility methods. The properties common to all layers are:</p>
+<ul class="simple">
+<li>its name (visible in a UI, perhaps, otherwise not used in DrawKit)</li>
+<li>whether it is visible or not</li>
+<li>whether it is locked or not</li>
+<li>what group it belongs to</li>
+<li>the &#8220;selection&#8221; colour value</li>
+<li>the <cite>DKKnob</cite> helper class that draws the selection handles for objects</li>
+<li>arbitrary metadata attached by the user</li>
+</ul>
+<p>Useful utility methods that can be used by all layers include:</p>
+<ul class="simple">
+<li>getting informed when the layer is made active or inactive</li>
+<li>displaying a small information window near the mouse point with some value of your choice</li>
+<li>updating itself or any part of itself</li>
+<li>supporting a general drag/drop functionality</li>
+<li>supporting contextual menus</li>
+</ul>
+<p>One problem facing designers of applications that have multiple layers is making sure the user is clear about which layer is active. One way to help distinguish layers is by the use of colour, so the &#8220;selection&#8221; colour is provided by <cite>DKLayer</cite> to assist. Primarily intended for showing selection highlights in object layers, it is available to all layers. Classes such as <cite>DKGuideLayer</cite> use this as a default colour for its guides, for example. A simple mechanism is used to initially assign a different colour to each layer as it is initialized, but of course you can set it to whatever you like. The same colour is used as a background to the information window, again reinforcing which layer the information originates from. The DK demo application has a user interface for setting this colour directly, in its layers palette.</p>
+<p>The information window is a handy feature that can be used to help supply direct feedback for some kinds of operations. For example when an object is resized the info window is used to display its current width and height. In general this tooltip-like window should be used for numeric information that takes up one, or at most two lines. As it is displayed in front of everything, it must not be so large as to obscure the content. Using the info window is easy - simply supply it with a string and a position in local coordinates, and <cite>DKLayer</cite> will do the rest. When you are finished with it, ask the layer to hide it.</p>
+<p><cite>DKLayer</cite> is able to respond to mouse events originating in a view and passed to it when it is the active layer. This passing on of events is performed by <cite>DKViewController</cite>. In general, layers should be designed to respond to their own mouse events only if their needs are simple and easily handled in a self-contained manner. So <cite>DKGuideLayer</cite> implements these methods for dragging guides, but the much more complex requirements of selecting and manipulating objects in a <cite>DKObjectDrawingLayer</cite> is handled by a variety of different tool objects instead.</p>
+<p>Layers can be locked, which prevents their content being changed. Subclasses of <cite>DKLayer</cite> are responsible for checking and honouring this state to ensure that locking is consistent. Likewise, hidden layers should not be edited either, as the results cannot be seen and so the user should be gently prevented from giving themselves a nasty surprise. Hidden layers are automatically not drawn, but subclasses of <cite>DKLayer</cite> need to check for this state to prevent editing. The method -isLockedOrHidden usefully covers both states that should disallow editing.</p>
+<p>Layers may or may not be required to appear in printed output. &#8220;Structural&#8221; layers such as <cite>DKGuideLayer</cite> probably shouldn&#8217;t be, whereas of course layers with actual content should be. This can be easily set using the -setShouldDrawToPrinter: method. Subclasses usually set this to some appropriate default themselves.</p>
+<p>A layer&#8217;s name can be a useful way in a user interface to tell layers apart. <cite>DKLayer</cite> retains a name, and all layer subclasses set this to some useful default, but DrawKit itself does not use or interpret the name - it is entirely for the benefit of your user interface.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="hierarchy.html">The layer containment hierarchy</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="dklayergroup.html">DKLayerGroup</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

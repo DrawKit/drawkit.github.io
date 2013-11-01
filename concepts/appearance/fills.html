@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Fills &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Graphical Appearance of Objects" href="index.html" />
+    <link rel="next" title="Adornments" href="adornments.html" />
+    <link rel="prev" title="Strokes" href="strokes.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Fills</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="strokes.html">Strokes</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="adornments.html">Adornments</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="fills">
+<h1>Fills<a class="headerlink" href="#fills" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dkfill">
+<h2><cite>DKFill</cite><a class="headerlink" href="#dkfill" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKFill</cite> provides for a basic colour fill using a solid colour, an image-based pattern or a gradient. Its properties include:</p>
+<ul class="simple">
+<li>its colour (including image-based pattern colours)</li>
+<li>its shadow, if any</li>
+<li>its gradient, if any</li>
+</ul>
+<p>Note that image-based patterns are entirely handled by Cocoa&#8217;s default implementation. They are useful for emulating the patterns used in older graphics software (e.g. MacDraw) but they are not hugely flexible. Their main advantage is good performance. DrawKit also has <cite>DKFillPattern</cite> for a different approach to patterns, where a &#8220;motif&#8221; image is placed at regular intervals with many parameters being adjustable.</p>
+</div>
+<div class="section" id="dkgradient">
+<h2><cite>DKGradient</cite><a class="headerlink" href="#dkgradient" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKGradient</cite> is an object that implements Quartz&#8217;s gradient shading with a higher-level API. Here it is used as a property of a <cite>DKFill</cite>, where it takes priority over any solid colour fill value. <cite>DKGradient</cite> is compatible with GCGardient as used in the Gradient Panel framework, so you can freely interchange one for the other if you want to use the GP user interface in your application.</p>
+</div>
+<div class="section" id="dkhatching">
+<h2><cite>DKHatching</cite><a class="headerlink" href="#dkhatching" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKHatching</cite> is a <cite>DKRasterizer</cite> subclass that fills a path with a series of straight lines. This class is invaluable for CAD-type drawing applications and is surprisingly versatlie, especially when used in pairs or groups. Properties include:</p>
+<ul class="simple">
+<li>the line width</li>
+<li>the line colour</li>
+<li>the line dash (set using a <cite>DKLineDash</cite> object)</li>
+<li>the line spacing</li>
+<li>the line angle</li>
+<li>line cap and join styles</li>
+<li>the line phase or lead-in offset</li>
+</ul>
+</div>
+<div class="section" id="dkfillpattern">
+<h2><cite>DKFillPattern</cite><a class="headerlink" href="#dkfillpattern" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKFillPattern</cite> is a subclass of <cite>DKPathDecorator</cite> since it leverages the same image caching techniques for performance reasons. However its disposition is rather different. The problem with Quartz&#8217;s basic pattern support via <cite>NSImage</cite> and <cite>NSColor</cite> is that it&#8217;s hard to control very precisely and alignment is always to the base coordinates not to the object being filled. <cite>DKFillPattern</cite> works differently - it takes an image (called the &#8220;motif&#8221;) and repeats it at intervals within the path&#8217;s interior. The image&#8217;s PDF representation is used wherever possible so a vector image remains a vector image even when used as a pattern motif. The scaling, spacing and angle of the motif is controllable, as is the angle of the pattern as a whole and the alternate row and column offset values. Because this object can do a lot of intensive drawing work at times, it is able to use a low-quality image of the motif during live updates for better performance, then switch to the PDF motif for better quality when the rapid redrawing ceases.</p>
+<p>The motif is always positioned based on the path&#8217;s centre point so it remains stable as the path is resized and moved in the drawing.</p>
+</div>
+<div class="section" id="dkzigzagfill">
+<h2><cite>DKZigZagFill</cite><a class="headerlink" href="#dkzigzagfill" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKZigZagFill</cite> subclasses <cite>DKFill</cite> to provide a zig-zag outline to the filled region. As with <cite>DKZigZagStroke</cite>, wavelength, amplitude and spread can be
+controlled.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="strokes.html">Strokes</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="adornments.html">Adornments</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

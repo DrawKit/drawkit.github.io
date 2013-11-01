@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Strokes &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Graphical Appearance of Objects" href="index.html" />
+    <link rel="next" title="Fills" href="fills.html" />
+    <link rel="prev" title="DKStyle and Key-Value Observing (KVO)" href="keyvalueobservation.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Strokes</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="keyvalueobservation.html"><cite>DKStyle</cite> and Key-Value Observing (KVO)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="fills.html">Fills</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="strokes">
+<h1>Strokes<a class="headerlink" href="#strokes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dkstroke">
+<h2><cite>DKStroke</cite><a class="headerlink" href="#dkstroke" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKStroke</cite> is a concrete subclass of <cite>DKRasterizer</cite> that provides for a straightforward stroke of a path. Its properties include:</p>
+<ul class="simple">
+<li>its width</li>
+<li>its colour</li>
+<li>its shadow, if any</li>
+<li>its dash, if any (set using a <cite>DKLineDash</cite> object)</li>
+<li>line cap and join styles</li>
+</ul>
+</div>
+<div class="section" id="dkarrowstroke">
+<h2><cite>DKArrowStroke</cite><a class="headerlink" href="#dkarrowstroke" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKArrowStroke</cite> subclasses <cite>DKStroke</cite> to add arrow heads to a stroked path. A variety of arrow head styles are supported, and this class also supports &#8220;smart&#8221; arrow heads that can be used on curving paths to good effect.</p>
+</div>
+<div class="section" id="dkroughstroke">
+<h2><cite>DKRoughStroke</cite><a class="headerlink" href="#dkroughstroke" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKRoughStroke</cite> subclasses <cite>DKStroke</cite> to add random variation to the stroke width along the rendered path. This gives a much more naturalistic and &#8220;hand drawn&#8221; look to a stroke, which can be invaluable in some kinds of illustration work.</p>
+</div>
+<div class="section" id="dkzigzagstroke">
+<h2><cite>DKZigZagStroke</cite><a class="headerlink" href="#dkzigzagstroke" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKZigZagStroke</cite> subclasses <cite>DKStroke</cite> to provide a path that zig-zags about the nominal path. The wavelength, amplitude and &#8220;spread&#8221; (roundness of the peaks) can all be adjusted.</p>
+</div>
+<div class="section" id="dashes">
+<h2>Dashes<a class="headerlink" href="#dashes" title="Permalink to this headline">¶</a></h2>
+<p>Dashes are handled by a small helper class called <cite>DKLineDash</cite>. This simply stores a dash&#8217;s properties and applies them to a path on demand.
+The use of an object to store a dash makes life a lot easier when it comes to handling dashes in a user interface, for example.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="keyvalueobservation.html"><cite>DKStyle</cite> and Key-Value Observing (KVO)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="fills.html">Fills</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<map id="DKHotspot" name="DKHotspot">
+<area shape="rect" id="node6" href="$interface_d_k_drawable_object.html" title="DKDrawableObject" alt="" coords="207,166,341,194"/>
+<area shape="rect" id="node5" href="$interface_d_k_drawable_shape.html" title="DKDrawableShape" alt="" coords="143,246,277,274"/>
+<area shape="rect" id="node7" href="$protocol_d_k_storable_object-p.html" title="\&lt;DKStorableObject\&gt;" alt="" coords="394,86,536,114"/>
+<area shape="rect" id="node9" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="246,86,369,114"/>
+</map>

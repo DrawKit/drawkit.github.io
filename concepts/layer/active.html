@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The active layer &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Drawing and Layers" href="index.html" />
+    <link rel="next" title="Grid Layer" href="grid.html" />
+    <link rel="prev" title="DKDrawing - the root of the layer tree" href="dkdrawing.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>The active layer</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="dkdrawing.html"><cite>DKDrawing</cite> - the root of the layer tree</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="grid.html">Grid Layer</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="the-active-layer">
+<h1>The active layer<a class="headerlink" href="#the-active-layer" title="Permalink to this headline">¶</a></h1>
+<p>In order to make sense of a layered drawing and to provide a context for user input, DrawKit supports one active layer per drawing at a time. <cite>DKDrawing</cite> is the object that maintains the active layer reference - other objects such as <cite>DKViewController</cite> also provide convenient access to this value.</p>
+<p>The active layer is one nominated layer to which all input is directed. The input may come from menu commands, the keyboard or the mouse being used in a view, or items dragged into a view. For many simple kinds of layers, a layer is able to handle this input directly without the intervention of a controller - in fact by default <cite>DKViewController</cite> merely forwards all such events to the current active layer without interpretation. The active layer is analogous within the DrawKit system to the active window within an application (or entire computer desktop) as a whole - it provides a context for the focus of a user&#8217;s current work.</p>
+<p>Input events come from the key view to the active layer through the view&#8217;s controller by way of invocation forwarding (except mouse events, which are forwarded directly). This allows a layer to simply implement whatever commands it wants to respond to directly as if it were itself a subclass of <cite>NSResponder</cite> and part of the responder chain. Effectively the active layer is automatically a delegate of the key view. Object layers extend this forwarding to the selection and even individual target objects. This general approach means that DrawKit is able to offer many commands and features at a variety of different levels that an application can take advantage of (or choose not to, simply by ignoring their presence). For example if your application wishes to implement commands such as Move Layer Forward or Move Layer Backward, it can simply make the appropriate methods available to 1st Responder in Interface Builder and hook up menu items to them - the forwarding mechanism originating in <cite>DKDrawingView</cite> will see to it that they &#8220;just work&#8221; as expected.</p>
+<p>The current active layer needs to be set appropriately. If your application has many potential active layers, it will need to arrange a user interface to select which one is active. Since the current active layer establishes so much of the basic context of DrawKit, it is important that a UI makes the active layer reasonably obvious to the user. Alternatively a simple application might only have one layer, or not allow it to be changed at all. The active layer can also be selected automatically by a hit being detected in the layer. <cite>DKViewController</cite> implements this automatic switching, and also allows it to be disabled. The layer itself is required to return whether it was hit or not - typically for object layers this means whether any contained object was hit.</p>
+<p>A layer may refuse to become the active layer by returning NO to -layerMayBecomeActive. This response is always honoured, whether switching the active layer through <cite>DKDrawing</cite>&#8216;s -setActiveLayer: method, or automatically when the mouse hits the layer. In addition a layer can get first shot at the mouseDown that might cause automatic layer activation by overriding -shouldAutoActivateWithEvent: and returning YES or NO. This is addition to the hit test itself, which will have already been performed and found to have hit something.</p>
+<p>Note that the active layer is expected to be an individual layer, in general. It is theoretically possible to make a layer group the active layer, but unless that group is a special subclass that implements some particular behaviour, it is not going to do anything useful. Your application&#8217;s UI should generally prevent the user from making a layer group active unless it has a special reason to allow it. By default, <cite>DKLayerGroup</cite> always refuses the active status.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="dkdrawing.html"><cite>DKDrawing</cite> - the root of the layer tree</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="grid.html">Grid Layer</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

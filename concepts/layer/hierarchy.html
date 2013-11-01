@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The layer containment hierarchy &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Drawing and Layers" href="index.html" />
+    <link rel="next" title="DKLayer" href="dklayer.html" />
+    <link rel="prev" title="The Drawing and Layers" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>The layer containment hierarchy</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">The Drawing and Layers</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="dklayer.html">DKLayer</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="the-layer-containment-hierarchy">
+<h1>The layer containment hierarchy<a class="headerlink" href="#the-layer-containment-hierarchy" title="Permalink to this headline">¶</a></h1>
+<p>Layers, based on the <cite>DKLayer</cite> semi-abstract base class, are organised into hierarchical groups. <cite>DKLayer</cite> is an object that provides support for drawing content on demand, and possibly providing some basic mouse event handling. In DrawKit, everything you see in a drawing is drawn in a layer, including any grid or guides. Layers have a front-to-back (Z) ordering that you can change at will. This means that whether a grid is placed in front of or behind other content is your simple choice - just put the layers in the order you require.</p>
+<p>Layers are hierarchical. They can be, but are not required to be, organised into related groups. <cite>DKLayerGroup</cite> is a <cite>DKLayer</cite> subclass that can contain any number of other layers. Layers that are grouped together can be hidden or shown as a group for example. However, even grouped layers share the root drawing&#8217;s overall size. <cite>DKLayerGroup</cite> provides methods for (undoably) changing the order of the layers that it immediately contains.
+<cite>DKDrawing</cite> is itself a subclass of <cite>DKLayerGroup</cite>, because it is at the root of the layer containment hierarchy.</p>
+<p>Principal properties of <cite>DKLayer</cite> include whether it is visible or not, locked (locked layers cannot have their content edited), whether the layer is included in printed output, its name and some properties that affect the appearance of selected objects in that layer.
+In some respects layers can be though of a little like views - they draw stuff when requested and mouse events are directed to them.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">The Drawing and Layers</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="dklayer.html">DKLayer</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

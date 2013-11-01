@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Model, View and Controller &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Concepts" href="index.html" />
+    <link rel="next" title="The Drawing and Layers" href="layer/index.html" />
+    <link rel="prev" title="Concepts" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Model, View and Controller</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Concepts</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="layer/index.html">The Drawing and Layers</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="model-view-and-controller">
+<h1>Model, View and Controller<a class="headerlink" href="#model-view-and-controller" title="Permalink to this headline">¶</a></h1>
+<p>In common with most object-oriented designs, DrawKit is divided into three major functional areas - the model layer, the controller layer and the view layer. The majority of DrawKit&#8217;s classes reside in the model layer, with some overlap between this and the controller layer when it comes to handling direct interaction with objects. Distinct &#8220;tools&#8221; for creating and manipulating objects reside in the controller layer, and the view(s) through which the graphics are displayed are of course part of the view layer.</p>
+<p>The user of a DrawKit application interacts with DrawKit through one or more views. In common with any Cocoa-based application, if the view is key, then keyboard, mouse and menu events are targeted at the view. From there they are processed by the controllers and affect the state of the model. Changes in the model&#8217;s state, if they affect the visible appearance of an object, are in turn used to mark areas of the view for update.</p>
+<p>In DrawKit, objects that are part of the model are responsible for both drawing themselves and to a large extent, handling their own editing via the mouse. The controller layers coordinate both of these processes. In turn the appearance of an object (how it is actually painted) is handled by its style, and this is separate from the geometry of the object (its path or shape). Each functional area is handled by a distinct class of object. This makes DrawKit both powerful and flexible as well as easier to manage from a maintenance or customisation standpoint.</p>
+<p>At the centre of the DrawKit architecture stands <cite>DKDrawing</cite>, the &#8220;drawing&#8221; object. Understanding DrawKit begins here.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Concepts</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="layer/index.html">The Drawing and Layers</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

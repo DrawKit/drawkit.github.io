@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Document-based applications &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Advice for Your App" href="index.html" />
+    <link rel="next" title="Data handling" href="datahandling.html" />
+    <link rel="prev" title="Advice for Your App" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Document-based applications</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Advice for Your App</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="datahandling.html">Data handling</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="document-based-applications">
+<h1>Document-based applications<a class="headerlink" href="#document-based-applications" title="Permalink to this headline">¶</a></h1>
+<p>If your application is a document-based drawing application, DrawKit can play a major role in providing the core &#8220;engine&#8221; that you need. In fact, this is its main design focus. In such an application, a document (<cite>NSDocument</cite> subclass) will typically own a <cite>DKDrawing</cite> instance and arrange for one or more <cite>DKDrawingViews</cite> to display and interact with it. To make this approach even easier, you could base your document class on <cite>DKDrawingDocument</cite>.</p>
+<p><cite>DKDrawingDocument</cite> is an <cite>NSDocument</cite> subclass that owns a <cite>DKDrawing</cite> and arranges for it to be created when the document is initialised or opened from a file on disk. It also provides an outlet called m_mainView which you can hook up to a <cite>DKDrawingView</cite> in Interface Builder (of course if you have other arrangements in mind you can easily extend this approach). <cite>DKDrawingDocument</cite> automatically connects a valid <cite>DKDrawingView</cite> on that outlet to the <cite>DKDrawing</cite> instance it creates via a suitable controller, so it very much &#8220;just works&#8221; for this typical case.</p>
+<p>The important thing to remember is the M-V-C design - you need all three: model, view and controller for the Drawkit system to hang together and function. <cite>DKDrawingDocument</cite> makes these connections if you use it, but if you prefer to go it alone, you need to make these connections yourself. Recall that <cite>DKDrawing</cite> owns its controllers (<cite>DKViewController</cite> or subclass), the view is owned by its superview or window, and the drawing itself must be owned by some other object - typically the document.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Advice for Your App</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="datahandling.html">Data handling</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

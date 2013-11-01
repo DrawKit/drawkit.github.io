@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>View Controller and the Flow of Events &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="View and Tool Controllers" href="index.html" />
+    <link rel="next" title="Basics of Object Editing" href="objectediting.html" />
+    <link rel="prev" title="View and Tool Controllers" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>View Controller and the Flow of Events</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">View and Tool Controllers</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="objectediting.html">Basics of Object Editing</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="view-controller-and-the-flow-of-events">
+<h1>View Controller and the Flow of Events<a class="headerlink" href="#view-controller-and-the-flow-of-events" title="Permalink to this headline">¶</a></h1>
+<p>Initially a user&#8217;s inputs are all directed to the key view, which is the first responder in the responder chain. These user inputs can be mouse clicks and drags, selecting commands from menus, typing on the keyboard, or dragging data items into the view. <cite>DKDrawingView</cite> forwards all messages it cannot respond to to its controller, including forwarding all mouse and flagsChanged events.</p>
+<p><cite>DKViewController</cite> basically forwards everything on again, this time to the active layer as determined by querying the <cite>DKDrawing</cite> instance that the controller belongs to. However it does intercept the Layer Z-ordering action messages and invokes the relevant methods on <cite>DKDrawing</cite> to handle them, as well as providing an optional &#8220;click to activate&#8221; methodology for setting the active layer. <cite>DKViewController</cite> also implements autoscrolling of a mouse dragged event using a timer.</p>
+<p>Depending on the class of the current active layer, the forwarded messages and mouse events may be handled or forwarded again to &#8220;the selection&#8221; or a single selected object.</p>
+<p>When a <cite>DKToolController</cite> is used in place of a <cite>DKViewController</cite> (which is usually the case), the currently set tool acts as a filter for mouse events such that the basic events are translated into meaningful operations that can be applied to the active layer or objects within it. What happens depends on the class of tool set, and <cite>DKToolController</cite> merely coordinates the calling of the various methods that the tool protocol provides. The tool itself performs its operations on the active layer according to its design.</p>
+<p>Typically a tool will target a specific object and pass events or messages to it to get its job done. Tools are generally quite lightweight in that they don&#8217;t do
+a lot of heavy lifting on behalf of objects - they identify the target object and then mostly simply pass on events to it in the proper sequence.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">View and Tool Controllers</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="objectediting.html">Basics of Object Editing</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

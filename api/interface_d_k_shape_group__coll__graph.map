@@ -1,0 +1,7 @@
+<map id="DKShapeGroup" name="DKShapeGroup">
+<area shape="rect" id="node2" href="$interface_d_k_drawable_shape.html" title="DKDrawableShape" alt="" coords="298,238,432,266"/>
+<area shape="rect" id="node3" href="$interface_d_k_drawable_object.html" title="DKDrawableObject" alt="" coords="279,161,413,189"/>
+<area shape="rect" id="node5" href="$protocol_d_k_storable_object-p.html" title="\&lt;DKStorableObject\&gt;" alt="" coords="116,83,259,111"/>
+<area shape="rect" id="node9" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="283,83,407,111"/>
+<area shape="rect" id="node10" href="$protocol_d_k_drawable_container-p.html" title="\&lt;DKDrawableContainer\&gt;" alt="" coords="439,161,608,189"/>
+</map>

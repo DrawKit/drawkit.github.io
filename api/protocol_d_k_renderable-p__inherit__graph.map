@@ -1,0 +1,14 @@
+<map id="&lt;DKRenderable&gt;" name="&lt;DKRenderable&gt;">
+<area shape="rect" id="node3" href="$interface_d_k_drawable_object.html" title="DKDrawableObject" alt="" coords="327,135,462,163"/>
+<area shape="rect" id="node14" href="$interface_d_k_select_and_edit_tool.html" title="DKSelectAndEditTool" alt="" coords="321,187,469,215"/>
+<area shape="rect" id="node4" href="$interface_d_k_drawable_path.html" title="DKDrawablePath" alt="" coords="524,83,647,111"/>
+<area shape="rect" id="node8" href="$interface_d_k_drawable_shape.html" title="DKDrawableShape" alt="" coords="518,213,653,241"/>
+<area shape="rect" id="node5" href="$interface_d_k_arc_path.html" title="DKArcPath" alt="" coords="739,5,826,33"/>
+<area shape="rect" id="node6" href="$interface_d_k_regular_polygon_path.html" title="DKRegularPolygonPath" alt="" coords="702,57,864,85"/>
+<area shape="rect" id="node7" href="$interface_d_k_text_path.html" title="DKTextPath" alt="" coords="737,109,829,137"/>
+<area shape="rect" id="node9" href="$interface_d_k_image_shape.html" title="DKImageShape" alt="" coords="725,161,840,189"/>
+<area shape="rect" id="node10" href="$interface_d_k_reshapable_shape.html" title="DKReshapableShape" alt="" coords="708,213,857,241"/>
+<area shape="rect" id="node11" href="$interface_d_k_shape_group.html" title="DKShapeGroup" alt="" coords="725,265,840,293"/>
+<area shape="rect" id="node13" href="$interface_d_k_text_shape.html" title="DKTextShape" alt="" coords="731,317,834,345"/>
+<area shape="rect" id="node12" href="$interface_d_k_shape_cluster.html" title="DKShapeCluster" alt="" coords="912,265,1032,293"/>
+</map>

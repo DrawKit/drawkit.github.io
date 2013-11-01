@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Views &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Concepts" href="index.html" />
+    <link rel="next" title="Automatic Drawing Construction" href="automatic.html" />
+    <link rel="prev" title="Style Registry" href="appearance/styleregistry.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Views</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="appearance/styleregistry.html">Style Registry</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="automatic.html">Automatic Drawing Construction</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="views">
+<h1>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h1>
+<p>The architecture of DrawKit is designed to support any number of views &#8220;into&#8221; a drawing. These views might actually display the drawing itself, or just present some aspect of it to the user in some fashion - an example could be a table view showing the arrangement of the layers. By using <cite>DKViewController</cite> as a basis for your views&#8217; controllers, you can easily make any sort of view or user interface for the DrawKit drawing.</p>
+<p>For views such as the layer UI mentioned, it is worth using a <cite>DKViewController</cite> because it&#8217;s much easier to get informed about events and so forth that involve objects deep within the drawing without having to dig down through the drawing structure yourself. For example when any layer or drawable object changes state the view controller is informed directly, so any interface attached to it is able to quickly get the update triggers it needs.</p>
+<p>Of course there are numerous notifications that you can also make use of, if that makes more sense. For example a global &#8220;inspector&#8221; type interface may prefer to rely on notifications since it can get them from all documents/drawings at once. The <cite>DKDrawKitInspectorBase</cite> works this way, for example. For a complete list of available notifications, see xxxx [missing - ed].</p>
+<div class="section" id="general-views">
+<h2>General Views<a class="headerlink" href="#general-views" title="Permalink to this headline">¶</a></h2>
+<p>For the case of actually viewing and interacting with the drawing, DrawKit provides the <cite>DKDrawingView</cite> class. This provides some useful features that most drawing programs are likely to want to take advantage of, such as rulers, zooming in and out of the drawing, and of course acting as an initial first responder for all actions and events that ultimately end up targeted at the active layer and any objects it contains. <cite>DKDrawingView</cite> interfaces to <cite>DKViewController</cite> for handling all the usual mouse events, and provides a few other conveniences, such as drawing page breaks for the current printer setup. In general for actually viewing the drawing, you should use <cite>DKDrawingView</cite>, or possibly a subclass of it, though there&#8217;s relatively little functionality that should be part of the view itself - mostly subclassing the controller is likely to be the better bet for customising interactivity with <cite>DKDrawing</cite> and its layers.</p>
+<p><cite>DKDrawing</cite> owns its controllers but it does not own or keep a reference to any view. Views are, as normal, owned by their superviews and ultimately their windows. There is also no limit on the number of view/controller pairs that a <cite>DKDrawing</cite> can support - you can easily set up a split view of the same drawing, or have views in different windows viewing the same drawing. All that is required is that each view has an associated <cite>DKViewController</cite> added to the drawing. Each view that views the same drawing will be automatically updated when necessary - if you are working with objects in one view, any others will display changes live as you work.</p>
+<p><cite>DKDrawingView</cite> is generally used in a &#8220;flipped&#8221; state, meaning that the Y coordinate increases in a downward direction. This is common to many drawing programs and is familiar. However you can use DrawKit in an &#8220;unflipped&#8221; state where Y coordinates increase in an upward direction. Because this needs to be consistent across all views associated with a drawing, this is actually set in <cite>DKDrawing</cite> - <cite>DKDrawingView</cite> queries this value and returns it in the - isFlipped method.</p>
+</div>
+<div class="section" id="specialised-views">
+<h2>Specialised views<a class="headerlink" href="#specialised-views" title="Permalink to this headline">¶</a></h2>
+<p>Because DrawKit provides no user interface of its own except the interactivity with objects, it is designed to make as few assumptions about how your user interface might work as possible. However because many typical drawing-type applications often have quite similar user interfaces, DK does provide some support, particularly for inspector-type views.</p>
+<p><cite>DKDrawkitInspectorBase</cite> is a simple class that subclasses <cite>NSWindowController</cite>, and can be used by your own inspector controllers if you wish. All it does it to provide some standard hooks for most of the useful state change notifications coming out of drawkit, such as the active document changing, the active layer changing, and the selection changing. It leaves the handling and display of the information entirely up to your application.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="appearance/styleregistry.html">Style Registry</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="automatic.html">Automatic Drawing Construction</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

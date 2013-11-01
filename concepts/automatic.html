@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Automatic Drawing Construction &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Concepts" href="index.html" />
+    <link rel="next" title="Drag and Drop" href="draganddrop.html" />
+    <link rel="prev" title="Views" href="views.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Automatic Drawing Construction</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="views.html">Views</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="draganddrop.html">Drag and Drop</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="automatic-drawing-construction">
+<h1>Automatic Drawing Construction<a class="headerlink" href="#automatic-drawing-construction" title="Permalink to this headline">¶</a></h1>
+<p>DrawKit suppports a special mode of operation that is implemented by <cite>DKDrawingView</cite>. This convenient feature constructs all of the necessary drawing &#8220;back-end&#8221; for a view if you don&#8217;t bother to make one yourself. This is meant to be analogous to Cocoa&#8217;s <cite>NSTextView</cite> class - if you do not set up the text &#8220;back-end&#8221; yourself it does it for you, so you can go right ahead and start editing text immediately. DrawKit provides the same approach to drawings - drop a <cite>DKDrawingView</cite> into a nib and you will get a complete working drawing editor with no set up at all. The drawing size is set to the view&#8217;s bounds. In this case the <cite>DKDrawing</cite> is owned by the view, which is fine because the weak references within <cite>DKViewController</cite> ensure that there is no retain cycle created.</p>
+<p>This mechanism works when <cite>DKDrawingView</cite>&#8216;s drawRect: method is called - if at that point there is no drawing, <cite>DKDrawingView</cite> creates one, adds layers to it and then carries on as normal. The upshot is a very simple and easy way to drop a drawing editor into your application.</p>
+<p>The drawback of this approach is the same as the one for <cite>NSTextView</cite> - it might not be what you want. While it&#8217;s a very typical setup, possible drawing editors are likely to be even more varied than possible text editors, so chances are you&#8217;ll want something else. For ultimate control you&#8217;ll want to set up the &#8220;back-end&#8221; by hand, just as you would for <cite>NSTextView</cite> - for other cases you can let the automatic setup be done and then modify it, or override methods in <cite>DKDrawingView</cite> that make the automatic <cite>DKDrawing</cite> and supply the set-up you want.</p>
+<p>Functionally, there is no difference in terms of what DK can do when it&#8217;s set up this way, though because you are not using <cite>DKDrawingDocument</cite> you
+would have to handle file opening and saving yourself.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="views.html">Views</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="draganddrop.html">Drag and Drop</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Creating New Objects &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="View and Tool Controllers" href="index.html" />
+    <link rel="next" title="Selection and Editing" href="selectionandediting.html" />
+    <link rel="prev" title="Tools and the Tool Controller" href="toolcontroller.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Creating New Objects</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="toolcontroller.html">Tools and the Tool Controller</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="selectionandediting.html">Selection and Editing</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="creating-new-objects">
+<h1>Creating New Objects<a class="headerlink" href="#creating-new-objects" title="Permalink to this headline">¶</a></h1>
+<p>A single tool class - <cite>DKObjectCreationTool</cite> - is responsible for creating new objects in the active layer. The same tool class is able to make all types of drawable so a typical drawing application might have numerous instances of this registered, one for each kind of shape or path it can natively create. The reason this tool appears to be so versatile is that in fact the majority of the work it does is carried out by the object it creates itself.</p>
+<p>Object creation is based on copying a prototype object attached to the tool. When the tool is brought into use, the prototype object, whatever it is, is copied and becomes the new object. The prototype is copied faithfully, so you can set up the state of this object when you make the tool as part of your application&#8217;s setup. For instance <cite>DKDrawablePath</cite> is the same whether it is created as a line, polygon, bezier path, arc or other form - what differs is the initial &#8220;creation mode&#8221; parameter of the prototype object. When the tool copies the prototype, the creation mode is already set and the tool allows the new object to largely handle its own creation.</p>
+<p>The prototype object also has an initial style, which will be copied also. However, commonly applications may wish to set the style for new objects separately from the tool itself, so <cite>DKObjectCreationTool</cite> has some handy class methods that allow you to set a style independently which will override the style from the prototype for the new copy.</p>
+<p>This tool works in conjunction with <cite>DKObjectOwnerLayer</cite> as well as the object it is making to coordinate the creation process. First, the new object is added to the layer only as a &#8220;pending&#8221; object. This allows it to be drawn normally but doesn&#8217;t commit the layer to fully taking on the object at this stage - during creation the object is in a &#8220;probationary period&#8221;. The object&#8217;s class is consulted to determine what partcode should be used for the intial creation of the object - since partcodes are private to the objects only its class can supply this information. For a rectangle for example, the initial partcode is the bottom, right corner, because by convention new shapes are dragged into existence by dragging out the bottom, right corner while anchoring the top, left corner at the initial click point. So once dragging is underway, the creation tool is basically proceeding as for the edit tool, and letting the object do all its own work.</p>
+<p>When the user releases the mouse, the object may then become a full citizen of the target layer, provided that the object is sensible - so for example if the user didn&#8217;t drag it out so that it has no width or height, it is not committed to the layer but instead merely discarded. This prevents badly-formed objects becoming part of a drawing and potentially causing problems.</p>
+<p>Snap To Grid is honoured for object creation just as for any editing operation.
+Path creation follows much the same sequence as shapes, except that the path &#8220;captures&#8221; the initial mouse event and for each method of path creation set by the &#8220;creation mode&#8221;, keeps control in its own event loop until the user is done. This approach has the advantage that the exact mouse gestures needed for each type of path are tuned for the best user experience for each path type, and that in many cases these can involve a mouse- up or a drag without the mouse button being down without ending the creation process. Thus the mouse gestures for each type are:</p>
+<ul class="simple">
+<li>Straight lines - click, move, click to end OR click-drag-release.</li>
+<li>Irregular polygons - click, move, click for each corner, double-click or click on first point to end.</li>
+<li>Freehand - click, drag, release.</li>
+<li>Bezier path - click, drag and release to set control points, move end point, repeat. click on first point or double-click to end. (This is far easier to do than to explain, and is a very quick and easy way to drag out bezier curves once learned).</li>
+<li>Arc and Wedge - click, move to set radius, click, move to set arc, click to finish.</li>
+</ul>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="toolcontroller.html">Tools and the Tool Controller</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="selectionandediting.html">Selection and Editing</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

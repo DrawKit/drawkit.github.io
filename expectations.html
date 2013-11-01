@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>DrawKit and You &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="index.html" />
+    <link rel="next" title="Design Philosophy" href="philosophy.html" />
+    <link rel="prev" title="Introduction to DrawKit" href="introduction.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>DrawKit and You</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="introduction.html">Introduction to DrawKit</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="philosophy.html">Design Philosophy</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="drawkit-and-you">
+<h1>DrawKit and You<a class="headerlink" href="#drawkit-and-you" title="Permalink to this headline">¶</a></h1>
+<p>Cocoa programmers come in all shapes, sizes and levels of experience. If you&#8217;re a beginner with Cocoa, using Drawkit effectively is likely to be a challenge; DrawKit is not a beginner&#8217;s framework. However, DrawKit doesn&#8217;t require knowledge of Bindings or Core Data, which are considered more advanced topics. DrawKit doesn&#8217;t use Core Data, and it allows you to use Bindings or not as you wish, since it doesn&#8217;t concern itself with how you implement your user interface.</p>
+<p>To properly understand DrawKit, and this documentation, you will need to have some familiarity with Cocoa. Concepts such as memory management, how container classes and strings and many other parts of the Application Kit work is taken for granted, as is the model-view-controller paradigm, KVC, KVO and how views work. DrawKit is heavily based on Cocoa and Quartz graphics, and a good working knowledge of these technologies is highly advantageous. The beginner is directed to any of the many good books and online documentation available.</p>
+<p>For the programmer already familiar with Cocoa, DrawKit should present no particular difficulties - it mostly works in the Cocoa domain, rather than Core Graphics or other framework, and employs no unusual techniques or tricky approaches. It makes use of Cocoa&#8217;s classes for all of its storage, message passing and other needs. In one or two places it does extend Cocoa&#8217;s classes for improved performance or efficiency (e.g. <cite>NSUndoManager</cite>) but by and large there should be no surprises. The lower level parts of the code make use of a number of categories on Cocoa classes, such as <cite>NSBezierPath</cite> and others.</p>
+<p>While DrawKit is mostly &#8220;back end&#8221; or model, some programmers may prefer to approach it as a self-contained custom view, since that is probably how it
+seems to the user, just as <cite>NSTextView</cite> is a view (but in fact consists mostly of non-view classes behind the scenes).</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="introduction.html">Introduction to DrawKit</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="philosophy.html">Design Philosophy</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+<map id="DKPrintDrawingView" name="DKPrintDrawingView">
+<area shape="rect" id="node2" href="$interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="" coords="19,161,136,189"/>
+<area shape="rect" id="node3" href="$interface_g_c_zoom_view.html" title="GCZoomView" alt="" coords="25,83,129,111"/>
+</map>

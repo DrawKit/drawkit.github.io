@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Basic Shapes and Paths &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Drawables" href="index.html" />
+    <link rel="next" title="Image Shapes" href="imageshapes.html" />
+    <link rel="prev" title="Drawables" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Basic Shapes and Paths</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Drawables</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="imageshapes.html">Image Shapes</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="basic-shapes-and-paths">
+<h1>Basic Shapes and Paths<a class="headerlink" href="#basic-shapes-and-paths" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dkdrawablepath">
+<h2><cite>DKDrawablePath</cite><a class="headerlink" href="#dkdrawablepath" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKDrawablePath</cite> is a concrete subclass of <cite>DKDrawableObject</cite> that draws a path. Its path is stored at the final size and position in the drawing that it occupies - there is no transformation done on the path at the time it is drawn. Paths are designed to be editable at the path control point level, so when selected these objects display draggable handles for every control point in the path.</p>
+<p>Paths are best for objects that are long and thin, or have an irregular outline. Paths can be created in a number of &#8220;modes&#8221;, which map to different kinds of typical creation tools - for example, bezier curves, straight lines, polygons, ars and wedges and freehand. Once created all these paths are edited in the same way, by dragging their control points. Thus an arc for example doesn&#8217;t &#8220;know&#8221; its an arc once created, and will lose its shape if edited.</p>
+<p>Path objects have no concept of overall rotation and always return an angle of zero.
+Paths are drawn by their associated style objects exactly the same as for shapes.</p>
+</div>
+<div class="section" id="dkdrawableshape">
+<h2><cite>DKDrawableShape</cite><a class="headerlink" href="#dkdrawableshape" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKDrawableShape</cite> is a concrete subclass of <cite>DKDrawableObject</cite> that draws a geometric shape defined by a bounding box. A selected shape features (as standard) eight &#8220;handles&#8221; or &#8220;knobs&#8221; arranged at the corners and mid-points of the box. Dragging the knobs changes the size of the box and the path of the shape is scaled to fit within.</p>
+<p>Shapes also feature (as standard) a rotation knob which allows the object&#8217;s angle to be simply dragged to a new value, and a centre position which sets the centre of rotation and origin for the object. This means that you are not required to have a separate &#8220;rotate&#8221; tool though DrawKit would certainly permit this approach if you prefer.</p>
+<p>Shapes are best suited for objects that can be defined by simple scaling of a path to fit the bounding box - an irregular path can certainly be set and scaled to fit, but the detail of the path cannot be changed. However, <cite>DKDrawablePath</cite> and <cite>DKDrawableShape</cite> are freely interconvertible to each other with no loss of data (except rotation angle), so in fact you can simply convert to the other type and edit how you wish.</p>
+<p>Shapes store their paths based on a unit square centred at the origin (i.e. a square 1.0 points wide and high, with its centre point at 0,0) and transform the path at that size to the final position, size and rotation angle when drawn. A shape&#8217;s path is drawn by its associated style object.</p>
+</div>
+<div class="section" id="dkreshapableshape">
+<h2><cite>DKReshapableShape</cite><a class="headerlink" href="#dkreshapableshape" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKReshapableShape</cite> is a simple subclass of <cite>DKDrawableShape</cite> that provides an opportunity for the path to be recomputed whenever the object&#8217;s size changes. It is still best suited for geometric shapes but provides more flexibility - for example, a round-cornered rectangle will usually want to maintain a constant corner radius even as the overall shape is resized.</p>
+<p>This object uses a helper object, an instance of <cite>DKShapeFactory</cite> to supply it with a new path on demand.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Drawables</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="imageshapes.html">Image Shapes</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

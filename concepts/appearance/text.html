@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Styles and Text &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Graphical Appearance of Objects" href="index.html" />
+    <link rel="next" title="Style Registry" href="styleregistry.html" />
+    <link rel="prev" title="Rasterizer Groups" href="rasterizergroups.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Styles and Text</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rasterizergroups.html">Rasterizer Groups</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="styleregistry.html">Style Registry</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="styles-and-text">
+<h1>Styles and Text<a class="headerlink" href="#styles-and-text" title="Permalink to this headline">¶</a></h1>
+<p>Given how useful the ability to share styles among multiple objects can be for many applications, <cite>DKStyle</cite> also supports text attributes that can be shared among text objects in exactly the same way. All styles support text attributes independently of any rasterizers they might also have, but by default the text attributes are not set. The category <cite>DKStyle+Text</cite> provides numerous additional methods on a <cite>DKStyle</cite> for setting attributes such as the font, paragraph style, alignment and so forth.</p>
+<p>Objects such as <cite>DKTextShape</cite> can use their attached style&#8217;s text attributes or their own local attributes - again it&#8217;s up to the application design to decide how such objects should typically operate. The text attributes of rasterizers such as <cite>DKTextAdornment</cite> are independent of the style&#8217;s attributes, if it has any, except for the case of dragging text onto an object, where the style&#8217;s text attributes, if any, are used for the adornment&#8217;s initial attributes.</p>
+<p>It is possible to define a style with only text attributes - in fact <cite>DKStyle+Text</cite> returns such a style by default, having 18pt Helvetica centred text. Styles that only have text attributes are also usually named after the font for ease of easily identifying them, but this is up to your application - there is a class method to generate a suitable name from the font info.</p>
+<p>The <cite>DKTextShape</cite> object is also able to set its style&#8217;s text attributes if the style is not locked, by directly responding to standard Text menu commands such as Bold, Italic and so forth, and to the Font Panel. If the style is shared all objects sharing the style will be updated as well. Currently Drawkit requires that the text attributes apply to all of the text at once (because where a style&#8217;s attributes can be shared by different pieces of text, applying the text in ranges is not really feasible as each piece of text is generally different). However if you elect to disconnect a <cite>DKTextShape</cite> from its style and allow it to use its local attributes, different attributes can be applied to different ranges of the text if required. The disadvantage of course is that this &#8220;style&#8221; is then unique to that particular <cite>DKTextShape</cite> object.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rasterizergroups.html">Rasterizer Groups</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="styleregistry.html">Style Registry</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

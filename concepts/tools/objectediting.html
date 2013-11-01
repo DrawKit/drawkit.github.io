@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Basics of Object Editing &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="View and Tool Controllers" href="index.html" />
+    <link rel="next" title="Tools and the Tool Controller" href="toolcontroller.html" />
+    <link rel="prev" title="View Controller and the Flow of Events" href="viewcontroller.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Basics of Object Editing</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="viewcontroller.html">View Controller and the Flow of Events</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="toolcontroller.html">Tools and the Tool Controller</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="basics-of-object-editing">
+<h1>Basics of Object Editing<a class="headerlink" href="#basics-of-object-editing" title="Permalink to this headline">¶</a></h1>
+<p>By and large, drawable objects are able to edit themselves. This is sensible as it avoids the need to have lots of different controller classes with overlapping responsibilities just to deal with the object variations. Instead, objects are given fairly low-level events such as mouse dragged, and given the context of where the mouse is within the object, do the expected thing.</p>
+<p>Drawables typically have numerous places or clickable regions within them that are sensitive to the mouse and have specific behaviours when clicked or dragged. For example a path&#8217;s every control point is draggable, and each one will have a slightly different effect on the path. A shape&#8217;s handles or knobs each resize the shape in a slightly different way. In order for a drawable object to tell what the user clicked, it assigns a &#8220;partcode&#8221; to every single separately sensitive place. A partcode is just a number (int) which identifies the point clicked - it is entirely private to the object and is only interpreted by it.</p>
+<p>Two partcodes are reserved and are interpreted outside of an individual drawable instance - that of 0 meaning &#8220;no part was hit&#8221; and -1 meaning &#8220;the entire object was hit&#8221; or &#8220;no special partcode was hit&#8221;.</p>
+<p>When the mouse goes down initially in an object, the partcode of the hit is determined by the target object itself, and returned to the caller (the tool or tool controller, for example). If the partcode is anything other than 0 or -1, it is known to be private to the object so all that will happen is that the same value is passed back in subsequent mouse-dragged and mouse-up handlers. 0 or -1 values might be interpreted. For example -1 might trigger a move operation, and 0 might trigger the start of a drag selection operation.</p>
+<p>If the target object is passed back the partcode in a mouse drag call, it alone knows what to do with it. For example, a shape might identify the partcode as meaning the rotation knob was hit, so it carries out a rotation operation based on the current mouse point.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="viewcontroller.html">View Controller and the Flow of Events</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="toolcontroller.html">Tools and the Tool Controller</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Object Storage &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Concepts" href="index.html" />
+    <link rel="next" title="The Selection" href="selection.html" />
+    <link rel="prev" title="Object Layers" href="objectlayers.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Object Storage</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="objectlayers.html">Object Layers</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="selection.html">The Selection</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="object-storage">
+<h1>Object Storage<a class="headerlink" href="#object-storage" title="Permalink to this headline">¶</a></h1>
+<p><cite>DKObjectOwnerLayer</cite> abstracts the actual storage of the drawables it owns into a further class, based on the <cite>DKObjectStorage</cite> formal protocol. Concrete objects that implement this protocol currently are <cite>DKLinearObjectStorage</cite> and <cite>DKBSPObjectStorage</cite>. The storage abstraction is entirely transparent to applications, but the ability to use different types of storage can have useful advantages for the programmer.</p>
+<p>The storage class for new instances of <cite>DKObjectOwnerLayer</cite> can be set using +setStorageClass: The default is <cite>DKLInearObjectStorage</cite>.</p>
+<p>The layer will return, on demand, a list of objects to be drawn based on a rect or a view needing update. This list is built by the storage using whatever internal algorithm it implements. The result is always the same - a list of objects to be drawn, in bottom-to-top order.</p>
+<div class="section" id="dklinearobjectstorage">
+<h2><cite>DKLinearObjectStorage</cite><a class="headerlink" href="#dklinearobjectstorage" title="Permalink to this headline">¶</a></h2>
+<p>Linear storage is very simple and reliable - all objects are simply kept in a single list (array). Such an array strictly defines the back-to-front ordering of objects (Z-ordering). For many uses, linear storage is entirely adequate, providing good performance up to a few hundred objects per layer. Conceptually, the indexed nature of linear storage is what all storage &#8220;looks like&#8221; to client code (such as <cite>DKObjectOwnerLayer</cite>).</p>
+</div>
+<div class="section" id="dkbspobjectstorage">
+<h2><cite>DKBSPObjectStorage</cite><a class="headerlink" href="#dkbspobjectstorage" title="Permalink to this headline">¶</a></h2>
+<p>The drawback of linear storage starts to become noticeable when the data sets become much larger than a few hundred objects. While DrawKit always avoids drawing objects that it doesn&#8217;t need to draw by carefully using <cite>NSView</cite>&#8216;s update rects mechanism, when data sets are large there is still the issue of having to iterate over the entire objects list to determine which objects should be drawn.</p>
+<p>BSP (Binary Search Partition) Storage improves performance on larger data sets by avoiding the need to iterate all objects to find those that need to be drawn. BSP storage uses a tree structure which conceptually repeatedly subdivides the overall drawing space into smaller and smaller binary partitions. When an area needs updating, the tree is used to rapidly determine which partitions and hence which objects are affected. Thus while the returned list of objects to be drawn is the same as for the linear storage, the time to build that list can be much less. In theory data sets having hundreds of thousands of objects should be possible, and performance will only be dictated by the objects that are currently visible.</p>
+<p><cite>DKBSPObjectStorage</cite> subclasses <cite>DKLinearObjectStorage</cite> so objects are still stored in a single array, but the BSP tree is used to efficiently index it on a spatial basis. Z-ordering is thus strictly defined as for the linear case. DK&#8217;s implementation dynamically sizes the BSP Tree as needed to maintain efficiency as objects are added and removed, though the programmer has the option to set a fixed-size tree if they wish (Note - a fixed-size tree can still store any number of objects, but efficiency may decline if the number of objects greatly exceeds the optimal tree depth).</p>
+</div>
+<div class="section" id="dkrstartreeobjectstorage">
+<h2><cite>DKRStarTreeObjectStorage</cite><a class="headerlink" href="#dkrstartreeobjectstorage" title="Permalink to this headline">¶</a></h2>
+<p>R*-Trees are another way to spatially index objects to improve efficiency when dealing with very large data sets. R*-Trees are able to efficiently store millions of objects. This class is currently under development.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="objectlayers.html">Object Layers</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="selection.html">The Selection</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

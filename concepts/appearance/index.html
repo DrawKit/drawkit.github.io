@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The Graphical Appearance of Objects &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Concepts" href="../index.html" />
+    <link rel="next" title="Drawing Pathway" href="drawingpathway.html" />
+    <link rel="prev" title="Setting the Current Tool" href="../tools/settingthecurrentool.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>The Graphical Appearance of Objects</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="../tools/settingthecurrentool.html">Setting the Current Tool</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="drawingpathway.html">Drawing Pathway</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="the-graphical-appearance-of-objects">
+<span id="appearance"></span><h1>The Graphical Appearance of Objects<a class="headerlink" href="#the-graphical-appearance-of-objects" title="Permalink to this headline">¶</a></h1>
+<p>Objects drawn by DrawKit separate their geometry (their path or shape) from their appearance - how the path is painted. This is accomplished using the <cite>DKStyle</cite> class, which is attached to one or more objects.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="drawingpathway.html">Drawing Pathway</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="styles-and-rasterizers">
+<h1>Styles and Rasterizers<a class="headerlink" href="#styles-and-rasterizers" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rasterizertree.html"><cite>DKStyle</cite> and the Rasterizer Tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyvalueobservation.html"><cite>DKStyle</cite> and Key-Value Observing (KVO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strokes.html">Strokes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="strokes.html#dkstroke"><cite>DKStroke</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="strokes.html#dkarrowstroke"><cite>DKArrowStroke</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="strokes.html#dkroughstroke"><cite>DKRoughStroke</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="strokes.html#dkzigzagstroke"><cite>DKZigZagStroke</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="strokes.html#dashes">Dashes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fills.html">Fills</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fills.html#dkfill"><cite>DKFill</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="fills.html#dkgradient"><cite>DKGradient</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="fills.html#dkhatching"><cite>DKHatching</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="fills.html#dkfillpattern"><cite>DKFillPattern</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="fills.html#dkzigzagfill"><cite>DKZigZagFill</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adornments.html">Adornments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adornments.html#dkimageadornment"><cite>DKImageAdornment</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="adornments.html#dktextadornment"><cite>DKTextAdornment</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="adornments.html#dkpathdecorator"><cite>DKPathDecorator</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rasterizergroups.html">Rasterizer Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text.html">Styles and Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styleregistry.html">Style Registry</a></li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="../tools/settingthecurrentool.html">Setting the Current Tool</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="drawingpathway.html">Drawing Pathway</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

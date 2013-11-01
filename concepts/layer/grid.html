@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Grid Layer &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Drawing and Layers" href="index.html" />
+    <link rel="next" title="Guides Layer" href="guides.html" />
+    <link rel="prev" title="The active layer" href="active.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Grid Layer</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="active.html">The active layer</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="guides.html">Guides Layer</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="grid-layer">
+<h1>Grid Layer<a class="headerlink" href="#grid-layer" title="Permalink to this headline">¶</a></h1>
+<p>The Grid Layer is responsible for several things - a) drawing the squared grid for a drawing, b) establishing &#8220;snap to grid&#8221; fundamental manipulation of points and rects, c) managing the ruler setup and d) establishing the &#8220;real world&#8221; coordinate system of a drawing. It is implemented as a layer so that it can be placed anywhere relative to your other content - behind, in front, it&#8217;s up to you. By default the grid draws a three-part grid designed to simulate common real-world graph paper, using transparency and very fine lines to avoid it &#8220;filling up&#8221; the display too much. Previously, most drawing programs have had to compromise by drawing unrealistic grids simply because the display resolution was not up to anything better.</p>
+<p>Grids are draw in three parts, corresponding to the three types of &#8220;squares&#8221; that make up the grid. The fundamental grid unit is called its span. This is divided into a whole number of divisions which are the smallest squares in the grid. A whole number of spans makes up a major interval. Thus on a typical metric grid (in fact the default metric grid) the span is set to 1cm, divided into 5 parts (thus each is 2mm square) and there is a major interval every 10 spans, or 10cm. Each part of the grid can be drawn using a different colour, though usually you will probably set a single &#8220;theme&#8221; colour from which all three are derived.</p>
+<p>The grid&#8217;s span establishes the basic conversion between the underlying Quartz drawing coordinates and whatever &#8220;real world&#8221; coordinate system you define. The units can be whatever you want - centimetres, metres, kilometres, miles, light-years... While DrawKit always works in the underlying coordinate system of Quartz points, the user of an application is most likely to want to work in some real system - <cite>DKGridLayer</cite> is responsible for that mapping. <cite>DKDrawing</cite> provides a number of convenient methods to access some of the grid&#8217;s features, since it helps isolate you from the grid&#8217;s position and even its existence (which is optional - some drawing systems will prefer to simply do without a grid).</p>
+<p>Snapping points and rectangles to the grid is also performed by fundamental methods in <cite>DKGridLayer</cite>, but again, you&#8217;ll probably access these through <cite>DKDrawing</cite> or even <cite>DKDrawableObject</cite> itself, which provides a higher-level interface. <cite>DKGridLayer</cite>&#8216;s most basic snapping method is - nearestGridIntersectionToPoint:, which given any point in Quartz coordinates, returns the nearest grid point (based on the divisions). You can also convert any length to and from the grid&#8217;s coordinate system easily.</p>
+<p><cite>DKGridLayer</cite> only supports square grids, where the span in the horizontal and vertical dimensions are equal. For alternative grids (polar, for example, or other non-square grid) you would need to subclass <cite>DKGridLayer</cite>.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="active.html">The active layer</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="guides.html">Guides Layer</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

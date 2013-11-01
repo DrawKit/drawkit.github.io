@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Inherited To Do List &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="index.html" />
+    <link rel="prev" title="Building the Site" href="meta/index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Inherited To Do List</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="meta/index.html">Building the Site</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="inherited-to-do-list">
+<h1>Inherited To Do List<a class="headerlink" href="#inherited-to-do-list" title="Permalink to this headline">¶</a></h1>
+<p>The original to-do list inherited from DrawKit 1.0b7 (22 July 2007):</p>
+<ul class="simple">
+<li>Align Edges To Grid of group doesn&#8217;t do the right thing if group is rotated</li>
+<li>Check poly create loop possible error (insert nil attempt)</li>
+<li>Moving first point of any subpath is either not correct or asserts when constraining to angle.</li>
+<li>Inspector base should send selection change notification when document closes and/or when new one opens to clear out any cached values for objects in the closed drawing. (Not sure on this, but get a crash at times).</li>
+<li>Text shapes in groups stretch instead of rewrap.</li>
+<li>Hitting a thin line is still quite difficult especially when the view is zoomed out. (Should the hit bitmap account for scaling??? hard to do). (Improved by making the hit bitmap at least 4 (not 2) wide)</li>
+<li>Text objects should show &#8220;double-click&#8221; message as a placeholder when created initially empty.</li>
+<li>Add bounds property to layers so they can be spatially arranged. (or at least think through the implications)</li>
+<li>Throughout Cocoa&#8217;s documentation, whenever an NSNotification message is defined, it mentions at least two things: What the NSNotification &#8220;object&#8221; will be and, if the NSNotification has a &#8220;userInfo&#8221; dictionary, what keys it may contain. Similar documentation needs to be provided on NSNotification messages throughout DrawKit.</li>
+</ul>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="meta/index.html">Building the Site</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

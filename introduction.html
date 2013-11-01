@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction to DrawKit &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="index.html" />
+    <link rel="next" title="DrawKit and You" href="expectations.html" />
+    <link rel="prev" title="Welcome to DrawKit" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Introduction to DrawKit</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Welcome to DrawKit</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="expectations.html">DrawKit and You</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="introduction-to-drawkit">
+<h1>Introduction to DrawKit<a class="headerlink" href="#introduction-to-drawkit" title="Permalink to this headline">¶</a></h1>
+<p>DrawKit is a software framework that enables the Mac OS X Cocoa developer to rapidly implement vector drawing and illustration features in a custom application. It is comprehensive, powerful and complete, but it is also highly modular so you can make use of only those parts that you need, or go the whole hog and drop it in as a complete vector drawing solution.</p>
+<p>Taking its cue from Cocoa&#8217;s powerful text handling model, DrawKit provides a general purpose and complete drawing model that can be deployed with very little (or in the most general case, no) code at all. The defaults for most classes and created objects have been selected to give a working system out of the box with minimal set up. As you might expect, the more your requirements deviate from the defaults, the more customising you will need to do, but DrawKit has been designed to make this as straightforward as possible without compromising on the graphical power available. Many classes can be operated in a variety of modes for the most obvious of customisations, and can of course be subclassed when necessary to provide more divergent behaviour.</p>
+<p>Where possible, familiar Cocoa idioms and conventions are used to ensure that the Cocoa developer will be able to start using DrawKit as if it were a natural extension of the standard Cocoa frameworks (which in a way, of course, it is).</p>
+<p>Generally speaking, DrawKit provides the following:</p>
+<ul class="simple">
+<li>A general-purpose &#8220;drawing&#8221; data model consisting of unlimited layers organised hierarchically.</li>
+<li>Separation into model, view and controller classes gives genuine architectural flexibility</li>
+<li>Built-in classes for shapes and path objects, and various derivations of them to cover most typical needs.</li>
+<li>Standard grid and guide layers supporting object snapping and any &#8220;real world&#8221; measurement system you need.</li>
+<li>Built-in selection of objects and targeting of the selection for commands and user events.</li>
+<li>Separation of an object&#8217;s geometry from its appearance gives incredible flexibility for creating exciting graphics.</li>
+<li>Attachment of unlimited arbirtrary user data to all objects.</li>
+<li>Style objects can be optionally shared by multiple objects, and contain an entire tree of rasterizers for drawing. This goes way beyond the classic &#8220;one stroke and one fill per object&#8221; that many drawing applications adopt (though if this is what you want it&#8217;s easy to implement).</li>
+<li>Built-in gradients, vector pattern fills and hatches.</li>
+<li>Interactively edit any bezier path.</li>
+<li>Image objects support all the formats that Cocoa itself supports.</li>
+<li>Text objects.</li>
+<li>Group objects to any degree of nesting. Groups can be rotated, scaled and moved like any shape.</li>
+<li>Many path operations including boolean (set) operations (requires the inclusion of additional code).</li>
+<li>Tool-based drawing, editing and selection operations.</li>
+<li>Export to PDF or any raster image format, as well as its own keyed archive format.</li>
+<li>Built-in Undo.</li>
+<li>Supports multiple views and multiple view classes.</li>
+<li>Various caching and quality modulating techniques to improve performance when interacting directly.</li>
+</ul>
+<p>DrawKit is a moderately large framework but its architecture is straightforward. While you won&#8217;t be able to learn it in half an hour, it is designed to be easy to deploy and get working with minimal configuration or fuss.</p>
+<p>DrawKit does NOT provide a user interface except that of direct manipulation of objects, which is highly customisable. It is intended to form the core of an application or perhaps find a subsidiary role - it is not in and of itself a drawing application. Some classes are provided to help get started with building a GUI for DrawKit, such as a basic document class and a base class for an inspector type of controller.</p>
+<p>As its name suggests, DrawKit is a kit - some assembly is required. However getting a &#8220;bare bones&#8221; system up and running should be very easy, which is intended to give the programmer confidence in the default operation of the framework, providing an excellent starting point for customising and extending DrawKit to suit your own applications&#8217; needs.</p>
+<p>The DrawKit Demo application is also an essential download for any prospective user of DrawKit. It provides an interface to most of the kit&#8217;s features allowing them to be explored in a drawing-type application. It is not a drawing application intended for end users however - it is there as a way for programmers to explore the architecture and capabilities of the framework.</p>
+<p>The DrawKit Demo application is also an essential download for any prospective user of DrawKit. It provides an interface to most of the kit&#8217;s features allowing them to be explored in a drawing-type application. It is not a drawing application intended for end users however - it is there as a way for programmers to explore the architecture and capabilities of the framework.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Welcome to DrawKit</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="expectations.html">DrawKit and You</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

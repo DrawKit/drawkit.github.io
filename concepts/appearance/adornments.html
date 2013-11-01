@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Adornments &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="The Graphical Appearance of Objects" href="index.html" />
+    <link rel="next" title="Rasterizer Groups" href="rasterizergroups.html" />
+    <link rel="prev" title="Fills" href="fills.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Adornments</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="fills.html">Fills</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rasterizergroups.html">Rasterizer Groups</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="adornments">
+<h1>Adornments<a class="headerlink" href="#adornments" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dkimageadornment">
+<h2><cite>DKImageAdornment</cite><a class="headerlink" href="#dkimageadornment" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKImageAdornment</cite> is a <cite>DKRasterizer</cite> that can display a single image within the path&#8217;s bounds - typically centred. The image scale, opacity, angle and offset can all be controlled, or the image can be scaled to fill the bounds or fit proportionally within it.
+This approach to displaying images may be more versatile than using a <cite>DKImageShape</cite>, depending on your needs. If you want to apply a Core Image effect to an image using a <cite>DKCIFilterRastGroup</cite>, this is currently the only built-in way within DrawKit to do it.</p>
+</div>
+<div class="section" id="dktextadornment">
+<h2><cite>DKTextAdornment</cite><a class="headerlink" href="#dktextadornment" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKTextAdornment</cite> is a <cite>DKRasterizer</cite> that provides two main ways to add text to an object. It can lay text out in a block in much the same way as a <cite>DKTextShape</cite>, or it can lay it out along a path (including curved paths). Text attributes can be controlled using the Font Panel or other UI.</p>
+<p>This rasterizer is also able to lay out text by flowing it into a path or shape, using the <cite>DKBezierTextContainer</cite> class. In this mode, the vertical placement parameter is ignored (always acts as per &#8216;top&#8217; alignment), as is the separate text angle. The text can be set to adopt the object&#8217;s angle or not however.</p>
+</div>
+<div class="section" id="dkpathdecorator">
+<h2><cite>DKPathDecorator</cite><a class="headerlink" href="#dkpathdecorator" title="Permalink to this headline">¶</a></h2>
+<p><cite>DKPathDecorator</cite> is a <cite>DKRasterizer</cite> that can place copies of an image (called the &#8220;motif&#8221;) at linear intervals along a path. Wherever possible it uses the PDF representation of the image to maximise quality, so vector images remain vector images. The spacing and scale of the motif can be controlled, and also whether the image is rotated to the instantaneous slope of the path at the point where it is drawn. This gives a very powerful effect where a path effectively becomes the guideline for the placement of much more complicated objects.</p>
+<p>In addition, you can specify a lead-in and a lead-out scale, where the scale of objects drawn close to the ends of the path are reduced to give a gradual ramping in and out of the motif.</p>
+<p>This object also supports a special &#8220;chain mode&#8221; of operation where successive links formed by the motif can be positioned accurately so that their nominated end points line up precisely. This has application in mechanical drawing for example, or for drawing linked train cars on a track.</p>
+<p><cite>DKPathDecorator</cite> is computationally and graphically expensive, and can cause slow drawing. To alleviate this, it is able to use a cached offscreen version of the motif for faster, low quality updates. It also takes care only to draw those copies of the motif that actually intersect the view&#8217;s update region. Nevertheless, beware that complex motifs can sap drawing performance considerably.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="fills.html">Fills</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rasterizergroups.html">Rasterizer Groups</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>View and Tool Controllers &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Concepts" href="../index.html" />
+    <link rel="next" title="View Controller and the Flow of Events" href="viewcontroller.html" />
+    <link rel="prev" title="Metadata" href="../drawables/metadata.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>View and Tool Controllers</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="../drawables/metadata.html">Metadata</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="viewcontroller.html">View Controller and the Flow of Events</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="view-and-tool-controllers">
+<span id="tools"></span><h1>View and Tool Controllers<a class="headerlink" href="#view-and-tool-controllers" title="Permalink to this headline">¶</a></h1>
+<p>DrawKit&#8217;s controllers sit between a drawing and its views. The controllers are owned by the drawing; the views are owned by their superviews and ultimately their windows. In DrawKit, there is one controller per view.</p>
+<p>The basic controller, <cite>DKViewController</cite>, provides basic support for forwarding input events from the view to the active layer within the drawing, and for responding to requests from the drawing to update the view. <cite>DKToolController</cite>, a subclass of <cite>DKViewController</cite>, adds the concept of a settable tool, allowing the user to interactively create, select and edit objects.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="viewcontroller.html">View Controller and the Flow of Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="objectediting.html">Basics of Object Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolcontroller.html">Tools and the Tool Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creatingnewobjects.html">Creating New Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="selectionandediting.html">Selection and Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="objectmodifyingtools.html">Object Modifying Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userinterfacetools.html">User Interface Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settingthecurrentool.html">Setting the Current Tool</a></li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="../drawables/metadata.html">Metadata</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="viewcontroller.html">View Controller and the Flow of Events</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

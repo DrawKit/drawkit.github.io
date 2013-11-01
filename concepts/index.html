@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Concepts &mdash; DrawKit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="next" title="Model, View and Controller" href="mvc.html" />
+    <link rel="prev" title="Design Philosophy" href="../philosophy.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>DrawKit 1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Concepts</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="../philosophy.html">Design Philosophy</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="mvc.html">Model, View and Controller</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="concepts">
+<span id="id1"></span><h1>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h1>
+<p>This section fully explores the architecture and design concepts of DrawKit. It provides a comprehensive functional description of how the various classes fit together to provide DrawKit&#8217;s overall functionality. It does not explore every single class in its entirety - the Class Reference section following this should be referred to for the complete API.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mvc.html">Model, View and Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layer/index.html">The Drawing and Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="layer/hierarchy.html">The layer containment hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer/dklayer.html">DKLayer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer/dklayergroup.html">DKLayerGroup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer/dkdrawing.html"><cite>DKDrawing</cite> - the root of the layer tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer/active.html">The active layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="layer/index.html#specialised-layers">Specialised Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="layer/grid.html">Grid Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer/guides.html">Guides Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer/imageoverlay.html">Image overlays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer/info.html">Drawing Information Layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="objectlayers.html">Object Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="objectlayers.html#object-owning-layers-and-drawables">Object Owning Layers and Drawables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="objectstorage.html">Object Storage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="objectstorage.html#dklinearobjectstorage"><cite>DKLinearObjectStorage</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="objectstorage.html#dkbspobjectstorage"><cite>DKBSPObjectStorage</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="objectstorage.html#dkrstartreeobjectstorage"><cite>DKRStarTreeObjectStorage</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="selection.html">The Selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="selection.html#dkknob">DKKnob</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="drawables/index.html">Drawables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="drawables/shapesandpaths.html">Basic Shapes and Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drawables/imageshapes.html">Image Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drawables/textshapes.html">Text Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drawables/groups.html">Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drawables/metadata.html">Metadata</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools/index.html">View and Tool Controllers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools/viewcontroller.html">View Controller and the Flow of Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/objectediting.html">Basics of Object Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/toolcontroller.html">Tools and the Tool Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/creatingnewobjects.html">Creating New Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/selectionandediting.html">Selection and Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/objectmodifyingtools.html">Object Modifying Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/userinterfacetools.html">User Interface Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/settingthecurrentool.html">Setting the Current Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appearance/index.html">The Graphical Appearance of Objects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appearance/drawingpathway.html">Drawing Pathway</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appearance/index.html#styles-and-rasterizers">Styles and Rasterizers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appearance/rasterizertree.html"><cite>DKStyle</cite> and the Rasterizer Tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appearance/keyvalueobservation.html"><cite>DKStyle</cite> and Key-Value Observing (KVO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appearance/strokes.html">Strokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appearance/fills.html">Fills</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appearance/adornments.html">Adornments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appearance/rasterizergroups.html">Rasterizer Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appearance/text.html">Styles and Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appearance/styleregistry.html">Style Registry</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="views.html">Views</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="views.html#general-views">General Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="views.html#specialised-views">Specialised views</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="automatic.html">Automatic Drawing Construction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="draganddrop.html">Drag and Drop</a></li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="../philosophy.html">Design Philosophy</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="mvc.html">Model, View and Controller</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

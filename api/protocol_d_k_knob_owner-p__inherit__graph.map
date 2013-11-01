@@ -1,0 +1,11 @@
+<map id="&lt;DKKnobOwner&gt;" name="&lt;DKKnobOwner&gt;">
+<area shape="rect" id="node3" href="$interface_d_k_layer.html" title="DKLayer" alt="" coords="321,135,394,163"/>
+<area shape="rect" id="node4" href="$interface_d_k_drawing_info_layer.html" title="DKDrawingInfoLayer" alt="" coords="449,5,594,33"/>
+<area shape="rect" id="node5" href="$interface_d_k_grid_layer.html" title="DKGridLayer" alt="" coords="472,57,571,85"/>
+<area shape="rect" id="node6" href="$interface_d_k_guide_layer.html" title="DKGuideLayer" alt="" coords="467,109,576,137"/>
+<area shape="rect" id="node7" href="$interface_d_k_image_overlay_layer.html" title="DKImageOverlayLayer" alt="" coords="443,161,599,189"/>
+<area shape="rect" id="node8" href="$interface_d_k_layer_group.html" title="DKLayerGroup" alt="" coords="466,213,576,241"/>
+<area shape="rect" id="node10" href="$interface_d_k_object_owner_layer.html" title="DKObjectOwnerLayer" alt="" coords="446,265,597,293"/>
+<area shape="rect" id="node9" href="$interface_d_k_drawing.html" title="A DKDrawing is the model data for the drawing system. " alt="" coords="684,213,772,241"/>
+<area shape="rect" id="node11" href="$interface_d_k_object_drawing_layer.html" title="DKObjectDrawingLayer" alt="" coords="648,265,808,293"/>
+</map>
