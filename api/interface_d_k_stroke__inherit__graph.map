@@ -1,8 +1,8 @@
 <map id="DKStroke" name="DKStroke">
-<area shape="rect" id="node9" href="$interface_d_k_arrow_stroke.html" title="DKArrowStroke" alt="" coords="187,315,300,343"/>
-<area shape="rect" id="node10" href="$interface_d_k_rough_stroke.html" title="DKRoughStroke" alt="" coords="325,315,443,343"/>
+<area shape="rect" id="node9" href="$interface_d_k_arrow_stroke.html" title="DKArrowStroke is a rasterizer that implements arrowheads on the ends of paths. " alt="" coords="187,315,300,343"/>
+<area shape="rect" id="node10" href="$interface_d_k_rough_stroke.html" title="DKRoughStroke is a stroke rasterizer that randomly varies the stroke width about its nominal set widt..." alt="" coords="325,315,443,343"/>
 <area shape="rect" id="node11" href="$interface_d_k_zig_zag_stroke.html" title="DKZigZagStroke" alt="" coords="467,315,585,343"/>
-<area shape="rect" id="node2" href="$interface_d_k_rasterizer.html" title="DKRasterizer" alt="" coords="246,161,345,189"/>
-<area shape="rect" id="node3" href="$interface_g_c_observable_object.html" title="GCObservableObject" alt="" coords="5,83,152,111"/>
+<area shape="rect" id="node2" href="$interface_d_k_rasterizer.html" title="Renderers can now have a delegate attached which is able to modify behaviours such as changing the pa..." alt="" coords="246,161,345,189"/>
+<area shape="rect" id="node3" href="$interface_g_c_observable_object.html" title="This is used to permit setting up KVO in a simpler manner than comes as standard. ..." alt="" coords="5,83,152,111"/>
 <area shape="rect" id="node5" href="$protocol_d_k_rasterizer-p.html" title="\&lt;DKRasterizer\&gt;" alt="" coords="177,83,292,111"/>
 </map>

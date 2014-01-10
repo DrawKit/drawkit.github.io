@@ -1,5 +1,5 @@
 <map id="DKImageAdornment" name="DKImageAdornment">
-<area shape="rect" id="node2" href="$interface_d_k_rasterizer.html" title="DKRasterizer" alt="" coords="246,161,345,189"/>
-<area shape="rect" id="node3" href="$interface_g_c_observable_object.html" title="GCObservableObject" alt="" coords="5,83,152,111"/>
+<area shape="rect" id="node2" href="$interface_d_k_rasterizer.html" title="Renderers can now have a delegate attached which is able to modify behaviours such as changing the pa..." alt="" coords="246,161,345,189"/>
+<area shape="rect" id="node3" href="$interface_g_c_observable_object.html" title="This is used to permit setting up KVO in a simpler manner than comes as standard. ..." alt="" coords="5,83,152,111"/>
 <area shape="rect" id="node5" href="$protocol_d_k_rasterizer-p.html" title="\&lt;DKRasterizer\&gt;" alt="" coords="177,83,292,111"/>
 </map>

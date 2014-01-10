@@ -1,4 +1,4 @@
 <map id="DKRotationHandle" name="DKRotationHandle">
 <area shape="rect" id="node4" href="$interface_d_k_locked_rotation_handle.html" title="DKLockedRotationHandle" alt="" coords="5,238,179,266"/>
-<area shape="rect" id="node2" href="$interface_d_k_handle.html" title="DKHandle" alt="" coords="51,83,132,111"/>
+<area shape="rect" id="node2" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="51,83,132,111"/>
 </map>

@@ -2344,6 +2344,8 @@
       <Scope>DKArrowStroke</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_arrow_stroke.html</Path>
+    <Abstract>DKArrowStroke is a rasterizer that implements arrowheads on the ends of paths. </Abstract>
+    <DeclaredIn>DKArrowStroke.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -2497,6 +2499,7 @@
       <Scope>DKAuxiliaryMenus</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_auxiliary_menus.html</Path>
+    <Abstract>Most drawables in DK have contextual menus associated with them. </Abstract>
     <DeclaredIn>DKAuxiliaryMenus.h</DeclaredIn>
   </Token>
   <Token>
@@ -2516,6 +2519,7 @@
       <Scope>DKBezierLayoutManager</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_bezier_layout_manager.html</Path>
+    <Abstract>This subclass of NSLayoutManager captures the laid-out text in a bezier path which it creates...</Abstract>
     <DeclaredIn>DKBezierLayoutManager.h</DeclaredIn>
   </Token>
   <Token>
@@ -2526,6 +2530,7 @@
       <Scope>DKBezierTextContainer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_bezier_text_container.html</Path>
+    <Abstract>This class is used by DKTextAdornment to lay out text flowed into an arbitrary shape. </Abstract>
     <DeclaredIn>DKBezierTextContainer.h</DeclaredIn>
   </Token>
   <Token>
@@ -2546,6 +2551,7 @@
       <Scope>DKBSPDirectObjectStorage</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_b_s_p_direct_object_storage.html</Path>
+    <DeclaredIn>DKBSPDirectObjectStorage.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -2584,6 +2590,7 @@
       <Scope>DKBSPIndexTree</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_b_s_p_index_tree.html</Path>
+    <Abstract>tree object; this stores indexes in mutable index sets. </Abstract>
     <DeclaredIn>DKBSPObjectStorage.h</DeclaredIn>
   </Token>
   <Token>
@@ -2612,6 +2619,7 @@
       <Scope>DKBSPObjectStorage</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_b_s_p_object_storage.html</Path>
+    <Abstract>The actual storage object. </Abstract>
     <DeclaredIn>DKBSPObjectStorage.h</DeclaredIn>
   </Token>
   <Token>
@@ -2631,6 +2639,8 @@
       <Scope>DKCategoryManager</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_category_manager.html</Path>
+    <Abstract>The cat manager supports a UI based on menu(s). </Abstract>
+    <DeclaredIn>DKCategoryManager.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3429,6 +3439,8 @@
       <Scope>DKCategoryManagerMenuInfo</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_category_manager_menu_info.html</Path>
+    <Abstract>private object used to store menu info - allows efficient management of the menu to match the C/Mgrs ...</Abstract>
+    <DeclaredIn>DKCategoryManager.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3447,6 +3459,7 @@
       <Scope>DKCIFilterRastGroup</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_c_i_filter_rast_group.html</Path>
+    <Abstract>Captures the output of its contained renderers in an image. </Abstract>
     <DeclaredIn>DKCIFilterRastGroup.h</DeclaredIn>
   </Token>
   <Token>
@@ -3817,7 +3830,7 @@
       <Scope>DKColorStop</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_color_stop.html</Path>
-    <Abstract>DKColorStop class - small object that links a Color with its relative position. </Abstract>
+    <Abstract>small object that links a Color with its relative position </Abstract>
     <DeclaredIn>DKGradient.h</DeclaredIn>
   </Token>
   <Token>
@@ -3894,6 +3907,7 @@
       <Scope>DKColourQuantizer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_colour_quantizer.html</Path>
+    <Abstract>generic interface and simple quantizer which performs uniform quantization. </Abstract>
     <DeclaredIn>DKColourQuantizer.h</DeclaredIn>
   </Token>
   <Token>
@@ -3904,6 +3918,7 @@
       <Scope>DKCropTool</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_crop_tool.html</Path>
+    <Abstract>Implements a very simple type of crop tool. </Abstract>
     <DeclaredIn>DKCropTool.h</DeclaredIn>
   </Token>
   <Token>
@@ -4214,6 +4229,7 @@
       <Scope>DKDistortionTransform</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_distortion_transform.html</Path>
+    <Abstract>This objects performs distortion transformations on points and paths. </Abstract>
     <DeclaredIn>DKDistortionTransform.h</DeclaredIn>
   </Token>
   <Token>
@@ -4233,6 +4249,8 @@
       <Scope>DKDrawableObject</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_drawable_object.html</Path>
+    <Abstract>This object is responsible for the visual representation of the selection as well as any content...</Abstract>
+    <DeclaredIn>DKDrawableObject.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -5798,6 +5816,8 @@
       <Scope>DKDrawableObject(Metadata)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_drawable_object_07_metadata_08.html</Path>
+    <Abstract>Stores various drawkit private variables in the metadata. </Abstract>
+    <DeclaredIn>DKDrawableObject+Metadata.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -5816,6 +5836,8 @@
       <Scope>DKDrawablePath</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_drawable_path.html</Path>
+    <Abstract>DKDrawablePath is a drawable object that renders a path such as a line or curve (bezigon). </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -8014,6 +8036,8 @@
       <Scope>DKDrawableShape</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_drawable_shape.html</Path>
+    <Abstract>A semi-abstract base class for a drawable object consisting of any path-based shape that can be drawn...</Abstract>
+    <DeclaredIn>DKDrawableShape.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -10241,6 +10265,8 @@
       <Scope>DKDrawableShape(Hotspots)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_drawable_shape_07_hotspots_08.html</Path>
+    <Abstract>A HOTSPOT is an object attached to a shape to provide a direct user-interface for implementing custom...</Abstract>
+    <DeclaredIn>DKDrawableShape+Hotspots.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -10366,6 +10392,54 @@
     <Path>interface_d_k_drawing.html</Path>
     <Anchor>a9b0a55c794f567ebab7762197cf67b3b</Anchor>
     <Abstract>Sets the &amp;quot;owner&amp;quot; of this drawing. </Abstract>
+    <DeclaredIn>DKDrawing.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>invalidateCursors</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>instm</Type>
+      <Scope>DKDrawing</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawing.html</Path>
+    <Anchor>a6a1c595ca8cc6795bb62eba21ae7b3d2</Anchor>
+    <Abstract>Causes all cursor rectangles for all attached views to be recalculated. This forces any cursors that ...</Abstract>
+    <DeclaredIn>DKDrawing.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>scrollToRect:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>instm</Type>
+      <Scope>DKDrawing</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawing.html</Path>
+    <Anchor>a0e53b27575b64c06f17fda124e5fe9bd</Anchor>
+    <Abstract>Causes all attached views to scroll to show the rect, if necessary. </Abstract>
+    <DeclaredIn>DKDrawing.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>exitTemporaryTextEditingMode</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>instm</Type>
+      <Scope>DKDrawing</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawing.html</Path>
+    <Anchor>af8955d67aabefaf8240eeeb1eb50e6da</Anchor>
+    <Abstract>For the utility of contained objects, this ends any open text editing session without the object need...</Abstract>
+    <DeclaredIn>DKDrawing.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>objectDidNotifyStatusChange:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>instm</Type>
+      <Scope>DKDrawing</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawing.html</Path>
+    <Anchor>afdc2e2781455c7d30b71a6cd6cc2a437</Anchor>
+    <Abstract>Notifies all the controllers that an object within the drawing notified a status change. </Abstract>
     <DeclaredIn>DKDrawing.h</DeclaredIn>
   </Token>
   <Token>
@@ -10806,54 +10880,6 @@
     <Path>interface_d_k_drawing.html</Path>
     <Anchor>a8f577f2c3b34d6e04e4acbcbb1fa6e9f</Anchor>
     <Abstract>Removes all controller from the drawing. </Abstract>
-    <DeclaredIn>DKDrawing.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>invalidateCursors</Name>
-      <APILanguage>occ</APILanguage>
-      <Type>instm</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a6a1c595ca8cc6795bb62eba21ae7b3d2</Anchor>
-    <Abstract>Causes all cursor rectangles for all attached views to be recalculated. This forces any cursors that ...</Abstract>
-    <DeclaredIn>DKDrawing.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>scrollToRect:</Name>
-      <APILanguage>occ</APILanguage>
-      <Type>instm</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a0e53b27575b64c06f17fda124e5fe9bd</Anchor>
-    <Abstract>Causes all attached views to scroll to show the rect, if necessary. </Abstract>
-    <DeclaredIn>DKDrawing.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>exitTemporaryTextEditingMode</Name>
-      <APILanguage>occ</APILanguage>
-      <Type>instm</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>af8955d67aabefaf8240eeeb1eb50e6da</Anchor>
-    <Abstract>For the utility of contained objects, this ends any open text editing session without the object need...</Abstract>
-    <DeclaredIn>DKDrawing.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>objectDidNotifyStatusChange:</Name>
-      <APILanguage>occ</APILanguage>
-      <Type>instm</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>afdc2e2781455c7d30b71a6cd6cc2a437</Anchor>
-    <Abstract>Notifies all the controllers that an object within the drawing notified a status change. </Abstract>
     <DeclaredIn>DKDrawing.h</DeclaredIn>
   </Token>
   <Token>
@@ -13091,136 +13117,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>kDKDrawingInfoDrawingNumber</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a611e87f9c0ea90a31fcb547f83e5fc20</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoDrawingNumberUnformatted</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a8cb8471f4e8fbe34fe9d85a589b04687</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoDrawingRevision</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>aaa7605e1a7644a5acc3569be718b0479</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoDrawingPrefix</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a0705dac19cea727d1934d3f8384b1d04</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoDraughter</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a316eb5722dcf129bc1c7cad0c6e2d38c</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoCreationDate</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a3f0ad95ac34c82297892536e5505c92d</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoLastModificationDate</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a2187424cabf9e3b7730433b3b8fea51a</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoModificationHistory</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a01fc2f7e8baaad4543780338e434f150</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoOriginalFilename</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a3499d669e067bc341f7a2be9e9d3fdd1</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoTitle</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a13d97041f9eb986d83d069298f85d416</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoDrawingDimensions</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>acb0ca46e2c24249904b57df0c2b5be28</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoDimensionsUnits</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a7f6ce370dd3b70dd11c7997d9a046319</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>kDKDrawingInfoDimensionsShortUnits</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DKDrawing</Scope>
-    </TokenIdentifier>
-    <Path>interface_d_k_drawing.html</Path>
-    <Anchor>a75ac3ddbbbe2becaa44d8e9999c0d935</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>DKDrawing(Deprecated)</Name>
       <APILanguage>c</APILanguage>
       <Type>cat</Type>
@@ -13262,6 +13158,7 @@
       <Scope>DKDrawing(Export)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_drawing_07_export_08.html</Path>
+    <Abstract>This category provides methods for exporting drawings in a variety of formats, such as TIFF...</Abstract>
     <DeclaredIn>DKDrawing+Export.h</DeclaredIn>
   </Token>
   <Token>
@@ -13392,6 +13289,7 @@
       <Scope>DKDrawing(Paper)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_drawing_07_paper_08.html</Path>
+    <Abstract>This category on DKDrawing simply supplies some common ISO paper sizes in terms of Quartz point dimen...</Abstract>
     <DeclaredIn>DKDrawing+Paper.h</DeclaredIn>
   </Token>
   <Token>
@@ -13485,6 +13383,8 @@
       <Scope>DKDrawingDocument</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_drawing_document.html</Path>
+    <Abstract>This class is a simple document type that owns a drawing instance. </Abstract>
+    <DeclaredIn>DKDrawingDocument.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -13770,6 +13670,8 @@
       <Scope>DKDrawingInfoLayer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_drawing_info_layer.html</Path>
+    <Abstract>This is a DKLayer subclass which is able to draw an information panel in a corner of the drawing...</Abstract>
+    <DeclaredIn>DKDrawingInfoLayer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -14766,6 +14668,8 @@
       <Scope>DKDrawingTool</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_drawing_tool.html</Path>
+    <Abstract>DKDrawingTool is the semi-abstract base class for all types of drawing tool. </Abstract>
+    <DeclaredIn>DKDrawingTool.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -15941,6 +15845,7 @@
       <Scope>DKDrawingView(DropHandling)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_drawing_view_07_drop_handling_08.html</Path>
+    <Abstract>Drag and Drop is extended down to the layer level by this category. </Abstract>
     <DeclaredIn>DKDrawingView+Drop.h</DeclaredIn>
   </Token>
   <Token>
@@ -16008,6 +15913,8 @@
       <Scope>DKDrawkitInspectorBase</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_drawkit_inspector_base.html</Path>
+    <Abstract>This is a base class for any inspector for looking at DrawKit. </Abstract>
+    <DeclaredIn>DKDrawkitInspectorBase.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -16026,6 +15933,8 @@
       <Scope>DKFill</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_fill.html</Path>
+    <Abstract>A renderer that implements a colour fill with optional shadow. </Abstract>
+    <DeclaredIn>DKFill.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -16203,6 +16112,7 @@
       <Scope>DKFillPattern</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_fill_pattern.html</Path>
+    <Abstract>This object represents a pattern consisting of a repeated motif spaced out at intervals within a larg...</Abstract>
     <DeclaredIn>DKFillPattern.h</DeclaredIn>
   </Token>
   <Token>
@@ -16357,6 +16267,8 @@
       <Scope>DKGradient</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_gradient.html</Path>
+    <Abstract>A DKGradient encapsulates gradient/shading drawing. </Abstract>
+    <DeclaredIn>DKGradient.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -16799,6 +16711,7 @@
       <Scope>DKGreekingLayoutManager</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_greeking_layout_manager.html</Path>
+    <Abstract>This layout manager subclass draws greeking rectangles instead of glyphs, either as entire line frage...</Abstract>
     <DeclaredIn>DKGreekingLayoutManager.h</DeclaredIn>
   </Token>
   <Token>
@@ -16809,6 +16722,8 @@
       <Scope>DKGridLayer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_grid_layer.html</Path>
+    <Abstract>This class is a layer that draws a grid like a piece of graph paper. </Abstract>
+    <DeclaredIn>DKGridLayer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -18366,6 +18281,7 @@
       <Scope>DKGuideLayer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_guide_layer.html</Path>
+    <DeclaredIn>DKGuideLayer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -19755,6 +19671,8 @@
       <Scope>DKHandle</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_handle.html</Path>
+    <Abstract>DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with...</Abstract>
+    <DeclaredIn>DKHandle.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -19773,6 +19691,8 @@
       <Scope>DKHatching</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_hatching.html</Path>
+    <Abstract>This class provides a simple hatching fill for a path. </Abstract>
+    <DeclaredIn>DKHatching.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -20064,6 +19984,8 @@
       <Scope>DKImageAdornment</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_image_adornment.html</Path>
+    <Abstract>This class allows any image to be part of the rendering tree. </Abstract>
+    <DeclaredIn>DKImageAdornment.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -20236,6 +20158,8 @@
       <Scope>DKImageOverlayLayer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_image_overlay_layer.html</Path>
+    <Abstract>This layer type implements a single image overlay, for example for tracing a photograph in another la...</Abstract>
+    <DeclaredIn>DKImageOverlayLayer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -21232,6 +21156,8 @@
       <Scope>DKImageShape</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_image_shape.html</Path>
+    <Abstract>DKImageShape is a drawable shape that displays an image. </Abstract>
+    <DeclaredIn>DKImageShape.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -23891,6 +23817,8 @@
       <Scope>DKKeyedUnarchiver</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_keyed_unarchiver.html</Path>
+    <Abstract>This class works identically to NSKeyedUnarchiver in every way, except that it can store a reference ...</Abstract>
+    <DeclaredIn>DKKeyedUnarchiver.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -23900,6 +23828,8 @@
       <Scope>DKKnob</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_knob.html</Path>
+    <Abstract>simple class used to provide the drawing of knobs for object selection. </Abstract>
+    <DeclaredIn>DKKnob.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -23927,6 +23857,8 @@
       <Scope>DKLayer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_layer.html</Path>
+    <Abstract>drawing layers are lightweight objects which represent a layer. </Abstract>
+    <DeclaredIn>DKLayer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -24923,6 +24855,8 @@
       <Scope>DKLayer(Metadata)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_layer_07_metadata_08.html</Path>
+    <Abstract>adds some convenience methods for standard meta data attached to a graphic object. </Abstract>
+    <DeclaredIn>DKLayer+Metadata.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -24950,6 +24884,7 @@
       <Scope>DKLayerGroup</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_layer_group.html</Path>
+    <Abstract>A layer group is a layer which maintains a list of other layers. </Abstract>
     <DeclaredIn>DKLayerGroup.h</DeclaredIn>
   </Token>
   <Token>
@@ -27216,6 +27151,7 @@
       <Scope>DKLinearObjectStorage</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_linear_object_storage.html</Path>
+    <Abstract>Basic storage class stores objects in a standard array. </Abstract>
     <DeclaredIn>DKLinearObjectStorage.h</DeclaredIn>
   </Token>
   <Token>
@@ -27271,6 +27207,7 @@
       <Scope>DKMetadataItem</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_metadata_item.html</Path>
+    <DeclaredIn>DKMetadataItem.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -27289,6 +27226,8 @@
       <Scope>DKNullObject</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_null_object.html</Path>
+    <Abstract>substitution class for avoiding an exception during dearchiving </Abstract>
+    <DeclaredIn>DKUnarchivingHelper.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -27298,6 +27237,8 @@
       <Scope>DKObjectCreationTool</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_object_creation_tool.html</Path>
+    <Abstract>This tool class is used to make all kinds of drawable objects. </Abstract>
+    <DeclaredIn>DKObjectCreationTool.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -27712,6 +27653,8 @@
       <Scope>DKObjectDrawingLayer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_object_drawing_layer.html</Path>
+    <Abstract>This layer adds the concept of selection to drawable objects as defined by DKObjectOwnerLayer. </Abstract>
+    <DeclaredIn>DKObjectDrawingLayer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -31202,6 +31145,7 @@
       <Scope>DKObjectDrawingLayer(Alignment)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_object_drawing_layer_07_alignment_08.html</Path>
+    <DeclaredIn>DKObjectDrawingLayer+Alignment.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -31487,6 +31431,7 @@
       <Scope>DKObjectDrawingLayer(BooleanOps)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_object_drawing_layer_07_boolean_ops_08.html</Path>
+    <Abstract>This category provides high-level Boolean Operation commands for a drawing layer. ...</Abstract>
     <DeclaredIn>DKObjectDrawingLayer+BooleanOps.h</DeclaredIn>
   </Token>
   <Token>
@@ -31581,6 +31526,7 @@
       <Scope>DKObjectDrawingLayer(Duplication)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_object_drawing_layer_07_duplication_08.html</Path>
+    <Abstract>Some handy methods for implementing various kinds of object duplications. </Abstract>
     <DeclaredIn>DKObjectDrawingLayer+Duplication.h</DeclaredIn>
   </Token>
   <Token>
@@ -31648,6 +31594,8 @@
       <Scope>DKObjectOwnerLayer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_object_owner_layer.html</Path>
+    <Abstract>This layer class can be the owner of any number of DKDrawableObjects. </Abstract>
+    <DeclaredIn>DKObjectOwnerLayer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -33682,6 +33630,8 @@
       <Scope>DKOctreeQuantizer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_octree_quantizer.html</Path>
+    <Abstract>octree quantizer which does a much better job than DKColourQuantizer </Abstract>
+    <DeclaredIn>DKColourQuantizer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -33710,6 +33660,7 @@
       <Scope>DKPasteboardInfo</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_pasteboard_info.html</Path>
+    <Abstract>This object is archived and added to the pasteboard when copying items within DK. ...</Abstract>
     <DeclaredIn>DKPasteboardInfo.h</DeclaredIn>
   </Token>
   <Token>
@@ -33720,6 +33671,8 @@
       <Scope>DKPathDecorator</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_path_decorator.html</Path>
+    <Abstract>This renderer draws the image along the path of another object spaced at &amp;lt;interval&amp;gt; distance...</Abstract>
+    <DeclaredIn>DKPathDecorator.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -33882,6 +33835,8 @@
       <Scope>DKPathInsertDeleteTool</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_path_insert_delete_tool.html</Path>
+    <Abstract>This tool is able to insert or delete on-path points from a path. </Abstract>
+    <DeclaredIn>DKPathInsertDeleteTool.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -35327,6 +35282,7 @@
       <Scope>DKQuartzCache</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_quartz_cache.html</Path>
+    <Abstract>Higher-level wrapper for CGLayer, used to cache graphics in numerous places in DK. </Abstract>
     <DeclaredIn>DKQuartzCache.h</DeclaredIn>
   </Token>
   <Token>
@@ -35337,6 +35293,7 @@
       <Scope>DKRandom</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_random.html</Path>
+    <Abstract>returns a random number between 0 and 1 </Abstract>
     <DeclaredIn>DKRandom.h</DeclaredIn>
   </Token>
   <Token>
@@ -35347,6 +35304,8 @@
       <Scope>DKRasterizer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_rasterizer.html</Path>
+    <Abstract>Renderers can now have a delegate attached which is able to modify behaviours such as changing the pa...</Abstract>
+    <DeclaredIn>DKRasterizer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -35509,6 +35468,8 @@
       <Scope>DKRastGroup</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_rast_group.html</Path>
+    <Abstract>A rendergroup is a single renderer which contains a list of other renderers. </Abstract>
+    <DeclaredIn>DKRastGroup.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -38090,6 +38051,7 @@
       <Scope>DKReshapableShape</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_reshapable_shape.html</Path>
+    <Abstract>This subclass of DKDrawableShape implements a protocol for obtaining shapes dynamically from a shape ...</Abstract>
     <DeclaredIn>DKReshapableShape.h</DeclaredIn>
   </Token>
   <Token>
@@ -40318,6 +40280,7 @@
       <Scope>DKRetriggerableTimer</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_retriggerable_timer.html</Path>
+    <Abstract>Implements a one-shot timer that can be repeatedly extended (retriggered) preventing it timing out...</Abstract>
     <DeclaredIn>DKRetriggerableTimer.h</DeclaredIn>
   </Token>
   <Token>
@@ -40347,6 +40310,7 @@
       <Scope>DKRoughStroke</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_rough_stroke.html</Path>
+    <Abstract>DKRoughStroke is a stroke rasterizer that randomly varies the stroke width about its nominal set widt...</Abstract>
     <DeclaredIn>DKRoughStroke.h</DeclaredIn>
   </Token>
   <Token>
@@ -40501,6 +40465,8 @@
       <Scope>DKRouteFinder</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_route_finder.html</Path>
+    <Abstract>This object implements an heuristic solution to the travelling salesman problem. </Abstract>
+    <DeclaredIn>DKRouteFinder.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -40529,6 +40495,7 @@
       <Scope>DKSelectAndEditTool</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_select_and_edit_tool.html</Path>
+    <DeclaredIn>DKSelectAndEditTool.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -41111,6 +41078,8 @@
       <Scope>DKSelectionPDFView</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_selection_p_d_f_view.html</Path>
+    <Abstract>these objects are never used to make a visible view. </Abstract>
+    <DeclaredIn>DKSelectionPDFView.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -41885,6 +41854,7 @@
       <Scope>DKShapeCluster</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_shape_cluster.html</Path>
+    <Abstract>A CLUSTER is a specialised form of group. </Abstract>
     <DeclaredIn>DKShapeCluster.h</DeclaredIn>
   </Token>
   <Token>
@@ -44365,6 +44335,7 @@
       <Scope>DKShapeFactory</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_shape_factory.html</Path>
+    <Abstract>This class provides a number of standard shareable paths that can be utilsed by DKDrawableShape. </Abstract>
     <DeclaredIn>DKShapeFactory.h</DeclaredIn>
   </Token>
   <Token>
@@ -44375,6 +44346,8 @@
       <Scope>DKShapeGroup</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_shape_group.html</Path>
+    <Abstract>This is a group objects that can group any number of shapes or paths. </Abstract>
+    <DeclaredIn>DKShapeGroup.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -46836,6 +46809,8 @@
       <Scope>DKStroke</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_stroke.html</Path>
+    <Abstract>represents the stroke of a path, and can be added as an attribute of a DKStyle. </Abstract>
+    <DeclaredIn>DKStroke.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -48139,6 +48114,8 @@
       <Scope>DKStyle(SimpleAccess)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_style_07_simple_access_08.html</Path>
+    <Abstract>This category on DKStyle provides some simple accessors if your app only has the most basic use of st...</Abstract>
+    <DeclaredIn>DKStyle+SimpleAccess.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -48148,6 +48125,7 @@
       <Scope>DKStyle(TextAdditions)</Scope>
     </TokenIdentifier>
     <Path>category_d_k_style_07_text_additions_08.html</Path>
+    <Abstract>This adds text attributes to the DKStyle object. </Abstract>
     <DeclaredIn>DKStyle+Text.h</DeclaredIn>
   </Token>
   <Token>
@@ -48203,6 +48181,7 @@
       <Scope>DKStyleRegistry</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_style_registry.html</Path>
+    <DeclaredIn>DKStyleRegistry.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -49767,6 +49746,8 @@
       <Scope>DKTextAdornment</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_text_adornment.html</Path>
+    <Abstract>This renderer allows text to be an attribute of any object. </Abstract>
+    <DeclaredIn>DKTextAdornment.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -49965,6 +49946,8 @@
       <Scope>DKTextPath</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_text_path.html</Path>
+    <Abstract>Very similar to a DKTextShape but based on a path and defaulting to text-on-a-path rendering...</Abstract>
+    <DeclaredIn>DKTextPath.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -52178,6 +52161,8 @@
       <Scope>DKTextShape</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_text_shape.html</Path>
+    <Abstract>Text shapes are shapes that draw text. </Abstract>
+    <DeclaredIn>DKTextShape.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -54807,6 +54792,7 @@
       <Scope>DKTextSubstitutor</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_text_substitutor.html</Path>
+    <Abstract>This objects abstracts the text substitution task used by text adornments, et. </Abstract>
     <DeclaredIn>DKTextSubstitutor.h</DeclaredIn>
   </Token>
   <Token>
@@ -54817,6 +54803,8 @@
       <Scope>DKToolController</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_tool_controller.html</Path>
+    <Abstract>This object is a view controller that can apply one of a range of tools to the objects in the current...</Abstract>
+    <DeclaredIn>DKToolController.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -55675,6 +55663,8 @@
       <Scope>DKToolRegistry</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_tool_registry.html</Path>
+    <Abstract>DKToolRegistry takes over the tool collection functionality formerly part of DKDrawingTool itself...</Abstract>
+    <DeclaredIn>DKToolRegistry.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -55732,6 +55722,7 @@
       <Scope>DKUnarchivingHelper</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_unarchiving_helper.html</Path>
+    <Abstract>this helper is used when unarchiving to translate class names from older files to their modern equiva...</Abstract>
     <DeclaredIn>DKUnarchivingHelper.h</DeclaredIn>
   </Token>
   <Token>
@@ -55742,6 +55733,7 @@
       <Scope>DKUndoManager</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_undo_manager.html</Path>
+    <DeclaredIn>DKUndoManager.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -55751,6 +55743,7 @@
       <Scope>DKUniqueID</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_unique_i_d.html</Path>
+    <Abstract>Utility class generates totally unique keys using CFUUID. </Abstract>
     <DeclaredIn>DKUniqueID.h</DeclaredIn>
   </Token>
   <Token>
@@ -55761,6 +55754,8 @@
       <Scope>DKViewController</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_view_controller.html</Path>
+    <Abstract>DKViewController is a basic controller class that sits between a DKDrawingView and the DKDrawing itse...</Abstract>
+    <DeclaredIn>DKViewController.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -56690,6 +56685,7 @@
       <Scope>DKZoomTool</Scope>
     </TokenIdentifier>
     <Path>interface_d_k_zoom_tool.html</Path>
+    <Abstract>This tool implements a zoom &amp;quot;magnifier&amp;quot; tool. </Abstract>
     <DeclaredIn>DKZoomTool.h</DeclaredIn>
   </Token>
   <Token>
@@ -57019,6 +57015,7 @@
       <Scope>GCObservableObject</Scope>
     </TokenIdentifier>
     <Path>interface_g_c_observable_object.html</Path>
+    <Abstract>This is used to permit setting up KVO in a simpler manner than comes as standard. ...</Abstract>
     <DeclaredIn>GCObservableObject.h</DeclaredIn>
   </Token>
   <Token>
@@ -57050,6 +57047,7 @@
       <Scope>GCOneShotEffectTimer</Scope>
     </TokenIdentifier>
     <Path>interface_g_c_one_shot_effect_timer.html</Path>
+    <Abstract>This class wraps up a very simple piece of timer functionality. </Abstract>
     <DeclaredIn>GCOneShotEffectTimer.h</DeclaredIn>
   </Token>
   <Token>
@@ -57088,6 +57086,8 @@
       <Scope>GCUndoManager</Scope>
     </TokenIdentifier>
     <Path>interface_g_c_undo_manager.html</Path>
+    <Abstract>This class is a public API-compatible replacement for NSUndoManager. </Abstract>
+    <DeclaredIn>GCUndoManager.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -57115,6 +57115,8 @@
       <Scope>GCZoomView</Scope>
     </TokenIdentifier>
     <Path>interface_g_c_zoom_view.html</Path>
+    <Abstract>This is a very general-purpose view class that provides some handy high-level methods for doing zoomi...</Abstract>
+    <DeclaredIn>GCZoomView.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -57482,6 +57484,7 @@
       <Scope>NSAttributedString(DKAdditions)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_attributed_string_07_d_k_additions_08.html</Path>
+    <Abstract>These category methods perform high-level text layout. </Abstract>
     <DeclaredIn>NSAttributedString+DKAdditions.h</DeclaredIn>
   </Token>
   <Token>
@@ -57516,6 +57519,7 @@
       <Scope>NSBezierPath(Combinatorial)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_bezier_path_07_combinatorial_08.html</Path>
+    <DeclaredIn>NSBezierPath+Combinatorial.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -57534,6 +57538,7 @@
       <Scope>NSBezierPath(DKEditing)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_bezier_path_07_d_k_editing_08.html</Path>
+    <Abstract>This category provides some basic methods for supporting interactive editing of a NSBezierPath object...</Abstract>
     <DeclaredIn>NSBezierPath+Editing.h</DeclaredIn>
   </Token>
   <Token>
@@ -58003,6 +58008,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>drawAtPoint:fromRect:coreImageFilter:arguments:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>NSBitmapImageRep(CoreImage)</Scope>
+    </TokenIdentifier>
+    <Path>category_n_s_bitmap_image_rep_07_core_image_08.html</Path>
+    <Anchor>ab1add614ef7ef5a614d47c045f0a385f</Anchor>
+    <Abstract>Draws the specified image representation using Core Image. </Abstract>
+    <DeclaredIn>DKCIFilterRastGroup.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>NSColor(DKAdditions)</Name>
       <APILanguage>c</APILanguage>
       <Type>cat</Type>
@@ -58355,6 +58372,7 @@
       <Scope>NSDictionary(DeepCopy)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_dictionary_07_deep_copy_08.html</Path>
+    <Abstract>implements a deep copy of a dictionary and array. </Abstract>
     <DeclaredIn>NSDictionary+DeepCopy.h</DeclaredIn>
   </Token>
   <Token>
@@ -58392,6 +58410,30 @@
       <Scope>NSImage(CoreImage)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_image_07_core_image_08.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>drawAtPoint:fromRect:coreImageFilter:arguments:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>NSImage(CoreImage)</Scope>
+    </TokenIdentifier>
+    <Path>category_n_s_image_07_core_image_08.html</Path>
+    <Anchor>a2365dfa1452e20c30e6281953c7eeab4</Anchor>
+    <Abstract>Draws the specified image using Core Image. </Abstract>
+    <DeclaredIn>DKCIFilterRastGroup.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>bitmapImageRepresentation</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>NSImage(CoreImage)</Scope>
+    </TokenIdentifier>
+    <Path>category_n_s_image_07_core_image_08.html</Path>
+    <Anchor>a4ae22f784ddaa70afdc6668d167dabd1</Anchor>
+    <Abstract>Gets a bitmap representation of the image, or creates one if the image does not have any...</Abstract>
+    <DeclaredIn>DKCIFilterRastGroup.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -58484,6 +58526,8 @@
       <Scope>NSObject(DKArrowSrokeDimensioning)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_object_07_d_k_arrow_sroke_dimensioning_08.html</Path>
+    <Abstract>informal protocol for requesting dimension information from an object. </Abstract>
+    <DeclaredIn>DKArrowStroke.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -58561,6 +58605,8 @@
       <Scope>NSObject(DKToolDelegate)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_object_07_d_k_tool_delegate_08.html</Path>
+    <Abstract>The drawing tool protocol must be implemented by all tools that can be used to operate on a drawing...</Abstract>
+    <DeclaredIn>DKDrawingToolProtocol.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -58597,6 +58643,7 @@
       <Scope>NSObject(StringValue)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_object_07_string_value_08.html</Path>
+    <Abstract>This category allows -stringValue to be called on a broader range of objects than standard - in fact ...</Abstract>
     <DeclaredIn>NSObject+StringValue.h</DeclaredIn>
   </Token>
   <Token>
@@ -58652,6 +58699,7 @@
       <Scope>NSShadow(DKAdditions)</Scope>
     </TokenIdentifier>
     <Path>category_n_s_shadow_07_d_k_additions_08.html</Path>
+    <DeclaredIn>NSShadow+Scaling.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -58709,6 +58757,7 @@
       <Scope>TestBSPStorage</Scope>
     </TokenIdentifier>
     <Path>interface_test_b_s_p_storage.html</Path>
+    <Abstract>Unit Test for the BSP storage sub-system. </Abstract>
     <DeclaredIn>TestBSPStorage.h</DeclaredIn>
   </Token>
   <Token>

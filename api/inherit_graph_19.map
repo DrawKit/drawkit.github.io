@@ -1,8 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node2" href="$interface_d_k_drawable_p_d_f_view.html" title="DKDrawablePDFView" alt="" coords="123,5,274,33"/>
-<area shape="rect" id="node3" href="$interface_g_c_zoom_view.html" title="GCZoomView" alt="" coords="147,57,251,85"/>
+<area shape="rect" id="node3" href="$interface_g_c_zoom_view.html" title="This is a very general&#45;purpose view class that provides some handy high&#45;level methods for doing zoomi..." alt="" coords="147,57,251,85"/>
 <area shape="rect" id="node4" href="$interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="" coords="323,57,440,85"/>
 <area shape="rect" id="node5" href="$interface_d_k_layer_p_d_f_view.html" title="DKLayerPDFView" alt="" coords="500,5,628,33"/>
 <area shape="rect" id="node6" href="$interface_d_k_print_drawing_view.html" title="DKPrintDrawingView" alt="" coords="492,57,636,85"/>
-<area shape="rect" id="node7" href="$interface_d_k_selection_p_d_f_view.html" title="DKSelectionPDFView" alt="" coords="489,109,639,137"/>
+<area shape="rect" id="node7" href="$interface_d_k_selection_p_d_f_view.html" title="these objects are never used to make a visible view. " alt="" coords="489,109,639,137"/>
 </map>

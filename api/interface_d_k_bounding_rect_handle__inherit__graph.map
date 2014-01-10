@@ -1,5 +1,5 @@
 <map id="DKBoundingRectHandle" name="DKBoundingRectHandle">
 <area shape="rect" id="node4" href="$interface_d_k_inactive_bounding_rect_handle.html" title="DKInactiveBoundingRectHandle" alt="" coords="5,238,216,266"/>
 <area shape="rect" id="node5" href="$interface_d_k_locked_bounding_rect_handle.html" title="DKLockedBoundingRectHandle" alt="" coords="241,238,449,266"/>
-<area shape="rect" id="node2" href="$interface_d_k_handle.html" title="DKHandle" alt="" coords="187,83,268,111"/>
+<area shape="rect" id="node2" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="187,83,268,111"/>
 </map>

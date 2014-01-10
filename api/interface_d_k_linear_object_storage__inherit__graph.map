@@ -1,5 +1,5 @@
 <map id="DKLinearObjectStorage" name="DKLinearObjectStorage">
 <area shape="rect" id="node6" href="$interface_d_k_b_s_p_direct_object_storage.html" title="DKBSPDirectObjectStorage" alt="" coords="4,238,189,266"/>
-<area shape="rect" id="node7" href="$interface_d_k_b_s_p_object_storage.html" title="DKBSPObjectStorage" alt="" coords="215,238,365,266"/>
+<area shape="rect" id="node7" href="$interface_d_k_b_s_p_object_storage.html" title="The actual storage object. " alt="" coords="215,238,365,266"/>
 <area shape="rect" id="node3" href="$protocol_d_k_object_storage-p.html" title="\&lt;DKObjectStorage\&gt;" alt="" coords="123,83,263,111"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="DKTargetHandle" name="DKTargetHandle">
 <area shape="rect" id="node4" href="$interface_d_k_locked_target_handle.html" title="DKLockedTargetHandle" alt="" coords="4,238,165,266"/>
-<area shape="rect" id="node2" href="$interface_d_k_handle.html" title="DKHandle" alt="" coords="44,83,125,111"/>
+<area shape="rect" id="node2" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="44,83,125,111"/>
 </map>

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Building the Site &mdash; DrawKit 1.0 documentation</title>
+    <title>Building the Site &mdash; DrawKit  documentation</title>
     
     <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '1.0',
+        VERSION:     '',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,13 +26,13 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/theme_extras.js"></script>
-    <link rel="top" title="DrawKit 1.0 documentation" href="../index.html" />
+    <link rel="top" title="DrawKit  documentation" href="../index.html" />
     <link rel="next" title="Inherited To Do List" href="../todo.html" />
     <link rel="prev" title="Licensing" href="../licensing.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="../index.html">
-          <span>DrawKit 1.0 documentation</span></a></h1>
+          <span>DrawKit  documentation</span></a></h1>
         <h2 class="heading"><span>Building the Site</span></h2>
       </div>
       <div class="topnav">
@@ -84,7 +84,11 @@ pip install breathe</pre>
 <div class="highlight-python"><pre>cd documentation
 make html</pre>
 </div>
-<p>Building will take a few moments and the output will appear in the _build folder. The _/html/ folder is published to the <a class="reference external" href="http://drawkit.github.io">DrawKit web site</a>.</p>
+<p>Building will take a few moments and the output will appear in the _build folder. The _build/html/ folder is published to the <a class="reference external" href="http://drawkit.github.io">DrawKit web site</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A <cite>.nojekyll</cite> file is needed to allow github.io to <a class="reference external" href="https://help.github.com/articles/files-that-start-with-an-underscore-are-missing">serve contents from folders beginning with underscore</a> (_).</p>
+</div>
 </div>
 </div>
 
@@ -103,7 +107,7 @@ make html</pre>
       </div>
 
     <div class="footer">
-        &copy; Copyright 2013, Graham Cox, Graham Miln, et al.
+        &copy; Copyright 2014, Graham Cox, Graham Miln, et al.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
     </div>
   </body>

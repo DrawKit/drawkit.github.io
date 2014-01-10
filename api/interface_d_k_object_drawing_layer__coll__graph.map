@@ -1,6 +1,6 @@
 <map id="DKObjectDrawingLayer" name="DKObjectDrawingLayer">
-<area shape="rect" id="node2" href="$interface_d_k_object_owner_layer.html" title="DKObjectOwnerLayer" alt="" coords="346,238,496,266"/>
-<area shape="rect" id="node3" href="$interface_d_k_layer.html" title="DKLayer" alt="" coords="375,161,448,189"/>
+<area shape="rect" id="node2" href="$interface_d_k_object_owner_layer.html" title="This layer class can be the owner of any number of DKDrawableObjects. " alt="" coords="346,238,496,266"/>
+<area shape="rect" id="node3" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="375,161,448,189"/>
 <area shape="rect" id="node6" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="349,83,474,111"/>
 <area shape="rect" id="node9" href="$protocol_d_k_drawable_container-p.html" title="\&lt;DKDrawableContainer\&gt;" alt="" coords="42,161,210,189"/>
 </map>

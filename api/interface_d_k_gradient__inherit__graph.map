@@ -1,4 +1,4 @@
 <map id="DKGradient" name="DKGradient">
 <area shape="rect" id="node6" href="$interface_d_k_swept_angle_gradient.html" title="DKSweptAngleGradient" alt="" coords="144,238,305,266"/>
-<area shape="rect" id="node2" href="$interface_g_c_observable_object.html" title="GCObservableObject" alt="" coords="5,83,152,111"/>
+<area shape="rect" id="node2" href="$interface_g_c_observable_object.html" title="This is used to permit setting up KVO in a simpler manner than comes as standard. ..." alt="" coords="5,83,152,111"/>
 </map>
