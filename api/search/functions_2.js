@@ -48,6 +48,7 @@ var searchData=
   ['comparestylesinset_3a',['compareStylesInSet:',['../interface_d_k_style_registry.html#a5713ce9c2ccfa9def1ead047f2ec5ddd',1,'DKStyleRegistry']]],
   ['compositingoperation',['compositingOperation',['../interface_d_k_image_shape.html#a2e8b7507cba81e62dd1bb8f83302da48',1,'DKImageShape']]],
   ['concentricduplicate_3acentre_3anumberofcopies_3ainsetby_3a',['concentricDuplicate:centre:numberOfCopies:insetBy:',['../category_d_k_object_drawing_layer_07_duplication_08.html#a541d2458a3c514a249761c6ab1fb41cd',1,'DKObjectDrawingLayer(Duplication)::concentricDuplicate:centre:numberOfCopies:insetBy:()'],['../interface_d_k_object_drawing_layer.html#a541d2458a3c514a249761c6ab1fb41cd',1,'DKObjectDrawingLayer::concentricDuplicate:centre:numberOfCopies:insetBy:()']]],
+  ['constrainwithevent_3a',['constrainWithEvent:',['../interface_d_k_drawable_path.html#a4f350bc9265670f95ccb9ec73820e7af',1,'DKDrawablePath']]],
   ['container',['container',['../interface_d_k_drawable_object.html#aa31465a3d7ae7019f22ebfe3a894255b',1,'DKDrawableObject::container()'],['../interface_d_k_rasterizer.html#a4816b72b08e87dd1599ac6dbd61c8ba3',1,'DKRasterizer::container()']]],
   ['containertransform',['containerTransform',['../interface_d_k_drawable_object.html#ace0190f818114a27ad3ff0ffd4f7e41b',1,'DKDrawableObject']]],
   ['containskey_3a',['containsKey:',['../interface_d_k_category_manager.html#aea44f48031670ef3d66354f5a8c2653f',1,'DKCategoryManager']]],

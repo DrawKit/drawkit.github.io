@@ -2805,6 +2805,11 @@
               <Anchor>a5217dedb399af85f6882fce5ffe5e17e</Anchor>
              </Node>
              <Node>
+              <Name>angularConstraintAngle</Name>
+              <Path>interface_d_k_drawable_path.html</Path>
+              <Anchor>a520b1364d0800c6dfee5692170838fed</Anchor>
+             </Node>
+             <Node>
               <Name>arcCreateLoop:</Name>
               <Path>interface_d_k_drawable_path.html</Path>
               <Anchor>acf0da9497e1b3a383bba6ebc16ed1ee4</Anchor>
@@ -2838,6 +2843,11 @@
               <Name>combine:</Name>
               <Path>interface_d_k_drawable_path.html</Path>
               <Anchor>aeb2ae3f8d62f5db391d28fcf69a20712</Anchor>
+             </Node>
+             <Node>
+              <Name>constrainWithEvent:</Name>
+              <Path>interface_d_k_drawable_path.html</Path>
+              <Anchor>a4f350bc9265670f95ccb9ec73820e7af</Anchor>
              </Node>
              <Node>
               <Name>convertToOutline:</Name>
@@ -3023,6 +3033,11 @@
               <Name>roughenPath:</Name>
               <Path>interface_d_k_drawable_path.html</Path>
               <Anchor>aadc0647d3829555d94f1edf05c76473a</Anchor>
+             </Node>
+             <Node>
+              <Name>setAngularConstraintAngle:</Name>
+              <Path>interface_d_k_drawable_path.html</Path>
+              <Anchor>a7cc9a0d08850de55b7538b6d262bd5a3</Anchor>
              </Node>
              <Node>
               <Name>setDefaultOnPathHitDetectionPriority:</Name>

@@ -158,6 +158,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>constrainWithEvent:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>instm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a4f350bc9265670f95ccb9ec73820e7af</Anchor>
+    <Abstract>Should the angle of the path be constrained? </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>setPath:</Name>
       <APILanguage>occ</APILanguage>
       <Type>instm</Type>
@@ -2133,6 +2145,30 @@
     <Path>interface_d_k_drawable_path.html</Path>
     <Anchor>a3614d369d96f7f1e1f7d1e5e69645a78</Anchor>
     <Abstract>Returns whether the default hit-detection behaviour is to prioritise on-path points or off-path point...</Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setAngularConstraintAngle:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a7cc9a0d08850de55b7538b6d262bd5a3</Anchor>
+    <Abstract>Set the angle of constraint for new paths. </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>angularConstraintAngle</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a520b1364d0800c6dfee5692170838fed</Anchor>
+    <Abstract>Angle of constraint for new paths. </Abstract>
     <DeclaredIn>DKDrawablePath.h</DeclaredIn>
   </Token>
   <Token>
@@ -5865,6 +5901,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>constrainWithEvent:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>instm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a4f350bc9265670f95ccb9ec73820e7af</Anchor>
+    <Abstract>Should the angle of the path be constrained? </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>setPath:</Name>
       <APILanguage>occ</APILanguage>
       <Type>instm</Type>
@@ -7840,6 +7888,30 @@
     <Path>interface_d_k_drawable_path.html</Path>
     <Anchor>a3614d369d96f7f1e1f7d1e5e69645a78</Anchor>
     <Abstract>Returns whether the default hit-detection behaviour is to prioritise on-path points or off-path point...</Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setAngularConstraintAngle:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a7cc9a0d08850de55b7538b6d262bd5a3</Anchor>
+    <Abstract>Set the angle of constraint for new paths. </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>angularConstraintAngle</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a520b1364d0800c6dfee5692170838fed</Anchor>
+    <Abstract>Angle of constraint for new paths. </Abstract>
     <DeclaredIn>DKDrawablePath.h</DeclaredIn>
   </Token>
   <Token>
@@ -35867,6 +35939,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>constrainWithEvent:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>instm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a4f350bc9265670f95ccb9ec73820e7af</Anchor>
+    <Abstract>Should the angle of the path be constrained? </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>setPath:</Name>
       <APILanguage>occ</APILanguage>
       <Type>instm</Type>
@@ -37842,6 +37926,30 @@
     <Path>interface_d_k_drawable_path.html</Path>
     <Anchor>a3614d369d96f7f1e1f7d1e5e69645a78</Anchor>
     <Abstract>Returns whether the default hit-detection behaviour is to prioritise on-path points or off-path point...</Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setAngularConstraintAngle:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a7cc9a0d08850de55b7538b6d262bd5a3</Anchor>
+    <Abstract>Set the angle of constraint for new paths. </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>angularConstraintAngle</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a520b1364d0800c6dfee5692170838fed</Anchor>
+    <Abstract>Angle of constraint for new paths. </Abstract>
     <DeclaredIn>DKDrawablePath.h</DeclaredIn>
   </Token>
   <Token>
@@ -49999,6 +50107,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>constrainWithEvent:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>instm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a4f350bc9265670f95ccb9ec73820e7af</Anchor>
+    <Abstract>Should the angle of the path be constrained? </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>setPath:</Name>
       <APILanguage>occ</APILanguage>
       <Type>instm</Type>
@@ -51974,6 +52094,30 @@
     <Path>interface_d_k_drawable_path.html</Path>
     <Anchor>a3614d369d96f7f1e1f7d1e5e69645a78</Anchor>
     <Abstract>Returns whether the default hit-detection behaviour is to prioritise on-path points or off-path point...</Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setAngularConstraintAngle:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a7cc9a0d08850de55b7538b6d262bd5a3</Anchor>
+    <Abstract>Set the angle of constraint for new paths. </Abstract>
+    <DeclaredIn>DKDrawablePath.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>angularConstraintAngle</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>DKDrawablePath</Scope>
+    </TokenIdentifier>
+    <Path>interface_d_k_drawable_path.html</Path>
+    <Anchor>a520b1364d0800c6dfee5692170838fed</Anchor>
+    <Abstract>Angle of constraint for new paths. </Abstract>
     <DeclaredIn>DKDrawablePath.h</DeclaredIn>
   </Token>
   <Token>

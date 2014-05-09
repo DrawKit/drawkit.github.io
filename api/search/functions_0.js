@@ -69,6 +69,7 @@ var searchData=
   ['angle',['angle',['../interface_d_k_drawable_object.html#adaa85a7b507649f8278bf4fb40bd821b',1,'DKDrawableObject::angle()'],['../interface_d_k_gradient.html#a2af3de9c25582616042acb29bdc8630e',1,'DKGradient::angle()'],['../interface_d_k_hatching.html#a9dd5cec31cf732f2da1dfd77f67549d4',1,'DKHatching::angle()']]],
   ['angleforvertexpartcode_3a',['angleForVertexPartcode:',['../category_d_k_regular_polygon_path_07_private_08.html#ac2964333babda3d49469b40a43d68df8',1,'DKRegularPolygonPath(Private)']]],
   ['angleindegrees',['angleInDegrees',['../interface_d_k_drawable_object.html#aad898e6d93826a8778dd620ffc422a7a',1,'DKDrawableObject::angleInDegrees()'],['../interface_d_k_gradient.html#aecd9a6416fcc7fbe32ddbd145d929995',1,'DKGradient::angleInDegrees()'],['../interface_d_k_hatching.html#a9630675ff023d00451c40dbe9bf20346',1,'DKHatching::angleInDegrees()']]],
+  ['angularconstraintangle',['angularConstraintAngle',['../interface_d_k_drawable_path.html#a520b1364d0800c6dfee5692170838fed',1,'DKDrawablePath']]],
   ['apparentbounds',['apparentBounds',['../interface_d_k_drawable_object.html#a63ef8500d723e2d5226ab27e77f0fb33',1,'DKDrawableObject']]],
   ['appendcontentswithdata_3a',['appendContentsWithData:',['../interface_d_k_category_manager.html#a537454a933a78869b460d7d0cbc0c4cf',1,'DKCategoryManager']]],
   ['applystrokeattributestopath_3a',['applyStrokeAttributesToPath:',['../interface_d_k_style.html#ac1058ed07c47990d1fc576962c603fdd',1,'DKStyle']]],
