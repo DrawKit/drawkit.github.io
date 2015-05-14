@@ -1,5 +1,0 @@
-<map id="DKDrawablePath" name="DKDrawablePath">
-<area shape="rect" id="node2" href="$interface_d_k_drawable_object.html" title="This object is responsible for the visual representation of the selection as well as any content..." alt="" coords="197,161,331,189"/>
-<area shape="rect" id="node4" href="$protocol_d_k_storable_object-p.html" title="\&lt;DKStorableObject\&gt;" alt="" coords="192,83,335,111"/>
-<area shape="rect" id="node8" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="359,83,483,111"/>
-</map>

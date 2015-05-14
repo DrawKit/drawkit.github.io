@@ -1,4 +1,4 @@
 <map id="DKCropTool" name="DKCropTool">
-<area shape="rect" id="node2" href="$interface_d_k_drawing_tool.html" title="DKDrawingTool is the semi&#45;abstract base class for all types of drawing tool. " alt="" coords="51,83,164,111"/>
-<area shape="rect" id="node4" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="108,6,236,34"/>
+<area shape="rect" id="node2" href="$interface_d_k_drawing_tool.html" title="DKDrawingTool is the semi&#45;abstract base class for all types of drawing tool. " alt="" coords="52,79,165,104"/>
+<area shape="rect" id="node4" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="108,5,237,31"/>
 </map>

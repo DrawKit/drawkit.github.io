@@ -1,6 +1,6 @@
 <map id="DKObjectOwnerLayer" name="DKObjectOwnerLayer">
-<area shape="rect" id="node9" href="$interface_d_k_object_drawing_layer.html" title="This layer adds the concept of selection to drawable objects as defined by DKObjectOwnerLayer. " alt="" coords="414,315,575,343"/>
-<area shape="rect" id="node2" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="321,161,393,189"/>
-<area shape="rect" id="node5" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="108,83,233,111"/>
-<area shape="rect" id="node8" href="$protocol_d_k_drawable_container-p.html" title="\&lt;DKDrawableContainer\&gt;" alt="" coords="533,161,701,189"/>
+<area shape="rect" id="node10" href="$interface_d_k_object_drawing_layer.html" title="This layer adds the concept of selection to drawable objects as defined by DKObjectOwnerLayer. " alt="" coords="321,299,481,324"/>
+<area shape="rect" id="node2" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="328,152,401,177"/>
+<area shape="rect" id="node7" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="453,79,578,104"/>
+<area shape="rect" id="node9" href="$protocol_d_k_drawable_container-p.html" title="\&lt;DKDrawableContainer\&gt;" alt="" coords="693,152,863,177"/>
 </map>

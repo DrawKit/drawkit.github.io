@@ -1,4 +1,4 @@
 <map id="DKSweptAngleGradient" name="DKSweptAngleGradient">
-<area shape="rect" id="node2" href="$interface_d_k_gradient.html" title="A DKGradient encapsulates gradient/shading drawing. " alt="" coords="180,161,271,189"/>
-<area shape="rect" id="node3" href="$interface_g_c_observable_object.html" title="This is used to permit setting up KVO in a simpler manner than comes as standard. ..." alt="" coords="5,83,152,111"/>
+<area shape="rect" id="node2" href="$interface_d_k_gradient.html" title="A DKGradient encapsulates gradient/shading drawing. " alt="" coords="181,152,272,177"/>
+<area shape="rect" id="node3" href="$interface_g_c_observable_object.html" title="This is used to permit setting up KVO in a simpler manner than comes as standard. ..." alt="" coords="5,79,153,104"/>
 </map>

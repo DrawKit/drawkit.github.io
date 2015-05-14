@@ -1,6 +1,0 @@
-<map id="DKLayerPDFView" name="DKLayerPDFView">
-<area shape="rect" id="node2" href="$interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="" coords="53,166,171,194"/>
-<area shape="rect" id="node3" href="$interface_g_c_zoom_view.html" title="This is a very general&#45;purpose view class that provides some handy high&#45;level methods for doing zoomi..." alt="" coords="5,86,109,114"/>
-<area shape="rect" id="node5" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="247,166,320,194"/>
-<area shape="rect" id="node8" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="357,86,483,114"/>
-</map>

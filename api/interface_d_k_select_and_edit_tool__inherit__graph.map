@@ -1,5 +1,5 @@
 <map id="DKSelectAndEditTool" name="DKSelectAndEditTool">
-<area shape="rect" id="node2" href="$interface_d_k_drawing_tool.html" title="DKDrawingTool is the semi&#45;abstract base class for all types of drawing tool. " alt="" coords="111,83,224,111"/>
-<area shape="rect" id="node4" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="108,6,236,34"/>
-<area shape="rect" id="node5" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="248,83,372,111"/>
+<area shape="rect" id="node2" href="$interface_d_k_drawing_tool.html" title="DKDrawingTool is the semi&#45;abstract base class for all types of drawing tool. " alt="" coords="112,79,225,104"/>
+<area shape="rect" id="node4" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="108,5,237,31"/>
+<area shape="rect" id="node5" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="249,79,373,104"/>
 </map>

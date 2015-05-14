@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$category_d_k_b_s_p_direct_tree_07_private_08.html" title="DKBSPDirectTree(Private)" alt="" coords="5,5,184,33"/>
+<area shape="rect" id="node2" href="$interface_d_k_drawable_p_d_f_view.html" title="DKDrawablePDFView" alt="" coords="122,5,273,31"/>
+<area shape="rect" id="node3" href="$interface_g_c_zoom_view.html" title="This is a very general&#45;purpose view class that provides some handy high&#45;level methods for doing zoomi..." alt="" coords="146,55,250,80"/>
+<area shape="rect" id="node4" href="$interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="" coords="321,55,439,80"/>
+<area shape="rect" id="node5" href="$interface_d_k_layer_p_d_f_view.html" title="DKLayerPDFView" alt="" coords="498,5,626,31"/>
+<area shape="rect" id="node6" href="$interface_d_k_print_drawing_view.html" title="DKPrintDrawingView" alt="" coords="489,55,634,80"/>
+<area shape="rect" id="node7" href="$interface_d_k_selection_p_d_f_view.html" title="these objects are never used to make a visible view. " alt="" coords="487,104,637,129"/>
 </map>

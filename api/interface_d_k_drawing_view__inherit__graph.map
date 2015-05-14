@@ -1,6 +1,6 @@
 <map id="DKDrawingView" name="DKDrawingView">
-<area shape="rect" id="node4" href="$interface_d_k_layer_p_d_f_view.html" title="DKLayerPDFView" alt="" coords="5,238,133,266"/>
-<area shape="rect" id="node5" href="$interface_d_k_print_drawing_view.html" title="DKPrintDrawingView" alt="" coords="158,238,303,266"/>
-<area shape="rect" id="node6" href="$interface_d_k_selection_p_d_f_view.html" title="these objects are never used to make a visible view. " alt="" coords="328,238,477,266"/>
-<area shape="rect" id="node2" href="$interface_g_c_zoom_view.html" title="This is a very general&#45;purpose view class that provides some handy high&#45;level methods for doing zoomi..." alt="" coords="179,83,283,111"/>
+<area shape="rect" id="node4" href="$interface_d_k_layer_p_d_f_view.html" title="DKLayerPDFView" alt="" coords="5,225,134,251"/>
+<area shape="rect" id="node5" href="$interface_d_k_print_drawing_view.html" title="DKPrintDrawingView" alt="" coords="159,225,303,251"/>
+<area shape="rect" id="node6" href="$interface_d_k_selection_p_d_f_view.html" title="these objects are never used to make a visible view. " alt="" coords="328,225,478,251"/>
+<area shape="rect" id="node2" href="$interface_g_c_zoom_view.html" title="This is a very general&#45;purpose view class that provides some handy high&#45;level methods for doing zoomi..." alt="" coords="179,79,283,104"/>
 </map>

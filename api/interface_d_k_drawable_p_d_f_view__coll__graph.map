@@ -1,5 +1,0 @@
-<map id="DKDrawablePDFView" name="DKDrawablePDFView">
-<area shape="rect" id="node3" href="$interface_d_k_drawable_object.html" title="This object is responsible for the visual representation of the selection as well as any content..." alt="" coords="202,166,336,194"/>
-<area shape="rect" id="node5" href="$protocol_d_k_storable_object-p.html" title="\&lt;DKStorableObject\&gt;" alt="" coords="307,86,449,114"/>
-<area shape="rect" id="node9" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="107,86,231,114"/>
-</map>

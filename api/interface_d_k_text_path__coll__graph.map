@@ -1,6 +1,0 @@
-<map id="DKTextPath" name="DKTextPath">
-<area shape="rect" id="node2" href="$interface_d_k_drawable_path.html" title="DKDrawablePath is a drawable object that renders a path such as a line or curve (bezigon). " alt="" coords="288,238,411,266"/>
-<area shape="rect" id="node3" href="$interface_d_k_drawable_object.html" title="This object is responsible for the visual representation of the selection as well as any content..." alt="" coords="282,161,416,189"/>
-<area shape="rect" id="node5" href="$protocol_d_k_storable_object-p.html" title="\&lt;DKStorableObject\&gt;" alt="" coords="120,83,263,111"/>
-<area shape="rect" id="node9" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="287,83,411,111"/>
-</map>

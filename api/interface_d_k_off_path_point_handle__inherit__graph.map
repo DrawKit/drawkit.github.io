@@ -1,6 +1,6 @@
 <map id="DKOffPathPointHandle" name="DKOffPathPointHandle">
-<area shape="rect" id="node5" href="$interface_d_k_inactive_off_path_point_handle.html" title="DKInactiveOffPathPointHandle" alt="" coords="5,315,208,343"/>
-<area shape="rect" id="node6" href="$interface_d_k_locked_off_path_point_handle.html" title="DKLockedOffPathPointHandle" alt="" coords="232,315,432,343"/>
-<area shape="rect" id="node2" href="$interface_d_k_on_path_point_handle.html" title="DKOnPathPointHandle" alt="" coords="140,161,297,189"/>
-<area shape="rect" id="node3" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="178,83,259,111"/>
+<area shape="rect" id="node5" href="$interface_d_k_inactive_off_path_point_handle.html" title="DKInactiveOffPathPointHandle" alt="" coords="5,299,209,324"/>
+<area shape="rect" id="node6" href="$interface_d_k_locked_off_path_point_handle.html" title="DKLockedOffPathPointHandle" alt="" coords="232,299,433,324"/>
+<area shape="rect" id="node2" href="$interface_d_k_on_path_point_handle.html" title="DKOnPathPointHandle" alt="" coords="140,152,298,177"/>
+<area shape="rect" id="node3" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="178,79,260,104"/>
 </map>

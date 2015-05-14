@@ -1,4 +1,0 @@
-<map id="DKSelectionPDFView" name="DKSelectionPDFView">
-<area shape="rect" id="node2" href="$interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="" coords="21,161,139,189"/>
-<area shape="rect" id="node3" href="$interface_g_c_zoom_view.html" title="This is a very general&#45;purpose view class that provides some handy high&#45;level methods for doing zoomi..." alt="" coords="28,83,132,111"/>
-</map>

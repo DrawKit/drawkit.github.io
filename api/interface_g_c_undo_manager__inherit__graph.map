@@ -1,3 +1,3 @@
 <map id="GCUndoManager" name="GCUndoManager">
-<area shape="rect" id="node3" href="$interface_d_k_undo_manager.html" title="DKUndoManager" alt="" coords="6,161,129,189"/>
+<area shape="rect" id="node3" href="$interface_d_k_undo_manager.html" title="This subclass of NSUndoManager can coalesce consecutive tasks that it receives so that only one task ..." alt="" coords="6,152,130,177"/>
 </map>
