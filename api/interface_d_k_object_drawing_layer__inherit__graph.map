@@ -1,6 +1,10 @@
 <map id="DKObjectDrawingLayer" name="DKObjectDrawingLayer">
-<area shape="rect" id="node2" href="$interface_d_k_object_owner_layer.html" title="This layer class can be the owner of any number of DKDrawableObjects. " alt="" coords="253,225,404,251"/>
-<area shape="rect" id="node3" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="292,152,365,177"/>
-<area shape="rect" id="node8" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="453,79,578,104"/>
-<area shape="rect" id="node10" href="$protocol_d_k_drawable_container-p.html" title="\&lt;DKDrawableContainer\&gt;" alt="" coords="657,152,827,177"/>
+<area shape="rect" id="node2" href="$interface_d_k_object_owner_layer.html" title="This layer class can be the owner of any number of DKDrawableObjects. " alt="" coords="505,225,656,251"/>
+<area shape="rect" id="node3" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="421,152,494,177"/>
+<area shape="rect" id="node4" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="205,79,283,104"/>
+<area shape="rect" id="node5" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="546,5,640,31"/>
+<area shape="rect" id="node10" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="531,79,656,104"/>
+<area shape="rect" id="node11" href="$protocol_d_k_drawable_container-p.html" title="\&lt;DKDrawableContainer\&gt;" alt="" coords="731,152,901,177"/>
+<area shape="rect" id="node6" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="141,5,347,31"/>
+<area shape="rect" id="node7" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/Reference/Reference" title="\&lt;NSCoding\&gt;" alt="" coords="681,79,778,104"/>
 </map>

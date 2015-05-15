@@ -1,6 +1,9 @@
 <map id="DKOffPathPointHandle" name="DKOffPathPointHandle">
-<area shape="rect" id="node5" href="$interface_d_k_inactive_off_path_point_handle.html" title="DKInactiveOffPathPointHandle" alt="" coords="5,299,209,324"/>
-<area shape="rect" id="node6" href="$interface_d_k_locked_off_path_point_handle.html" title="DKLockedOffPathPointHandle" alt="" coords="232,299,433,324"/>
-<area shape="rect" id="node2" href="$interface_d_k_on_path_point_handle.html" title="DKOnPathPointHandle" alt="" coords="140,152,298,177"/>
-<area shape="rect" id="node3" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="178,79,260,104"/>
+<area shape="rect" id="node7" href="$interface_d_k_inactive_off_path_point_handle.html" title="DKInactiveOffPathPointHandle" alt="" coords="5,372,209,397"/>
+<area shape="rect" id="node8" href="$interface_d_k_locked_off_path_point_handle.html" title="DKLockedOffPathPointHandle" alt="" coords="232,372,433,397"/>
+<area shape="rect" id="node2" href="$interface_d_k_on_path_point_handle.html" title="DKOnPathPointHandle" alt="" coords="140,225,298,251"/>
+<area shape="rect" id="node3" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="178,152,260,177"/>
+<area shape="rect" id="node4" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="180,79,258,104"/>
+<area shape="rect" id="node5" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="85,5,179,31"/>
+<area shape="rect" id="node6" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="204,5,410,31"/>
 </map>

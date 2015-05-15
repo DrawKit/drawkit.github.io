@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>https://drawkit.github.io/drawkit.atom/20150515081213</id>
+    <title type="text">DrawKit Documentation</title>
+    <rights>Copyright © DrawKit. All rights reserved.</rights>
+    <link rel="self" href="https://drawkit.github.io/drawkit.atom"></link>
+    <docset:publisherName>DrawKit</docset:publisherName>
+    <docset:publisherID>io.github.drawkit.documentation</docset:publisherID>
+    <updated>2015-05-15T08:12:13+02:00</updated>
+    <entry>
+        <id>tag:drawkit.github.io,2015-05-15:io.github.drawkit/0.0.0</id>
+        <title type="text">DrawKit</title>
+        <updated>2015-05-15T08:12:13+02:00</updated>
+        <content type="text">DrawKit (v0.0.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="https://drawkit.github.io/drawkit.atom" length="12539347"></link>
+        <docset:identifier>io.github.drawkit</docset:identifier>
+        <docset:version>0.0.0</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>

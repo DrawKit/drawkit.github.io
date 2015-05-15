@@ -4,6 +4,7 @@ var searchData=
   ['valleyspread',['valleySpread',['../interface_d_k_regular_polygon_path.html#a15670e598fea0e28478718b187e023bb',1,'DKRegularPolygonPath']]],
   ['value',['value',['../interface_d_k_metadata_item.html#a316b8c8314f3fc08173445461b3883ee',1,'DKMetadataItem::value()'],['../interface_d_k_expression_pair.html#a1cd51cd7c7396b6b101e6bd01c2355ed',1,'DKExpressionPair::value()']]],
   ['valueatindex_3a',['valueAtIndex:',['../interface_d_k_expression.html#a98a4b025e6dc0e5c38de05bcbe427326',1,'DKExpression']]],
+  ['valueclassforbinding_3a',['valueClassForBinding:',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference.html#//apple_ref/occ/instm/NSObject/valueClassForBinding:',1,'NSKeyValueBindingCreation-p']]],
   ['valueforinvalidunderlineposition',['valueForInvalidUnderlinePosition',['../category_n_s_font_07_d_k_underline_category_08.html#a962d097f6937c009e750f2c9682c0740',1,'NSFont(DKUnderlineCategory)']]],
   ['valueforinvalidunderlinethickness',['valueForInvalidUnderlineThickness',['../category_n_s_font_07_d_k_underline_category_08.html#a7584c90934c3b382b603982d495b9441',1,'NSFont(DKUnderlineCategory)']]],
   ['valueforkey_3a',['valueForKey:',['../interface_d_k_expression.html#acec8668f68ef2872b45cda5b54ed34c9',1,'DKExpression']]],

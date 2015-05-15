@@ -1,4 +1,7 @@
 <map id="DKTargetHandle" name="DKTargetHandle">
-<area shape="rect" id="node4" href="$interface_d_k_locked_target_handle.html" title="DKLockedTargetHandle" alt="" coords="5,225,167,251"/>
-<area shape="rect" id="node2" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="45,79,127,104"/>
+<area shape="rect" id="node6" href="$interface_d_k_locked_target_handle.html" title="DKLockedTargetHandle" alt="" coords="58,299,220,324"/>
+<area shape="rect" id="node2" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="98,152,180,177"/>
+<area shape="rect" id="node3" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="100,79,178,104"/>
+<area shape="rect" id="node4" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="5,5,99,31"/>
+<area shape="rect" id="node5" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="124,5,330,31"/>
 </map>

@@ -4,7 +4,7 @@ var searchData=
   ['handlefortype_3acolour_3a',['handleForType:colour:',['../interface_d_k_knob.html#a453e9a6d356433a9ed03b8c3ec1412b3',1,'DKKnob']]],
   ['handlefortype_3asize_3acolour_3a',['handleForType:size:colour:',['../interface_d_k_handle.html#ae7a4d24418c77002ba65a5bac883b928',1,'DKHandle']]],
   ['hasfill',['hasFill',['../interface_d_k_style.html#a18e2a28c8f0561cf160cd3bec5d67d7f',1,'DKStyle']]],
-  ['hash',['hash',['../category_n_s_bezier_path_07_o_a_extensions_08.html#a3ba1e57745a8bf1683584e6a0cf4d51e',1,'NSBezierPath(OAExtensions)']]],
+  ['hash',['hash',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html#//apple_ref/occ/intfm/NSObject/hash',1,'NSObject-p::hash()'],['../category_n_s_bezier_path_07_o_a_extensions_08.html#a3ba1e57745a8bf1683584e6a0cf4d51e',1,'NSBezierPath(OAExtensions)::hash()']]],
   ['hashatch',['hasHatch',['../interface_d_k_style.html#af50d10845c41784307018d0e374c9212',1,'DKStyle']]],
   ['hashiddenlayers',['hasHiddenLayers',['../interface_d_k_layer_group.html#a586c0c08e084dd0a4ebb0dd18839cf1e',1,'DKLayerGroup']]],
   ['hasimagecomponent',['hasImageComponent',['../category_d_k_style_07_simple_access_08.html#a95e83c0db03ecb129843fa324b609e51',1,'DKStyle(SimpleAccess)::hasImageComponent()'],['../interface_d_k_style.html#a95e83c0db03ecb129843fa324b609e51',1,'DKStyle::hasImageComponent()']]],

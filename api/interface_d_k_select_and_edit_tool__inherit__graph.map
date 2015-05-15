@@ -1,5 +1,8 @@
 <map id="DKSelectAndEditTool" name="DKSelectAndEditTool">
-<area shape="rect" id="node2" href="$interface_d_k_drawing_tool.html" title="DKDrawingTool is the semi&#45;abstract base class for all types of drawing tool. " alt="" coords="112,79,225,104"/>
-<area shape="rect" id="node4" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="108,5,237,31"/>
-<area shape="rect" id="node5" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="249,79,373,104"/>
+<area shape="rect" id="node2" href="$interface_d_k_drawing_tool.html" title="DKDrawingTool is the semi&#45;abstract base class for all types of drawing tool. " alt="" coords="139,152,252,177"/>
+<area shape="rect" id="node3" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="69,79,148,104"/>
+<area shape="rect" id="node4" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="263,5,357,31"/>
+<area shape="rect" id="node7" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="276,152,400,177"/>
+<area shape="rect" id="node5" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="5,5,212,31"/>
+<area shape="rect" id="node6" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="172,79,301,104"/>
 </map>

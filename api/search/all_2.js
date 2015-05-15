@@ -7,6 +7,7 @@ var searchData=
   ['baselineoffsetfortextheight_3a',['baselineOffsetForTextHeight:',['../interface_d_k_text_adornment.html#a1d8acaff9637ab36813adb15a41cfc72',1,'DKTextAdornment']]],
   ['begindragofselectedobjectswithevent_3ainview_3a',['beginDragOfSelectedObjectsWithEvent:inView:',['../interface_d_k_object_drawing_layer.html#a62489843cdc3b36ae15bebb433d08548',1,'DKObjectDrawingLayer']]],
   ['begindrawing',['beginDrawing',['../interface_d_k_layer.html#a5df918d3d91d04b3a9c3bd656dfbdce7',1,'DKLayer']]],
+  ['begintime',['beginTime',['https://developer.apple.com/library/mac/#documentation/GraphicsImaging/Reference/CAMediaTiming_protocol/Introduction/Introduction.html#//apple_ref/occ/intfp/CAMediaTiming/beginTime',1,'CAMediaTiming-p']]],
   ['beginundogrouping',['beginUndoGrouping',['../interface_g_c_undo_manager.html#aaac2f2a9a62aaad92572969827ac7c00',1,'GCUndoManager']]],
   ['bezier_5ffit_5fcubic',['bezier_fit_cubic',['../namespace_geom.html#a0b26206e3d80bb1ea83b2d969956e587',1,'Geom']]],
   ['bezier_5ffit_5fcubic_5ffull',['bezier_fit_cubic_full',['../namespace_geom.html#a07d441c710f495c1ce97e5f497fa8389',1,'Geom']]],
@@ -52,6 +53,7 @@ var searchData=
   ['bezierpathwiththreadlinesoflength_3adiameter_3athreadpitch_3a',['bezierPathWithThreadLinesOfLength:diameter:threadPitch:',['../category_n_s_bezier_path_07_shapes_08.html#a95834f74cc36f21a9efa5e296eab40ec',1,'NSBezierPath(Shapes)']]],
   ['bezierpathwithwavelength_3aamplitude_3aspread_3a',['bezierPathWithWavelength:amplitude:spread:',['../category_n_s_bezier_path_07_geometry_08.html#a3f3db8480bc7fd29db55dd9bb8b2a203',1,'NSBezierPath(Geometry)']]],
   ['bezierpathwithzig_3azag_3a',['bezierPathWithZig:zag:',['../category_n_s_bezier_path_07_geometry_08.html#ac6fa7a6fb8978b4a4735f7863a5c6edb',1,'NSBezierPath(Geometry)']]],
+  ['bind_3atoobject_3awithkeypath_3aoptions_3a',['bind:toObject:withKeyPath:options:',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference.html#//apple_ref/occ/instm/NSObject/bind:toObject:withKeyPath:options:',1,'NSKeyValueBindingCreation-p']]],
   ['bindfileexporttype_3atoselector_3a',['bindFileExportType:toSelector:',['../interface_d_k_drawing_document.html#a668670c91a11460067ea93ce00e81d24',1,'DKDrawingDocument']]],
   ['bindfileimporttype_3atoselector_3a',['bindFileImportType:toSelector:',['../interface_d_k_drawing_document.html#a30d87cc86fab562af0a4816c4691cea4',1,'DKDrawingDocument']]],
   ['bisleaf',['bIsLeaf',['../struct___n_o_d_e.html#aa7d2a5adb645f3c9acd737ce4e9443cb',1,'_NODE']]],
@@ -64,8 +66,9 @@ var searchData=
   ['bottomobject',['bottomObject',['../interface_d_k_object_owner_layer.html#ad1c04e8dddd0ca125381c36f329ab422',1,'DKObjectOwnerLayer']]],
   ['boundingboxesforpartcode_3a',['boundingBoxesForPartcode:',['../category_n_s_bezier_path_07_d_k_editing_08.html#ab85291db1a32389225d089e2518fae6b',1,'NSBezierPath(DKEditing)']]],
   ['boundingboxforelement_3a',['boundingBoxForElement:',['../category_n_s_bezier_path_07_d_k_editing_08.html#aa88cd0f6c30aa741025e27ad60a53c23',1,'NSBezierPath(DKEditing)']]],
-  ['bounds',['bounds',['../interface_d_k_distortion_transform.html#a735a3434586a0412e5580763d80ae969',1,'DKDistortionTransform::bounds()'],['../interface_d_k_drawable_object.html#a47b6f17593879b7eef88ca17ed5f0d5c',1,'DKDrawableObject::bounds()'],['../protocol_d_k_storable_object-p.html#aca32bfae68d321695bb0368ff9237a56',1,'DKStorableObject-p::bounds()'],['../interface_d_k_pasteboard_info.html#a175f5eefd68fdc621e9ac309990e7c09',1,'DKPasteboardInfo::bounds()'],['../protocol_d_k_renderable-p.html#a90748298c1f9f96d107e5f0929077dd3',1,'DKRenderable-p::bounds()']]],
+  ['bounds',['bounds',['https://developer.apple.com/library/mac/#documentation/GraphicsImaging/Reference/CALayer_class/Introduction/Introduction.html#//apple_ref/occ/instp/CALayer/bounds',1,'CALayer::bounds()'],['../interface_d_k_distortion_transform.html#a735a3434586a0412e5580763d80ae969',1,'DKDistortionTransform::bounds()'],['../interface_d_k_drawable_object.html#a47b6f17593879b7eef88ca17ed5f0d5c',1,'DKDrawableObject::bounds()'],['../protocol_d_k_storable_object-p.html#aca32bfae68d321695bb0368ff9237a56',1,'DKStorableObject-p::bounds()'],['../interface_d_k_pasteboard_info.html#a175f5eefd68fdc621e9ac309990e7c09',1,'DKPasteboardInfo::bounds()'],['../protocol_d_k_renderable-p.html#a90748298c1f9f96d107e5f0929077dd3',1,'DKRenderable-p::bounds()']]],
   ['breakapart',['breakApart',['../interface_d_k_drawable_path.html#a33ee67b1885f02f85108baa83d671582',1,'DKDrawablePath::breakApart()'],['../interface_d_k_drawable_shape.html#afbedcb1b2b13d3aefbfeb45d4baa3896',1,'DKDrawableShape::breakApart()']]],
   ['breakapart_3a',['breakApart:',['../interface_d_k_drawable_path.html#a60962cc39a2a646e0cbd4dc3c2e3d9d3',1,'DKDrawablePath']]],
-  ['buf',['buf',['../struct___scanner.html#a765fc971d711756e9c05cfde4f80fd2d',1,'_Scanner']]]
+  ['buf',['buf',['../struct___scanner.html#a765fc971d711756e9c05cfde4f80fd2d',1,'_Scanner']]],
+  ['byte_2dorder_20utilties_20reference',['Byte-Order Utilties Reference',['https://developer.apple.com/library/mac/#documentation/corefoundation/Reference/CFByteOrderUtils/Reference/reference.html.html',1,'']]]
 ];

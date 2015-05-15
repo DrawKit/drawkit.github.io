@@ -1,6 +1,11 @@
 <map id="DKRegularPolygonPath" name="DKRegularPolygonPath">
-<area shape="rect" id="node2" href="$interface_d_k_drawable_path.html" title="DKDrawablePath is a drawable object that renders a path such as a line or curve (bezigon). " alt="" coords="185,225,309,251"/>
-<area shape="rect" id="node3" href="$interface_d_k_drawable_object.html" title="This object is responsible for the visual representation of the selection as well as any content..." alt="" coords="270,152,405,177"/>
-<area shape="rect" id="node5" href="$protocol_d_k_storable_object-p.html" title="\&lt;DKStorableObject\&gt;" alt="" coords="222,79,365,104"/>
-<area shape="rect" id="node9" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="389,79,513,104"/>
+<area shape="rect" id="node2" href="$interface_d_k_drawable_path.html" title="DKDrawablePath is a drawable object that renders a path such as a line or curve (bezigon). " alt="" coords="197,225,321,251"/>
+<area shape="rect" id="node3" href="$interface_d_k_drawable_object.html" title="This object is responsible for the visual representation of the selection as well as any content..." alt="" coords="282,152,417,177"/>
+<area shape="rect" id="node4" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="436,79,514,104"/>
+<area shape="rect" id="node5" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="228,5,322,31"/>
+<area shape="rect" id="node7" href="$protocol_d_k_storable_object-p.html" title="\&lt;DKStorableObject\&gt;" alt="" coords="120,79,264,104"/>
+<area shape="rect" id="node10" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="287,79,412,104"/>
+<area shape="rect" id="node6" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="346,5,553,31"/>
+<area shape="rect" id="node8" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/Reference/Reference" title="\&lt;NSCoding\&gt;" alt="" coords="577,5,674,31"/>
+<area shape="rect" id="node9" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCopying_Protocol/Reference/Reference" title="\&lt;NSCopying\&gt;" alt="" coords="5,5,110,31"/>
 </map>

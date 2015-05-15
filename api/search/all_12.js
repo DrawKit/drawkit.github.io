@@ -127,6 +127,8 @@ var searchData=
   ['renderpath_3a',['renderPath:',['../protocol_d_k_rasterizer-p.html#a522e3599ef65b745af100607c7cf77fd',1,'DKRasterizer-p']]],
   ['renormalizepath',['renormalizePath',['../category_n_s_bezier_path_07_combinatorial_08.html#aa0d8b4723eca7c4579899024701dac8a',1,'NSBezierPath(Combinatorial)']]],
   ['reorderingtest_3a',['reorderingTest:',['../interface_test_b_s_p_storage.html#a0d3137d3275e83987b17f1d62ef8b838',1,'TestBSPStorage']]],
+  ['repeatcount',['repeatCount',['https://developer.apple.com/library/mac/#documentation/GraphicsImaging/Reference/CAMediaTiming_protocol/Introduction/Introduction.html#//apple_ref/occ/intfp/CAMediaTiming/repeatCount',1,'CAMediaTiming-p']]],
+  ['repeatduration',['repeatDuration',['https://developer.apple.com/library/mac/#documentation/GraphicsImaging/Reference/CAMediaTiming_protocol/Introduction/Introduction.html#//apple_ref/occ/intfp/CAMediaTiming/repeatDuration',1,'CAMediaTiming-p']]],
   ['replacecontentswithdata_3a',['replaceContentsWithData:',['../interface_d_k_category_manager.html#a24cdacab1e8438a45bd00fa2fb2f5610',1,'DKCategoryManager']]],
   ['replacecontrollerwithcontroller_3a',['replaceControllerWithController:',['../interface_d_k_drawing_view.html#a9f9b6bf2623d4c0d0f6963deb521f2ce',1,'DKDrawingView']]],
   ['replacedocumentstyleswithmatchingstylesfromset_3a',['replaceDocumentStylesWithMatchingStylesFromSet:',['../interface_d_k_drawing_document.html#a1cb9a42806a083ade7c3b32c84ce4c2d',1,'DKDrawingDocument']]],

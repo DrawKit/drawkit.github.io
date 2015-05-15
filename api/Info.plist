@@ -6,13 +6,13 @@
      <key>CFBundleName</key>
      <string>DrawKit</string>
      <key>CFBundleIdentifier</key>
-     <string>drawkit.github.io</string>
+     <string>io.github.drawkit</string>
      <key>CFBundleVersion</key>
      <string>ProjectNumber</string>
      <key>DocSetFeedName</key>
      <string>DrawKit</string>
      <key>DocSetPublisherIdentifier</key>
-     <string>drawkit.github.io</string>
+     <string>io.github.drawkit</string>
      <key>DocSetPublisherName</key>
      <string>DrawKit</string>
      <key>DashDocSetFamily</key>

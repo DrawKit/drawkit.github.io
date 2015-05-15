@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['unbind_3a',['unbind:',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference.html#//apple_ref/occ/instm/NSObject/unbind:',1,'NSKeyValueBindingCreation-p']]],
   ['underline_3a',['underline:',['../interface_d_k_text_path.html#ae38cf94fc9ac22067cf30fad5b62c779',1,'DKTextPath::underline:()'],['../interface_d_k_text_shape.html#a85eefc719a088bdbe73bf77196d8167a',1,'DKTextShape::underline:()']]],
   ['underlined',['underlined',['../category_d_k_style_07_text_additions_08.html#af23f21df9693828442a54dbd9b73e8e8',1,'DKStyle(TextAdditions)::underlined()'],['../interface_d_k_style.html#af23f21df9693828442a54dbd9b73e8e8',1,'DKStyle::underlined()']]],
   ['underlines',['underlines',['../interface_d_k_text_adornment.html#a252c038e94418fa732a41c77e63df015',1,'DKTextAdornment']]],

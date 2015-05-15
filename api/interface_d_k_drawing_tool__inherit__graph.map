@@ -1,8 +1,11 @@
 <map id="DKDrawingTool" name="DKDrawingTool">
-<area shape="rect" id="node4" href="$interface_d_k_crop_tool.html" title="Implements a very simple type of crop tool. " alt="" coords="379,5,472,31"/>
-<area shape="rect" id="node5" href="$interface_d_k_object_creation_tool.html" title="This tool class is used to make all kinds of drawable objects. " alt="" coords="349,55,502,80"/>
-<area shape="rect" id="node6" href="$interface_d_k_path_insert_delete_tool.html" title="This tool is able to insert or delete on&#45;path points from a path. " alt="" coords="343,104,507,129"/>
-<area shape="rect" id="node7" href="$interface_d_k_select_and_edit_tool.html" title="This tool implements the standard selection and edit tool behaviour (multi&#45;purpose tool) which allows..." alt="" coords="351,153,499,179"/>
-<area shape="rect" id="node8" href="$interface_d_k_zoom_tool.html" title="This tool implements a zoom &quot;magnifier&quot; tool. " alt="" coords="376,203,474,228"/>
-<area shape="rect" id="node3" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="5,128,134,153"/>
+<area shape="rect" id="node6" href="$interface_d_k_crop_tool.html" title="Implements a very simple type of crop tool. " alt="" coords="633,5,726,31"/>
+<area shape="rect" id="node7" href="$interface_d_k_object_creation_tool.html" title="This tool class is used to make all kinds of drawable objects. " alt="" coords="603,55,756,80"/>
+<area shape="rect" id="node8" href="$interface_d_k_path_insert_delete_tool.html" title="This tool is able to insert or delete on&#45;path points from a path. " alt="" coords="598,104,761,129"/>
+<area shape="rect" id="node9" href="$interface_d_k_select_and_edit_tool.html" title="This tool implements the standard selection and edit tool behaviour (multi&#45;purpose tool) which allows..." alt="" coords="606,153,754,179"/>
+<area shape="rect" id="node10" href="$interface_d_k_zoom_tool.html" title="This tool implements a zoom &quot;magnifier&quot; tool. " alt="" coords="630,203,729,228"/>
+<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="285,79,363,104"/>
+<area shape="rect" id="node3" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="62,55,156,80"/>
+<area shape="rect" id="node4" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="5,104,212,129"/>
+<area shape="rect" id="node5" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="260,128,389,153"/>
 </map>

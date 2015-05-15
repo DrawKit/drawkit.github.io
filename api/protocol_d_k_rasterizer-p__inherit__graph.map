@@ -1,5 +1,6 @@
 <map id="&lt;DKRasterizer&gt;" name="&lt;DKRasterizer&gt;">
 <area shape="rect" id="node3" href="$interface_d_k_rasterizer.html" title="Renderers can now have a delegate attached which is able to modify behaviours such as changing the pa..." alt="" coords="311,153,412,179"/>
+<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="5,153,99,179"/>
 <area shape="rect" id="node4" href="$interface_d_k_fill.html" title="A renderer that implements a colour fill with optional shadow. " alt="" coords="503,5,560,31"/>
 <area shape="rect" id="node6" href="$interface_d_k_hatching.html" title="This class provides a simple hatching fill for a path. " alt="" coords="485,55,577,80"/>
 <area shape="rect" id="node7" href="$interface_d_k_image_adornment.html" title="This class allows any image to be part of the rendering tree. " alt="" coords="460,104,602,129"/>

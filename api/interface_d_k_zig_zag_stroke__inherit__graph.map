@@ -1,6 +1,11 @@
 <map id="DKZigZagStroke" name="DKZigZagStroke">
-<area shape="rect" id="node2" href="$interface_d_k_stroke.html" title="represents the stroke of a path, and can be added as an attribute of a DKStyle. " alt="" coords="180,225,259,251"/>
-<area shape="rect" id="node3" href="$interface_d_k_rasterizer.html" title="Renderers can now have a delegate attached which is able to modify behaviours such as changing the pa..." alt="" coords="169,152,270,177"/>
-<area shape="rect" id="node4" href="$interface_g_c_observable_object.html" title="This is used to permit setting up KVO in a simpler manner than comes as standard. ..." alt="" coords="127,79,275,104"/>
-<area shape="rect" id="node6" href="$protocol_d_k_rasterizer-p.html" title="\&lt;DKRasterizer\&gt;" alt="" coords="299,79,415,104"/>
+<area shape="rect" id="node2" href="$interface_d_k_stroke.html" title="represents the stroke of a path, and can be added as an attribute of a DKStyle. " alt="" coords="170,299,248,324"/>
+<area shape="rect" id="node3" href="$interface_d_k_rasterizer.html" title="Renderers can now have a delegate attached which is able to modify behaviours such as changing the pa..." alt="" coords="159,225,259,251"/>
+<area shape="rect" id="node4" href="$interface_g_c_observable_object.html" title="This is used to permit setting up KVO in a simpler manner than comes as standard. ..." alt="" coords="127,152,275,177"/>
+<area shape="rect" id="node5" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="158,79,236,104"/>
+<area shape="rect" id="node6" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="271,5,365,31"/>
+<area shape="rect" id="node8" href="$protocol_d_k_rasterizer-p.html" title="\&lt;DKRasterizer\&gt;" alt="" coords="260,79,376,104"/>
+<area shape="rect" id="node7" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="40,5,247,31"/>
+<area shape="rect" id="node9" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/Reference/Reference" title="\&lt;NSCoding\&gt;" alt="" coords="5,152,103,177"/>
+<area shape="rect" id="node10" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCopying_Protocol/Reference/Reference" title="\&lt;NSCopying\&gt;" alt="" coords="350,152,454,177"/>
 </map>

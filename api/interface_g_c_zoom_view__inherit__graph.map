@@ -1,6 +1,12 @@
 <map id="GCZoomView" name="GCZoomView">
-<area shape="rect" id="node3" href="$interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="" coords="172,152,290,177"/>
-<area shape="rect" id="node4" href="$interface_d_k_layer_p_d_f_view.html" title="DKLayerPDFView" alt="" coords="5,225,134,251"/>
-<area shape="rect" id="node5" href="$interface_d_k_print_drawing_view.html" title="DKPrintDrawingView" alt="" coords="159,225,303,251"/>
-<area shape="rect" id="node6" href="$interface_d_k_selection_p_d_f_view.html" title="these objects are never used to make a visible view. " alt="" coords="328,225,478,251"/>
+<area shape="rect" id="node8" href="$interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="" coords="172,372,290,397"/>
+<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Classes/NSView_Class/Reference/NSView" title="NSView" alt="" coords="197,225,265,251"/>
+<area shape="rect" id="node3" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Classes/NSResponder_Class/Reference/Reference" title="NSResponder" alt="" coords="178,152,283,177"/>
+<area shape="rect" id="node4" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="136,79,214,104"/>
+<area shape="rect" id="node5" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="41,5,135,31"/>
+<area shape="rect" id="node6" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="160,5,366,31"/>
+<area shape="rect" id="node7" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/Reference/Reference" title="\&lt;NSCoding\&gt;" alt="" coords="238,79,336,104"/>
+<area shape="rect" id="node9" href="$interface_d_k_layer_p_d_f_view.html" title="DKLayerPDFView" alt="" coords="5,445,134,471"/>
+<area shape="rect" id="node10" href="$interface_d_k_print_drawing_view.html" title="DKPrintDrawingView" alt="" coords="159,445,303,471"/>
+<area shape="rect" id="node11" href="$interface_d_k_selection_p_d_f_view.html" title="these objects are never used to make a visible view. " alt="" coords="328,445,478,471"/>
 </map>

@@ -1,4 +1,8 @@
 <map id="DKGridLayer" name="DKGridLayer">
-<area shape="rect" id="node2" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="433,152,506,177"/>
-<area shape="rect" id="node7" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="531,79,657,104"/>
+<area shape="rect" id="node2" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="499,152,572,177"/>
+<area shape="rect" id="node3" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="117,79,196,104"/>
+<area shape="rect" id="node4" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="236,5,330,31"/>
+<area shape="rect" id="node9" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="220,79,346,104"/>
+<area shape="rect" id="node5" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="5,5,212,31"/>
+<area shape="rect" id="node6" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/Reference/Reference" title="\&lt;NSCoding\&gt;" alt="" coords="794,79,892,104"/>
 </map>

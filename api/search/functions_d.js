@@ -135,5 +135,7 @@ var searchData=
   ['moveupobject_3a',['moveUpObject:',['../interface_d_k_object_owner_layer.html#ab0626f57daec981b0fb7121e48364a17',1,'DKObjectOwnerLayer']]],
   ['multiparttiffdatawithresolution_3a',['multipartTIFFDataWithResolution:',['../category_d_k_drawing_07_export_08.html#a2ab1c554db0c3fed6dd209fbd40b16fa',1,'DKDrawing(Export)::multipartTIFFDataWithResolution:()'],['../interface_d_k_drawing.html#a2ab1c554db0c3fed6dd209fbd40b16fa',1,'DKDrawing::multipartTIFFDataWithResolution:()']]],
   ['multipleselectionautoforwarding',['multipleSelectionAutoForwarding',['../interface_d_k_object_drawing_layer.html#a43fd4dae628f2c045ad0fdda1e35f7b2',1,'DKObjectDrawingLayer']]],
-  ['multipleselectionvalidatedmenuitem_3a',['multipleSelectionValidatedMenuItem:',['../interface_d_k_object_drawing_layer.html#a8c9799f9bbce34e2e3478fb5ca2273c7',1,'DKObjectDrawingLayer']]]
+  ['multipleselectionvalidatedmenuitem_3a',['multipleSelectionValidatedMenuItem:',['../interface_d_k_object_drawing_layer.html#a8c9799f9bbce34e2e3478fb5ca2273c7',1,'DKObjectDrawingLayer']]],
+  ['mutablecopy',['mutableCopy',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html#//apple_ref/occ/instm/NSObject/mutableCopy',1,'NSObject']]],
+  ['mutablecopywithzone_3a',['mutableCopyWithZone:',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Protocols/NSMutableCopying_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/NSMutableCopying/mutableCopyWithZone:',1,'NSMutableCopying-p']]]
 ];

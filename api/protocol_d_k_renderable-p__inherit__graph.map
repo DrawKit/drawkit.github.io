@@ -1,6 +1,7 @@
 <map id="&lt;DKRenderable&gt;" name="&lt;DKRenderable&gt;">
 <area shape="rect" id="node3" href="$interface_d_k_drawable_object.html" title="This object is responsible for the visual representation of the selection as well as any content..." alt="" coords="326,129,461,155"/>
 <area shape="rect" id="node14" href="$interface_d_k_select_and_edit_tool.html" title="This tool implements the standard selection and edit tool behaviour (multi&#45;purpose tool) which allows..." alt="" coords="320,179,468,204"/>
+<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="5,155,99,180"/>
 <area shape="rect" id="node4" href="$interface_d_k_drawable_path.html" title="DKDrawablePath is a drawable object that renders a path such as a line or curve (bezigon). " alt="" coords="521,80,645,105"/>
 <area shape="rect" id="node8" href="$interface_d_k_drawable_shape.html" title="A semi&#45;abstract base class for a drawable object consisting of any path&#45;based shape that can be drawn..." alt="" coords="516,203,650,228"/>
 <area shape="rect" id="node5" href="$interface_d_k_arc_path.html" title="DKArcPath" alt="" coords="736,5,823,31"/>

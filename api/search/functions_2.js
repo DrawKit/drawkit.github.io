@@ -51,6 +51,7 @@ var searchData=
   ['bezierpathwiththreadlinesoflength_3adiameter_3athreadpitch_3a',['bezierPathWithThreadLinesOfLength:diameter:threadPitch:',['../category_n_s_bezier_path_07_shapes_08.html#a95834f74cc36f21a9efa5e296eab40ec',1,'NSBezierPath(Shapes)']]],
   ['bezierpathwithwavelength_3aamplitude_3aspread_3a',['bezierPathWithWavelength:amplitude:spread:',['../category_n_s_bezier_path_07_geometry_08.html#a3f3db8480bc7fd29db55dd9bb8b2a203',1,'NSBezierPath(Geometry)']]],
   ['bezierpathwithzig_3azag_3a',['bezierPathWithZig:zag:',['../category_n_s_bezier_path_07_geometry_08.html#ac6fa7a6fb8978b4a4735f7863a5c6edb',1,'NSBezierPath(Geometry)']]],
+  ['bind_3atoobject_3awithkeypath_3aoptions_3a',['bind:toObject:withKeyPath:options:',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference.html#//apple_ref/occ/instm/NSObject/bind:toObject:withKeyPath:options:',1,'NSKeyValueBindingCreation-p']]],
   ['bindfileexporttype_3atoselector_3a',['bindFileExportType:toSelector:',['../interface_d_k_drawing_document.html#a668670c91a11460067ea93ce00e81d24',1,'DKDrawingDocument']]],
   ['bindfileimporttype_3atoselector_3a',['bindFileImportType:toSelector:',['../interface_d_k_drawing_document.html#a30d87cc86fab562af0a4816c4691cea4',1,'DKDrawingDocument']]],
   ['bitmapimagerepresentation',['bitmapImageRepresentation',['../category_n_s_image_07_core_image_08.html#a3557e85552a03ec73281bcce5188a5b1',1,'NSImage(CoreImage)']]],

@@ -16,6 +16,7 @@ var searchData=
   ['fillwithpatternimage_3a',['fillWithPatternImage:',['../interface_d_k_fill.html#a6f49d0d51719794598e3eb28b9263186',1,'DKFill']]],
   ['fillwithpatternimagenamed_3a',['fillWithPatternImageNamed:',['../interface_d_k_fill.html#a4bc8fef7cc3002a990d6f75263e8b05b',1,'DKFill']]],
   ['filter',['filter',['../interface_d_k_c_i_filter_rast_group.html#ab753fc2cd024f3a6452afd4ded3f9ab6',1,'DKCIFilterRastGroup']]],
+  ['finalize',['finalize',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html#//apple_ref/occ/instm/NSObject/finalize',1,'NSObject']]],
   ['finalizepriortosaving',['finalizePriorToSaving',['../interface_d_k_drawing.html#a119fcc7e4f0dbada92524c7a493365ec',1,'DKDrawing']]],
   ['findlayer_3a',['findLayer:',['../interface_d_k_view_controller.html#addeeeb0fea2931ade1b5993d9104053c',1,'DKViewController']]],
   ['findlayerforpoint_3a',['findLayerForPoint:',['../interface_d_k_layer_group.html#a23d3cdb35305c0774c7563cd915e06db',1,'DKLayerGroup']]],

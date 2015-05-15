@@ -93,6 +93,7 @@ var searchData=
   ['allkeysincategories_3a',['allKeysInCategories:',['../interface_d_k_category_manager.html#a3d237b07a5da697ccdd49b43bb45ca32',1,'DKCategoryManager']]],
   ['allkeysincategory_3a',['allKeysInCategory:',['../interface_d_k_category_manager.html#a2e0cd13f991c14bf5ec2d9098595ef52',1,'DKCategoryManager']]],
   ['allobjects',['allObjects',['../interface_d_k_category_manager.html#aa260c3593fea8062c054b68dad511549',1,'DKCategoryManager']]],
+  ['alloc',['alloc',['https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html#//apple_ref/occ/clm/NSObject/alloc',1,'NSObject']]],
   ['allowance',['allowance',['../interface_d_k_stroke.html#a8c3c4a42bfb863bc5753486bf98bf938',1,'DKStroke']]],
   ['allowsdirectdragcopying',['allowsDirectDragCopying',['../interface_d_k_select_and_edit_tool.html#a0be8af1afb5de8d4010c8f72cc165d73',1,'DKSelectAndEditTool']]],
   ['allowsediting',['allowsEditing',['../interface_d_k_object_owner_layer.html#a4a61541e563a5981c806037e524d0617',1,'DKObjectOwnerLayer']]],
