@@ -1,0 +1,136 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$protocol_d_k_drawing_tool-p.html" title="\&lt;DKDrawingTool\&gt;" alt="" coords="266,381,394,407"/>
+<area shape="rect" id="node2" href="$interface_d_k_drawing_tool.html" title="DKDrawingTool is the semi&#45;abstract base class for all types of drawing tool. " alt="" coords="501,381,614,407"/>
+<area shape="rect" id="node3" href="$interface_d_k_crop_tool.html" title="Implements a very simple type of crop tool. " alt="" coords="753,357,846,383"/>
+<area shape="rect" id="node4" href="$interface_d_k_object_creation_tool.html" title="This tool class is used to make all kinds of drawable objects. " alt="" coords="723,407,876,432"/>
+<area shape="rect" id="node5" href="$interface_d_k_path_insert_delete_tool.html" title="This tool is able to insert or delete on&#45;path points from a path. " alt="" coords="718,456,881,481"/>
+<area shape="rect" id="node6" href="$interface_d_k_select_and_edit_tool.html" title="This tool implements the standard selection and edit tool behaviour (multi&#45;purpose tool) which allows..." alt="" coords="726,259,874,284"/>
+<area shape="rect" id="node7" href="$interface_d_k_zoom_tool.html" title="This tool implements a zoom &quot;magnifier&quot; tool. " alt="" coords="750,308,849,333"/>
+<area shape="rect" id="node8" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/Reference/Reference" title="\&lt;NSCoding\&gt;" alt="" coords="509,3387,606,3412"/>
+<area shape="rect" id="node9" href="$interface_d_k_arc_path.html" title="DKArcPath" alt="" coords="1481,963,1568,988"/>
+<area shape="rect" id="node10" href="$interface_d_k_arrow_stroke.html" title="DKArrowStroke is a rasterizer that implements arrowheads on the ends of paths. " alt="" coords="1237,2813,1351,2839"/>
+<area shape="rect" id="node11" href="$interface_d_k_category_manager.html" title="The cat manager supports a UI based on menu(s). " alt="" coords="726,3792,873,3817"/>
+<area shape="rect" id="node13" href="$interface_d_k_c_i_filter_rast_group.html" title="Captures the output of its contained renderers in an image. " alt="" coords="1220,2377,1368,2403"/>
+<area shape="rect" id="node14" href="$interface_d_k_color_stop.html" title="small object that links a Color with its relative position " alt="" coords="750,2176,849,2201"/>
+<area shape="rect" id="node15" href="$interface_d_k_distortion_transform.html" title="This objects performs distortion transformations on points and paths. " alt="" coords="721,2225,878,2251"/>
+<area shape="rect" id="node16" href="$interface_d_k_drawable_object.html" title="This object is responsible for the visual representation of the selection as well as any content..." alt="" coords="971,709,1106,735"/>
+<area shape="rect" id="node17" href="$interface_d_k_drawable_path.html" title="DKDrawablePath is a drawable object that renders a path such as a line or curve (bezigon). " alt="" coords="1232,811,1356,836"/>
+<area shape="rect" id="node18" href="$interface_d_k_regular_polygon_path.html" title="Implements a regular polygon and variations of it (stars and other similar shapes) ..." alt="" coords="1444,861,1606,887"/>
+<area shape="rect" id="node19" href="$interface_d_k_text_path.html" title="Very similar to a DKTextShape but based on a path and defaulting to text&#45;on&#45;a&#45;path rendering..." alt="" coords="1479,811,1571,836"/>
+<area shape="rect" id="node20" href="$interface_d_k_drawable_shape.html" title="A semi&#45;abstract base class for a drawable object consisting of any path&#45;based shape that can be drawn..." alt="" coords="1227,709,1361,735"/>
+<area shape="rect" id="node21" href="$interface_d_k_image_shape.html" title="DKImageShape is a drawable shape that displays an image. " alt="" coords="1467,709,1582,735"/>
+<area shape="rect" id="node22" href="$interface_d_k_reshapable_shape.html" title="This subclass of DKDrawableShape implements a protocol for obtaining shapes dynamically from a shape ..." alt="" coords="1450,912,1600,937"/>
+<area shape="rect" id="node23" href="$interface_d_k_shape_group.html" title="This is a group objects that can group any number of shapes or paths. " alt="" coords="1467,559,1582,584"/>
+<area shape="rect" id="node25" href="$interface_d_k_text_shape.html" title="Text shapes are shapes that draw text. " alt="" coords="1473,1013,1576,1039"/>
+<area shape="rect" id="node26" href="$interface_d_k_drawing.html" title="A DKDrawing is the model data for the drawing system. " alt="" coords="1250,3640,1338,3665"/>
+<area shape="rect" id="node27" href="$interface_d_k_drawing_info_layer.html" title="This is a DKLayer subclass which is able to draw an information panel in a corner of the drawing..." alt="" coords="966,2987,1111,3012"/>
+<area shape="rect" id="node28" href="$interface_d_k_fill.html" title="A renderer that implements a colour fill with optional shadow. " alt="" coords="1010,2303,1067,2328"/>
+<area shape="rect" id="node29" href="$interface_d_k_zig_zag_fill.html" title="DKZigZagFill" alt="" coords="1245,2303,1343,2328"/>
+<area shape="rect" id="node30" href="$interface_d_k_fill_pattern.html" title="This object represents a pattern consisting of a repeated motif spaced out at intervals within a larg..." alt="" coords="1244,2961,1344,2987"/>
+<area shape="rect" id="node31" href="$interface_d_k_gradient.html" title="A DKGradient encapsulates gradient/shading drawing. " alt="" coords="754,2475,845,2500"/>
+<area shape="rect" id="node33" href="$interface_d_k_grid_layer.html" title="This class is a layer that draws a grid like a piece of graph paper. " alt="" coords="989,3036,1088,3061"/>
+<area shape="rect" id="node34" href="$interface_d_k_guide.html" title="DKGuide" alt="" coords="762,4247,837,4272"/>
+<area shape="rect" id="node35" href="$interface_d_k_guide_layer.html" title="A guide layer implements any number of horizontal and vertical guidelines and provides methods for sn..." alt="" coords="984,3085,1093,3111"/>
+<area shape="rect" id="node36" href="$interface_d_k_hatching.html" title="This class provides a simple hatching fill for a path. " alt="" coords="992,2500,1085,2525"/>
+<area shape="rect" id="node37" href="$interface_d_k_hotspot.html" title="DKHotspot" alt="" coords="757,2275,843,2300"/>
+<area shape="rect" id="node38" href="$interface_d_k_image_adornment.html" title="This class allows any image to be part of the rendering tree. " alt="" coords="967,2549,1109,2575"/>
+<area shape="rect" id="node39" href="$interface_d_k_image_data_manager.html" title="The purpose of this class is to allow images to be archived much more efficiently, by archiving the original data that the image was created from rather than any bitmaps or other uncompressed forms, and to avoid storing multiple copies of the same image. " alt="" coords="721,4296,878,4321"/>
+<area shape="rect" id="node40" href="$interface_d_k_image_overlay_layer.html" title="This layer type implements a single image overlay, for example for tracing a photograph in another la..." alt="" coords="960,3135,1116,3160"/>
+<area shape="rect" id="node41" href="$interface_d_k_knob.html" title="simple class used to provide the drawing of knobs for object selection. " alt="" coords="764,2324,835,2349"/>
+<area shape="rect" id="node42" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="763,2127,836,2152"/>
+<area shape="rect" id="node43" href="$interface_d_k_layer_group.html" title="A layer group is a layer which maintains a list of other layers. " alt="" coords="983,3640,1093,3665"/>
+<area shape="rect" id="node44" href="$interface_d_k_object_owner_layer.html" title="This layer class can be the owner of any number of DKDrawableObjects. " alt="" coords="963,1064,1114,1089"/>
+<area shape="rect" id="node45" href="$interface_d_k_object_drawing_layer.html" title="This layer adds the concept of selection to drawable objects as defined by DKObjectOwnerLayer. " alt="" coords="1214,1647,1374,1672"/>
+<area shape="rect" id="node46" href="$interface_d_k_linear_object_storage.html" title="Basic storage class stores objects in a standard array. " alt="" coords="719,2077,881,2103"/>
+<area shape="rect" id="node49" href="$interface_d_k_metadata_item.html" title="DKMetadataItems are used to store metadata (attribute) values in user info dictionaries attached to v..." alt="" coords="739,3944,860,3969"/>
+<area shape="rect" id="node50" href="$interface_d_k_null_object.html" title="substitution class for avoiding an exception during dearchiving " alt="" coords="749,4397,850,4423"/>
+<area shape="rect" id="node51" href="$interface_d_k_pasteboard_info.html" title="This object is archived and added to the pasteboard when copying items within DK. ..." alt="" coords="734,4447,865,4472"/>
+<area shape="rect" id="node52" href="$interface_d_k_path_decorator.html" title="This renderer draws the image along the path of another object spaced at &lt;interval&gt; distance..." alt="" coords="975,2937,1101,2963"/>
+<area shape="rect" id="node53" href="$interface_d_k_quartz_blend_rast_group.html" title="Simple render group subclass that applies the set blend mode to the context for all of the renderers ..." alt="" coords="1205,2427,1383,2452"/>
+<area shape="rect" id="node54" href="$interface_d_k_rasterizer.html" title="Renderers can now have a delegate attached which is able to modify behaviours such as changing the pa..." alt="" coords="749,2425,850,2451"/>
+<area shape="rect" id="node55" href="$interface_d_k_rast_group.html" title="A rendergroup is a single renderer which contains a list of other renderers. " alt="" coords="986,2401,1090,2427"/>
+<area shape="rect" id="node56" href="$interface_d_k_style.html" title="DKStyle" alt="" coords="1259,3816,1329,3841"/>
+<area shape="rect" id="node57" href="$interface_d_k_stroke.html" title="represents the stroke of a path, and can be added as an attribute of a DKStyle. " alt="" coords="999,2888,1078,2913"/>
+<area shape="rect" id="node58" href="$interface_d_k_rough_stroke.html" title="DKRoughStroke is a stroke rasterizer that randomly varies the stroke width about its nominal set widt..." alt="" coords="1235,2863,1353,2888"/>
+<area shape="rect" id="node59" href="$interface_d_k_zig_zag_stroke.html" title="DKZigZagStroke" alt="" coords="1234,2912,1354,2937"/>
+<area shape="rect" id="node60" href="$interface_d_k_text_adornment.html" title="This renderer allows text to be an attribute of any object. " alt="" coords="974,2451,1103,2476"/>
+<area shape="rect" id="node61" href="$interface_d_k_shape_factory.html" title="This class provides a number of standard shareable paths that can be utilsed by DKDrawableShape. " alt="" coords="738,4496,861,4521"/>
+<area shape="rect" id="node62" href="$protocol_d_k_storable_object-p.html" title="\&lt;DKStorableObject\&gt;" alt="" coords="728,1216,871,1241"/>
+<area shape="rect" id="node64" href="$interface_d_k_stroke_dash.html" title="DKStrokeDash" alt="" coords="745,3993,854,4019"/>
+<area shape="rect" id="node65" href="$interface_d_k_text_substitutor.html" title="This objects abstracts the text substitution task used by text adornments, et. " alt="" coords="736,4545,864,4571"/>
+<area shape="rect" id="node66" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Classes/NSResponder_Class/Reference/Reference" title="NSResponder" alt="" coords="747,4647,852,4672"/>
+<area shape="rect" id="node74" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/Reference/NSString" title="NSString" alt="" coords="762,4095,837,4120"/>
+<area shape="rect" id="node12" href="$interface_d_k_style_registry.html" title="The style registry is a singleton category manager instance that consolidates styles from a variety o..." alt="" coords="979,3841,1098,3867"/>
+<area shape="rect" id="node24" href="$interface_d_k_shape_cluster.html" title="A CLUSTER is a specialised form of group. " alt="" coords="1669,559,1789,584"/>
+<area shape="rect" id="node32" href="$interface_d_k_swept_angle_gradient.html" title="DKSweptAngleGradient" alt="" coords="957,3184,1119,3209"/>
+<area shape="rect" id="node47" href="$interface_d_k_b_s_p_direct_object_storage.html" title="This uses a similar algorithm to DKBSPObjectStorage but instead of indexing the objects it stores the..." alt="" coords="945,2052,1132,2077"/>
+<area shape="rect" id="node48" href="$interface_d_k_b_s_p_object_storage.html" title="The actual storage object. " alt="" coords="962,2101,1114,2127"/>
+<area shape="rect" id="node63" href="$interfacetest_storable_object.html" title="testStorableObject" alt="" coords="973,2352,1104,2377"/>
+<area shape="rect" id="node67" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Classes/NSView_Class/Reference/NSView" title="NSView" alt="" coords="1004,4647,1073,4672"/>
+<area shape="rect" id="node68" href="$interface_d_k_drawable_p_d_f_view.html" title="DKDrawablePDFView" alt="" coords="1218,4621,1370,4647"/>
+<area shape="rect" id="node69" href="$interface_g_c_zoom_view.html" title="This is a very general&#45;purpose view class that provides some handy high&#45;level methods for doing zoomi..." alt="" coords="1242,4671,1346,4696"/>
+<area shape="rect" id="node70" href="$interface_d_k_drawing_view.html" title="DKDrawingView is the visible &quot;front end&quot; for the DKDrawing architecture. " alt="" coords="1466,4671,1583,4696"/>
+<area shape="rect" id="node71" href="$interface_d_k_layer_p_d_f_view.html" title="DKLayerPDFView" alt="" coords="1665,4671,1793,4696"/>
+<area shape="rect" id="node72" href="$interface_d_k_print_drawing_view.html" title="DKPrintDrawingView" alt="" coords="1656,4720,1801,4745"/>
+<area shape="rect" id="node73" href="$interface_d_k_selection_p_d_f_view.html" title="these objects are never used to make a visible view. " alt="" coords="1654,4621,1804,4647"/>
+<area shape="rect" id="node75" href="$interface_d_k_symbol.html" title="DKSymbol" alt="" coords="996,3689,1080,3715"/>
+<area shape="rect" id="node76" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSCopying_Protocol/Reference/Reference" title="\&lt;NSCopying\&gt;" alt="" coords="505,1495,610,1520"/>
+<area shape="rect" id="node78" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSKeyValueBindingCreation_Protocol/Reference/Reference" title="\&lt;NSKeyValueBindingCreation\&gt;" alt="" coords="5,4271,212,4296"/>
+<area shape="rect" id="node79" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference" title="NSObject" alt="" coords="291,4271,369,4296"/>
+<area shape="rect" id="node80" href="$interface_d_k_auxiliary_menus.html" title="Most drawables in DK have contextual menus associated with them. " alt="" coords="492,4748,623,4773"/>
+<area shape="rect" id="node81" href="$interface_d_k_b_s_p_index_tree.html" title="tree object; this stores indexes in mutable index sets. " alt="" coords="495,4797,621,4823"/>
+<area shape="rect" id="node83" href="$interface_d_k_category_manager_menu_info.html" title="private object used to store menu info &#45; allows efficient management of the menu to match the C/Mgrs ..." alt="" coords="457,4847,659,4872"/>
+<area shape="rect" id="node84" href="$interface_d_k_colour_quantizer.html" title="generic interface and simple quantizer which performs uniform quantization. " alt="" coords="489,4896,626,4921"/>
+<area shape="rect" id="node86" href="$interface_d_k_evaluator.html" title="DKEvaluator" alt="" coords="510,4945,606,4971"/>
+<area shape="rect" id="node88" href="$interface_d_k_expression.html" title="DKExpression" alt="" coords="505,4995,611,5020"/>
+<area shape="rect" id="node89" href="$interface_d_k_expression_pair.html" title="DKExpressionPair" alt="" coords="493,5044,622,5069"/>
+<area shape="rect" id="node90" href="$interface_d_k_handle.html" title="DKHandle is a base class for all handles, which are the knobs attached to shapes for interacting with..." alt="" coords="517,5093,599,5119"/>
+<area shape="rect" id="node104" href="$interface_d_k_parser.html" title="DKParser" alt="" coords="518,5143,597,5168"/>
+<area shape="rect" id="node105" href="$interface_d_k_path_glyph_info.html" title="DKPathGlyphInfo" alt="" coords="495,5192,620,5217"/>
+<area shape="rect" id="node106" href="$interface_d_k_quartz_cache.html" title="Higher&#45;level wrapper for CGLayer, used to cache graphics in numerous places in DK. " alt="" coords="498,5241,617,5267"/>
+<area shape="rect" id="node107" href="$interface_d_k_random.html" title="returns a random number between 0 and 1 " alt="" coords="512,5291,603,5316"/>
+<area shape="rect" id="node108" href="$interface_d_k_retriggerable_timer.html" title="Implements a one&#45;shot timer that can be repeatedly extended (retriggered) preventing it timing out..." alt="" coords="481,5340,634,5365"/>
+<area shape="rect" id="node109" href="$interface_d_k_route_finder.html" title="This object implements an heuristic solution to the travelling salesman problem. " alt="" coords="501,5389,614,5415"/>
+<area shape="rect" id="node110" href="$interface_d_k_runtime_helper.html" title="DKRuntimeHelper" alt="" coords="493,5439,622,5464"/>
+<area shape="rect" id="node111" href="$interface_d_k_text_on_path_glyph_accumulator.html" title="DKTextOnPathGlyphAccumulator" alt="" coords="448,5488,667,5513"/>
+<area shape="rect" id="node112" href="$interface_d_k_text_on_path_glyph_drawer.html" title="DKTextOnPathGlyphDrawer" alt="" coords="464,2637,651,2663"/>
+<area shape="rect" id="node113" href="$interface_d_k_text_on_path_metrics_helper.html" title="DKTextOnPathMetricsHelper" alt="" coords="462,2687,654,2712"/>
+<area shape="rect" id="node114" href="$interface_d_k_text_substitution_key.html" title="DKTextSubstitutionKey" alt="" coords="479,2736,636,2761"/>
+<area shape="rect" id="node115" href="$interface_d_k_tool_registry.html" title="DKToolRegistry takes over the tool collection functionality formerly part of DKDrawingTool itself..." alt="" coords="501,2785,614,2811"/>
+<area shape="rect" id="node116" href="$interface_d_k_unarchiving_helper.html" title="this helper is used when unarchiving to translate class names from older files to their modern equiva..." alt="" coords="483,2835,632,2860"/>
+<area shape="rect" id="node117" href="$interface_d_k_unique_i_d.html" title="Utility class generates totally unique keys using CFUUID. " alt="" coords="510,2884,605,2909"/>
+<area shape="rect" id="node118" href="$interface_d_k_view_controller.html" title="DKViewController is a basic controller class that sits between a DKDrawingView and the DKDrawing itse..." alt="" coords="494,4600,621,4625"/>
+<area shape="rect" id="node120" href="$interface_g_c_observable_object.html" title="This is used to permit setting up KVO in a simpler manner than comes as standard. ..." alt="" coords="484,3337,632,3363"/>
+<area shape="rect" id="node121" href="$interface_g_c_observer_undo_relay.html" title="GCObserverUndoRelay" alt="" coords="477,2985,639,3011"/>
+<area shape="rect" id="node122" href="$interface_g_c_one_shot_effect_timer.html" title="This class wraps up a very simple piece of timer functionality. " alt="" coords="477,3084,638,3109"/>
+<area shape="rect" id="node123" href="$interface_g_c_thread_queue.html" title="GCThreadQueue" alt="" coords="496,4043,619,4068"/>
+<area shape="rect" id="node124" href="$interface_g_c_undo_manager.html" title="This class is a public API&#45;compatible replacement for NSUndoManager. " alt="" coords="495,4649,621,4675"/>
+<area shape="rect" id="node126" href="$interface_g_c_undo_task.html" title="GCUndoTask" alt="" coords="507,4699,608,4724"/>
+<area shape="rect" id="node82" href="$interface_d_k_b_s_p_direct_tree.html" title="tree object " alt="" coords="735,4893,864,4919"/>
+<area shape="rect" id="node85" href="$interface_d_k_octree_quantizer.html" title="octree quantizer which does a much better job than DKColourQuantizer " alt="" coords="731,4943,868,4968"/>
+<area shape="rect" id="node87" href="$interface_d_k_style_reader.html" title="DKStyleReader" alt="" coords="743,4992,856,5017"/>
+<area shape="rect" id="node91" href="$interface_d_k_bounding_rect_handle.html" title="DKBoundingRectHandle" alt="" coords="717,5141,883,5167"/>
+<area shape="rect" id="node94" href="$interface_d_k_on_path_point_handle.html" title="DKOnPathPointHandle" alt="" coords="721,5265,878,5291"/>
+<area shape="rect" id="node100" href="$interface_d_k_rotation_handle.html" title="DKRotationHandle" alt="" coords="734,5043,866,5068"/>
+<area shape="rect" id="node102" href="$interface_d_k_target_handle.html" title="DKTargetHandle" alt="" coords="740,5092,859,5117"/>
+<area shape="rect" id="node92" href="$interface_d_k_inactive_bounding_rect_handle.html" title="DKInactiveBoundingRectHandle" alt="" coords="932,5191,1144,5216"/>
+<area shape="rect" id="node93" href="$interface_d_k_locked_bounding_rect_handle.html" title="DKLockedBoundingRectHandle" alt="" coords="934,5141,1143,5167"/>
+<area shape="rect" id="node95" href="$interface_d_k_inactive_on_path_point_handle.html" title="DKInactiveOnPathPointHandle" alt="" coords="936,5289,1140,5315"/>
+<area shape="rect" id="node96" href="$interface_d_k_locked_on_path_point_handle.html" title="DKLockedOnPathPointHandle" alt="" coords="938,5339,1139,5364"/>
+<area shape="rect" id="node97" href="$interface_d_k_off_path_point_handle.html" title="DKOffPathPointHandle" alt="" coords="960,5240,1117,5265"/>
+<area shape="rect" id="node98" href="$interface_d_k_inactive_off_path_point_handle.html" title="DKInactiveOffPathPointHandle" alt="" coords="1192,5215,1396,5240"/>
+<area shape="rect" id="node99" href="$interface_d_k_locked_off_path_point_handle.html" title="DKLockedOffPathPointHandle" alt="" coords="1194,5264,1394,5289"/>
+<area shape="rect" id="node101" href="$interface_d_k_locked_rotation_handle.html" title="DKLockedRotationHandle" alt="" coords="951,5043,1126,5068"/>
+<area shape="rect" id="node103" href="$interface_d_k_locked_target_handle.html" title="DKLockedTargetHandle" alt="" coords="957,5092,1119,5117"/>
+<area shape="rect" id="node119" href="$interface_d_k_tool_controller.html" title="This object is a view controller that can apply one of a range of tools to the objects in the current..." alt="" coords="739,4696,861,4721"/>
+<area shape="rect" id="node125" href="$interface_d_k_undo_manager.html" title="This subclass of NSUndoManager can coalesce consecutive tasks that it receives so that only one task ..." alt="" coords="737,4745,862,4771"/>
+<area shape="rect" id="node127" href="$interface_g_c_concrete_undo_task.html" title="GCConcreteUndoTask" alt="" coords="722,4795,877,4820"/>
+<area shape="rect" id="node128" href="$interface_g_c_undo_group.html" title="GCUndoGroup" alt="" coords="744,4844,855,4869"/>
+<area shape="rect" id="node129" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSMutableCopying_Protocol/Reference/Reference" title="\&lt;NSMutableCopying\&gt;" alt="" coords="482,3993,634,4019"/>
+<area shape="rect" id="node130" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="62,2027,156,2052"/>
+<area shape="rect" id="node131" href="$protocol_d_k_drawable_container-p.html" title="\&lt;DKDrawableContainer\&gt;" alt="" coords="715,5,884,31"/>
+<area shape="rect" id="node132" href="$protocol_d_k_knob_owner-p.html" title="\&lt;DKKnobOwner\&gt;" alt="" coords="267,2101,393,2127"/>
+<area shape="rect" id="node133" href="$protocol_d_k_object_storage-p.html" title="\&lt;DKObjectStorage\&gt;" alt="" coords="260,2027,400,2052"/>
+<area shape="rect" id="node134" href="$protocol_d_k_rasterizer-p.html" title="\&lt;DKRasterizer\&gt;" alt="" coords="272,2239,388,2264"/>
+<area shape="rect" id="node135" href="$protocol_d_k_renderable-p.html" title="\&lt;DKRenderable\&gt;" alt="" coords="495,259,620,284"/>
+</map>
