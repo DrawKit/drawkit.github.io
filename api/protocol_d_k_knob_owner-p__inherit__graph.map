@@ -1,6 +1,6 @@
 <map id="&lt;DKKnobOwner&gt;" name="&lt;DKKnobOwner&gt;">
 <area shape="rect" id="node3" href="$interface_d_k_layer.html" title="drawing layers are lightweight objects which represent a layer. " alt="" coords="321,129,394,155"/>
-<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="5,129,99,155"/>
+<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-mpl2/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="5,129,99,155"/>
 <area shape="rect" id="node4" href="$interface_d_k_drawing_info_layer.html" title="This is a DKLayer subclass which is able to draw an information panel in a corner of the drawing..." alt="" coords="448,5,593,31"/>
 <area shape="rect" id="node5" href="$interface_d_k_grid_layer.html" title="This class is a layer that draws a grid like a piece of graph paper. " alt="" coords="471,55,570,80"/>
 <area shape="rect" id="node6" href="$interface_d_k_guide_layer.html" title="A guide layer implements any number of horizontal and vertical guidelines and provides methods for sn..." alt="" coords="466,104,575,129"/>

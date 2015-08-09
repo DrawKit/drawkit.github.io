@@ -1,6 +1,6 @@
 <map id="&lt;DKObjectStorage&gt;" name="&lt;DKObjectStorage&gt;">
 <area shape="rect" id="node3" href="$interface_d_k_linear_object_storage.html" title="Basic storage class stores objects in a standard array. " alt="" coords="114,152,276,177"/>
-<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="148,5,242,31"/>
+<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-mpl2/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="148,5,242,31"/>
 <area shape="rect" id="node4" href="$interface_d_k_b_s_p_direct_object_storage.html" title="This uses a similar algorithm to DKBSPObjectStorage but instead of indexing the objects it stores the..." alt="" coords="5,225,192,251"/>
 <area shape="rect" id="node5" href="$interface_d_k_b_s_p_object_storage.html" title="The actual storage object. " alt="" coords="216,225,368,251"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="&lt;DKDrawableContainer&gt;" name="&lt;DKDrawableContainer&gt;">
 <area shape="rect" id="node3" href="$interface_d_k_object_owner_layer.html" title="This layer class can be the owner of any number of DKDrawableObjects. " alt="" coords="11,152,162,177"/>
 <area shape="rect" id="node5" href="$interface_d_k_shape_group.html" title="This is a group objects that can group any number of shapes or paths. " alt="" coords="189,152,305,177"/>
-<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-appledoc/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="119,5,213,31"/>
+<area shape="rect" id="node2" href="/Volumes/Documents/Consulting/drawkit-mpl2/documentation/api/doxygen-cocoa-tags.xml$https://developer.apple.com/library/mac/.html#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject" title="\&lt;NSObject\&gt;" alt="" coords="119,5,213,31"/>
 <area shape="rect" id="node4" href="$interface_d_k_object_drawing_layer.html" title="This layer adds the concept of selection to drawable objects as defined by DKObjectOwnerLayer. " alt="" coords="5,225,166,251"/>
 <area shape="rect" id="node6" href="$interface_d_k_shape_cluster.html" title="A CLUSTER is a specialised form of group. " alt="" coords="189,225,310,251"/>
 </map>

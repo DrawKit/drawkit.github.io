@@ -273,7 +273,7 @@ Class Methods</h2></td></tr>
 <div class="textblock"><p>This is used to permit setting up KVO in a simpler manner than comes as standard. </p>
 <dl class="section author"><dt>Author</dt><dd>Contributions from the community; see CONTRIBUTORS.md </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2005-2015 </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>GNU LGPL3; see LICENSE</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MPL2; see LICENSE.txt</dd></dl>
 <p>This is used to permit setting up KVO in a simpler manner than comes as standard.</p>
 <p>The idea is that each class simply publishes a list of the observable properties that an observer can observe. When the observer wants to start observing all of these published properties, it calls setUpKVOForObserver: conversely, tearDownKVOForObserver: will stop the observer watching all the published properties.</p>
 <p>Subclasses can also override these methods to be more selective about which properties are observed, or to propagate the message to additional observable objects they own.</p>
